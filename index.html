@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Horizon — Youth Voices for Climate Action Through Drone Technology | Erasmus+</title>
+  <meta name="description" content="Official website of Green Horizon (Erasmus+ KA210-YOU). Empowering youth and youth workers across Germany, Türkiye, and Romania through drone technology, aerial photography, and environmental storytelling.">
+  <meta name="keywords" content="Erasmus+, Green Horizon, drone technology, climate action, youth empowerment, digital storytelling, aerial photography, European Union, environmental youth work">
+  <meta name="author" content="Green Horizon Consortium">
+  <link rel="canonical" href="https://greenhorizonyou.eu/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://greenhorizonyou.eu/">
+  <meta property="og:title" content="Green Horizon — Youth Voices for Climate Action Through Drone Technology">
+  <meta property="og:description" content="See Climate Change From a New Perspective. An Erasmus+ partnership connecting youth across Germany, Türkiye, and Romania.">
+  <meta property="og:image" content="https://greenhorizonyou.eu/assets/images/hero/aerial-landscape.svg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Green Horizon — Erasmus+ Climate & Drone Tech">
+  <meta name="twitter:description" content="Empowering youth voices through drone technology, digital storytelling, and climate action.">
+  <meta name="twitter:image" content="https://greenhorizonyou.eu/assets/images/hero/aerial-landscape.svg">
+
+  <!-- Leaflet CSS for Consortium Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/drone-hud.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Green Horizon: Youth Voices for Climate Action Through Drone Technology",
+    "url": "https://greenhorizonyou.eu",
+    "logo": "https://greenhorizonyou.eu/assets/images/logo.svg",
+    "funder": {
+      "@type": "Organization",
+      "name": "Erasmus+ Programme of the European Union"
+    },
+    "member": [
+      { "@type": "Organization", "name": "Integrational e.V.", "addressCountry": "Germany" },
+      { "@type": "Organization", "name": "Yenilikçi Eğitim Bilim ve Sanat Derneği", "addressCountry": "Türkiye" },
+      { "@type": "Organization", "name": "Asociația Empower Plus", "addressCountry": "Romania" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand" aria-label="Green Horizon Homepage">
+        <img src="assets/images/logo.svg" alt="Green Horizon Logo" width="220" height="44">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="partners.html" class="nav-link" data-i18n="nav_partners">Partners</a></li>
+          <li><a href="activities.html" class="nav-link" data-i18n="nav_activities">Activities</a></li>
+          <li><a href="stories.html" class="nav-link" data-i18n="nav_stories">Climate Stories</a></li>
+          <li><a href="exhibition.html" class="nav-link" data-i18n="nav_exhibition">Exhibition</a></li>
+          <li><a href="resources.html" class="nav-link" data-i18n="nav_resources">Resources</a></li>
+          <li><a href="news.html" class="nav-link" data-i18n="nav_news">News</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Language & Mobile Toggle -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-selector">
+          <button id="lang-switch-btn" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+            <span id="current-lang-code">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul id="lang-switch-menu" class="lang-menu" role="menu">
+            <li class="lang-menu-item"><button class="lang-item-btn active" data-lang="en">English (EN)</button></li>
+            <li class="lang-menu-item"><button class="lang-item-btn" data-lang="de">Deutsch (DE)</button></li>
+            <li class="lang-menu-item"><button class="lang-item-btn" data-lang="tr">Türkçe (TR)</button></li>
+            <li class="lang-menu-item"><button class="lang-item-btn" data-lang="ro">Română (RO)</button></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Overlay -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <a href="index.html" style="display: block; margin-bottom: 2rem;">
+        <img src="assets/images/logo.svg" alt="Green Horizon" width="180">
+      </a>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link active" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link" data-i18n="nav_about">About the Project</a></li>
+        <li><a href="partners.html" class="mobile-nav-link" data-i18n="nav_partners">Project Partners</a></li>
+        <li><a href="activities.html" class="mobile-nav-link" data-i18n="nav_activities">Activities & Timeline</a></li>
+        <li><a href="stories.html" class="mobile-nav-link" data-i18n="nav_stories">Climate Stories</a></li>
+        <li><a href="exhibition.html" class="mobile-nav-link" data-i18n="nav_exhibition">Virtual Exhibition</a></li>
+        <li><a href="resources.html" class="mobile-nav-link" data-i18n="nav_resources">Educational Resources</a></li>
+        <li><a href="news.html" class="mobile-nav-link" data-i18n="nav_news">News & Updates</a></li>
+        <li><a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+        Erasmus+ KA210-YOU<br>Small-scale Partnerships in Youth
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section with Futuristic Drone HUD -->
+    <section class="section section-hero" aria-label="Introduction Hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <!-- Background Aerial Media (Vector Aerial Canvas) -->
+          <div class="hero-background-media" aria-hidden="true">
+            <img src="assets/images/hero/aerial-landscape.svg" alt="" width="1600" height="900">
+          </div>
+
+          <!-- Drone Scanline Animation -->
+          <div class="drone-scanline" aria-hidden="true"></div>
+
+          <!-- Drone HUD Telemetry Overlay -->
+          <div class="drone-hud-overlay" aria-hidden="true">
+            <!-- Corner Target Brackets -->
+            <div class="hud-corner hud-corner-tl"></div>
+            <div class="hud-corner hud-corner-tr"></div>
+            <div class="hud-corner hud-corner-bl"></div>
+            <div class="hud-corner hud-corner-br"></div>
+
+            <!-- Top Telemetry Ribbon -->
+            <div class="hud-telemetry-top">
+              <div class="hud-rec-indicator">
+                <span class="hud-rec-dot"></span>
+                <span>REC [●] 4K 60FPS</span>
+              </div>
+              <div class="hud-flight-mode">
+                SYS: GNSS ACTIVE // CLIMATE_SURVEILLANCE_V2.5
+              </div>
+              <div>
+                <span id="hud-live-sats">18 GNSS</span> | <span id="hud-live-bat">94%</span>
+              </div>
+            </div>
+
+            <!-- Center HUD Reticle -->
+            <div class="hud-center-sight">
+              <div class="hud-crosshair-h"></div>
+              <div class="hud-crosshair-v"></div>
+              <div class="hud-target-box"></div>
+            </div>
+
+            <!-- Bottom Telemetry Bar -->
+            <div class="hud-telemetry-bottom">
+              <div>
+                LAT/LON: <span id="hud-live-coords" class="hud-stat-value">50.7374°N, 7.0982°E</span>
+              </div>
+              <div>
+                ALTITUDE: <span id="hud-live-alt" class="hud-stat-value">124.5M AGL</span>
+              </div>
+              <div>
+                SENSOR: <span class="hud-stat-value">MULTISPECTRAL RGB</span>
+              </div>
+              <div>
+                WIND: <span class="hud-stat-value">2.4 M/S SW</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Content Layer -->
+          <div class="hero-content">
+            <div class="section-eyebrow">
+              Erasmus+ KA210-YOU • 2025–2026
+            </div>
+            
+            <h1 class="hero-title" data-i18n="hero_headline">
+              See Climate Change From a New Perspective.
+            </h1>
+            
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              Empowering Youth Voices Through Drone Technology, Digital Storytelling and Climate Action.
+            </p>
+
+            <div class="hero-actions">
+              <a href="about.html" class="btn btn-primary" data-i18n="btn_explore">
+                Explore Our Mission
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="stories.html" class="btn btn-secondary" data-i18n="btn_discover">
+                Discover Climate Stories
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+
+            <!-- EU Funding Acknowledgement Pill -->
+            <div style="margin-top: 2.5rem; display: inline-flex; align-items: center; gap: 0.8rem; background: rgba(7, 20, 17, 0.85); backdrop-filter: blur(8px); padding: 0.5rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--glass-border);">
+              <img src="assets/images/eu-flag.svg" alt="EU Flag" style="height: 24px; width: auto;">
+              <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">
+                Co-funded by the Erasmus+ Programme of the European Union
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Project Context &amp; European Dimension</span>
+          <h2 id="about-heading" class="section-title">Bridging Advanced Technology and Grassroots Climate Advocacy</h2>
+          <p class="section-subtitle">
+            Green Horizon is a 16-month European cooperation partnership connecting young people, educators, and youth workers from Germany, Türkiye, and Romania.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="card-glass">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--electric-green); margin-bottom: 0.8rem;">
+              [01 // THE CHALLENGE]
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 1rem;">Invisible Environmental Scars</h3>
+            <p>
+              Climate change impacts—from severe river droughts and receding inland lakes to high-altitude forest dieback—are often difficult to observe from ground level. Traditional advocacy often lacks immediate, tangible visual proof.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--teal); margin-bottom: 0.8rem;">
+              [02 // THE INNOVATION]
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 1rem;">The Aerial Perspective</h3>
+            <p>
+              Unmanned Aerial Vehicles (UAVs) provide unprecedented non-invasive access to remote ecosystems. By training youth to pilot drones safely and interpret aerial imagery, we turn complex ecological data into compelling visual narratives.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--electric-green); margin-bottom: 0.8rem;">
+              [03 // THE EMPOWERMENT]
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 1rem;">Youth as Environmental Reporters</h3>
+            <p>
+              Rather than passive recipients of climate anxiety, participating youth become certified drone operators, documentary storytellers, and climate ambassadors within their local communities and European networks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission Pillars -->
+    <section class="section section-darker" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Core Objectives</span>
+          <h2 id="mission-heading" class="section-title">Our Strategic Focus Areas</h2>
+          <p class="section-subtitle">
+            Six interconnected pillars designed to produce sustainable pedagogical models and real community impact.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem;">
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(183,255,74,0.15); border: 1px solid var(--electric-green); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--electric-green);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h4>Climate Awareness</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Investigating regional climate consequences and ecological adaptation across diverse European biomes.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(35,201,171,0.15); border: 1px solid var(--teal); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--teal);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h4>Drone Technology</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Mastering UAV flight principles, flight planning, sensor operation, and rigorous EASA safety regulations.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(183,255,74,0.15); border: 1px solid var(--electric-green); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--electric-green);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4>Digital &amp; Eco Literacy</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Equipping youth with data verification, critical media literacy, and non-invasive ecological monitoring skills.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(35,201,171,0.15); border: 1px solid var(--teal); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--teal);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4>Youth Participation &amp; Inclusion</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Active engagement of youth with fewer opportunities, breaking socioeconomic and geographical barriers.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(183,255,74,0.15); border: 1px solid var(--electric-green); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--electric-green);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <h4>Visual Storytelling</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Producing cinematic short documentaries, social media reels, and high-impact environmental advocacy pieces.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="width: 44px; height: 44px; border-radius: 8px; background: rgba(35,201,171,0.15); border: 1px solid var(--teal); display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; color: var(--teal);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h4>Sustainable Toolkit</h4>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">
+              Developing freely accessible educational booklets, checklists, and 360° VR blueprints for non-formal educators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Europe Consortium Map -->
+    <section class="section" aria-labelledby="map-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Transnational Partnership</span>
+          <h2 id="map-heading" class="section-title">Interactive Europe Consortium Map</h2>
+          <p class="section-subtitle">
+            Explore participating organisations and regional field testing hubs across Germany, Türkiye, and Romania.
+          </p>
+        </div>
+
+        <div class="map-wrapper">
+          <div id="consortium-map"></div>
+
+          <!-- Map Interactive HUD Card -->
+          <div class="map-legend-card">
+            <h5>Consortium Telemetry</h5>
+            <ul class="legend-items">
+              <li>
+                <span class="legend-dot" style="background: #B7FF4A;"></span>
+                <span><strong>Germany:</strong> Integrational e.V. (Lead)</span>
+              </li>
+              <li>
+                <span class="legend-dot" style="background: #23C9AB;"></span>
+                <span><strong>Türkiye:</strong> IESA (Education Lead)</span>
+              </li>
+              <li>
+                <span class="legend-dot" style="background: #23C9AB;"></span>
+                <span><strong>Romania:</strong> Empower Plus (VR Lead)</span>
+              </li>
+            </ul>
+            <div style="margin-top: 0.8rem; display: flex; gap: 0.4rem; flex-wrap: wrap;">
+              <button class="btn btn-ghost btn-sm" onclick="zoomToPartner('de')">Bonn</button>
+              <button class="btn btn-ghost btn-sm" onclick="zoomToPartner('tr')">Ankara</button>
+              <button class="btn btn-ghost btn-sm" onclick="zoomToPartner('ro')">Craiova</button>
+              <button class="btn btn-ghost btn-sm" onclick="resetConsortiumMap()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Project Activities (Proposal Work Plan) -->
+    <section class="section section-darker" aria-labelledby="activities-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Project Work Plan</span>
+          <h2 id="activities-heading" class="section-title">Core Activities &amp; Milestones</h2>
+          <p class="section-subtitle">
+            Work packages as defined in the Erasmus+ application (1 May 2025 – 31 August 2026).
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-teal">A1 // M1</span>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <h4>Kick-Off Meeting (TPM 1)</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Consortium governance, quality management, and safety alignment in Bonn, Germany.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-electric">A2 // M4-M5</span>
+              <span class="badge badge-pending">In Prep</span>
+            </div>
+            <h4>Transnational Training Course</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Intensive training in drone piloting, EASA flight regulations, and camera operations.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-teal">A3 // M6-M8</span>
+              <span class="badge badge-pending">In Dev</span>
+            </div>
+            <h4>Educational Booklet</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Publication of 6-module curriculum for youth workers and environmental educators.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-electric">A4 // M8-M11</span>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <h4>Three Local Youth Workshops</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Hands-on flight labs and local ecological documentation in DE, TR, and RO.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-teal">A5 // M11-M13</span>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <h4>Documentary Series</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Youth-directed video episodes covering river basins, droughts, and forest canopies.
+            </p>
+          </div>
+
+          <div class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem;">
+              <span class="badge badge-electric">A6 // M13-M14</span>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <h4>Photo &amp; 360° VR Exhibition</h4>
+            <p style="font-size: 0.86rem; color: var(--text-muted);">
+              Interactive virtual reality gallery and physical exhibition of aerial photography.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="activities.html" class="btn btn-secondary">
+            View Complete Gantt Chart &amp; Work Plan &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Results Showcase -->
+    <section class="section" aria-labelledby="results-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Project Deliverables</span>
+          <h2 id="results-heading" class="section-title">Open Access Educational Outputs</h2>
+          <p class="section-subtitle">
+            Sustainable resources created by the partnership for the European youth community.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="card-glass">
+            <span class="badge badge-electric" style="margin-bottom: 1rem;">Core Output</span>
+            <h3>Educational Booklet</h3>
+            <p style="color: var(--text-secondary);">
+              Open-access handbook integrating drone piloting guidelines, EASA safety rules, and climate storytelling lesson plans.
+            </p>
+            <a href="resources.html" class="btn btn-secondary btn-sm" style="margin-top: 1rem;">
+              Explore Resource Syllabus &rarr;
+            </a>
+          </div>
+
+          <div class="card-glass">
+            <span class="badge badge-teal" style="margin-bottom: 1rem;">Media Series</span>
+            <h3>Youth Documentary Mini-Series</h3>
+            <p style="color: var(--text-secondary);">
+              Multi-episode video series capturing European ecosystems from above, paired with authentic youth commentary.
+            </p>
+            <a href="stories.html" class="btn btn-secondary btn-sm" style="margin-top: 1rem;">
+              Discover Climate Cases &rarr;
+            </a>
+          </div>
+
+          <div class="card-glass">
+            <span class="badge badge-electric" style="margin-bottom: 1rem;">Interactive Tech</span>
+            <h3>360° Virtual Reality Exhibition</h3>
+            <p style="color: var(--text-secondary);">
+              Immersive web-based panoramic portal allowing schools, youth centres, and citizens to explore ecosystems in 3D.
+            </p>
+            <a href="exhibition.html" class="btn btn-secondary btn-sm" style="margin-top: 1rem;">
+              Enter Virtual Exhibition &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Updates Section -->
+    <section class="section section-darker" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Dissemination</span>
+          <h2 id="news-heading" class="section-title">Latest Project Updates</h2>
+          <p class="section-subtitle">
+            News, milestones, and announcements from the Green Horizon consortium.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <article class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
+              <span class="badge badge-electric">Official Launch</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--teal);">1 May 2025</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.8rem;">Green Horizon Commences Erasmus+ Implementation</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+              Integrational e.V., IESA, and Asociația Empower Plus officially launch the 16-month youth environmental initiative.
+            </p>
+            <a href="news.html" class="btn btn-ghost btn-sm">Read Announcement &rarr;</a>
+          </article>
+
+          <article class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
+              <span class="badge badge-teal">Capacity Building</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--teal);">Summer 2025</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.8rem;">Curriculum Finalized for Transnational Drone Training</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+              Youth educators and drone mentors finalize flight safety protocols and aerial photography curricula.
+            </p>
+            <a href="news.html" class="btn btn-ghost btn-sm">Read Announcement &rarr;</a>
+          </article>
+
+          <article class="card-glass">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
+              <span class="badge badge-electric">Web Platform</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--teal);">May 2025</span>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.8rem;">Official Web Portal greenhorizonyou.eu Deployed</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+              High-accessibility digital platform goes live, featuring interactive Europe consortium map and 360° VR demo viewer.
+            </p>
+            <a href="news.html" class="btn btn-ghost btn-sm">Read Announcement &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consortium Partners -->
+    <section class="section" aria-labelledby="partners-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">The Consortium</span>
+          <h2 id="partners-heading" class="section-title">Participating Organisations</h2>
+          <p class="section-subtitle">
+            A balanced European partnership committed to youth development and environmental action.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <div class="card-glass" style="text-align: center;">
+            <img src="assets/images/partners/integrational-logo.svg" alt="Integrational e.V." style="margin: 0 auto 1.5rem auto;">
+            <h4>Integrational e.V.</h4>
+            <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--electric-green); margin-bottom: 0.8rem;">
+              GERMANY // PROJECT COORDINATOR
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+              Non-profit organisation dedicated to European cooperation, youth empowerment, and quality project governance.
+            </p>
+            <a href="partners.html#integrational" class="btn btn-ghost btn-sm">Partner Profile &rarr;</a>
+          </div>
+
+          <div class="card-glass" style="text-align: center;">
+            <img src="assets/images/partners/iesa-logo.svg" alt="IESA" style="margin: 0 auto 1.5rem auto;">
+            <h4>IESA</h4>
+            <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--teal); margin-bottom: 0.8rem;">
+              TÜRKIYE // PROJECT PARTNER
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+              Innovative Education, Science and Art Association spearheading drone educational modules and digital pedagogy.
+            </p>
+            <a href="partners.html#iesa" class="btn btn-ghost btn-sm">Partner Profile &rarr;</a>
+          </div>
+
+          <div class="card-glass" style="text-align: center;">
+            <img src="assets/images/partners/empower-plus-logo.svg" alt="Asociația Empower Plus" style="margin: 0 auto 1.5rem auto;">
+            <h4>Asociația Empower Plus</h4>
+            <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--teal); margin-bottom: 0.8rem;">
+              ROMANIA // PROJECT PARTNER
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+              Youth and community empowerment association leading the 360° virtual exhibition and dissemination networks.
+            </p>
+            <a href="partners.html#empower-plus" class="btn btn-ghost btn-sm">Partner Profile &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Official Footer & Erasmus+ Acknowledgement -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo.svg" alt="Green Horizon" width="220" style="margin-bottom: 1.2rem;">
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.2rem;">
+            Green Horizon: Youth Voices for Climate Action Through Drone Technology.<br>
+            Erasmus+ KA210-YOU — Small-scale Partnerships in Youth.<br>
+            Project Duration: 1 May 2025 – 31 August 2026.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--electric-green);">
+            DOMAIN: https://greenhorizonyou.eu
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Project Partners</a></li>
+            <li><a href="activities.html">Activities &amp; Gantt</a></li>
+            <li><a href="stories.html">Climate Stories</a></li>
+            <li><a href="exhibition.html">Virtual Exhibition</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="resources.html">Educational Booklet</a></li>
+            <li><a href="resources.html">Drone Safety Manual</a></li>
+            <li><a href="resources.html">Facilitator Toolkit</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Consortium</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Consortium Contacts</h4>
+          <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.6rem;">
+            <strong>Coordinator:</strong> Integrational e.V., Germany<br>
+            <strong>Email:</strong> info@greenhorizonyou.eu
+          </p>
+          <p style="font-size: 0.86rem; color: var(--text-muted);">
+            <strong>Partners:</strong><br>
+            • IESA (Türkiye)<br>
+            • Asociația Empower Plus (Romania)
+          </p>
+        </div>
+      </div>
+
+      <!-- Mandatory Erasmus+ Disclaimer & EU Flag -->
+      <div class="eu-funding-box">
+        <img src="assets/images/eu-flag.svg" alt="Co-funded by the European Union" class="eu-flag-img">
+        <p class="eu-funding-text">
+          Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.
+        </p>
+      </div>
+
+      <!-- Footer Bottom Links -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2025–2026 Green Horizon Consortium. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GDPR Privacy-Conscious Cookie Consent Banner -->
+  <div id="cookie-consent-banner" class="cookie-banner hidden" role="dialog" aria-label="Cookie consent">
+    <div style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">
+      Privacy &amp; Open Access Notice
+    </div>
+    <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+      We use essential technical cookies to ensure the proper functionality of our interactive maps and 360° virtual exhibition. We do not use third-party behavioral profiling trackers.
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept-btn" class="btn btn-primary btn-sm">Accept Essential</button>
+      <button id="cookie-decline-btn" class="btn btn-ghost btn-sm">Decline Non-Essential</button>
+      <a href="privacy.html" style="font-size: 0.8rem; align-self: center; color: var(--teal); margin-left: auto;">Read Privacy Policy</a>
+    </div>
+  </div>
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Core Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>

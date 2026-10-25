@@ -1,0 +1,24 @@
+{
+  "name": "green-horizon-website",
+  "version": "1.0.0",
+  "description": "Official Website for Erasmus+ KA210-YOU Project: Green Horizon - Youth Voices for Climate Action Through Drone Technology",
+  "main": "index.html",
+  "scripts": {
+    "build": "node scripts/generate-assets.js && node scripts/package-release.js",
+    "test": "node scripts/package-release.js",
+    "preview": "python3 -m http.server 8080",
+    "add:news": "node scripts/add-article.js",
+    "add:photo": "node scripts/add-photo.js",
+    "generate:assets": "node scripts/generate-assets.js"
+  },
+  "keywords": [
+    "erasmus-plus",
+    "green-horizon",
+    "drone-technology",
+    "climate-action",
+    "youth-empowerment",
+    "hostgator-ready"
+  ],
+  "author": "Green Horizon Consortium (Integrational e.V., IESA, Asociația Empower Plus)",
+  "license": "CC-BY-NC-SA-4.0"
+}

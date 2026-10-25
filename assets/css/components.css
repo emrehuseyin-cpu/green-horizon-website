@@ -1,0 +1,701 @@
+/* ==========================================================================
+   GREEN HORIZON — Interactive Components & Page Elements
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Interactive Europe Consortium Map
+   ========================================================================== */
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  background: var(--bg-surface);
+}
+
+#consortium-map {
+  width: 100%;
+  height: 520px;
+  background: #06110e;
+  z-index: 10;
+}
+
+/* Leaflet Dark Customizations */
+.leaflet-container {
+  background-color: #06110e !important;
+  font-family: var(--font-body) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(10, 28, 23, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  color: var(--text-secondary) !important;
+  border: 1px solid var(--teal) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7) !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(10, 28, 23, 0.95) !important;
+  border: 1px solid var(--teal) !important;
+}
+
+.leaflet-popup-content {
+  margin: 1.2rem !important;
+  line-height: 1.5 !important;
+}
+
+.map-partner-popup h4 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.map-partner-popup .popup-role {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--electric-green);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.map-partner-popup p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+.map-partner-popup a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--electric-green);
+}
+
+/* Custom Pulsing Pulse Marker */
+.map-pulse-marker {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.marker-pin {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--electric-green);
+  border: 2px solid #071411;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  box-shadow: 0 0 10px var(--electric-green);
+}
+
+.marker-pulse {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--electric-green);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  animation: marker-pulse-anim 2s infinite ease-out;
+  opacity: 0;
+}
+
+@keyframes marker-pulse-anim {
+  0% { transform: scale(0.4); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Map Overlay HUD Card */
+.map-legend-card {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: rgba(7, 20, 17, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+  z-index: 500;
+  max-width: 300px;
+}
+
+.map-legend-card h5 {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--electric-green);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.legend-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.legend-items li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--electric-green);
+}
+
+/* ==========================================================================
+   2. Activity Gantt Timeline
+   ========================================================================== */
+.timeline-track {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-track::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--teal), var(--electric-green), transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-node {
+  position: absolute;
+  top: 2rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 3px solid var(--electric-green);
+  box-shadow: 0 0 12px var(--electric-green);
+  z-index: 5;
+}
+
+.timeline-item:nth-child(odd) .timeline-node {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-node {
+  left: -10px;
+}
+
+.timeline-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  transition: all var(--transition-normal);
+}
+
+.timeline-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--electric-green);
+  margin-bottom: 0.6rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-meta {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .timeline-track::before {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+    text-align: left !important;
+  }
+  .timeline-node {
+    left: 10px !important;
+  }
+  .timeline-item:nth-child(odd) .timeline-meta {
+    justify-content: flex-start;
+  }
+}
+
+/* ==========================================================================
+   3. Filter & Search Controls
+   ========================================================================== */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  background: rgba(10, 28, 23, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+}
+
+.filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  border-color: var(--teal);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background: var(--electric-green);
+  color: var(--text-dark);
+  border-color: var(--electric-green);
+  font-weight: 700;
+}
+
+.search-input-wrapper {
+  position: relative;
+  min-width: 240px;
+}
+
+.search-input {
+  width: 100%;
+  background: rgba(7, 20, 17, 0.8);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.55rem 1rem 0.55rem 2.4rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--electric-green);
+  box-shadow: 0 0 12px rgba(183, 255, 74, 0.25);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  stroke: var(--text-muted);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   4. Gallery & Lightbox Component
+   ========================================================================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.gallery-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.gallery-thumb-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: #06110e;
+  overflow: hidden;
+}
+
+.gallery-thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.gallery-card:hover .gallery-thumb-wrapper img {
+  transform: scale(1.05);
+}
+
+.gallery-telemetry-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: rgba(7, 20, 17, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(35, 201, 171, 0.3);
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--electric-green);
+}
+
+.gallery-card-body {
+  padding: 1.5rem;
+}
+
+.gallery-card-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-card-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--teal);
+  margin-bottom: 0.8rem;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(4, 13, 11, 0.96);
+  backdrop-filter: blur(16px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.lightbox-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.lightbox-img-wrapper {
+  max-width: 1000px;
+  max-height: 65vh;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--teal);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+.lightbox-img-wrapper img {
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+}
+
+.lightbox-telemetry-panel {
+  background: rgba(10, 28, 23, 0.9);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lightbox-close-btn, .lightbox-nav-btn {
+  background: rgba(18, 60, 47, 0.6);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lightbox-close-btn:hover, .lightbox-nav-btn:hover {
+  background: var(--electric-green);
+  color: var(--text-dark);
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+
+.lightbox-nav-btn.prev {
+  position: absolute;
+  left: -4rem;
+  top: 40%;
+}
+
+.lightbox-nav-btn.next {
+  position: absolute;
+  right: -4rem;
+  top: 40%;
+}
+
+@media (max-width: 768px) {
+  .lightbox-nav-btn.prev { left: 0.5rem; }
+  .lightbox-nav-btn.next { right: 0.5rem; }
+  .lightbox-close-btn { top: 0.5rem; right: 0.5rem; }
+}
+
+/* ==========================================================================
+   5. 360° Panorama Viewer Container
+   ========================================================================== */
+.vr-viewer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--teal);
+  background: #020806;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+#vr-panorama-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+
+#vr-panorama-canvas:active {
+  cursor: grabbing;
+}
+
+.vr-controls-overlay {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+  z-index: 20;
+}
+
+.vr-ctrl-btn {
+  background: rgba(7, 20, 17, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.vr-ctrl-btn:hover {
+  border-color: var(--electric-green);
+  color: var(--electric-green);
+}
+
+.vr-hint-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(7, 20, 17, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--teal);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--electric-green);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 20;
+}
+
+/* ==========================================================================
+   6. Contact Form & Feedback Alerts
+   ========================================================================== */
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  background: rgba(7, 20, 17, 0.85);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--electric-green);
+  box-shadow: 0 0 15px rgba(183, 255, 74, 0.2);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-alert {
+  padding: 1rem 1.4rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form-alert.success {
+  display: block;
+  background: rgba(183, 255, 74, 0.15);
+  border: 1px solid var(--electric-green);
+  color: #B7FF4A;
+}
+
+.form-alert.error {
+  display: block;
+  background: rgba(255, 77, 77, 0.15);
+  border: 1px solid #ff4d4d;
+  color: #ff9999;
+}
+
+/* ==========================================================================
+   7. Cookie Consent Banner (GDPR Compliant & Privacy-First)
+   ========================================================================== */
+.cookie-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  max-width: 600px;
+  background: rgba(10, 28, 23, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--teal);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  z-index: 9999;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+.cookie-banner.hidden {
+  transform: translateY(150%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

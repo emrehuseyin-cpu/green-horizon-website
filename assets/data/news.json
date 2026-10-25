@@ -1,0 +1,50 @@
+[
+  {
+    "id": "news-launch",
+    "title": "Green Horizon Officially Launched Under Erasmus+ Youth Programme",
+    "slug": "green-horizon-official-launch",
+    "date": "1 May 2025",
+    "category": "Project Launch",
+    "author": "Consortium Secretariat",
+    "summary": "Integrational e.V. (Germany), IESA (Türkiye), and Asociația Empower Plus (Romania) commence a 16-month initiative empowering young Europeans through aerial technology and environmental digital media.",
+    "content": "On 1 May 2025, the 'Green Horizon: Youth Voices for Climate Action Through Drone Technology' project officially began its implementation period under the Erasmus+ KA210-YOU Small-scale Partnerships in Youth scheme.\n\nOver the course of 16 months (May 2025 – August 2026), the transnational partnership will bridge the critical intersection between advanced digital technologies and climate activism. By equipping youth workers, educators, and young participants with theoretical and hands-on skills in drone piloting, environmental aerial photography, and cinematic storytelling, Green Horizon fosters a new generation of informed ecological communicators.\n\nThe consortium kicks off with its first Transnational Project Meeting in Bonn, Germany, laying down the quality assurance framework and safety protocols that will underpin all upcoming international activities.",
+    "tags": ["Erasmus+", "Consortium", "Youth Work", "Project Governance"],
+    "badge": "Official Announcement"
+  },
+  {
+    "id": "news-training-call",
+    "title": "Transnational Training Course: Preparing Youth Leaders in Aerial Media",
+    "slug": "transnational-training-course-prep",
+    "date": "June 2025",
+    "category": "Training Course",
+    "author": "Training Committee",
+    "summary": "Partner organisations finalize the safety and pedagogical syllabus for the upcoming summer transnational training course on drone operations and non-formal climate education.",
+    "content": "A high-standard curriculum is currently being finalized for the Transnational Drone Operation, Photography, and Video Editing Training Course scheduled for Summer 2025.\n\nThe training will bring together 15 youth leaders and youth workers from Germany, Türkiye, and Romania. Participants will undergo rigorous European Union Aviation Safety Agency (EASA) Open Category flight safety orientations, practice manual and automated flight modes, and learn how to collect verifiable visual data on regional environmental degradation.\n\nGraduates of the training course will subsequently spearhead the local youth workshops in their home countries.",
+    "tags": ["Training Course", "EASA Regulations", "Drone Tech", "Youth Workers"],
+    "badge": "Capacity Building"
+  },
+  {
+    "id": "news-educational-booklet",
+    "title": "Editorial Framework Established for Green Horizon Educational Booklet",
+    "slug": "educational-booklet-editorial-framework",
+    "date": "July 2025",
+    "category": "Educational Resources",
+    "author": "IESA Educational Team",
+    "summary": "Curriculum architects at IESA and partner organisations unveil the thematic structure for the upcoming open-access handbook for educators.",
+    "content": "To ensure long-term sustainability across the European youth education sector, the consortium has defined the 6-module architecture for the 'Green Horizon Educational Booklet: Drones & Climate Storytelling'.\n\nThe booklet will be published as an open-access digital guide in English, with key modular summaries in German, Turkish, and Romanian. It will provide educators with plug-and-play workshop lesson plans, legal flight checklists, and case study scripts directly adaptable to classroom and non-formal youth club settings.\n\nA public consultation draft will be circulated among selected partner networks prior to final release.",
+    "tags": ["Intellectual Output", "Open Educational Resources", "Methodology"],
+    "badge": "Publications"
+  },
+  {
+    "id": "news-dissemination-milestone",
+    "title": "Digital Platform Launch: Official Web Portal greenhorizonyou.eu Goes Live",
+    "slug": "digital-platform-launch",
+    "date": "May 2025",
+    "category": "Digital Platform",
+    "author": "Web Operations Team",
+    "summary": "The central digital hub for the Green Horizon project is deployed, featuring an interactive consortium map, accessible resource repository, and virtual exhibition space.",
+    "content": "The official Green Horizon web portal is now live at https://greenhorizonyou.eu. Built to high European digital accessibility (WCAG 2.1 AA) and responsive web design standards, the platform serves as the central showcase for all forthcoming project outputs, including the 360-degree virtual reality exhibition, educational booklet downloads, and youth documentary series.\n\nThe platform has been developed with a privacy-first architecture, clear version-controlled deployment protocols, and multilingual capability.",
+    "tags": ["Web Platform", "Accessibility", "Open Access", "Dissemination"],
+    "badge": "Milestone"
+  }
+]

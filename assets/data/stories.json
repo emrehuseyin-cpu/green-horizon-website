@@ -1,0 +1,68 @@
+[
+  {
+    "id": "story-rhine-basin",
+    "title": "Waterlines in Flux: Aerial Hydrology of the Rhine Basin",
+    "country": "Germany",
+    "countryCode": "DE",
+    "location": "Upper & Middle Rhine Valley",
+    "coordinates": "50°21'08\"N, 7°35'45\"E",
+    "altitude": "115m AGL",
+    "category": "River Ecology & Drought",
+    "date": "Project Case Study 01",
+    "author": "Youth Media Lab // Integrational e.V.",
+    "summary": "Documenting extreme seasonal water level fluctuations along the Rhine River using drone orthomosaic imaging, examining climate resilience measures and riparian wetland restoration.",
+    "content": "Over recent decades, European inland waterways have faced unprecedented climate pressures — from prolonged summer low-water events stalling shipping corridors to flash-flood surges impacting alluvial ecosystems. Through the Green Horizon aerial monitoring program, young participants investigate how drone sensors can track shoreline recession, sediment shifts, and the vitality of restored floodplains along the Middle Rhine valley.",
+    "highlights": [
+      "Orthomosaic aerial mapping of alluvial gravel bars",
+      "Thermal infrared assessments of heat stress in riparian foliage",
+      "Youth interview with regional hydrological monitoring engineers"
+    ],
+    "mediaType": "video-case",
+    "mediaPlaceholder": "Project media placeholder — Final documentary in production",
+    "status": "In Preparation // Case Study 01"
+  },
+  {
+    "id": "story-lake-tuz",
+    "title": "The Shrinking Salt Flat: Drone Perspectives on Central Anatolia",
+    "country": "Türkiye",
+    "countryCode": "TR",
+    "location": "Tuz Gölü Basin & Konya Closed Basin",
+    "coordinates": "38°45'12\"N, 33°20'18\"E",
+    "altitude": "140m AGL",
+    "category": "Aridification & Wetlands",
+    "date": "Project Case Study 02",
+    "author": "Youth Media Lab // IESA",
+    "summary": "Exploring the rapid hydrological changes of Lake Tuz and the Konya Closed Basin through high-altitude aerial sweeps, highlighting flamingo nesting sanctuaries and agricultural groundwater depletion.",
+    "content": "Lake Tuz, one of the world's most unique hypersaline wetland biomes and a vital breeding ground for the Greater Flamingo, is witnessing severe climatic drying cycles exacerbated by changing precipitation patterns and intense irrigation. Using regulated drone flights, Turkish youth teams record high-contrast aerial textures of salt crusting, water boundaries, and fragile flamingo habitats to formulate compelling visual calls for sustainable regional water governance.",
+    "highlights": [
+      "High-contrast aerial documentation of receding saline shorelines",
+      "Visual assessment of seasonal flamingo nesting zones",
+      "Grassroots youth advocacy dialogues with local agricultural communities"
+    ],
+    "mediaType": "photo-video-case",
+    "mediaPlaceholder": "Project media placeholder — Field flight data pending upload",
+    "status": "In Preparation // Case Study 02"
+  },
+  {
+    "id": "story-carpathian-canopy",
+    "title": "Canopy Guardians: Monitoring Virgin Forests in the Carpathians",
+    "country": "Romania",
+    "countryCode": "RO",
+    "location": "Făgăraș Mountains / Southern Carpathians",
+    "coordinates": "45°36'02\"N, 24°37'52\"E",
+    "altitude": "120m AGL",
+    "category": "Forestry & Biodiversity",
+    "date": "Project Case Study 03",
+    "author": "Youth Media Lab // Asociația Empower Plus",
+    "summary": "Deploying aerial imaging across steep mountain valleys to monitor primeval beech forest canopies, bark beetle infestations, and intact wildlife migration corridors.",
+    "content": "The Carpathian Mountains harbour some of Europe's last remaining old-growth and virgin forests. Climate heating has rendered these majestic ecosystems increasingly vulnerable to drought stress and subsequent pathogen outbreaks. Romanian youth volunteers employ drone cameras to survey dense canopy health across inaccessible ridge terrain, contrasting pristine intact forest clusters with disturbed perimeter zones.",
+    "highlights": [
+      "Canopy health multispectral analysis simulations",
+      "360° aerial panorama capture for the Green Horizon VR Exhibition",
+      "Comparative visual inventory of old-growth versus fragmented forests"
+    ],
+    "mediaType": "interactive-vr-case",
+    "mediaPlaceholder": "Project media placeholder — 360° VR panorama in curation",
+    "status": "In Preparation // Case Study 03"
+  }
+]

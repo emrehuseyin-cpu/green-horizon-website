@@ -1,0 +1,104 @@
+[
+  {
+    "id": "res-booklet",
+    "title": "Green Horizon Educational Booklet: Drones & Climate Storytelling",
+    "category": "Educational Guide",
+    "type": "PDF Handbook",
+    "format": "PDF",
+    "fileSize": "4.8 MB (Expected)",
+    "pages": "68 Pages",
+    "languages": ["English", "German", "Turkish", "Romanian"],
+    "badge": "Core Project Output",
+    "description": "Comprehensive educational syllabus providing youth workers, formal educators, and youth leaders with actionable methodologies to integrate drone piloting, ecological monitoring, and ethical digital media production into non-formal youth education.",
+    "modules": [
+      "Module 01: European Climate Reality & Youth Perspectives",
+      "Module 02: Fundamentals of UAV Technology & Flight Physics",
+      "Module 03: Legal Compliance & EASA Open Category Regulations",
+      "Module 04: Aerial Photography & Cinematic Composition",
+      "Module 05: Environmental Data Collection & Visual Storytelling",
+      "Module 06: Non-Formal Workshop Blueprints & Safety Protocols"
+    ],
+    "downloadUrl": "#",
+    "status": "In Development // Content pending upload"
+  },
+  {
+    "id": "res-drone-safety",
+    "title": "Drone Flight Safety Protocol & Field Checklist",
+    "category": "Field Toolkit",
+    "type": "Safety Manual",
+    "format": "PDF / Checklist",
+    "fileSize": "1.2 MB",
+    "pages": "12 Pages",
+    "languages": ["English"],
+    "badge": "Safety Standards",
+    "description": "A field-ready reference card detailing pre-flight risk assessment, airspace authorization verification, weather limits, battery lifecycle maintenance, and ethical privacy safeguards for youth fieldwork.",
+    "modules": [
+      "Pre-flight inspection routine (18-point checklist)",
+      "Airspace awareness & geofencing guidelines",
+      "Emergency landing and failsafe procedures",
+      "GDPR & privacy in public aerial filming"
+    ],
+    "downloadUrl": "#",
+    "status": "Ready for Training Course"
+  },
+  {
+    "id": "res-video-guide",
+    "title": "Climate Storytelling & Digital Video Production Guide",
+    "category": "Media Production",
+    "type": "Curriculum Guide",
+    "format": "PDF / Guide",
+    "fileSize": "3.5 MB",
+    "pages": "44 Pages",
+    "languages": ["English"],
+    "badge": "Youth Media Lab",
+    "description": "Practical guide on crafting emotionally engaging digital narratives around environmental degradation and grassroots climate adaptation using mobile tools and aerial footage.",
+    "modules": [
+      "Narrative arcs for environmental advocacy",
+      "Color grading aerial footage for documentary realism",
+      "Accessible subtitling and multilingual voiceover",
+      "Social media dissemination strategies for youth impact"
+    ],
+    "downloadUrl": "#",
+    "status": "In Development // Content pending upload"
+  },
+  {
+    "id": "res-vr-manual",
+    "title": "Curator's Guide to 360° Virtual Reality Climate Exhibitions",
+    "category": "Virtual Exhibition",
+    "type": "Technical Manual",
+    "format": "PDF / Web Guide",
+    "fileSize": "2.9 MB",
+    "pages": "32 Pages",
+    "languages": ["English", "Romanian"],
+    "badge": "Exhibition Tech",
+    "description": "Technical documentation for hosting immersive 360° virtual and physical hybrid exhibitions in youth centres, schools, and cultural galleries using open web standards.",
+    "modules": [
+      "Capturing equirectangular 360-degree aerial images",
+      "Deploying interactive web-based panorama players",
+      "Cardboard VR headset and smartphone setups for schools",
+      "Interactive hotspot curation with youth audio testimonials"
+    ],
+    "downloadUrl": "#",
+    "status": "In Preparation"
+  },
+  {
+    "id": "res-workshop-toolkit",
+    "title": "Local Youth Workshop Facilitator Kit",
+    "category": "Facilitator Toolkit",
+    "type": "Activity Plans",
+    "format": "ZIP / PDF Pack",
+    "fileSize": "8.4 MB (Expected)",
+    "pages": "5 Activity Blueprints",
+    "languages": ["English", "German", "Turkish", "Romanian"],
+    "badge": "Youth Work",
+    "description": "Ready-to-use pedagogical scenarios, icebreakers, hands-on flight exercises, and evaluation rubrics tailored for youth workers running 2-day climate media workshops.",
+    "modules": [
+      "Icebreaker: 'The Earth from Above' visual trivia",
+      "Flight Simulator Challenge: Indoor micro-drone navigation",
+      "Citizen Science: Identifying local ecological hot-spots",
+      "Team Media Sprint: Editing a 60-second climate micro-reel"
+    ],
+    "downloadUrl": "#",
+    "status": "In Development // Content pending upload"
+  }
+]

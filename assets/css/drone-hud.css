@@ -1,0 +1,287 @@
+/* ==========================================================================
+   GREEN HORIZON — Drone HUD & Futuristic Visual Elements
+   ========================================================================== */
+
+/* Hero Section with Drone HUD Viewport */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-surface);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.hero-background-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-background-media img,
+.hero-background-media svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Drone Flight HUD Overlay */
+.drone-hud-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+/* Corner Reticle Brackets */
+.hud-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: var(--teal);
+  border-style: solid;
+  opacity: 0.7;
+}
+
+.hud-corner-tl {
+  top: 1.5rem;
+  left: 1.5rem;
+  border-width: 2px 0 0 2px;
+}
+
+.hud-corner-tr {
+  top: 1.5rem;
+  right: 1.5rem;
+  border-width: 2px 2px 0 0;
+}
+
+.hud-corner-bl {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  border-width: 0 0 2px 2px;
+}
+
+.hud-corner-br {
+  bottom: 1.5rem;
+  right: 1.5rem;
+  border-width: 0 2px 2px 0;
+}
+
+/* Top Telemetry Header */
+.hud-telemetry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--teal);
+  background: rgba(7, 20, 17, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(35, 201, 171, 0.2);
+  width: 100%;
+}
+
+.hud-rec-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
+.hud-rec-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  animation: pulse-dot 1.2s infinite ease-in-out;
+}
+
+.hud-flight-mode {
+  color: var(--electric-green);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Center HUD Crosshair & Pitch Scale */
+.hud-center-sight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  border: 1px dashed rgba(35, 201, 171, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud-crosshair-h {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+}
+
+.hud-crosshair-v {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--teal), transparent);
+}
+
+.hud-target-box {
+  width: 60px;
+  height: 60px;
+  border: 1.5px solid var(--electric-green);
+  opacity: 0.6;
+  position: relative;
+}
+
+.hud-target-box::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--electric-green);
+  font-size: 14px;
+}
+
+/* Bottom Telemetry Bar */
+.hud-telemetry-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: rgba(7, 20, 17, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(35, 201, 171, 0.2);
+  width: 100%;
+}
+
+.hud-stat-value {
+  color: var(--electric-green);
+  font-weight: 700;
+}
+
+/* Hero Content Layer */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 5rem 3rem;
+  max-width: 860px;
+  pointer-events: auto;
+}
+
+.hero-title {
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* Live Telemetry Radar Animation Widget */
+.radar-widget {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(7, 20, 17, 0.8);
+  border: 1px solid var(--teal);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-sweep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(from 0deg, transparent 0deg, transparent 270deg, rgba(183, 255, 74, 0.4) 360deg);
+  border-radius: 50%;
+  animation: radar-spin 3s linear infinite;
+}
+
+.radar-concentric {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border: 1px dashed rgba(35, 201, 171, 0.4);
+}
+
+.radar-blip {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--electric-green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--electric-green);
+}
+
+.blip-1 { top: 30%; left: 65%; animation: pulse-dot 1.8s infinite; }
+.blip-2 { top: 70%; left: 35%; animation: pulse-dot 2.2s infinite; }
+
+/* Subtle Animated Scanline on Drone Viewports */
+.drone-scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--electric-green), transparent);
+  opacity: 0.35;
+  animation: scan-line 6s linear infinite;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 3rem 1.5rem;
+  }
+  .hud-center-sight {
+    display: none;
+  }
+  .hud-telemetry-top, .hud-telemetry-bottom {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

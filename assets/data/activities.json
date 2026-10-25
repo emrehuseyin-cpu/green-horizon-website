@@ -1,0 +1,155 @@
+[
+  {
+    "id": "act-kickoff",
+    "number": "A1",
+    "title": "Project Management & Kick-off Meeting (TPM 1)",
+    "category": "Governance",
+    "timing": "Month 1 (May 2025)",
+    "dates": "May 2025",
+    "location": "Bonn, Germany",
+    "hostPartner": "Integrational e.V.",
+    "status": "Planned",
+    "statusLabel": "Planned in Project Work Plan",
+    "description": "Consortium launch meeting to establish coordination mechanisms, align financial management protocols, finalize internal communication procedures, and calibrate the monitoring and quality assurance framework.",
+    "deliverables": [
+      "Consortium Partnership Agreement signed",
+      "Monitoring & Evaluation Plan adopted",
+      "Risk Management Protocol established",
+      "Internal communication and cloud repository setup"
+    ],
+    "targetAudience": "Project managers, coordinators, and youth work leads from DE, TR, and RO"
+  },
+  {
+    "id": "act-training-course",
+    "number": "A2",
+    "title": "Transnational Training Course: Drone Operation, Photography & Video Editing",
+    "category": "Mobility & Training",
+    "timing": "Month 4-5 (August - September 2025)",
+    "dates": "Summer 2025",
+    "location": "Germany / Transnational",
+    "hostPartner": "Integrational e.V. with IESA & Empower Plus",
+    "status": "In Preparation",
+    "statusLabel": "Curriculum Under Development",
+    "description": "An intensive transnational training course bringing together youth workers and youth leaders from the 3 partner countries. Focuses on drone flight regulations (EASA standards), aerial camera operations, environmental flight planning, safety protocols, and cinematic video post-production.",
+    "deliverables": [
+      "Certified cohort of youth drone operators & digital trainers",
+      "Field flight exercises capturing real environmental landscapes",
+      "Standard operating procedures for youth aerial fieldwork"
+    ],
+    "targetAudience": "Youth workers, youth educators, and young digital creators"
+  },
+  {
+    "id": "act-booklet",
+    "number": "A3",
+    "title": "Educational Booklet: Drones & Climate Storytelling",
+    "category": "Intellectual Output",
+    "timing": "Month 6-8 (October - December 2025)",
+    "dates": "Autumn 2025",
+    "location": "Digital Publication / Transnational",
+    "hostPartner": "IESA (Lead) with Integrational e.V. & Empower Plus",
+    "status": "In Development",
+    "statusLabel": "Content Pending Final Validation",
+    "description": "A comprehensive practical handbook providing youth workers and educators with non-formal educational curricula on integrating drone technology, ecological monitoring, ethical aerial photography, and digital climate activism into youth work.",
+    "deliverables": [
+      "Open-access digital publication (PDF)",
+      "Curriculum with 10 non-formal learning modules",
+      "Drone flight checklist & EU legal compliance guide"
+    ],
+    "targetAudience": "European youth organisations, environmental educators, and civil society"
+  },
+  {
+    "id": "act-local-workshops",
+    "number": "A4",
+    "title": "Three Local Youth Workshops & Field Missions",
+    "category": "Local Action",
+    "timing": "Month 8-11 (December 2025 - March 2026)",
+    "dates": "Winter - Spring 2026",
+    "location": "Germany, Türkiye, Romania",
+    "hostPartner": "All Partners in their respective countries",
+    "status": "Planned",
+    "statusLabel": "Host Venues Being Finalized",
+    "description": "Series of localized workshops engaging young people (including youth with fewer opportunities) in hands-on flight simulations, ecological problem-solving, digital media labs, and field documentation of regional climate challenges (deforestation, river basins, urban heat islands).",
+    "deliverables": [
+      "Local youth engaged in hands-on climate media creation",
+      "Aerial raw footage repositories collected across 3 countries",
+      "Youth-driven local environmental dialogues"
+    ],
+    "targetAudience": "Young people aged 16-30, students, local youth with fewer opportunities"
+  },
+  {
+    "id": "act-documentary",
+    "number": "A5",
+    "title": "Youth Climate Action Documentary Series",
+    "category": "Digital Production",
+    "timing": "Month 11-13 (March - May 2026)",
+    "dates": "Spring 2026",
+    "location": "Online / Transnational",
+    "hostPartner": "Consortium-wide Production",
+    "status": "Planned",
+    "statusLabel": "Production Pre-planning",
+    "description": "A high-impact, youth-directed multi-episode documentary mini-series presenting aerial views of ecological degradation alongside inspiring grassroots environmental solutions across Germany, Türkiye, and Romania.",
+    "deliverables": [
+      "Full documentary episodes with multi-language subtitles",
+      "Teaser trailers and social media micro-reels",
+      "Digital distribution package for schools and youth centres"
+    ],
+    "targetAudience": "General public, youth across Europe, policymakers, environmental NGOs"
+  },
+  {
+    "id": "act-exhibition",
+    "number": "A6",
+    "title": "Hybrid Photo & 360° Virtual Reality (VR) Exhibition",
+    "category": "Exhibition",
+    "timing": "Month 13-14 (May - June 2026)",
+    "dates": "May - June 2026",
+    "location": "Virtual Online Gallery & Partner Venues",
+    "hostPartner": "Asociația Empower Plus (Lead)",
+    "status": "Planned",
+    "statusLabel": "Curatorial Framework in Design",
+    "description": "A cutting-edge interactive hybrid exhibition featuring drone-captured high-resolution photography and 360-degree immersive panoramas depicting European ecosystems vulnerable to climate impacts.",
+    "deliverables": [
+      "Interactive 360° virtual exhibition web portal",
+      "Printable high-resolution photo gallery collection for physical events",
+      "Exhibition catalogue with youth reflections"
+    ],
+    "targetAudience": "Art and environmental communities, school students, European citizens"
+  },
+  {
+    "id": "act-dissemination",
+    "number": "A7",
+    "title": "Dissemination Events & Community Screenings",
+    "category": "Dissemination",
+    "timing": "Month 14-16 (June - August 2026)",
+    "dates": "Summer 2026",
+    "location": "Bonn (DE), Ankara (TR), Craiova (RO)",
+    "hostPartner": "All Partners",
+    "status": "Planned",
+    "statusLabel": "Planned in Dissemination Strategy",
+    "description": "Transnational public dissemination conferences, outdoor film screenings, and roundtables presenting project deliverables to local communities, stakeholders, and European youth networks.",
+    "deliverables": [
+      "Public dissemination conferences in 3 partner countries",
+      "Dissemination report and media reach assessment",
+      "Policy recommendations brief for youth climate education"
+    ],
+    "targetAudience": "Stakeholders, municipal representatives, youth workers, general public"
+  },
+  {
+    "id": "act-final-tpm",
+    "number": "A8",
+    "title": "Final Transnational Project Meeting & Evaluation (TPM 2)",
+    "category": "Governance",
+    "timing": "Month 16 (August 2026)",
+    "dates": "August 2026",
+    "location": "Craiova, Romania",
+    "hostPartner": "Asociația Empower Plus",
+    "status": "Planned",
+    "statusLabel": "Scheduled for Project Conclusion",
+    "description": "Final consortium assembly to evaluate indicators of achievement, review comprehensive financial documentation, compile final report submissions, and define the long-term exploitation strategy for project outputs.",
+    "deliverables": [
+      "Final Project Evaluation & Monitoring Report",
+      "Erasmus+ Final Beneficiary Report documentation",
+      "Long-term post-project sustainability pact"
+    ],
+    "targetAudience": "Consortium steering committee and partner delegates"
+  }
+]

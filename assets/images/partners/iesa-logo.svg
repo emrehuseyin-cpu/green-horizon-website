@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80" role="img" aria-label="IESA Logo">
+  <!-- Background Badge -->
+  <rect width="240" height="80" rx="12" fill="rgba(18,60,47,0.3)" stroke="rgba(35,201,171,0.2)" stroke-width="1"/>
+  <!-- Geometric Icon -->
+  <g transform="translate(16, 16)">
+    <polygon points="24,4 44,40 4,40" fill="none" stroke="#B7FF4A" stroke-width="2"/>
+    <circle cx="24" cy="26" r="8" fill="#123C2F" stroke="#23C9AB" stroke-width="1.5"/>
+    <path d="M 18,26 L 30,26" stroke="#B7FF4A" stroke-width="2"/>
+    <path d="M 24,20 L 24,32" stroke="#B7FF4A" stroke-width="2"/>
+  </g>
+  <!-- Partner Name -->
+  <g transform="translate(74, 23)">
+    <text x="0" y="14" fill="#FFFFFF" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="15" font-weight="700" letter-spacing="0.5">IESA</text>
+    <text x="0" y="28" fill="#23C9AB" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Yenilikçi Eğitim Bilim &amp; Sanat</text>
+    <text x="0" y="42" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="500">TÜRKIYE // PARTNER</text>
+  </g>
+</svg>

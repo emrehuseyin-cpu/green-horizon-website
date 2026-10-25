@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Coordinates Not Found | Green Horizon</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/drone-hud.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand">
+        <img src="assets/images/logo.svg" alt="Green Horizon Logo" width="220" height="44">
+      </a>
+      <a href="index.html" class="btn btn-secondary btn-sm">Return Home</a>
+    </div>
+  </header>
+
+  <main id="main-content" style="padding-top: calc(var(--header-height) + 4rem); padding-bottom: 4rem; display: flex; align-items: center; justify-content: center; flex: 1;">
+    <div class="container" style="text-align: center; max-width: 640px;">
+      <div class="card-glass" style="border-color: var(--teal); padding: 3rem 2rem;">
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #ff4d4d; margin-bottom: 1rem;">
+          [ERROR 404 // FLIGHT TELEMETRY LOST]
+        </div>
+        <h1 style="font-size: 4rem; color: var(--electric-green); margin-bottom: 0.5rem; letter-spacing: -0.05em;">404</h1>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Coordinates Out of Range</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+          The requested waypoint does not exist or has been shifted in the mission database. Check your route or return to the main base station.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn btn-primary">Return to Base Station (Home)</a>
+          <a href="contact.html" class="btn btn-ghost">Report Broken Link</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="padding: 2rem 0;">
+    <div class="container" style="text-align: center; font-size: 0.8rem; color: var(--text-muted);">
+      &copy; 2025–2026 Green Horizon (Erasmus+ KA210-YOU). All rights reserved.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

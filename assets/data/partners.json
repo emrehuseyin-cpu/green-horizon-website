@@ -1,0 +1,65 @@
+[
+  {
+    "id": "integrational",
+    "role": "Project Coordinator",
+    "roleTag": "COORDINATOR",
+    "name": "Integrational e.V.",
+    "country": "Germany",
+    "countryCode": "DE",
+    "city": "Bonn / Berlin",
+    "coordinates": [50.7374, 7.0982],
+    "logo": "assets/images/partners/integrational-logo.svg",
+    "description": "Integrational e.V. is a German non-profit organisation committed to promoting European cooperation, youth empowerment, civic engagement, and sustainable digital practices. As project coordinator for Green Horizon, Integrational e.V. oversees general project governance, quality assurance, transnational coordination, and financial administration.",
+    "keyResponsibilities": [
+      "Overall project coordination and financial management",
+      "Coordination of transnational meetings and monitoring framework",
+      "Organization of Transnational Drone Operation & Digital Storytelling Training Course",
+      "Leading evaluation, monitoring and sustainability reporting"
+    ],
+    "contactPerson": "Project Coordinator",
+    "email": "info@greenhorizonyou.eu",
+    "website": "https://greenhorizonyou.eu"
+  },
+  {
+    "id": "iesa",
+    "role": "Project Partner",
+    "roleTag": "PARTNER",
+    "name": "Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA)",
+    "country": "Türkiye",
+    "countryCode": "TR",
+    "city": "Ankara / Istanbul",
+    "coordinates": [39.9334, 32.8597],
+    "logo": "assets/images/partners/iesa-logo.svg",
+    "description": "Yenilikçi Eğitim Bilim ve Sanat Derneği (Innovative Education, Science and Art Association) is a forward-thinking youth organisation focused on STEAM education, digital youth work, creative media, and youth climate advocacy. In Green Horizon, IESA leads the technological curriculum, drone educational modules, and digital production standards.",
+    "keyResponsibilities": [
+      "Co-development of Educational Booklet on Drone Tech & Climate Storytelling",
+      "Coordination of local workshops and field missions in Türkiye",
+      "Technical mentorship in aerial photography, drone flight safety, and video post-production",
+      "Facilitating youth-led climate documentary production in Anatolian river basins"
+    ],
+    "contactPerson": "IESA Youth Work Department",
+    "email": "iesa@greenhorizonyou.eu",
+    "website": "https://greenhorizonyou.eu/partners.html#iesa"
+  },
+  {
+    "id": "empower-plus",
+    "role": "Project Partner",
+    "roleTag": "PARTNER",
+    "name": "Asociația Empower Plus",
+    "country": "Romania",
+    "countryCode": "RO",
+    "city": "Craiova / Bucharest",
+    "coordinates": [44.3302, 23.7949],
+    "logo": "assets/images/partners/empower-plus-logo.svg",
+    "description": "Asociația Empower Plus is a Romanian non-governmental organisation dedicated to community empowerment, social inclusion, environmental activism, and experiential youth education. In Green Horizon, Empower Plus leads dissemination strategies, local youth outreach, and the hybrid Virtual Reality (VR) climate exhibition.",
+    "keyResponsibilities": [
+      "Curation and technical launch of the 360° Virtual Climate Photo Exhibition",
+      "Implementation of Romanian regional youth workshops and field documentation missions",
+      "Design of the Dissemination & Exploitation Strategy across European youth networks",
+      "Hosting transnational dissemination events and local community screenings"
+    ],
+    "contactPerson": "Empower Plus Project Office",
+    "email": "empower@greenhorizonyou.eu",
+    "website": "https://greenhorizonyou.eu/partners.html#empower-plus"
+  }
+]
