@@ -1,5 +1,6 @@
 /**
  * GREEN HORIZON — News & Updates Archive Script
+ * Light Booklet Style
  */
 
 let newsArticles = [];
@@ -35,21 +36,21 @@ function renderNewsArticles(articles) {
   }
 
   container.innerHTML = articles.map(art => `
-    <article class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+    <article class="card card-accent-green" id="${art.id}" style="display: flex; flex-direction: column; justify-content: space-between;">
       <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-          <span class="badge badge-electric">${art.category}</span>
-          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--teal);">${art.date}</span>
+        <div style="margin-bottom: 1rem; overflow: hidden; border-radius: var(--radius-md);">
+          <img src="${art.image || 'assets/images/booklet-cover.jpg'}" alt="${art.title}" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
         </div>
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.8rem; line-height: 1.35;">${art.title}</h3>
-        <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.2rem;">${art.summary}</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem;">
+          <span class="badge badge-completed">${art.category || 'Update'}</span>
+          <span style="font-size: 0.82rem; color: var(--text-light); font-weight: 600;">🗓 ${art.date}</span>
+        </div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; line-height: 1.35; color: var(--primary);">${art.title}</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem; line-height: 1.55;">${art.summary}</p>
       </div>
       <div>
-        <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.2rem;">
-          ${art.tags.map(tag => `<span style="font-size: 0.72rem; color: var(--text-muted); background: rgba(7,20,17,0.7); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid var(--glass-border);">#${tag}</span>`).join('')}
-        </div>
         <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="openArticleModal('${art.id}')">
-          Read Full Announcement &rarr;
+          Read Full Post &rarr;
         </button>
       </div>
     </article>
@@ -84,14 +85,14 @@ function applyNewsFilters() {
   let filtered = newsArticles;
 
   if (activeFilter !== 'all') {
-    filtered = filtered.filter(item => item.category.toLowerCase().includes(activeFilter.toLowerCase()));
+    filtered = filtered.filter(item => (item.category || '').toLowerCase().includes(activeFilter.toLowerCase()));
   }
 
   if (query) {
     filtered = filtered.filter(item => 
-      item.title.toLowerCase().includes(query) ||
-      item.summary.toLowerCase().includes(query) ||
-      item.content.toLowerCase().includes(query)
+      (item.title || '').toLowerCase().includes(query) ||
+      (item.summary || '').toLowerCase().includes(query) ||
+      (item.full_text || item.content || '').toLowerCase().includes(query)
     );
   }
 
@@ -103,15 +104,25 @@ window.openArticleModal = function(id) {
   if (!art) return;
 
   const modal = document.getElementById('article-modal');
+  const textContent = art.full_text || art.content || art.summary;
+  
   if (!modal) {
-    alert(`${art.title}\n\n${art.date} // ${art.author}\n\n${art.content}`);
+    alert(`${art.title}\n\n${art.date} • ${art.author || 'Consortium'}\n\n${textContent}`);
     return;
   }
 
-  document.getElementById('article-modal-title').textContent = art.title;
-  document.getElementById('article-modal-meta').textContent = `${art.date} | Category: ${art.category} | Author: ${art.author}`;
-  document.getElementById('article-modal-content').innerHTML = art.content.split('\n\n').map(p => `<p style="margin-bottom: 1rem;">${p}</p>`).join('');
+  const titleEl = document.getElementById('article-modal-title');
+  const metaEl = document.getElementById('article-modal-meta');
+  const bodyEl = document.getElementById('article-modal-content');
+
+  if (titleEl) titleEl.textContent = art.title;
+  if (metaEl) metaEl.textContent = `${art.date} | ${art.category || 'News'} | ${art.author || 'Consortium'}`;
+  if (bodyEl) {
+    bodyEl.innerHTML = textContent.split('\n\n').map(p => `<p style="margin-bottom: 1rem; line-height: 1.6;">${p}</p>`).join('');
+  }
+
   modal.classList.add('open');
+  modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 };
 
@@ -119,6 +130,7 @@ window.closeArticleModal = function() {
   const modal = document.getElementById('article-modal');
   if (modal) {
     modal.classList.remove('open');
+    modal.style.display = 'none';
     document.body.style.overflow = '';
   }
 };

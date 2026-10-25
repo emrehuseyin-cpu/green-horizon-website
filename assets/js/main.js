@@ -1,14 +1,16 @@
 /**
- * GREEN HORIZON — Core Application & Drone HUD Script
- * Official Erasmus+ KA210-YOU Project
+ * GREEN HORIZON — Core Application Script
+ * Light Booklet Style (CC BY-SA 4.0)
+ * Project: Green Horizon (2024-3-DE04-KA210-YOU-000293009)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileNav();
-  initTelemetrySimulation();
+  initHomepageNewsSection();
   initCookieConsent();
   initDownloadTracking();
+  initChecklistState();
 });
 
 /* 1. Header Scroll Effect & Active Page Highlight */
@@ -17,14 +19,14 @@ function initHeader() {
   if (!header) return;
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
   }, { passive: true });
 
-  // Highlight active link based on clean URL or file
+  // Highlight active nav item based on clean URL
   let currentPath = (window.location.pathname.replace(/\/$/, '').split('/').pop() || '').replace(/\.html$/, '');
   const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
   navLinks.forEach(link => {
@@ -65,50 +67,50 @@ function initMobileNav() {
 
   overlay.addEventListener('click', closeDrawer);
 
-  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && drawer.classList.contains('open')) {
       closeDrawer();
     }
   });
 
-  // Close drawer on link click
   const drawerLinks = drawer.querySelectorAll('a');
   drawerLinks.forEach(link => {
     link.addEventListener('click', closeDrawer);
   });
 }
 
-/* 3. Live Telemetry HUD Simulation */
-function initTelemetrySimulation() {
-  const altEl = document.getElementById('hud-live-alt');
-  const coordsEl = document.getElementById('hud-live-coords');
-  const satsEl = document.getElementById('hud-live-sats');
-  const batEl = document.getElementById('hud-live-bat');
+/* 3. Homepage News & Updates (3 Latest Posts) */
+function initHomepageNewsSection() {
+  const newsContainer = document.getElementById('homepage-news-grid');
+  if (!newsContainer) return;
 
-  if (!altEl && !coordsEl) return;
-
-  let baseAlt = 124.5;
-  let baseLat = 50.7374;
-  let baseLon = 7.0982;
-  let sats = 18;
-  let bat = 94;
-
-  setInterval(() => {
-    // Subtle realistic UAV micro-fluctuations
-    const deltaAlt = (Math.random() - 0.49) * 0.4;
-    baseAlt = Math.max(90, Math.min(150, baseAlt + deltaAlt));
-
-    const deltaLat = (Math.random() - 0.5) * 0.00004;
-    const deltaLon = (Math.random() - 0.5) * 0.00004;
-    baseLat += deltaLat;
-    baseLon += deltaLon;
-
-    if (altEl) altEl.textContent = `${baseAlt.toFixed(1)}M AGL`;
-    if (coordsEl) coordsEl.textContent = `${baseLat.toFixed(4)}°N, ${baseLon.toFixed(4)}°E`;
-    if (satsEl) satsEl.textContent = `${sats} GNSS`;
-    if (batEl) batEl.textContent = `${bat}%`;
-  }, 2200);
+  fetch('assets/data/news.json')
+    .then(res => res.json())
+    .then(articles => {
+      // Pick top 3 newest articles
+      const latestThree = articles.slice(0, 3);
+      newsContainer.innerHTML = latestThree.map(item => `
+        <article class="news-card">
+          <img class="news-card-thumb" src="${item.image || 'assets/images/booklet-cover.jpg'}" alt="${item.title}" loading="lazy">
+          <div class="news-card-body">
+            <div class="news-card-meta">
+              <span>🗓 ${item.date}</span>
+              <span class="badge badge-completed">${item.category || 'News'}</span>
+            </div>
+            <h3 class="news-card-title">
+              <a href="news#${item.id || item.slug}">${item.title}</a>
+            </h3>
+            <p class="news-card-summary">${item.summary}</p>
+            <a href="news#${item.id || item.slug}" class="news-card-action">
+              Read more &rarr;
+            </a>
+          </div>
+        </article>
+      `).join('');
+    })
+    .catch(err => {
+      console.warn('Error loading homepage news:', err);
+    });
 }
 
 /* 4. Privacy-Conscious Cookie Consent (GDPR Compliant) */
@@ -147,5 +149,30 @@ function initDownloadTracking() {
       const file = target.getAttribute('href') || target.getAttribute('data-download');
       console.log(`[Green Horizon Analytics] Download tracked: ${file}`);
     }
+  });
+}
+
+/* 6. Interactive Checklist (Page 97) State Storage */
+function initChecklistState() {
+  const checklistItems = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+  if (!checklistItems.length) return;
+
+  checklistItems.forEach((box, idx) => {
+    const storageKey = `gh_check_${idx}`;
+    if (localStorage.getItem(storageKey) === 'true') {
+      box.checked = true;
+      box.closest('.checklist-item').classList.add('checked');
+    }
+
+    box.addEventListener('change', () => {
+      const parent = box.closest('.checklist-item');
+      if (box.checked) {
+        parent.classList.add('checked');
+        localStorage.setItem(storageKey, 'true');
+      } else {
+        parent.classList.remove('checked');
+        localStorage.removeItem(storageKey);
+      }
+    });
   });
 }

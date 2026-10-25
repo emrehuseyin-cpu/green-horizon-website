@@ -288,7 +288,7 @@ const bookletSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850
   <!-- Bottom partner indicators -->
   <line x1="40" y1="760" x2="560" y2="760" stroke="rgba(35, 201, 171, 0.3)" stroke-width="1"/>
   <text x="50" y="785" fill="#94A3B8" font-family="'Space Grotesk', monospace" font-size="11">CONSORTIUM: Integrational e.V. (DE) | IESA (TR) | Empower Plus (RO)</text>
-  <text x="50" y="805" fill="#B7FF4A" font-family="monospace" font-size="10">CO-FUNDED BY THE ERASMUS+ PROGRAMME OF THE EUROPEAN UNION</text>
+  <text x="50" y="805" fill="#1B5E20" font-family="sans-serif" font-size="10" font-weight="bold">CO-FUNDED BY THE EUROPEAN UNION</text>
 </svg>`;
 
 fs.writeFileSync(path.join(__dirname, '../assets/images/resources/booklet-cover.svg'), bookletSvg);

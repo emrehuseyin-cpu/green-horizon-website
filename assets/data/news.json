@@ -1,74 +1,128 @@
 [
   {
-    "id": "news-booklet-release",
-    "title": "Official Release: Green Horizon 99-Page Booklet on Climate Action & Drone Technology Published",
-    "slug": "green-horizon-99-page-booklet-official-release",
-    "date": "Official Release 2026",
-    "category": "Publication Release",
+    "id": "news-final-conference-meeting",
+    "title": "Final Dissemination Conferences & Final Transnational Meeting in Türkiye",
+    "slug": "final-dissemination-conferences-meeting-turkiye",
+    "date": "August 2026",
+    "category": "Dissemination & Closing",
+    "image": "assets/images/booklet/photo-workshop-flipchart.jpg",
+    "summary": "Project partners conclude Green Horizon with final multiplier dissemination events across Germany, Romania, and Türkiye, alongside the final meeting in Mersin.",
+    "full_text": "[add text] Summary of final dissemination conferences in Bonn, Brașov, and Mersin, presenting project milestones, screening documentaries, and gathering feedback from local youth and educational stakeholders. [add text] Consortium partners evaluated overall project indicators, completed the final reporting process, and adopted a post-project sustainability strategy.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/photo-workshop-flipchart.jpg",
+        "caption": "Project team and participants reviewing project milestones and impact outcomes."
+      }
+    ],
     "author": "Green Horizon Consortium",
-    "summary": "The flagship 99-page Open Educational Resource (Erasmus+ Project Code: 2024-3-DE04-KA210-YOU-000293009) is now available for open-access download on greenhorizonyou.eu.",
-    "content": "Integrational e.V., IESA, and Asociatia Empower Plus are proud to announce the official publication of the Green Horizon Booklet: 'Youth Voices for Climate Action Through Drone Technology'. The 99-page comprehensive manual combines scientific climate mitigation insights, photographic visual storytelling principles, and practical drone flight operation guides (including EU EASA and Turkish SHGM SHT-İHA regulations, 6 practice drills, 7 cinematic shot types, and a printable field checklist). Licensed under CC BY-SA 4.0, the booklet is freely downloadable on greenhorizonyou.eu.",
-    "tags": ["Booklet Release", "CC BY-SA 4.0", "Erasmus+ Output", "Drone Curriculum"],
-    "badge": "Flagship Output Available"
+    "badge": "Completed Milestone"
   },
   {
-    "id": "news-launch",
-    "title": "Green Horizon Officially Launched Under Erasmus+ Youth Programme",
-    "slug": "green-horizon-official-launch",
-    "date": "1 May 2025",
-    "category": "Project Launch",
-    "author": "Consortium Secretariat",
-    "summary": "Integrational e.V. (Germany), Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Türkiye), and Asociatia Empower Plus (Romania) commence their 16-month Erasmus+ partnership.",
-    "content": "On 1 May 2025, the 'Green Horizon: Youth Voices for Climate Action Through Drone Technology' project officially began its implementation period under the Erasmus+ KA210-YOU Small-scale Partnerships in Youth scheme (Call 2024 Round 3, Form ID: KA210-YOU-AB0390DF).\n\nFunded with a grant of €60,000 from the European Commission through the German National Agency (DE04 - JUGEND für Europa), the project will equip youth workers and young people aged 15-30 with cutting-edge skills in drone piloting, environmental photography, video post-production, and digital climate storytelling.",
-    "tags": ["Erasmus+", "KA210-YOU", "JUGEND für Europa", "Consortium Launch"],
-    "badge": "Official Announcement"
+    "id": "news-documentary-vr",
+    "title": "Youth Climate Documentary Series and 360° VR Exhibition Launched",
+    "slug": "youth-climate-documentary-series-vr-exhibition",
+    "date": "March 2026",
+    "category": "Media Release",
+    "image": "assets/images/booklet/poster-capture-the-change.jpg",
+    "summary": "Six short documentary films and an interactive 360-degree Virtual Reality exhibition curated on the Artsteps platform showcase youth climate perspectives.",
+    "full_text": "[add text] Following extensive field production and local workshops, young participants from Germany, Romania, and Türkiye produced six compelling short documentary films highlighting regional ecological topics. [add text] The 360° Virtual Reality exhibition on Artsteps provides an immersive virtual walkthrough featuring aerial and ground photography, youth narratives, and local environmental case studies.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/poster-capture-the-change.jpg",
+        "caption": "Official poster for the Youth Voices documentary series and virtual exhibition."
+      }
+    ],
+    "author": "Empower Plus & Consortium",
+    "badge": "Completed Milestone"
   },
   {
-    "id": "news-kickoff-bonn",
-    "title": "Consortium Meets in Bonn, Germany for Kick-Off Meeting (TPM 1)",
-    "slug": "kick-off-meeting-tpm1-bonn",
-    "date": "13–14 June 2025",
-    "category": "Governance",
-    "author": "Integrational e.V.",
-    "summary": "Project coordinators, communication specialists, and key youth workers convene in Bonn to finalize work plans, the monitoring matrix, and training course logistics.",
-    "content": "Under Activity A1, representatives from Integrational e.V. (Germany), IESA (Türkiye), and Asociatia Empower Plus (Romania) gathered in Bonn for the two-day Kick-Off Transnational Project Meeting.\n\nThe consortium established its shared vision, confirmed the partner division of labor, adopted the bi-monthly monitoring framework, and finalized preparations for the upcoming summer training mobility in Romania.",
-    "tags": ["TPM 1", "Bonn", "Governance", "Quality Assurance"],
-    "badge": "Milestone A1"
+    "id": "news-local-workshops",
+    "title": "Local Youth Workshops Successfully Held in Germany, Romania, and Türkiye",
+    "slug": "local-youth-workshops-germany-romania-turkiye",
+    "date": "December 2025",
+    "category": "Local Action",
+    "image": "assets/images/booklet/photo-field-tablet-team.jpg",
+    "summary": "Over 60 young people across Bonn, Brașov, and Mersin participated in hands-on workshops exploring camera drone operation and environmental storytelling.",
+    "full_text": "[add text] Youth workers certified during the August training mobility conducted grassroots workshops in their local communities. More than 60 young participants engaged with camera drones, learned ethical photography principles, and practiced visual documentation of regional environmental topics. [add text] Participants formed small production teams to storyboard climate issues and record initial video interviews.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/photo-field-tablet-team.jpg",
+        "caption": "Participants planning flight shots and storyboards during local workshop sessions."
+      }
+    ],
+    "author": "Local Workshop Facilitators",
+    "badge": "Completed Milestone"
+  },
+  {
+    "id": "news-booklet-published",
+    "title": "Official 99-Page Green Horizon Educational Booklet Published",
+    "slug": "official-99-page-green-horizon-educational-booklet-published",
+    "date": "October 2025",
+    "category": "Publication Release",
+    "image": "assets/images/booklet-cover.jpg",
+    "summary": "The flagship 99-page open-access handbook 'Youth Voices for Climate Action Through Drone Technology' is now available for download under CC BY-SA 4.0.",
+    "full_text": "Integrational e.V., IESA, and Asociația Empower Plus have officially published the Green Horizon Educational Booklet: 'Youth Voices for Climate Action Through Drone Technology' (Project Number: 2024-3-DE04-KA210-YOU-000293009). [add text] Structured into three clear chapters—Climate Action, Photography & Storytelling, and Drone Technology & Field Drills—the 99-page handbook provides practical guidance, safety checklists, and creative exercises for educators and youth leaders across Europe.",
+    "photos": [
+      {
+        "file": "assets/images/booklet-cover.jpg",
+        "caption": "Cover of the official 99-page Green Horizon Educational Booklet."
+      }
+    ],
+    "author": "IESA & Consortium Editorial Team",
+    "badge": "Open Educational Resource"
   },
   {
     "id": "news-training-romania",
-    "title": "Transnational Training Course: 18 Youth Workers to Train in Romania",
-    "slug": "training-course-romania-august-2025",
-    "date": "July 2025",
-    "category": "Training Mobility",
-    "author": "Asociatia Empower Plus",
-    "summary": "Curriculum finalized for the 6-day intensive training in Romania (11–16 August 2025), certifying 18 youth workers as drone flight and climate media facilitators.",
-    "content": "Asociatia Empower Plus has finalized the educational program for the Transnational Training Course for Youth Workers (Activity A2). Taking place in Romania from 11 to 16 August 2025, 18 youth workers (6 from each country) will receive hands-on training on drone setup, EASA Open Category safety rules, aerial photography, video editing, and non-formal pedagogical methods.\n\nAll participants will receive official Youthpass certificates recognizing their newly gained competences.",
-    "tags": ["Training Course", "Romania", "Youthpass", "EASA Standards"],
-    "badge": "Milestone A2"
-  },
-  {
-    "id": "news-booklet-progress",
-    "title": "IESA Leads Drafting of Official Drone & Climate Mitigation Booklet",
-    "slug": "educational-booklet-drafting-october-2025",
+    "title": "Transnational Training Course for Youth Workers Completed in Romania",
+    "slug": "transnational-training-course-youth-workers-romania",
     "date": "August 2025",
-    "category": "Educational Resources",
-    "author": "IESA Educational Team",
-    "summary": "Development begins on the open-access 'Booklet on Drone Operation, Photography, and Effective Ways to Mitigate Climate Change' (Activity A3).",
-    "content": "Under the leadership of Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA, Mersin), drafting of the core project booklet has commenced. The publication will feature three interconnected sections: technical drone operations, aerial photography and video storytelling, and practical climate mitigation strategies.\n\nThe booklet will be made available as a free Open Access digital download translated into English, German, Turkish, and Romanian.",
-    "tags": ["Booklet", "Open Educational Resource", "IESA", "Pedagogy"],
-    "badge": "Milestone A3"
+    "category": "Training Mobility",
+    "image": "assets/images/booklet/photo-outdoor-group-training.jpg",
+    "summary": "18 youth workers from Germany, Romania, and Türkiye completed a 6-day intensive mobility on drone operations, safe flying, and video editing.",
+    "full_text": "[add text] Hosted by Asociația Empower Plus in Brașov, Romania from 11 to 16 August 2025, 18 youth workers completed comprehensive training covering camera drone flight mechanics, EU flight safety regulations, outdoor piloting drills, and digital video editing. [add text] All 18 participants earned official Youthpass certificates recognizing their acquired competencies as multiplier facilitators.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/photo-outdoor-group-training.jpg",
+        "caption": "The 18 participating youth workers and trainers during the outdoor field mobility in Romania."
+      }
+    ],
+    "author": "Asociația Empower Plus",
+    "badge": "Completed Mobility"
   },
   {
-    "id": "news-platform-live",
-    "title": "Official Project Web Platform greenhorizonyou.eu Deployed",
-    "slug": "green-horizon-website-deployed",
+    "id": "news-kickoff-bonn",
+    "title": "Consortium Meets in Bonn, Germany for Project Kick-Off Meeting",
+    "slug": "kick-off-meeting-bonn-germany",
+    "date": "June 2025",
+    "category": "Governance",
+    "image": "assets/images/booklet/poster-chapter1-climate-action.jpg",
+    "summary": "Coordinators and youth leaders convened in Bonn on 13–14 June 2025 to finalize operational plans, quality assurance, and the project timeline.",
+    "full_text": "Representatives from Integrational e.V., IESA, and Asociația Empower Plus met in Bonn, Germany for the two-day Kick-Off Meeting (Activity A1). The consortium established internal communication protocols, reviewed the bi-monthly monitoring matrix, and coordinated preparatory work for the upcoming transnational training course in Romania.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/poster-chapter1-climate-action.jpg",
+        "caption": "Consortium alignment around climate action goals and youth participation."
+      }
+    ],
+    "author": "Integrational e.V.",
+    "badge": "Completed Milestone"
+  },
+  {
+    "id": "news-project-launch",
+    "title": "Green Horizon Project Officially Launched Under Erasmus+ Youth Programme",
+    "slug": "green-horizon-project-officially-launched",
     "date": "May 2025",
-    "category": "Digital Platform",
-    "author": "Web Operations Team",
-    "summary": "The central dissemination platform for Green Horizon goes live at https://greenhorizonyou.eu, built to WCAG 2.1 AA accessibility standards.",
-    "content": "The official Green Horizon web portal is now live under Activity A6. Serving as the dissemination hub for the project, the platform features an interactive Europe consortium map, a 360-degree VR demonstration viewer, and open-access repositories for educational downloads and upcoming documentary films.",
-    "tags": ["Web Platform", "Accessibility", "Open Access", "Dissemination"],
-    "badge": "Milestone A6"
+    "category": "Project Launch",
+    "image": "assets/images/booklet/poster-climate-change-globe.jpg",
+    "summary": "A 16-month Erasmus+ partnership commences between Germany, Türkiye, and Romania to empower youth in climate advocacy using camera drones.",
+    "full_text": "On 1 May 2025, the 'Green Horizon: Youth Voices for Climate Action Through Drone Technology' project (2024-3-DE04-KA210-YOU-000293009) began under the Erasmus+ KA210-YOU scheme, co-funded with €60,000 from the European Union through the German National Agency JUGEND für Europa. Over 16 months, the initiative equips youth workers and young people with skills in camera drone piloting, environmental photography, and visual storytelling.",
+    "photos": [
+      {
+        "file": "assets/images/booklet/poster-climate-change-globe.jpg",
+        "caption": "Project launch visual: Empowering European youth for climate action."
+      }
+    ],
+    "author": "Consortium Secretariat",
+    "badge": "Official Launch"
   }
 ]

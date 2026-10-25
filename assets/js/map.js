@@ -1,6 +1,8 @@
 /**
  * GREEN HORIZON — Interactive Consortium Map Script
- * Powered by Leaflet.js with Dark-Tech Customization
+ * Powered by Leaflet.js with Light Booklet Aesthetic
+ * Coordinator: Integrational e.V. (Bonn, Germany)
+ * Partners: IESA (Mersin, Türkiye) & Asociația Empower Plus (Bucharest / Brașov, Romania)
  */
 
 function initConsortiumMap() {
@@ -28,44 +30,44 @@ function initConsortiumMap() {
     zoomControl: true
   });
 
-  // Dark-matter high-contrast base map tiles
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  // Light-theme Carto Positron map tiles
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19
   }).addTo(map);
 
-  // Consortium Partners Data
+  // Consortium Partners Data (Bonn, Mersin, Bucharest / Brașov)
   const partners = [
     {
       id: 'de',
       name: 'Integrational e.V.',
       role: 'Project Coordinator',
       country: 'Germany',
-      city: 'Bonn / Berlin',
+      city: 'Bonn',
       coords: [50.7374, 7.0982],
-      desc: 'Oversees overall project governance, financial administration, and the Transnational Drone Operation & Video Editing Training Course.',
-      link: 'partners.html#integrational'
-    },
-    {
-      id: 'tr',
-      name: 'IESA (Yenilikçi Eğitim Bilim ve Sanat Derneği)',
-      role: 'Project Partner',
-      country: 'Türkiye',
-      city: 'Ankara / Istanbul',
-      coords: [39.9334, 32.8597],
-      desc: 'Leads technological and educational module development, the Educational Booklet on Drones & Climate Storytelling, and regional youth workshops.',
-      link: 'partners.html#iesa'
+      desc: 'Oversees overall project governance, financial administration, quality assurance, and project website management.',
+      link: 'partners#integrational'
     },
     {
       id: 'ro',
       name: 'Asociația Empower Plus',
       role: 'Project Partner',
       country: 'Romania',
-      city: 'Craiova / Bucharest',
-      coords: [44.3302, 23.7949],
-      desc: 'Leads the 360° Virtual Reality (VR) Climate Exhibition, youth dissemination campaigns, and regional Carpathian forest monitoring.',
-      link: 'partners.html#empower-plus'
+      city: 'Bucharest / Brașov',
+      coords: [45.6579, 25.6012], // Brașov training location
+      desc: 'Hosted the Transnational Training Course in Brașov (Activity A2), curated the 360° VR Exhibition, and led local youth workshops.',
+      link: 'partners#empower-plus'
+    },
+    {
+      id: 'tr',
+      name: 'Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA)',
+      role: 'Project Partner',
+      country: 'Türkiye',
+      city: 'Mersin',
+      coords: [36.8121, 34.6415],
+      desc: 'Led the 99-page Educational Booklet production, internal quality evaluation, and the Final Dissemination Conference in Türkiye.',
+      link: 'partners#iesa'
     }
   ];
 
@@ -91,10 +93,10 @@ function initConsortiumMap() {
       <div class="map-partner-popup">
         <span class="popup-role">${partner.role}</span>
         <h4>${partner.name}</h4>
-        <p style="margin: 0.2rem 0 0.5rem 0; color: #23C9AB; font-family: monospace; font-size: 0.8rem;">
+        <p style="margin: 0.2rem 0 0.5rem 0; color: #1B5E20; font-weight: 600; font-size: 0.85rem;">
           📍 ${partner.city}, ${partner.country}
         </p>
-        <p>${partner.desc}</p>
+        <p style="font-size: 0.88rem; color: #4B5563; line-height: 1.45;">${partner.desc}</p>
         <a href="${partner.link}">Explore Partner Profile &rarr;</a>
       </div>
     `;
@@ -103,18 +105,18 @@ function initConsortiumMap() {
     markers.push({ partner, marker });
   });
 
-  // Connect Partners with Animated Futuristic Geodesic Flight Vectors
+  // Connect Partners with Geodesic Flight Vectors
   const flightPathCoordinates = [
-    [50.7374, 7.0982],   // Germany
-    [44.3302, 23.7949],  // Romania
-    [39.9334, 32.8597],  // Türkiye
+    [50.7374, 7.0982],   // Bonn (Germany)
+    [45.6579, 25.6012],  // Brașov / Bucharest (Romania)
+    [36.8121, 34.6415],  // Mersin (Türkiye)
     [50.7374, 7.0982]    // Loop back to Germany
   ];
 
   L.polyline(flightPathCoordinates, {
-    color: '#23C9AB',
-    weight: 2,
-    opacity: 0.6,
+    color: '#1B5E20',
+    weight: 2.5,
+    opacity: 0.7,
     dashArray: '6, 8',
     lineCap: 'round'
   }).addTo(map);
@@ -135,7 +137,6 @@ function initConsortiumMap() {
 
 // Auto-run when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  // If Leaflet script is loaded asynchronously, retry if needed
   if (typeof L !== 'undefined') {
     initConsortiumMap();
   } else {

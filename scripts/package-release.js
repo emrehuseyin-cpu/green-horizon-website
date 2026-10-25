@@ -34,6 +34,7 @@ const requiredPages = [
   'about.html',
   'partners.html',
   'activities.html',
+  'gallery.html',
   'stories.html',
   'exhibition.html',
   'resources.html',

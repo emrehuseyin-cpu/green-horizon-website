@@ -3,50 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — Coordinates Not Found | Green Horizon</title>
+  <title>404 — Page Not Found | Green Horizon</title>
   <meta name="robots" content="noindex, follow">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/drone-hud.css">
   <link rel="stylesheet" href="assets/css/components.css">
 </head>
-<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
+<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; background: var(--bg-warm);">
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <!-- Header -->
   <header class="site-header" role="banner">
-    <div class="container header-container">
-      <a href="/" class="site-brand" aria-label="Green Horizon Homepage">
-        <img src="assets/images/logo-greenhorizon-emblem.png" alt="Green Horizon" width="46" height="46" style="border-radius: 50%; border: 1.5px solid var(--electric-green); background: #FFF; object-fit: contain;">
-        <div>
-          <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #FFF; letter-spacing: 0.05em; display: block; line-height: 1.1;">GREEN <span style="color: var(--electric-green);">HORIZON</span></span>
-          <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--teal); letter-spacing: 0.15em; font-weight: 600;">YOUTH VOICES // CLIMATE ACTION</span>
-        </div>
-      </a>
-      <a href="/" class="btn btn-secondary btn-sm">Return Home</a>
+    <div class="header-nav-bar">
+      <div class="container header-nav-container">
+        <a href="/" class="site-brand-pill" aria-label="Green Horizon Homepage">
+          <img src="assets/images/logo-greenhorizon-emblem.png" alt="Green Horizon" width="42" height="42">
+          <div>
+            <span class="site-brand-name">GREEN HORIZON</span>
+            <span class="site-brand-tagline">ERASMUS+ KA210-YOU</span>
+          </div>
+        </a>
+        <a href="/" class="btn btn-secondary btn-sm" style="text-decoration: none;">Return Home &rarr;</a>
+      </div>
     </div>
   </header>
 
-  <main id="main-content" style="padding-top: calc(var(--header-height) + 4rem); padding-bottom: 4rem; display: flex; align-items: center; justify-content: center; flex: 1;">
-    <div class="container" style="text-align: center; max-width: 640px;">
-      <div class="card-glass" style="border-color: var(--teal); padding: 3rem 2rem;">
-        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #ff4d4d; margin-bottom: 1rem;">
-          [ERROR 404 // FLIGHT TELEMETRY LOST]
-        </div>
-        <h1 style="font-size: 4rem; color: var(--electric-green); margin-bottom: 0.5rem; letter-spacing: -0.05em;">404</h1>
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Coordinates Out of Range</h2>
-        <p style="color: var(--text-muted); margin-bottom: 2rem;">
-          The requested waypoint does not exist or has been shifted in the mission database. Check your route or return to the main base station.
+  <main id="main-content" class="booklet-bg-pattern" style="padding: 5rem 0; display: flex; align-items: center; justify-content: center; flex: 1;">
+    <div class="container" style="text-align: center; max-width: 620px;">
+      <div class="card card-accent-green" style="padding: 3rem 2rem;">
+        <span class="booklet-chapter-pill pill-safety" style="margin-bottom: 1rem;">Page Not Found</span>
+        <h1 style="font-size: 4.5rem; color: var(--primary); margin-bottom: 0.5rem; line-height: 1;">404</h1>
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--text-main);">We couldn't find that page</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.6;">
+          The page or file you are looking for might have been moved, renamed, or is temporarily unavailable.
         </p>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="/" class="btn btn-primary">Return to Base Station (Home)</a>
-          <a href="contact" class="btn btn-ghost">Report Broken Link</a>
+          <a href="/" class="btn btn-primary btn-lg" style="text-decoration: none;">Return to Homepage</a>
+          <a href="contact" class="btn btn-secondary btn-lg" style="text-decoration: none;">Contact Us</a>
         </div>
       </div>
     </div>
   </main>
 
   <footer class="site-footer" style="padding: 2rem 0;">
-    <div class="container" style="text-align: center; font-size: 0.8rem; color: var(--text-muted);">
-      &copy; 2025–2026 Green Horizon (Erasmus+ KA210-YOU). All rights reserved.
+    <div class="container" style="text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+      Co-funded by the European Union • Green Horizon (Project Number: 2024-3-DE04-KA210-YOU-000293009)
     </div>
   </footer>
 
