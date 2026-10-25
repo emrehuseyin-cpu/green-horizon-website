@@ -1,104 +1,106 @@
 [
   {
     "id": "res-booklet",
-    "title": "Green Horizon Educational Booklet: Drones & Climate Storytelling",
+    "title": "Booklet on Drone Operation, Photography, and Effective Ways to Mitigate Climate Change",
     "category": "Educational Guide",
-    "type": "PDF Handbook",
-    "format": "PDF",
-    "fileSize": "4.8 MB (Expected)",
-    "pages": "68 Pages",
+    "type": "Open Educational Resource (PDF)",
+    "format": "PDF / Handbook",
+    "fileSize": "Open Access (In Development)",
+    "pages": "Comprehensive Multi-Module Handbook",
     "languages": ["English", "German", "Turkish", "Romanian"],
-    "badge": "Core Project Output",
-    "description": "Comprehensive educational syllabus providing youth workers, formal educators, and youth leaders with actionable methodologies to integrate drone piloting, ecological monitoring, and ethical digital media production into non-formal youth education.",
+    "badge": "Core Project Output (Activity A3)",
+    "leadPartner": "Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Türkiye)",
+    "description": "The official Green Horizon handbook created under the Erasmus+ KA210-YOU grant. It serves as a comprehensive resource for youth workers, educators, and young people combining technological drone skills with creative environmental advocacy.",
     "modules": [
-      "Module 01: European Climate Reality & Youth Perspectives",
-      "Module 02: Fundamentals of UAV Technology & Flight Physics",
-      "Module 03: Legal Compliance & EASA Open Category Regulations",
-      "Module 04: Aerial Photography & Cinematic Composition",
-      "Module 05: Environmental Data Collection & Visual Storytelling",
-      "Module 06: Non-Formal Workshop Blueprints & Safety Protocols"
+      "Section 1: Technical Skills in Drone Operation (Setup, Flight Physics, EASA Safety Regulations, Airspace Rules, Drone Maintenance)",
+      "Section 2: Aerial Photography & Videography Techniques (Framing, Natural Lighting, Visual Storytelling, Capturing Environmental Changes)",
+      "Section 3: Practical Climate Change Mitigation Strategies (Documenting Deforestation, River Fluctuations & Aridity; Actionable Community Steps; Inspiring Youth Case Studies)"
     ],
     "downloadUrl": "#",
-    "status": "In Development // Content pending upload"
+    "status": "In Development // Activity A3 (Oct 2025)"
   },
   {
     "id": "res-drone-safety",
     "title": "Drone Flight Safety Protocol & Field Checklist",
     "category": "Field Toolkit",
     "type": "Safety Manual",
-    "format": "PDF / Checklist",
-    "fileSize": "1.2 MB",
-    "pages": "12 Pages",
-    "languages": ["English"],
-    "badge": "Safety Standards",
-    "description": "A field-ready reference card detailing pre-flight risk assessment, airspace authorization verification, weather limits, battery lifecycle maintenance, and ethical privacy safeguards for youth fieldwork.",
+    "format": "PDF / Field Checklist",
+    "fileSize": "Field Ready",
+    "pages": "Field Reference Card",
+    "languages": ["English", "German", "Turkish", "Romanian"],
+    "badge": "Safety Standards (Activity A2/A4)",
+    "leadPartner": "Asociatia Empower Plus (Romania)",
+    "description": "Essential safety checklist utilized in the Romania Training Course (A2) and the three Local Youth Workshops (A4). Details pre-flight risk checks, weather tolerance thresholds, GNSS calibration, battery handling, and ethical privacy safeguards under GDPR.",
     "modules": [
-      "Pre-flight inspection routine (18-point checklist)",
-      "Airspace awareness & geofencing guidelines",
-      "Emergency landing and failsafe procedures",
-      "GDPR & privacy in public aerial filming"
+      "18-Point Pre-Flight Safety Protocol",
+      "Airspace Verification & Geofencing Limits",
+      "Emergency Failsafe & Return-to-Home Procedures",
+      "Ethical Aerial Filming & Respect for Wildlife"
     ],
     "downloadUrl": "#",
-    "status": "Ready for Training Course"
+    "status": "Curriculum Component // Activity A2"
   },
   {
     "id": "res-video-guide",
-    "title": "Climate Storytelling & Digital Video Production Guide",
+    "title": "Youth Documentary Production Guide: From Raw Footage to Climate Advocacy",
     "category": "Media Production",
     "type": "Curriculum Guide",
-    "format": "PDF / Guide",
-    "fileSize": "3.5 MB",
-    "pages": "44 Pages",
+    "format": "PDF / Digital Guide",
+    "fileSize": "Educational Guide",
+    "pages": "Step-by-Step Production Guide",
     "languages": ["English"],
-    "badge": "Youth Media Lab",
-    "description": "Practical guide on crafting emotionally engaging digital narratives around environmental degradation and grassroots climate adaptation using mobile tools and aerial footage.",
+    "badge": "Youth Media Lab (Activity A2/A5)",
+    "leadPartner": "Asociatia Empower Plus with Integrational e.V.",
+    "description": "Practical guide on editing 4K aerial footage and ground interviews into impactful short documentaries (2–10 minutes) addressing regional environmental degradation and climate adaptation.",
     "modules": [
-      "Narrative arcs for environmental advocacy",
-      "Color grading aerial footage for documentary realism",
-      "Accessible subtitling and multilingual voiceover",
-      "Social media dissemination strategies for youth impact"
+      "Visual Narrative Structures for Environmental Journalism",
+      "Non-Linear Video Editing with Accessible Open Tools",
+      "Color Grading Aerial Drone Clips for Visual Clarity",
+      "Multilingual Subtitling, Voiceovers, and Accessible Audio"
     ],
     "downloadUrl": "#",
-    "status": "In Development // Content pending upload"
+    "status": "Production Framework // Activity A5"
   },
   {
     "id": "res-vr-manual",
-    "title": "Curator's Guide to 360° Virtual Reality Climate Exhibitions",
+    "title": "Curator's Guide to 360° Virtual Reality Climate Exhibitions on Artsteps",
     "category": "Virtual Exhibition",
     "type": "Technical Manual",
-    "format": "PDF / Web Guide",
-    "fileSize": "2.9 MB",
-    "pages": "32 Pages",
+    "format": "PDF / Virtual Guide",
+    "fileSize": "Digital Manual",
+    "pages": "Curatorial Guide",
     "languages": ["English", "Romanian"],
-    "badge": "Exhibition Tech",
-    "description": "Technical documentation for hosting immersive 360° virtual and physical hybrid exhibitions in youth centres, schools, and cultural galleries using open web standards.",
+    "badge": "VR Technology (Activity A5/A6)",
+    "leadPartner": "Asociatia Empower Plus (Romania)",
+    "description": "Step-by-step technical manual on curating 360-degree aerial panoramas and high-resolution photo exhibitions on the Artsteps platform, complete with interactive guided tours and ambient soundscapes.",
     "modules": [
-      "Capturing equirectangular 360-degree aerial images",
-      "Deploying interactive web-based panorama players",
-      "Cardboard VR headset and smartphone setups for schools",
-      "Interactive hotspot curation with youth audio testimonials"
+      "Capturing Equirectangular Aerial 360° Panoramas",
+      "Setting Up 3D Exhibition Spaces on the Artsteps Platform",
+      "Curating Informative Captions and Environmental Data Points",
+      "Designing Guided Virtual Tours for Schools and Community Centers"
     ],
     "downloadUrl": "#",
-    "status": "In Preparation"
+    "status": "Exhibition Curation // Activity A5"
   },
   {
     "id": "res-workshop-toolkit",
-    "title": "Local Youth Workshop Facilitator Kit",
+    "title": "Local Youth Workshop Facilitator Kit: Training 60 Youth Across DE, TR, and RO",
     "category": "Facilitator Toolkit",
     "type": "Activity Plans",
-    "format": "ZIP / PDF Pack",
-    "fileSize": "8.4 MB (Expected)",
-    "pages": "5 Activity Blueprints",
+    "format": "PDF / Lesson Plans",
+    "fileSize": "Complete Facilitator Kit",
+    "pages": "1-Day Workshop Blueprint",
     "languages": ["English", "German", "Turkish", "Romanian"],
-    "badge": "Youth Work",
-    "description": "Ready-to-use pedagogical scenarios, icebreakers, hands-on flight exercises, and evaluation rubrics tailored for youth workers running 2-day climate media workshops.",
+    "badge": "Local Action (Activity A4)",
+    "leadPartner": "Integrational e.V. (Germany)",
+    "description": "Turnkey pedagogical blueprint for youth workers facilitating the 1-day local workshops in Germany, Türkiye, and Romania, reaching a minimum of 60 youth participants with hands-on flight simulation and climate dialogue.",
     "modules": [
-      "Icebreaker: 'The Earth from Above' visual trivia",
-      "Flight Simulator Challenge: Indoor micro-drone navigation",
-      "Citizen Science: Identifying local ecological hot-spots",
-      "Team Media Sprint: Editing a 60-second climate micro-reel"
+      "Module 1: Introduction to Drone Operation, Setup & Regulations",
+      "Module 2: Photography & Videography Techniques for Landscape Documentation",
+      "Module 3: Basic Video Editing & Visual Storytelling Exercises",
+      "Module 4: Climate Advocacy Discussion & Youth Action Planning"
     ],
     "downloadUrl": "#",
-    "status": "In Development // Content pending upload"
+    "status": "Workshop Blueprint // Activity A4"
   }
 ]

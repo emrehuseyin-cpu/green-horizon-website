@@ -13,7 +13,7 @@ const distDir = path.join(rootDir, 'dist');
 console.log('--- GREEN HORIZON: PRE-FLIGHT VALIDATION & BUILD ---');
 
 // 1. Verify JSON Data Files
-const dataFiles = ['activities.json', 'gallery.json', 'news.json', 'partners.json', 'resources.json', 'stories.json'];
+const dataFiles = ['activities.json', 'dissemination.json', 'gallery.json', 'news.json', 'partners.json', 'resources.json', 'stories.json'];
 dataFiles.forEach(file => {
   const filePath = path.join(rootDir, 'assets/data', file);
   if (!fs.existsSync(filePath)) {

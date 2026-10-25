@@ -1,0 +1,26 @@
+{
+  "targetIndicators": [
+    { "tool": "Project Website", "indicator": "Total visits", "target": ">3,000 visits", "milestone": "At project conclusion (Month 16)", "status": "Active" },
+    { "tool": "Project Website", "indicator": "Monthly average", "target": "150 visits/month", "milestone": "Ongoing (Month 1–16)", "status": "Active" },
+    { "tool": "Educational Booklet", "indicator": "Total downloads", "target": ">300 downloads", "milestone": "Open Access (M6–M16)", "status": "In Preparation" },
+    { "tool": "Social Media (IG, FB, YT)", "indicator": "Followers & Network Users", "target": ">1,000 users", "milestone": "From Month 3 onwards", "status": "In Setup" },
+    { "tool": "Social Media Stories & Posts", "indicator": "Created stories & posts", "target": ">30 posts (>10 per partner)", "milestone": "Before & after project activities", "status": "Ongoing" },
+    { "tool": "Social Media Reach", "indicator": "Views per story/post", "target": ">150 views (>50 per partner)", "milestone": "Throughout dissemination", "status": "Ongoing" },
+    { "tool": "Digital Leaflet Invitations", "indicator": "Number of reads", "target": ">600 reads", "milestone": "Prior to youth participant selection", "status": "Planned" },
+    { "tool": "Mass Media (Press & Journals)", "indicator": "Articles & Press Releases", "target": "9 releases (3 per partner, 18 reach)", "milestone": "After each Project Result", "status": "Planned" },
+    { "tool": "Project Newsletters", "indicator": "Published newsletters", "target": "3 newsletters", "milestone": "Start, Middle (post-workshops), Final phase", "status": "In Preparation" },
+    { "tool": "Consortium Email Network", "indicator": "Registered stakeholders", "target": "150 contacts (50 per partner)", "milestone": "From project start", "status": "Active" },
+    { "tool": "Positive Video Clips", "indicator": "Documentary micro-videos", "target": "6 videos (2 per partner)", "milestone": "Final dissemination phase", "status": "Planned" }
+  ],
+  "monitoringFramework": [
+    { "indicator": "Project Management Office", "frequency": "Weekly", "responsible": "All Partners", "purpose": "Rapid information retrieval and misinformation prevention" },
+    { "indicator": "Team Contacts & Channels", "frequency": "On change", "responsible": "All Partners", "purpose": "Seamless communication and data flow" },
+    { "indicator": "Tasks Execution & Roadmap", "frequency": "Monthly", "responsible": "P1 Integrational e.V.", "purpose": "Adherence to GANTT chart schedule" },
+    { "indicator": "Project Results Development", "frequency": "Monthly", "responsible": "P2 IESA", "purpose": "Version control of intellectual outputs and booklet" },
+    { "indicator": "Meetings Minutes & Photos", "frequency": "Before & after meetings, Monthly", "responsible": "P1 Integrational e.V.", "purpose": "Task definition and reporting documentation" },
+    { "indicator": "Training Events & Evaluations", "frequency": "Before & after event", "responsible": "P3 Empower Plus", "purpose": "Event logistics, participant evaluations, and reporting" },
+    { "indicator": "Dissemination Links & Mobility Tool", "frequency": "Per dissemination plan", "responsible": "All Partners", "purpose": "Mobility Tool compliance and impact metrics" },
+    { "indicator": "Financial Plans & Timesheets", "frequency": "Every 3 months", "responsible": "P1 Integrational e.V.", "purpose": "Travel documents, timesheets, and budget compliance" },
+    { "indicator": "Budget Control & Spend", "frequency": "Every 3 months", "responsible": "All Partners", "purpose": "Proportional expenditure aligned with GANTT" }
+  ]
+}
