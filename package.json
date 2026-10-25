@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/generate-assets.js && node scripts/package-release.js",
     "test": "node scripts/package-release.js",
-    "preview": "python3 -m http.server 8080",
+    "preview": "node scripts/serve.js",
     "add:news": "node scripts/add-article.js",
     "add:photo": "node scripts/add-photo.js",
     "generate:assets": "node scripts/generate-assets.js"
