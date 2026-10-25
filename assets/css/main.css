@@ -74,6 +74,13 @@ body {
   font-family: var(--font-body);
   color: var(--text-secondary);
   background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 50% 12%, rgba(20, 60, 45, 0.75) 0%, rgba(7, 20, 17, 0.94) 65%, #050e0c 100%),
+    url('../images/green-horizon-booklet-art.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto, cover;
+  background-attachment: fixed;
   line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
