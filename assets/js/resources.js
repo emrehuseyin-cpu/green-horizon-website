@@ -62,13 +62,13 @@ function renderResources(items) {
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 0.8rem; min-width: 180px;">
-          <a href="${res.downloadUrl}" class="btn btn-primary" data-download="${res.id}" onclick="handleDownloadPlaceholder(event, '${res.title}')">
+          <a href="${res.downloadUrl}" class="btn btn-primary" data-download="${res.id}" ${res.downloadUrl.endsWith('.pdf') ? 'download' : ''} onclick="return handleDownloadPlaceholder(event, '${res.title.replace(/'/g, "\\'")}', '${res.downloadUrl}')">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Download Guide
+            ${res.downloadUrl !== '#' ? 'Download PDF' : 'Download Guide'}
           </a>
           <button class="btn btn-ghost btn-sm" onclick="showResourceDetails('${res.id}')">
             View Syllabus Details
@@ -132,7 +132,11 @@ window.resetResourceFilters = function() {
   renderResources(resourcesData);
 };
 
-window.handleDownloadPlaceholder = function(e, title) {
+window.handleDownloadPlaceholder = function(e, title, url) {
+  if (url && url !== '#') {
+    // Allow direct download of available file
+    return true;
+  }
   e.preventDefault();
   alert(`"${title}" is currently in development under the Erasmus+ work plan. The open-access publication will be available for download here upon validation by the consortium.`);
 };

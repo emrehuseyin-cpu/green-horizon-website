@@ -24,12 +24,13 @@ function initHeader() {
     }
   }, { passive: true });
 
-  // Highlight active link based on URL
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  // Highlight active link based on clean URL or file
+  let currentPath = (window.location.pathname.replace(/\/$/, '').split('/').pop() || '').replace(/\.html$/, '');
   const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
   navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+    let href = (link.getAttribute('href') || '').replace(/^\//, '').replace(/\.html$/, '').split('#')[0].split('?')[0];
+    if ((currentPath === '' && (href === '' || href === '/' || href === 'index')) ||
+        (currentPath !== '' && href === currentPath)) {
       link.classList.add('active');
     }
   });

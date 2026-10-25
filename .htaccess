@@ -8,13 +8,23 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 2. Prevent Directory Browsing
+# 2. SEO-Friendly Clean URLs: Redirect .html to Extensionless URLs
+# (e.g. /about.html -> /about)
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# 3. SEO-Friendly Clean URLs: Internally Rewrite Extensionless Requests to .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# 4. Prevent Directory Browsing
 Options -Indexes
 
-# 3. Custom Error Pages
+# 5. Custom Error Pages
 ErrorDocument 404 /404.html
 
-# 4. Security Headers
+# 6. Security Headers
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
@@ -22,14 +32,14 @@ ErrorDocument 404 /404.html
     Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# 5. Enable GZIP / Brotli Compression
+# 7. Enable GZIP / Brotli Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
     AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
     AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
-# 6. Browser Caching
+# 8. Browser Caching
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"

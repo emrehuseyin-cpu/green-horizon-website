@@ -39,7 +39,7 @@ function renderGalleryCards(items) {
   grid.innerHTML = items.map((item, idx) => `
     <article class="gallery-card" data-index="${idx}" tabindex="0" role="button" aria-label="View ${item.title}">
       <div class="gallery-thumb-wrapper">
-        <img src="assets/images/exhibition/${item.id}.svg" alt="${item.title}" loading="lazy">
+        <img src="${item.image || 'assets/images/exhibition/' + item.id + '.svg'}" alt="${item.title}" loading="lazy">
         <div class="gallery-telemetry-badge">
           ALT: ${item.altitude}
         </div>
@@ -153,7 +153,7 @@ function updateLightboxContent() {
   const telemetryEl = document.getElementById('lightbox-telemetry');
 
   if (imgEl) {
-    imgEl.src = `assets/images/exhibition/${item.id}.svg`;
+    imgEl.src = item.image || `assets/images/exhibition/${item.id}.svg`;
     imgEl.alt = item.title;
   }
   if (titleEl) titleEl.textContent = item.title;

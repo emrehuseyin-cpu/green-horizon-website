@@ -1,23 +1,43 @@
 [
   {
     "id": "res-booklet",
-    "title": "Booklet on Drone Operation, Photography, and Effective Ways to Mitigate Climate Change",
+    "title": "Booklet — Green Horizon: Youth Voices for Climate Action Through Drone Technology",
     "category": "Educational Guide",
-    "type": "Open Educational Resource (PDF)",
+    "type": "Official Publication (PDF)",
     "format": "PDF / Handbook",
-    "fileSize": "Open Access (In Development)",
-    "pages": "Comprehensive Multi-Module Handbook",
-    "languages": ["English", "German", "Turkish", "Romanian"],
-    "badge": "Core Project Output (Activity A3)",
-    "leadPartner": "Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Türkiye)",
-    "description": "The official Green Horizon handbook created under the Erasmus+ KA210-YOU grant. It serves as a comprehensive resource for youth workers, educators, and young people combining technological drone skills with creative environmental advocacy.",
+    "fileSize": "3.3 MB • 99 Pages • Full Release",
+    "pages": "99 Pages • 3 Comprehensive Chapters",
+    "languages": ["English"],
+    "badge": "Official Booklet (Code: 2024-3-DE04-KA210-YOU-000293009)",
+    "leadPartner": "Integrational e.V. (DE) • IESA (TR) • Empower Plus (RO)",
+    "description": "The complete 99-page Open Educational Resource developed under Erasmus+ grant 2024-3-DE04-KA210-YOU-000293009. Licensed under CC BY-SA 4.0. Contains Chapter I (Climate Change Mitigation Strategies), Chapter II (Photography for Climate Storytelling), and Chapter III (Drone Operation for Climate Documentation) complete with field checklists and flight exercises.",
     "modules": [
-      "Section 1: Technical Skills in Drone Operation (Setup, Flight Physics, EASA Safety Regulations, Airspace Rules, Drone Maintenance)",
-      "Section 2: Aerial Photography & Videography Techniques (Framing, Natural Lighting, Visual Storytelling, Capturing Environmental Changes)",
-      "Section 3: Practical Climate Change Mitigation Strategies (Documenting Deforestation, River Fluctuations & Aridity; Actionable Community Steps; Inspiring Youth Case Studies)"
+      "Chapter I: Practical Insights Into Climate Change Mitigation Strategies (Conceptual Framework, 5 Local Indicators, Community-Based Observation, Evidence to Action, Youth Leadership)",
+      "Chapter II: Photography for Climate Storytelling (Image Formation, Composition Rules, Environmental Observation, Visual Narratives, Aerial vs Ground Perspectives, Communication Ethics)",
+      "Chapter III: Drone Operation for Climate Documentation (Drone Anatomy & Flight Modes, EU & Turkish Aviation Rules, Flight Planning & Weather, 6 Flight Exercises, 7 Shot Types, 9-Step Video Editing, Printable Field Checklist)"
     ],
-    "downloadUrl": "#",
-    "status": "In Development // Activity A3 (Oct 2025)"
+    "downloadUrl": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
+    "status": "Available Now // Official 99-Page PDF"
+  },
+  {
+    "id": "res-field-checklist",
+    "title": "Printable Drone Documentation Field Checklist (Page 97)",
+    "category": "Field Toolkit",
+    "type": "Printable Safety Tool",
+    "format": "PDF / Field Card",
+    "fileSize": "1-Page Ready Reference",
+    "pages": "Single Page Checklist",
+    "languages": ["English"],
+    "badge": "Essential Flight Safety Protocol",
+    "leadPartner": "Green Horizon Consortium",
+    "description": "The exact one-page pre-flight, on-site, and post-flight safety protocol from Page 97 of the Green Horizon Booklet. Covers registration, insurance, weather limits (wind <30 km/h), satellite home lock, 120m AGL ceiling, and battery safety.",
+    "modules": [
+      "Phase 1: BEFORE — Permissions, certificate, insurance, weather & wind checks, battery charge, team roles",
+      "Phase 2: ON SITE — Consent, safe LZ, home point recorded, hover check at 2–3m, VLOS & 120m ceiling, 30% battery margin",
+      "Phase 3: AFTER — Flight log, backup with GPS metadata, blurring faces/plates, video editing, battery storage charge"
+    ],
+    "downloadUrl": "assets/downloads/Green_Horizon_Booklet_Official.pdf#page=97",
+    "status": "Ready to Print & Use"
   },
   {
     "id": "res-drone-safety",
