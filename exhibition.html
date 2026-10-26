@@ -99,31 +99,55 @@
       </div>
     </section>
 
-    <!-- 1. Artsteps 360° VR Exhibition Embed & Link Slot -->
+    <!-- 1. 360° VR Exhibition Live Embed & Controls -->
     <section class="section" style="padding-top: 2rem;">
       <div class="container">
-        <div class="exhibition-frame-box">
-          <!-- ARTSTEPS LINK / IFRAME SLOT -->
-          <!-- Below is the dedicated container. When your real Artsteps exhibition link is ready, embed it with: -->
-          <!-- <iframe src="https://www.artsteps.com/embed/YOUR_EXHIBITION_ID/560/315" width="100%" height="600" frameborder="0" allowfullscreen></iframe> -->
-          <div class="exhibition-frame-placeholder">
-            <span class="booklet-chapter-pill pill-ch2" style="background: rgba(255, 255, 255, 0.2); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.4); margin-bottom: 1rem;">
-              Artsteps 3D Virtual Gallery Slot (Activity A5)
-            </span>
-            <h2 style="color: #FFFFFF; font-size: 2rem; margin-bottom: 0.8rem;">
-              360° Virtual Reality Exhibition Room
-            </h2>
-            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; max-width: 680px; margin: 0 auto 2rem auto; line-height: 1.6;">
-              Curated under the leadership of Asociația Empower Plus, the exhibition presents youth photography, aerial landscape captures, and environmental audio notes in a walk-through 3D gallery.
-            </p>
-
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-              <!-- Direct Artsteps Link Button (Editable) -->
-              <a href="https://www.artsteps.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="background: #FFFFFF; color: var(--primary); text-decoration: none;">
-                🚪 Enter Artsteps Exhibition &rarr;
+        <div class="exhibition-frame-box" style="background: #111827; border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-color);">
+          <!-- Top VR Player Header Bar -->
+          <div style="background: #1F2937; padding: 0.85rem 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; border-bottom: 1px solid #374151;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+              <span class="badge badge-completed" style="font-size: 0.75rem;">Activity A5 • Live Exhibition</span>
+              <span style="color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: var(--font-heading);">
+                Green Horizon 360° VR Gallery Room
+              </span>
+            </div>
+            <div style="display: flex; gap: 0.6rem; align-items: center;">
+              <a href="https://metasteps.com/viewer/embed/832a0a3b-4ea0-413d-9b47-d9eccd1e1459?showSignIn=0&showCommunications=0&showOrbitButton=0&showSettingsButton=0&showSoundButton=0&showLikeButton=0&forceOrbitCamera=0" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-primary btn-sm" 
+                 style="font-size: 0.82rem; padding: 0.35rem 0.85rem; text-decoration: none;">
+                ⛶ Open Fullscreen / New Tab
               </a>
-              <a href="gallery" class="btn btn-secondary btn-lg" style="background: transparent; border-color: #FFFFFF; color: #FFFFFF; text-decoration: none;">
-                📸 Browse 2D Photo Gallery
+            </div>
+          </div>
+
+          <!-- Responsive 360° VR Embed Iframe -->
+          <div style="position: relative; width: 100%; min-height: 520px; height: 65vh; max-height: 750px; background: #000000;">
+            <iframe 
+              src="https://metasteps.com/viewer/embed/832a0a3b-4ea0-413d-9b47-d9eccd1e1459?showSignIn=0&showCommunications=0&showOrbitButton=0&showSettingsButton=0&showSoundButton=0&showLikeButton=0&forceOrbitCamera=0" 
+              title="Green Horizon: Youth Voices for Climate Action Through Drone"
+              width="100%" 
+              height="100%" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; display: block;" 
+              allow="fullscreen; xr-spatial-tracking; accelerometer; gyroscope"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Bottom Navigation Guide Bar -->
+          <div style="background: #FFFFFF; padding: 1.25rem 1.75rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <p style="margin: 0; font-size: 0.92rem; color: var(--text-main); font-weight: 600;">
+                🎮 <strong>How to Explore:</strong> Click &amp; drag to look around 360° • Click the floor markers to move • Click artworks to zoom &amp; inspect captions
+              </p>
+              <p style="margin: 0.25rem 0 0 0; font-size: 0.82rem; color: var(--text-light);">
+                Curated by Asociația Empower Plus in collaboration with Integrational e.V. and IESA.
+              </p>
+            </div>
+            <div>
+              <a href="gallery" class="btn btn-outline btn-sm" style="text-decoration: none;">
+                📸 Browse 2D Photo Gallery &rarr;
               </a>
             </div>
           </div>
