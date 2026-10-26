@@ -81,6 +81,8 @@ html {
   scroll-padding-top: 140px;
   background-color: var(--bg-body);
   color-scheme: light;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -91,6 +93,9 @@ body {
   background-color: var(--bg-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /* Landscape Art Backdrop for Content Sections (~20% soft opacity) */
@@ -320,7 +325,7 @@ img, svg, video {
 
 /* Main Navigation Bar */
 .header-nav-bar {
-  padding: 0.75rem 0;
+  padding: 0.6rem 0;
   background: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
@@ -329,21 +334,21 @@ img, svg, video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .site-brand-pill {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.65rem;
   text-decoration: none;
   flex-shrink: 0;
   min-width: 0;
 }
 
 .site-brand-pill img {
-  height: 48px;
-  width: 48px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
   object-fit: contain;
   background: transparent !important;
@@ -354,45 +359,50 @@ img, svg, video {
 
 .site-brand-name {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--primary);
   line-height: 1.1;
   display: block;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .site-brand-tagline {
   font-family: var(--font-body);
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-weight: 700;
-  color: #374151;
+  color: #4B5563;
   letter-spacing: 0.02em;
   display: block;
   line-height: 1.2;
   text-transform: uppercase;
-  white-space: nowrap;
+  max-width: 230px;
+  white-space: normal;
 }
 
 .nav-desktop {
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 0.35rem;
+  gap: 0.2rem;
   flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
   font-family: var(--font-heading);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-main);
-  padding: 0.4rem 0.6rem;
+  padding: 0.35rem 0.5rem;
   border-radius: var(--radius-sm);
   text-decoration: none;
   white-space: nowrap;
@@ -407,6 +417,34 @@ img, svg, video {
 .nav-link.active {
   background-color: var(--primary);
   color: #FFFFFF;
+}
+
+/* Mobile Nav Toggle Button */
+.mobile-nav-toggle {
+  display: none;
+  background: var(--bg-warm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.65rem;
+  color: var(--primary);
+  cursor: pointer;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-toggle:hover {
+  background: var(--leaf-green-light);
+  border-color: var(--leaf-green);
+}
+
+.mobile-nav-toggle svg {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 /* Mobile Nav Toggle */
@@ -1252,17 +1290,12 @@ img, svg, video {
    Responsive Breakpoints
    ========================================================================== */
 
-@media (max-width: 1180px) {
+@media (max-width: 1100px) {
   .nav-desktop {
     display: none;
   }
   .mobile-nav-toggle {
-    display: block;
-  }
-  .site-brand-tagline {
-    font-size: 0.62rem;
-    max-width: 280px;
-    line-height: 1.2;
+    display: inline-flex;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -1276,13 +1309,41 @@ img, svg, video {
   }
 }
 
+@media (max-width: 768px) {
+  .header-institutional-bar {
+    padding: 0.4rem 0;
+  }
+  .institutional-logos-wrapper {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .eu-emblem-img {
+    height: 36px;
+  }
+  .partner-logo-strip {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .partner-logo-item {
+    height: 28px;
+    max-width: 90px;
+  }
+}
+
 @media (max-width: 640px) {
+  .header-nav-bar {
+    padding: 0.45rem 0;
+  }
+  .site-brand-pill img {
+    height: 38px;
+    width: 38px;
+  }
   .site-brand-name {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .site-brand-tagline {
-    font-size: 0.55rem;
-    max-width: 195px;
+    font-size: 0.52rem;
+    max-width: 170px;
     line-height: 1.15;
   }
   .footer-grid {
@@ -1300,6 +1361,11 @@ img, svg, video {
     text-align: center;
   }
   .partner-logo-strip {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-bottom {
+    flex-direction: column;
     justify-content: center;
   }
   .footer-bottom {

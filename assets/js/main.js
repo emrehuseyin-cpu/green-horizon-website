@@ -45,6 +45,9 @@ function initMobileNav() {
   const overlay = document.querySelector('.mobile-drawer-overlay');
   if (!toggleBtn || !drawer || !overlay) return;
 
+  const closeBtn = drawer.querySelector('.mobile-drawer-close');
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
   function openDrawer() {
     drawer.classList.add('open');
     overlay.classList.add('open');

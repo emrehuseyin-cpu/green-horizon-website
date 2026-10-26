@@ -56,6 +56,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
+          <span>Menu</span>
         </button>
       </div>
     </div>
@@ -65,13 +66,15 @@
   <div class="mobile-drawer-overlay"></div>
   <aside class="mobile-drawer" aria-label="Mobile Navigation">
     <div>
-      <a href="/" class="site-brand-pill" style="margin-bottom: 2rem;">
-        <img src="assets/images/logo-greenhorizon-badge.svg" alt="Green Horizon" width="44" height="44">
-        <div>
-          <span class="site-brand-name">GREEN HORIZON</span>
-          <span class="site-brand-tagline">YOUTH VOICES FOR CLIMATE ACTION THROUGH DRONE TECHNOLOGY</span>
-        </div>
-      </a>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.85rem;">
+        <a href="/" class="site-brand-pill">
+          <img src="assets/images/logo-greenhorizon-badge.svg" alt="Green Horizon" width="40" height="40">
+          <div>
+            <span class="site-brand-name" style="font-size: 1.15rem;">GREEN HORIZON</span>
+          </div>
+        </a>
+        <button class="mobile-drawer-close" aria-label="Close navigation menu" style="background: var(--bg-warm); border: 1px solid var(--border-color); border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--text-main); cursor: pointer; line-height: 1;">&times;</button>
+      </div>
       <ul class="mobile-nav-links">
         <li><a href="/" class="mobile-nav-link">Home</a></li>
         <li><a href="about" class="mobile-nav-link active">About the Project</a></li>
