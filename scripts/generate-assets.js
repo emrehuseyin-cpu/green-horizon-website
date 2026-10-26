@@ -167,7 +167,7 @@ const exhibits = [
   { id: 'gallery-03', title: 'Carpathian Ridge Ancient Beech Canopy', loc: 'Făgăraș Mountains, Romania', coords: '45°38\'22"N 24°41\'05"E', alt: '96m AGL', color: '#23C9AB', sens: '48MP Quad-Bayer' },
   { id: 'gallery-04', title: 'Flight Calibration & Sensor Orientation', loc: 'Bonn Field Lab, Germany', coords: '50°44\'10"N 07°05\'58"E', alt: '15m AGL', color: '#B7FF4A', sens: '120° FOV Ultra-Wide' },
   { id: 'gallery-05', title: 'Anatolian Agricultural Irrigation Interfaces', loc: 'Konya Steppe, Türkiye', coords: '37°52\'11"N 32°29\'01"E', alt: '130m AGL', color: '#23C9AB', sens: '48MP Telephoto' },
-  { id: 'gallery-06', title: 'Transnational Youth Media Lab in Session', loc: 'Craiova Youth Hub, Romania', coords: '44°19\'40"N 23°47\'30"E', alt: 'Ground Lab', color: '#B7FF4A', sens: '35mm Cine Sensor' }
+  { id: 'gallery-06', title: 'Transnational Youth Media Lab in Session', loc: 'Brașov Youth Hub, Romania', coords: '44°19\'40"N 23°47\'30"E', alt: 'Ground Lab', color: '#B7FF4A', sens: '35mm Cine Sensor' }
 ];
 
 exhibits.forEach(ex => {

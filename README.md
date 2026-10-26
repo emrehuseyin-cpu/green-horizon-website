@@ -15,9 +15,9 @@ Green Horizon equips young Europeans and youth workers with practical skills in 
 ### The Consortium Partnership
 1. **Integrational e.V. (Germany)** — *Project Coordinator* (Bonn / Berlin)
    - Oversees general governance, financial monitoring, and coordinates the Transnational Training Course (A2).
-2. **Yenilikçi Eğitim Bilim ve Sanat Derneği / IESA (Türkiye)** — *Project Partner* (Ankara / Istanbul)
+2. **Yenilikçi Eğitim Bilim ve Sanat Derneği / IESA (Türkiye)** — *Project Partner* (Mersin / Istanbul)
    - Leads technological and educational module development and authors the *Green Horizon Educational Booklet* (A3).
-3. **Asociația Empower Plus (Romania)** — *Project Partner* (Craiova / Bucharest)
+3. **Asociația Empower Plus (Romania)** — *Project Partner* (Brașov / Bucharest)
    - Leads the *360° Virtual Reality (VR) Climate Exhibition* (A6) and coordinates European dissemination campaigns.
 
 ---
@@ -137,5 +137,5 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed step-by-step instructions:
 This platform has been developed in strict compliance with the **Erasmus+ 2021–2027 Visual Identity and Dissemination Guidelines**:
 - Official European Union emblem displayed alongside *"Co-funded by the European Union"*.
 - Mandatory European Commission disclaimer embedded across every page and document output:
-  > *"Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them."*
+  > *"Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the German National Agency JUGEND für Europa. Neither the European Union nor the granting authority can be held responsible for them."*
 - No made-up statistical achievements or fictitious participant counts. All planned items are clearly marked as *"Content pending upload"* or *"Planned in Project Work Plan"*.

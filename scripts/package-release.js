@@ -38,6 +38,7 @@ const requiredPages = [
   'stories.html',
   'exhibition.html',
   'resources.html',
+  'results.html',
   'news.html',
   'contact.html',
   'privacy.html',

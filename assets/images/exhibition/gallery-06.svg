@@ -46,7 +46,7 @@
   <!-- Bottom Label Badge -->
   <rect x="20" y="420" width="760" height="60" rx="6" fill="rgba(7, 20, 17, 0.9)" stroke="rgba(35, 201, 171, 0.3)" stroke-width="1"/>
   <text x="35" y="446" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Transnational Youth Media Lab in Session</text>
-  <text x="35" y="466" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Craiova Youth Hub, Romania // Project Media Placeholder</text>
+  <text x="35" y="466" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Brașov Youth Hub, Romania // Project Media Placeholder</text>
   <rect x="660" y="434" width="105" height="28" rx="4" fill="rgba(183,255,74,0.15)" stroke="#B7FF4A" stroke-width="1"/>
   <text x="672" y="452" fill="#B7FF4A" font-family="monospace" font-size="10" font-weight="bold">UAV CAPTURE</text>
 </svg>

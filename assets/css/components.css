@@ -306,6 +306,82 @@
   box-shadow: var(--shadow-card);
 }
 
+@media (max-width: 640px) {
+  .timeline-roadmap::before {
+    left: 16px;
+  }
+  .timeline-milestone {
+    padding-left: 45px;
+    margin-bottom: 2rem;
+  }
+  .timeline-milestone-marker {
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.7rem;
+    border-width: 3px;
+  }
+  .timeline-milestone-content {
+    padding: 1.25rem;
+  }
+}
+
+.activity-photo-slot {
+  margin-top: 1.25rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: var(--bg-warm);
+}
+
+.timeline-photo {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-caption {
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: #FFFFFF;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.photo-placeholder-box {
+  padding: 2.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  text-align: center;
+  background: var(--bg-warm);
+}
+
+.photo-placeholder-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  opacity: 0.6;
+}
+
+.photo-alt-hint {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-light);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
 /* ==========================================================================
    4. Documentary Series Slots & Virtual Exhibition Link Cards
    ========================================================================== */

@@ -1,271 +1,186 @@
 [
   {
     "id": "act-kickoff",
-    "number": "A1",
-    "title": "Project Management + Kick-Off Meeting TPM in Germany",
-    "category": "Governance & Management",
-    "timing": "13–14 June 2025",
-    "dates": "13–14 June 2025",
-    "location": "Bonn, Germany",
-    "leadingOrganisation": "Integrational e.V. (Germany)",
-    "participatingOrganisations": "IESA (Türkiye), Asociatia Empower Plus (Romania)",
-    "allocatedGrant": "16 005,00 €",
+    "number": "1",
+    "date": "28–29 July 2025",
+    "title": "Kick-off Meeting",
+    "place": "Germany",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "Day-to-day coordination, budget monitoring, quality control, risk mitigation, and the Kick-Off Transnational Project Meeting held in Bonn, Germany. Brought together coordinators, communication leads, and youth workers from all three partner organisations to establish a shared vision, confirm task allocations, finalize the monitoring framework, and set the training curriculum foundation.",
-    "deliverables": [
-      "Consortium Partnership Agreements and internal communication channels established",
-      "Monitoring & Evaluation (M&E) framework with bi-monthly checkpoints adopted",
-      "Comprehensive Risk Management and Quality Assurance plan finalized",
-      "Project management digital tools configured for tracking and reporting"
-    ],
-    "targetAudience": "Consortium project coordinators, communication specialists, and youth workers from Germany, Türkiye, and Romania",
-    "photoGallery": {
-      "folder": "assets/activities/a1-kickoff/",
-      "slotsCount": 6,
-      "activityName": "A1 Kick-off Meeting, Bonn (13–14 Jun 2025)",
-      "photos": [
-        {
-          "file": "assets/activities/a1-kickoff/photo-1.jpg",
-          "caption": "Consortium delegation during the opening session in Bonn.",
-          "alt": "Youth project partners gathered around the conference table in Bonn",
-          "date": "13 June 2025",
-          "place": "Bonn, Germany"
-        }
-      ]
+    "participants": "[number of participants]",
+    "description": "Project coordinators, communication leads, and youth workers met in Germany to launch the Green Horizon partnership. The consortium aligned on work packages, established quality and risk monitoring protocols, and agreed on the training course curriculum.",
+    "photo": {
+      "file": "assets/activities/a1-kickoff/photo-1.jpg",
+      "alt": "Consortium partners during the opening session of the kick-off meeting in Germany",
+      "caption": "Kick-off meeting opening session in Germany (28–29 July 2025)"
     }
   },
   {
     "id": "act-training-course",
-    "number": "A2",
-    "title": "Drone Operation, Photography, and Video Editing Training Course for Youth Workers",
-    "category": "Transnational Training Mobility",
-    "timing": "11–16 August 2025",
-    "dates": "11–16 August 2025",
-    "location": "Brașov, Romania",
-    "leadingOrganisation": "Asociatia Empower Plus (Romania)",
-    "participatingOrganisations": "IESA (Türkiye), Integrational e.V. (Germany)",
-    "allocatedGrant": "22 588,00 €",
+    "number": "2",
+    "date": "11–18 October 2025",
+    "title": "Training Course on Drone Operation, Photography and Video Editing",
+    "place": "Brașov, Romania",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "A 6-day intensive transnational training mobility in Romania bringing together 18 youth workers (6 from Germany, 6 from Türkiye, 6 from Romania). Designed to equip youth workers with digital competencies in simple camera drone setup, flight safety, environmental photography, video storytelling, and post-production editing to serve as multiplier facilitators in their local communities.",
-    "deliverables": [
-      "18 certified youth workers equipped with camera drone operation and climate media skills",
-      "Practical outdoor flight drills covering safety procedures, pre-flight checks, and basic maneuvers",
-      "Masterclasses in composition, rule of thirds, framing, color grading, and video editing",
-      "Youthpass certificates awarded to all 18 participants recognising their non-formal learning achievements"
-    ],
-    "targetAudience": "18 youth workers and educators (6 per country) who facilitate local youth workshops",
-    "photoGallery": {
-      "folder": "assets/activities/a2-training/",
-      "slotsCount": 9,
-      "activityName": "A2 Training Course for Youth Workers, Romania (11–16 Aug 2025)",
-      "photos": [
-        {
-          "file": "assets/activities/a2-training/photo-1.jpg",
-          "caption": "Youth worker and pilot operating a camera drone during the outdoor training lab.",
-          "alt": "Young woman operating camera drone controller in a sunny park with partner coach",
-          "date": "12 August 2025",
-          "place": "Brașov, Romania"
-        },
-        {
-          "file": "assets/activities/a2-training/photo-2.jpg",
-          "caption": "Precision flight and obstacle navigation drills with safety cones.",
-          "alt": "Youth participant guiding a drone through safety training cones on an open field",
-          "date": "13 August 2025",
-          "place": "Brașov, Romania"
-        },
-        {
-          "file": "assets/activities/a2-training/photo-3.jpg",
-          "caption": "Video post-production and editing masterclass at the training center.",
-          "alt": "Youth workers editing aerial documentary footage on laptops in a workshop room",
-          "date": "14 August 2025",
-          "place": "Brașov, Romania"
-        },
-        {
-          "file": "assets/activities/a2-training/photo-4.jpg",
-          "caption": "Outdoor group photo of all 18 transnational youth workers and trainers.",
-          "alt": "Group of 18 young people and facilitators smiling outdoors holding drones and cameras",
-          "date": "16 August 2025",
-          "place": "Brașov, Romania"
-        }
-      ]
+    "participants": "18 youth workers from 3 countries",
+    "description": "An intensive 8-day training course hosted by Asociația Empower Plus bringing together 18 youth workers from Germany, Romania, and Türkiye. Participants received hands-on training in camera drone flight safety, photographic framing, and video post-production to act as multipliers.",
+    "photo": {
+      "file": "assets/activities/a2-training/photo-1.jpg",
+      "alt": "Youth workers practicing camera drone flight maneuvers during the training course in Brașov, Romania",
+      "caption": "Youth workers practicing drone flight skills in Brașov, Romania (11–18 October 2025)"
     }
   },
   {
     "id": "act-booklet",
-    "number": "A3",
-    "title": "Booklet on Drone Operation, Photography, and Effective Ways to Mitigate Climate Change",
-    "category": "Open Educational Resource (OER)",
-    "timing": "October 2025",
-    "dates": "October 2025",
-    "location": "Digital Publication",
-    "leadingOrganisation": "Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Türkiye)",
-    "participatingOrganisations": "Integrational e.V. (Germany), Asociatia Empower Plus (Romania)",
-    "allocatedGrant": "3 000,00 €",
+    "number": "3",
+    "date": "[publication date – to be added]",
+    "title": "Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change",
+    "place": "Digital Publication (Open Access)",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "A 99-page comprehensive educational guide created under the leadership of IESA with expert contributions from Empower Plus and Integrational e.V. Divided into three practical chapters: (1) Climate Action & Environmental Urgency; (2) Photography & Visual Storytelling; (3) Drone Technology, Safe Flight Operations & Field Drills. Published under CC BY-SA 4.0 Open Access license and freely downloadable.",
-    "deliverables": [
-      "Official 99-page handbook with printable field checklist and practice drills",
-      "Clear guidance on camera drone operation, safety rules, and ethical storytelling",
-      "Real-world climate case studies and visual documentation techniques",
-      "Open Access digital resource for youth organisations and educators across Europe"
-    ],
-    "targetAudience": "Youth workers, educators, students, environmental clubs, and young people aged 15–30"
-  },
-  {
-    "id": "act-local-workshops",
-    "number": "A4",
-    "title": "Local Workshops in Germany, Romania, and Türkiye",
-    "category": "Grassroots Youth Workshops",
-    "timing": "December 2025",
-    "dates": "December 2025",
-    "location": "Bonn (DE), Mersin (TR), Bucharest / Brașov (RO)",
-    "leadingOrganisation": "Joint Implementation by All Partners",
-    "participatingOrganisations": "Integrational e.V., IESA, Asociatia Empower Plus",
-    "allocatedGrant": "7 200,00 €",
-    "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "Trained youth workers from Activity A2 facilitated hands-on local workshops in their respective countries. Over 60 young people (at least 20 per country, with a strong focus on youth with fewer opportunities) learned camera drone flight basics, digital photography, and climate storytelling, documenting local ecological challenges and positive green initiatives.",
-    "deliverables": [
-      "Over 60 young participants actively trained across 3 partner countries",
-      "Hands-on practice with camera drones, framing, and interview recording",
-      "Raw footage, photo essays, and environmental storyboards produced by youth",
-      "Local community engagement connecting youth with regional environmental topics"
-    ],
-    "targetAudience": "Young people aged 15–30, high school and university students, local youth club members",
-    "photoGalleryDE": {
-      "folder": "assets/activities/a4-workshops-de/",
-      "slotsCount": 6,
-      "activityName": "A4 Local Workshops, Germany (Dec 2025)",
-      "photos": [
-        {
-          "file": "assets/activities/a4-workshops-de/photo-1.jpg",
-          "caption": "Youth workshop in Bonn exploring local riverbank ecosystems.",
-          "alt": "German youth participants with camera drones during local field workshop",
-          "date": "December 2025",
-          "place": "Bonn, Germany"
-        }
-      ]
-    },
-    "photoGalleryRO": {
-      "folder": "assets/activities/a4-workshops-ro/",
-      "slotsCount": 6,
-      "activityName": "A4 Local Workshops, Romania (Dec 2025)",
-      "photos": [
-        {
-          "file": "assets/activities/a4-workshops-ro/photo-1.jpg",
-          "caption": "Romanian youth team reviewing aerial photos of suburban green spaces.",
-          "alt": "Romanian young people gathered around a screen reviewing drone photographs",
-          "date": "December 2025",
-          "place": "Brașov, Romania"
-        }
-      ]
-    },
-    "photoGalleryTR": {
-      "folder": "assets/activities/a4-workshops-tr/",
-      "slotsCount": 6,
-      "activityName": "A4 Local Workshops, Türkiye (Dec 2025)",
-      "photos": [
-        {
-          "file": "assets/activities/a4-workshops-tr/photo-1.jpg",
-          "caption": "Mersin workshop participants preparing camera equipment and flight checklists.",
-          "alt": "Turkish youth team checking camera drone blades and reviewing flight checklist",
-          "date": "December 2025",
-          "place": "Mersin, Türkiye"
-        }
-      ]
+    "participants": "Project Consortium",
+    "description": "A comprehensive 99-page educational guide co-authored by the partnership covering climate change mitigation concepts, photography composition, and drone operation safety rules. Includes 6 practical flight drills and a printable field checklist.",
+    "link": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
+    "linkLabel": "Download 99-Page Booklet (PDF)",
+    "photo": {
+      "file": "assets/images/booklet-cover.jpg",
+      "alt": "Cover of the Green Horizon 99-Page Educational Booklet",
+      "caption": "Official 99-page educational booklet published under CC BY-SA 4.0"
     }
   },
   {
-    "id": "act-documentary-vr",
-    "number": "A5",
-    "title": "Documentary Series and Photo Exhibition on Local Climate Change Impacts and VR Exhibition",
-    "category": "Digital Media & Virtual Reality",
-    "timing": "March 2026",
-    "dates": "March 2026",
-    "location": "Online & Artsteps Virtual Gallery",
-    "leadingOrganisation": "Asociatia Empower Plus (Romania)",
-    "participatingOrganisations": "Integrational e.V. (Germany), IESA (Türkiye)",
-    "allocatedGrant": "3 000,00 €",
+    "id": "act-workshop-tr",
+    "number": "4",
+    "date": "19 April 2026",
+    "title": "Local Workshop",
+    "place": "Mersin, Türkiye",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "Production and online publication of youth-created digital media: (1) A mini-documentary series featuring 6 short films created by young participants exploring regional climate impacts, drone perspectives, and community solutions; (2) A digital photo collection; (3) An interactive 360-degree Virtual Reality (VR) exhibition hosted on the Artsteps platform.",
-    "deliverables": [
-      "6 short documentary films documenting youth perspectives on local climate action",
-      "Interactive 360° Virtual Reality exhibition hosted on Artsteps",
-      "Curated digital photo collection with captions and environmental context",
-      "Digital screening materials available for youth centers, schools, and NGOs"
-    ],
-    "targetAudience": "European youth, educators, local communities, climate advocates, and the general public"
+    "participants": "[number of participants]",
+    "description": "Organized by IESA, trained youth workers guided local youth in camera drone flight basics, environmental observation, and photographic composition. Participants documented local coastal and urban ecological topics.",
+    "photo": {
+      "file": "assets/activities/a4-workshops-tr/photo-1.jpg",
+      "alt": "Local youth workshop participants preparing camera equipment and flight checklists in Mersin, Türkiye",
+      "caption": "Local youth workshop in Mersin, Türkiye (19 April 2026)"
+    }
   },
   {
-    "id": "act-website",
-    "number": "A6",
-    "title": "Website - Construction and Running",
-    "category": "Digital Hub & Visibility",
-    "timing": "September 2025 – August 2026",
-    "dates": "September 2025 – August 2026",
-    "location": "Online (https://greenhorizonyou.eu)",
-    "leadingOrganisation": "Integrational e.V. (Germany)",
-    "participatingOrganisations": "IESA (Türkiye), Asociatia Empower Plus (Romania)",
-    "allocatedGrant": "1 000,00 €",
+    "id": "act-workshop-de",
+    "number": "5",
+    "date": "23 April 2026",
+    "title": "Local Workshop",
+    "place": "Germany",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "The central open-access portal hosting all project results, learning materials, and event updates. The website features the downloadable 99-page booklet, links to the 6 documentary films, the Artsteps VR exhibition, partner profiles, interactive photo galleries, and news updates. Maintained for at least 3 years post-project to guarantee lasting European impact.",
-    "deliverables": [
-      "Fully responsive, accessible (WCAG AA) website at greenhorizonyou.eu",
-      "Open access repository for educational materials and downloadable booklet PDF",
-      "Interactive media hubs for youth documentaries, photo galleries, and news",
-      "EU visibility compliance with official emblem and required disclaimers"
-    ],
-    "targetAudience": "European youth workers, NGOs, educators, researchers, and public visitors"
+    "participants": "[number of participants]",
+    "description": "Hosted by Integrational e.V., local young people learned camera drone safety, flight controls, and visual storytelling methods to observe riverbank habitats and urban green spaces.",
+    "photo": {
+      "file": "assets/activities/a4-workshops-de/photo-1.jpg",
+      "alt": "German youth participants with camera drones during local field workshop in Germany",
+      "caption": "Local youth workshop in Germany (23 April 2026)"
+    }
   },
   {
-    "id": "act-dissemination-tpm",
-    "number": "A7",
-    "title": "Dissemination Events and Final TPM in Türkiye",
-    "category": "Dissemination & Final Evaluation",
-    "timing": "April – August 2026",
-    "dates": "April – August 2026",
-    "location": "Germany, Romania, and Mersin, Türkiye",
-    "leadingOrganisation": "Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Türkiye)",
-    "participatingOrganisations": "Integrational e.V. (Germany), Asociatia Empower Plus (Romania)",
-    "allocatedGrant": "7 207,00 €",
+    "id": "act-workshop-ro",
+    "number": "6",
+    "date": "29 April 2026",
+    "title": "Local Workshop",
+    "place": "Romania",
     "status": "Completed",
-    "statusLabel": "Completed",
-    "description": "Final dissemination and evaluation phase of the project: (1) Final dissemination events organized in Germany, Romania, and Türkiye, engaging at least 60 total stakeholders, youth representatives, and educators to share outputs and screened documentaries; (2) The Final Transnational Project Meeting hosted in Mersin, Türkiye by IESA to evaluate project metrics, prepare final reports, and adopt a long-term sustainability plan.",
-    "deliverables": [
-      "3 final dissemination conferences in Germany, Romania, and Türkiye (60+ total attendees)",
-      "Final Transnational Project Meeting in Mersin, Türkiye evaluating project impact",
-      "Consortium final evaluation report and Erasmus+ documentation",
-      "Long-term sustainability and follow-up strategy for youth climate education"
-    ],
-    "targetAudience": "Young people, educators, civil society stakeholders, youth workers, and local authorities",
-    "photoGalleryConfDE": {
-      "folder": "assets/activities/a7-conferences-de/",
-      "slotsCount": 6,
-      "activityName": "A7 Final Conference, Germany",
-      "photos": []
-    },
-    "photoGalleryConfRO": {
-      "folder": "assets/activities/a7-conferences-ro/",
-      "slotsCount": 6,
-      "activityName": "A7 Final Conference, Romania",
-      "photos": []
-    },
-    "photoGalleryConfTR": {
-      "folder": "assets/activities/a7-conferences-tr/",
-      "slotsCount": 6,
-      "activityName": "A7 Final Conference, Türkiye",
-      "photos": []
-    },
-    "photoGalleryMeetingTR": {
-      "folder": "assets/activities/a7-final-meeting-tr/",
-      "slotsCount": 6,
-      "activityName": "A7 Final Transnational Meeting, Mersin, Türkiye",
-      "photos": []
+    "participants": "[number of participants]",
+    "description": "Organized by Asociația Empower Plus, young participants practiced camera drone piloting, video capture, and photo framing to document local environmental realities.",
+    "photo": {
+      "file": "assets/activities/a4-workshops-ro/photo-1.jpg",
+      "alt": "Romanian young people gathered around a screen reviewing drone photographs",
+      "caption": "Local youth workshop in Romania (29 April 2026)"
+    }
+  },
+  {
+    "id": "act-production",
+    "number": "7",
+    "date": "May–July 2026",
+    "title": "Documentary Series Production & Exhibition Photo Selection",
+    "place": "Germany, Romania, and Türkiye",
+    "status": "Completed",
+    "participants": "[number of participants]",
+    "description": "Young people worked in local production teams to film, edit, and finalize six short climate documentaries and curate high-resolution drone photography for the dissemination conferences and exhibition.",
+    "photo": {
+      "file": "assets/images/booklet/booklet_img_29_657.jpg",
+      "alt": "Youth editing climate documentary footage on a laptop",
+      "caption": "Documentary editing and photo curation by youth participants (May–July 2026)"
+    }
+  },
+  {
+    "id": "act-conference-ro",
+    "number": "8",
+    "date": "17 July 2026",
+    "title": "Dissemination Conference",
+    "place": "Romania",
+    "status": "Completed",
+    "participants": "[number of participants]",
+    "description": "Asociația Empower Plus hosted the national dissemination event where youth-created documentary films and the Green Horizon photo exhibition were presented to local community members, educators, and stakeholders.",
+    "photo": {
+      "file": "assets/activities/a7-conferences-ro/photo-1.jpg",
+      "alt": "Dissemination conference in Romania showcasing youth climate documentaries and photo exhibition",
+      "caption": "Dissemination conference in Romania (17 July 2026)"
+    }
+  },
+  {
+    "id": "act-conference-tr",
+    "number": "9",
+    "date": "22 July 2026",
+    "title": "Dissemination Conference",
+    "place": "Mersin, Türkiye",
+    "status": "Completed",
+    "participants": "[number of participants]",
+    "description": "IESA organized the dissemination conference in Mersin, showcasing the project results, screening the documentary short films, and exhibiting photographs of local climate challenges to community stakeholders.",
+    "photo": {
+      "file": "assets/activities/a7-conferences-tr/photo-1.jpg",
+      "alt": "Screening of youth climate documentaries at the dissemination conference in Mersin, Türkiye",
+      "caption": "Dissemination conference in Mersin, Türkiye (22 July 2026)"
+    }
+  },
+  {
+    "id": "act-conference-de",
+    "number": "10",
+    "date": "25 July 2026",
+    "title": "Dissemination Conference",
+    "place": "Germany",
+    "status": "Completed",
+    "participants": "[number of participants]",
+    "description": "Integrational e.V. presented the final project results, screening the youth documentaries and displaying the photography collection to local youth leaders, educators, and community representatives.",
+    "photo": {
+      "file": "assets/activities/a7-conferences-de/photo-1.jpg",
+      "alt": "Participants and stakeholders gathered at the dissemination conference in Germany",
+      "caption": "Dissemination conference in Germany (25 July 2026)"
+    }
+  },
+  {
+    "id": "act-final-meeting",
+    "number": "11",
+    "date": "31 July – 1 August 2026",
+    "title": "Final Partner Meeting",
+    "place": "Mersin, Türkiye",
+    "status": "Completed",
+    "participants": "[number of participants]",
+    "description": "Representatives from Integrational e.V., Asociația Empower Plus, and IESA met in Mersin to evaluate all project results, review participant feedback, finalize reporting procedures, and plan future collaboration.",
+    "photo": {
+      "file": "assets/activities/a7-final-meeting-tr/photo-1.jpg",
+      "alt": "Consortium partners during the final transnational meeting in Mersin, Türkiye",
+      "caption": "Final partner meeting in Mersin, Türkiye (31 July – 1 August 2026)"
+    }
+  },
+  {
+    "id": "act-vr-launch",
+    "number": "12",
+    "date": "October 2026",
+    "title": "VR Exhibition Online Launch",
+    "place": "Online (MetaSteps / Artsteps Virtual Gallery)",
+    "status": "Completed",
+    "participants": "Open to the public worldwide",
+    "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above.",
+    "link": "exhibition",
+    "linkLabel": "Visit the VR Exhibition",
+    "photo": {
+      "file": "assets/images/booklet/poster-chapter2-photography.jpg",
+      "alt": "Welcome panel of the Green Horizon 360-degree Virtual Reality photo exhibition",
+      "caption": "360° VR Photo Exhibition goes live online (October 2026)"
     }
   }
 ]
