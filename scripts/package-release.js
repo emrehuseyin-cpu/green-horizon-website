@@ -68,7 +68,7 @@ requiredPages.forEach(page => {
 
 // 3. Prepare Clean Production Distribution Directory
 if (fs.existsSync(distDir)) {
-  fs.rmSync(distDir, { recursive: true, force: true });
+  fs.rmSync(distDir, { recursive: true, force: true, maxRetries: 3, retryDelay: 100 });
 }
 fs.mkdirSync(distDir, { recursive: true });
 

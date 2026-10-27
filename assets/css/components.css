@@ -247,9 +247,109 @@
    3. Chronological Gantt & Timeline (Light Style)
    ========================================================================== */
 
+/* Timeline Controls Bar (Filters & Quick Jump) */
+.timeline-controls-bar {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: sticky;
+  top: 76px;
+  z-index: 90;
+  backdrop-filter: blur(10px);
+}
+
+.timeline-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timeline-filter-btn {
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4B5563;
+  background: var(--bg-warm);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-filter-btn:hover {
+  background: var(--leaf-green-light);
+  color: var(--primary);
+  border-color: var(--leaf-green-border);
+  transform: translateY(-1px);
+}
+
+.timeline-filter-btn.active {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-color: var(--primary);
+  box-shadow: 0 2px 6px rgba(27, 94, 32, 0.25);
+}
+
+.timeline-quick-jump {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.quick-jump-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.quick-jump-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.quick-jump-pill {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-warm);
+  border: 1px solid var(--border-color);
+  color: var(--primary);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.quick-jump-pill:hover,
+.quick-jump-pill:focus-visible {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-color: var(--primary);
+  transform: scale(1.12);
+}
+
 .timeline-roadmap {
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .timeline-roadmap::before {
@@ -266,7 +366,12 @@
 .timeline-milestone {
   position: relative;
   padding-left: 70px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-milestone.hidden-by-filter {
+  display: none !important;
 }
 
 .timeline-milestone:last-child {
@@ -275,7 +380,7 @@
 
 .timeline-milestone-marker {
   position: absolute;
-  top: 0;
+  top: 14px;
   left: 14px;
   width: 32px;
   height: 32px;
@@ -296,7 +401,7 @@
   background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
-  padding: 1.8rem;
+  padding: 1.75rem 2rem;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -306,16 +411,66 @@
   box-shadow: var(--shadow-card);
 }
 
+/* Split Grid for Compact Side-by-Side Milestone Design */
+.timeline-milestone-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.milestone-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.milestone-media-col {
+  width: 100%;
+}
+
+.milestone-media-col .activity-slider-container {
+  margin-top: 0;
+}
+
+.milestone-media-col .activity-slider-viewport {
+  aspect-ratio: 16 / 10;
+  max-height: 290px;
+}
+
+@media (max-width: 950px) {
+  .timeline-milestone-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .milestone-media-col .activity-slider-viewport {
+    aspect-ratio: 16 / 9;
+    max-height: 360px;
+  }
+}
+
 @media (max-width: 640px) {
+  .timeline-controls-bar {
+    top: 60px;
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+  }
+  .timeline-filter-btn {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.75rem;
+  }
+  .quick-jump-label {
+    display: none;
+  }
   .timeline-roadmap::before {
     left: 16px;
   }
   .timeline-milestone {
     padding-left: 45px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
   .timeline-milestone-marker {
     left: 4px;
+    top: 10px;
     width: 26px;
     height: 26px;
     font-size: 0.7rem;

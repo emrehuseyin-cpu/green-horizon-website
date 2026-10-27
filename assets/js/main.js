@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileNav();
+  initTimelineControls();
   initHomepageNewsSection();
   initCookieConsent();
   initDownloadTracking();
@@ -175,6 +176,52 @@ function initChecklistState() {
       } else {
         parent.classList.remove('checked');
         localStorage.removeItem(storageKey);
+      }
+    });
+  });
+}
+
+/* 7. Activities Timeline Category Filters & Quick Jump */
+function initTimelineControls() {
+  const filterBtns = document.querySelectorAll('.timeline-filter-btn');
+  const milestones = document.querySelectorAll('.timeline-milestone');
+  if (!filterBtns.length || !milestones.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const filter = btn.getAttribute('data-filter');
+
+      milestones.forEach(m => {
+        const cat = m.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.includes(filter)) {
+          m.classList.remove('hidden-by-filter');
+        } else {
+          m.classList.add('hidden-by-filter');
+        }
+      });
+    });
+  });
+
+  // Smooth scroll for quick jump pills
+  document.querySelectorAll('.quick-jump-pill').forEach(pill => {
+    pill.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = pill.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        // If hidden by current filter, reset filter to 'all'
+        if (targetEl.classList.contains('hidden-by-filter')) {
+          const allBtn = document.querySelector('.timeline-filter-btn[data-filter="all"]');
+          if (allBtn) allBtn.click();
+        }
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
   });
