@@ -10,7 +10,7 @@
     { "tool": "Mass Media (Press & Journals)", "indicator": "Articles & Press Releases", "target": "9 releases (3 per partner, 18 reach)", "milestone": "After each Project Result", "status": "Planned" },
     { "tool": "Project Newsletters", "indicator": "Published newsletters", "target": "3 newsletters", "milestone": "Start, Middle (post-workshops), Final phase", "status": "In Preparation" },
     { "tool": "Consortium Email Network", "indicator": "Registered stakeholders", "target": "150 contacts (50 per partner)", "milestone": "From project start", "status": "Active" },
-    { "tool": "Positive Video Clips", "indicator": "Documentary micro-videos", "target": "6 videos (2 per partner)", "milestone": "Final dissemination phase", "status": "Planned" }
+    { "tool": "Positive Video Clips", "indicator": "Documentary micro-videos", "target": "3 videos (1 per partner)", "milestone": "Final dissemination phase", "status": "Completed" }
   ],
   "monitoringFramework": [
     { "indicator": "Project Management Office", "frequency": "Weekly", "responsible": "All Partners", "purpose": "Rapid information retrieval and misinformation prevention" },
