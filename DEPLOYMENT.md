@@ -201,6 +201,6 @@ Before going live, verify:
 - [ ] `.htaccess` present in document root (ensures HTTPS and Gzip compression).
 - [ ] Test https://greenhorizonyou.eu in desktop and mobile viewports.
 - [ ] Test the interactive Europe map (zoom into Germany, Türkiye, Romania).
-- [ ] Test 360° VR Panorama Viewer in `exhibition.html`.
+- [ ] Test Virtual Exhibition Viewer in `exhibition.html`.
 - [ ] Submit a test message through `contact.html`.
 - [ ] Check EU funding visibility logo and disclaimer on every page.

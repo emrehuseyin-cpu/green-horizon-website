@@ -14,7 +14,7 @@
     "description": "Integrational e.V. is a German non-profit, non-governmental organisation based in Bonn, Germany. The organisation focuses on youth empowerment, digital literacy, and social inclusion, with a strong emphasis on climate advocacy through cutting-edge technology, digital media, and civic participation. As project coordinator, Integrational e.V. oversees overall project governance, financial monitoring, and quality assurance.",
     "keyResponsibilities": [
       "Overall project management, day-to-day administration, and quality control (Activity A1)",
-      "Hosting the Kick-Off Transnational Project Meeting (TPM 1) in Bonn, Germany (13–14 June 2025)",
+      "Hosting the Kick-off meeting in Germany (28–29 July 2025)",
       "Leading the project website construction and continuous management (Activity A6)",
       "Leading the VR Photo Exhibition and local German workshops with at least 20 youth participants",
       "Financial oversight, quarterly reports, timesheets, and submission of reports to the German National Agency (DE04 - JUGEND für Europa)"
@@ -61,16 +61,16 @@
     "name": "Asociatia Empower Plus",
     "country": "Romania",
     "countryCode": "RO",
-    "region": "București - Ilfov / Brașov",
-    "city": "Bucharest / Brașov",
-    "coordinates": [44.4268, 26.1025],
+    "region": "Brașov",
+    "city": "Brașov",
+    "coordinates": [45.6579, 25.6012],
     "logo": "assets/images/partners/empower-plus-official.png",
-    "description": "Asociatia Empower Plus is a Romanian youth organisation operating in Bucharest and Brașov, focused on empowering young people through non-formal education, creativity, environmental awareness, and digital skills. With specialized expertise in drone technology, photography, and arts, Empower Plus delivers the Transnational Training Course for Youth Workers in Romania and curates the VR Exhibition.",
+    "description": "Asociatia Empower Plus is a Romanian youth organisation based in Brașov, focused on empowering young people through non-formal education, creativity, environmental awareness, and digital skills. With specialized expertise in drone technology, photography, and arts, Empower Plus delivers the Transnational Training Course for Youth Workers in Romania and curates the virtual exhibition.",
     "keyResponsibilities": [
-      "Developing and delivering the Drone Operation, Photography, and Video Editing Training Course for 18 Youth Workers in Romania (Activity A2, 11–16 August 2025)",
+      "Developing and delivering the Drone Operation, Photography, and Video Editing Training Course for 18 Youth Workers in Romania (Activity A2, 11–18 October 2025)",
       "Technical mentoring and ongoing support during the production of the youth documentary series and photo exhibition",
       "Leading cross-country knowledge sharing and peer-to-peer learning among youth workers",
-      "Leading the design and setup of the VR enhanced exhibition on the Artsteps platform",
+      "Leading the design and setup of the virtual exhibition on the MetaSteps platform",
       "Organizing Romanian local workshops with at least 20 youth participants"
     ],
     "contactPerson": "Empower Plus Project Office",

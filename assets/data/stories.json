@@ -21,45 +21,24 @@
     "status": "Completed"
   },
   {
-    "id": "story-deforestation-germany",
-    "title": "Forest Health & Recovery in the Siebengebirge Woodlands",
-    "country": "Germany",
-    "countryCode": "DE",
-    "location": "Bonn & Siebengebirge Region, Germany",
-    "category": "Woodland & Drought Resilience",
+    "id": "story-carpathian-canopy",
+    "title": "Mountain Canopies: Documenting Forests in the Carpathians",
+    "country": "Romania",
+    "countryCode": "RO",
+    "location": "Brașov & Carpathian Foothills, Romania",
+    "category": "Forestry & Biodiversity",
     "episode": "Documentary Film 02 (Activity A5)",
-    "duration": "5 minutes",
+    "duration": "7 minutes",
     "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_02",
-    "author": "Integrational e.V. Youth Media Team",
-    "summary": "Drone photography comparing seasonal heat stress across mixed woodlands near Bonn with local native reforestation efforts.",
-    "content": "Examining local woodland resilience and summer heat stress near Bonn. Youth participants used camera drones to observe differences between damaged monoculture areas and resilient broadleaf native tree plantings.",
+    "author": "Asociația Empower Plus Media Lab",
+    "summary": "Employing camera drones across mountain valleys near Brașov to document dense beech forests, wildlife corridors, and forest conservation.",
+    "content": "The Carpathian Mountains hold Europe's most extensive virgin forest systems. Romanian youth participants used camera drones during their outdoor workshops to film dense canopies and explore how local conservationists protect mountain woodlands.",
     "highlights": [
-      "Aerial views of woodland canopies and local tree species",
-      "Youth conversations on local forest preservation and care",
-      "Field photography documenting community tree planting initiatives"
+      "Smooth aerial tracking of mountain valleys and deciduous forest canopies",
+      "Contributing to the virtual exhibition on MetaSteps",
+      "Interviews with local youth about nature protection and heritage"
     ],
-    "mediaType": "video-case",
-    "status": "Completed"
-  },
-  {
-    "id": "story-lake-tuz",
-    "title": "Changing Horizons: Drone Perspectives on Central Anatolian Wetlands",
-    "country": "Türkiye",
-    "countryCode": "TR",
-    "location": "Central Anatolian Basin, Türkiye",
-    "category": "Wetlands & Drought",
-    "episode": "Documentary Film 03 (Activity A5)",
-    "duration": "8 minutes",
-    "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_03",
-    "author": "IESA Youth Media Team",
-    "summary": "Exploring changing seasonal water levels and salt flats in Central Anatolia through aerial camera perspectives, raising awareness for sustainable water conservation.",
-    "content": "Turkish youth participants documented changing waterlines and fragile wetland environments, illustrating how regional droughts affect ecosystems. Their video combines aerial footage with community interviews advocating for water saving.",
-    "highlights": [
-      "Aerial camera drone shots of natural salt crystallization patterns",
-      "Documentation of fragile wetland habitats vulnerable to prolonged summer heat",
-      "Youth-led community discussions on agricultural water saving and conservation"
-    ],
-    "mediaType": "photo-video-case",
+    "mediaType": "interactive-vr-case",
     "status": "Completed"
   },
   {
@@ -69,9 +48,9 @@
     "countryCode": "TR",
     "location": "Mersin Coastal Region, Türkiye",
     "category": "Coastal Agriculture & Greenery",
-    "episode": "Documentary Film 04 (Activity A5)",
+    "episode": "Documentary Film 03 (Activity A5)",
     "duration": "6 minutes",
-    "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_04",
+    "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_03",
     "author": "IESA Youth Media Team",
     "summary": "Aerial surveys of the Mersin coastline examining shoreline protection, citrus farming, and youth beach clean-up initiatives.",
     "content": "IESA youth participants in Mersin documented the interface between coastal agriculture and sensitive marine habitats, showing how changing weather patterns influence farming livelihoods and coastal parks.",
@@ -79,48 +58,6 @@
       "Camera drone flights along the eastern Mediterranean shoreline",
       "Visual documentation of citrus orchards and water management in Mersin",
       "Interviews with youth volunteers taking part in community clean-up actions"
-    ],
-    "mediaType": "video-case",
-    "status": "Completed"
-  },
-  {
-    "id": "story-carpathian-canopy",
-    "title": "Mountain Canopies: Documenting Forests in the Carpathians",
-    "country": "Romania",
-    "countryCode": "RO",
-    "location": "Brașov & Carpathian Foothills, Romania",
-    "category": "Forestry & Biodiversity",
-    "episode": "Documentary Film 05 (Activity A5)",
-    "duration": "7 minutes",
-    "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_05",
-    "author": "Asociația Empower Plus Media Lab",
-    "summary": "Employing camera drones across mountain valleys near Brașov to document dense beech forests, wildlife corridors, and forest conservation.",
-    "content": "The Carpathian Mountains hold Europe's most extensive virgin forest systems. Romanian youth participants used camera drones during their outdoor workshops to film dense canopies and explore how local conservationists protect mountain woodlands.",
-    "highlights": [
-      "Smooth aerial tracking of mountain valleys and deciduous forest canopies",
-      "360-degree photography contributing to the Virtual Reality exhibition on Artsteps",
-      "Interviews with local youth about nature protection and heritage"
-    ],
-    "mediaType": "interactive-vr-case",
-    "status": "Completed"
-  },
-  {
-    "id": "story-dambovita-river",
-    "title": "Urban Waterways: Documenting the Dâmbovița River in Bucharest",
-    "country": "Romania",
-    "countryCode": "RO",
-    "location": "Bucharest & Dâmbovița Basin, Romania",
-    "category": "Urban Green Spaces & Rivers",
-    "episode": "Documentary Film 06 (Activity A5)",
-    "duration": "5 minutes",
-    "youtube_embed_slot": "PASTE_YOUTUBE_LINK_HERE_FILM_06",
-    "author": "Asociația Empower Plus Media Lab",
-    "summary": "Aerial perspectives on urban heat mitigation, riverbanks, and green corridor revitalisation in the Romanian capital.",
-    "content": "Empower Plus youth participants explored Bucharest's urban ecosystem, using aerial views of the Dâmbovița River to show how urban waterways and riverside trees provide crucial natural cooling during heatwaves.",
-    "highlights": [
-      "Camera drone footage along urban waterways and city park perimeters",
-      "Observations of temperature differences between shaded green spaces and asphalt roads",
-      "Youth ideas for expanding urban greenery and cycling corridors"
     ],
     "mediaType": "video-case",
     "status": "Completed"

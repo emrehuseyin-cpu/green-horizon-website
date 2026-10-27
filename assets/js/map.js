@@ -2,7 +2,7 @@
  * GREEN HORIZON — Interactive Consortium Map Script
  * Powered by Leaflet.js with Light Booklet Aesthetic
  * Coordinator: Integrational e.V. (Bonn, Germany)
- * Partners: IESA (Mersin, Türkiye) & Asociația Empower Plus (Bucharest / Brașov, Romania)
+ * Partners: IESA (Mersin, Türkiye) & Asociația Empower Plus (Brașov, Romania)
  */
 
 function initConsortiumMap() {
@@ -37,7 +37,7 @@ function initConsortiumMap() {
     maxZoom: 19
   }).addTo(map);
 
-  // Consortium Partners Data (Bonn, Mersin, Bucharest / Brașov)
+  // Consortium Partners Data (Bonn, Mersin, Brașov)
   const partners = [
     {
       id: 'de',
@@ -46,7 +46,7 @@ function initConsortiumMap() {
       country: 'Germany',
       city: 'Bonn',
       coords: [50.7374, 7.0982],
-      desc: 'Oversees overall project governance, financial administration, quality assurance, and project website management.',
+      desc: 'Project coordinator; VR photo exhibition, local workshops and dissemination.',
       link: 'partners#integrational'
     },
     {
@@ -54,9 +54,9 @@ function initConsortiumMap() {
       name: 'Asociația Empower Plus',
       role: 'Project Partner',
       country: 'Romania',
-      city: 'Bucharest / Brașov',
+      city: 'Brașov',
       coords: [45.6579, 25.6012], // Brașov training location
-      desc: 'Hosted the Transnational Training Course in Brașov (Activity A2), curated the 360° VR Exhibition, and led local youth workshops.',
+      desc: 'Training course host (A2) and documentary series.',
       link: 'partners#empower-plus'
     },
     {
@@ -66,7 +66,7 @@ function initConsortiumMap() {
       country: 'Türkiye',
       city: 'Mersin',
       coords: [36.8121, 34.6415],
-      desc: 'Led the 99-page Educational Booklet production, internal quality evaluation, and the Final Dissemination Conference in Türkiye.',
+      desc: 'Booklet lead; host of the Mersin dissemination conference and final meeting.',
       link: 'partners#iesa'
     }
   ];
@@ -108,7 +108,7 @@ function initConsortiumMap() {
   // Connect Partners with Geodesic Flight Vectors
   const flightPathCoordinates = [
     [50.7374, 7.0982],   // Bonn (Germany)
-    [45.6579, 25.6012],  // Brașov / Bucharest (Romania)
+    [45.6579, 25.6012],  // Brașov (Romania)
     [36.8121, 34.6415],  // Mersin (Türkiye)
     [50.7374, 7.0982]    // Loop back to Germany
   ];

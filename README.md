@@ -18,7 +18,7 @@ Green Horizon equips young Europeans and youth workers with practical skills in 
 2. **Yenilikçi Eğitim Bilim ve Sanat Derneği / IESA (Türkiye)** — *Project Partner* (Mersin / Istanbul)
    - Leads technological and educational module development and authors the *Green Horizon Educational Booklet* (A3).
 3. **Asociația Empower Plus (Romania)** — *Project Partner* (Brașov / Bucharest)
-   - Leads the *360° Virtual Reality (VR) Climate Exhibition* (A6) and coordinates European dissemination campaigns.
+   - Leads the *Virtual Reality Climate Exhibition* (A6) and coordinates European dissemination campaigns.
 
 ---
 
@@ -51,7 +51,7 @@ The website consists of 11 fully functional, responsive, and interconnected page
 | `partners.html` | **Project Partners** | Dedicated profiles for Integrational e.V., IESA, and Empower Plus with roles, GPS coordinates, and contacts. |
 | `activities.html` | **Activities & Timeline** | Chronological 16-month Gantt chart roadmap (A1 to A8) with proposal milestones and transparent status badges. |
 | `stories.html` | **Climate Stories** | Aerial field dossiers and documentary video showcase (Rhine Basin, Lake Tuz, Carpathian Forest Canopy). |
-| `exhibition.html` | **Virtual Exhibition** | Interactive 360° VR panoramic viewer (drag, zoom, auto-rotate) plus photo gallery with full-screen lightbox and drone EXIF telemetry. |
+| `exhibition.html` | **Virtual Exhibition** | Interactive virtual exhibition and panoramic viewer plus photo gallery with full-screen lightbox and drone EXIF telemetry. |
 | `resources.html` | **Educational Resources** | Searchable & filterable repository for the Educational Booklet, Drone Safety Manual, and Facilitator Kits. |
 | `news.html` | **News & Updates** | Searchable project announcements archive with article modal reader. |
 | `contact.html` | **Contact** | Accessible contact form integrated with HostGator PHP mailer (`api/contact.php`) and consortium emails. |
@@ -67,7 +67,7 @@ All dynamic website content is separated into clean, human-readable JSON files i
 
 ### Content Data Sources
 - **`assets/data/news.json`**: News articles, announcements, and press releases.
-- **`assets/data/gallery.json`**: Photographs, drone telemetry (altitude, GPS, shutter, ISO), and 360° VR assets.
+- **`assets/data/gallery.json`**: Photographs, drone telemetry (altitude, GPS, shutter, ISO), and virtual exhibition assets.
 - **`assets/data/resources.json`**: Educational booklet syllabus, downloadable PDFs, and facilitator toolkits.
 - **`assets/data/stories.json`**: Country-specific climate investigations and video cases.
 - **`assets/data/activities.json`**: Gantt timeline work packages and status indicators.
