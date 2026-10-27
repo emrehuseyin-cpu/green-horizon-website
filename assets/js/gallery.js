@@ -10,6 +10,7 @@ let currentLightboxIndex = 0;
 document.addEventListener('DOMContentLoaded', () => {
   initMainGalleryPage();
   initHomepageGalleryStrip();
+  initActivityGalleries();
   initActivityPhotoSpaces();
   setupGlobalLightbox();
 });
@@ -148,9 +149,84 @@ function initHomepageGalleryStrip() {
 }
 
 /**
- * 3. Activity Photo Spaces
- * Renders defined slots per activity:
- * A1 (6 slots), A2 (9 slots), A4 (DE 6, RO 6, TR 6), A7 (DE 6, RO 6, TR 6, TR Final Meeting 6)
+ * 3. Activity Photo Galleries (A1–A7)
+ * Loads photos from folder/photos.json.
+ * If empty, the gallery section is completely hidden (no placeholders).
+ * Renders a responsive grid (3 desktop, 2 tablet, 1 phone) with lightbox support.
+ */
+function initActivityGalleries() {
+  const containers = document.querySelectorAll('.activity-photo-gallery[data-activity-folder]');
+  if (!containers.length) return;
+
+  const currentLang = localStorage.getItem('gh_lang') || 'en';
+
+  containers.forEach(container => {
+    const folder = container.getAttribute('data-activity-folder');
+    if (!folder) return;
+
+    fetch(`${folder}/photos.json`)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(photos => {
+        if (!Array.isArray(photos) || photos.length === 0) {
+          // If the list is empty, the gallery section is hidden: show no placeholder images.
+          container.style.display = 'none';
+          container.innerHTML = '';
+          return;
+        }
+
+        container.style.display = 'grid';
+
+        const galleryItems = photos.map(item => {
+          const caption = item[`caption_${currentLang}`] || item.caption_en || item.caption || '';
+          return {
+            file: `${folder}/${item.file}`,
+            caption: caption,
+            credit: item.credit || '',
+            alt: caption || 'Activity photo'
+          };
+        });
+
+        container.innerHTML = galleryItems.map((item, idx) => `
+          <div class="activity-gallery-card" data-idx="${idx}" tabindex="0" role="button" aria-label="${item.caption ? `View photo: ${item.caption}` : 'View photo'}">
+            <div class="activity-gallery-thumb-wrap">
+              <img src="${item.file}" alt="${item.alt}" loading="lazy" decoding="async" class="activity-gallery-img">
+            </div>
+            ${(item.caption || item.credit) ? `
+              <div class="activity-gallery-caption">
+                ${item.caption ? `<span class="activity-gallery-caption-text">${item.caption}</span>` : ''}
+                ${item.credit ? `<span class="activity-gallery-credit">© ${item.credit}</span>` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `).join('');
+
+        container.querySelectorAll('.activity-gallery-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const idx = parseInt(card.getAttribute('data-idx'), 10);
+            openLightbox(galleryItems, idx);
+          });
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              const idx = parseInt(card.getAttribute('data-idx'), 10);
+              openLightbox(galleryItems, idx);
+            }
+          });
+        });
+      })
+      .catch(err => {
+        container.style.display = 'none';
+        container.innerHTML = '';
+      });
+  });
+}
+
+/**
+ * 4. Legacy / Manual Activity Photo Spaces
+ * Renders defined slots per activity if [data-activity-slots] is used
  */
 function initActivityPhotoSpaces() {
   const activityGrids = document.querySelectorAll('[data-activity-slots]');
@@ -312,15 +388,19 @@ function renderActiveLightboxItem() {
   if (imgEl) {
     imgEl.src = item.file || item.image;
     imgEl.alt = item.alt || item.title || item.caption || 'Enlarged photo';
+    imgEl.style.maxWidth = '1600px';
+    imgEl.style.maxHeight = '80vh';
+    imgEl.style.objectFit = 'contain';
   }
   if (capEl) {
     capEl.textContent = item.caption || item.title || '';
   }
   if (metaEl) {
     let metaText = '';
+    if (item.credit) metaText += `© ${item.credit} `;
     if (item.place) metaText += `📍 ${item.place} `;
     if (item.date) metaText += `• 🗓 ${item.date} `;
     if (item.category) metaText += `• [${item.category}]`;
-    metaEl.textContent = metaText;
+    metaEl.textContent = metaText.trim();
   }
 }

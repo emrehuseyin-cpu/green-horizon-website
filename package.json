@@ -7,6 +7,7 @@
     "build": "node scripts/generate-assets.js && node scripts/package-release.js",
     "test": "node scripts/package-release.js",
     "preview": "node scripts/serve.js",
+    "resize:photos": "node scripts/resize-photos.js",
     "add:news": "node scripts/add-article.js",
     "add:photo": "node scripts/add-photo.js",
     "generate:assets": "node scripts/generate-assets.js"
