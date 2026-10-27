@@ -437,6 +437,89 @@
   max-height: 290px;
 }
 
+/* Multi-Country Tabs & Switcher inside Milestones */
+.country-switcher-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.country-nav-pills {
+  display: inline-flex;
+  background: var(--bg-warm);
+  padding: 4px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.country-nav-btn {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 0.4rem 0.9rem;
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4B5563;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.country-nav-btn:hover {
+  color: var(--primary);
+  background: rgba(46, 125, 50, 0.08);
+}
+
+.country-nav-btn.active {
+  background: #FFFFFF;
+  color: var(--primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.country-nav-btn .country-nav-date {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-light);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+.country-nav-btn.active .country-nav-date {
+  background: var(--leaf-green-light);
+  color: var(--primary);
+}
+
+.country-tab-pane {
+  display: none;
+  animation: fadeInTab 0.25s ease-out;
+}
+
+.country-tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeInTab {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 950px) {
   .timeline-milestone-grid {
     grid-template-columns: 1fr;

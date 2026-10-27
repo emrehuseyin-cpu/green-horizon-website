@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileNav();
   initTimelineControls();
+  initCountryTabs();
   initHomepageNewsSection();
   initCookieConsent();
   initDownloadTracking();
@@ -223,6 +224,39 @@ function initTimelineControls() {
         }
         targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
+    });
+  });
+}
+
+/* 8. Multi-Country Tabs inside Milestones */
+function initCountryTabs() {
+  const switchers = document.querySelectorAll('.country-switcher-container');
+  if (!switchers.length) return;
+
+  switchers.forEach(switcher => {
+    const tabBtns = switcher.querySelectorAll('.country-nav-btn');
+    const panes = switcher.querySelectorAll('.country-tab-pane');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-country-target');
+        if (!targetId) return;
+
+        tabBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        panes.forEach(pane => {
+          if (pane.id === targetId) {
+            pane.classList.add('active');
+          } else {
+            pane.classList.remove('active');
+          }
+        });
+      });
     });
   });
 }
