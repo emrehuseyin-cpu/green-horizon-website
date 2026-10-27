@@ -326,25 +326,30 @@ img, svg, video {
 
 /* Main Navigation Bar */
 .header-nav-bar {
-  padding: 0.6rem 0;
+  padding: 0.7rem 0;
   background: #FFFFFF;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 .header-nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .site-brand-pill {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
   text-decoration: none;
   flex-shrink: 0;
   min-width: 0;
+  transition: transform var(--transition-fast);
+}
+
+.site-brand-pill:hover {
+  transform: translateY(-1px);
 }
 
 .site-brand-pill img {
@@ -360,7 +365,7 @@ img, svg, video {
 
 .site-brand-name {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.28rem;
   font-weight: 700;
   color: var(--primary);
   line-height: 1.1;
@@ -370,13 +375,13 @@ img, svg, video {
 }
 
 .site-brand-tagline {
-  font-family: var(--font-body);
+  font-family: 'Nunito', sans-serif;
   font-size: 0.58rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #4B5563;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   display: block;
-  line-height: 1.2;
+  line-height: 1.25;
   text-transform: uppercase;
   max-width: 230px;
   white-space: normal;
@@ -392,76 +397,65 @@ img, svg, video {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 0.2rem;
+  gap: 0.25rem;
   flex-wrap: nowrap;
   margin: 0;
   padding: 0;
 }
 
 .nav-link {
-  font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-main);
-  padding: 0.35rem 0.5rem;
-  border-radius: var(--radius-sm);
+  color: #374151;
+  padding: 0.4rem 0.68rem;
+  border-radius: var(--radius-full);
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  letter-spacing: 0.01em;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-link:hover {
   background-color: var(--leaf-green-light);
   color: var(--primary);
+  transform: translateY(-1px);
 }
 
 .nav-link.active {
   background-color: var(--primary);
   color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(27, 94, 32, 0.25);
 }
 
 /* Mobile Nav Toggle Button */
 .mobile-nav-toggle {
   display: none;
   background: var(--bg-warm);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 0.45rem 0.65rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 0.45rem 0.85rem;
   color: var(--primary);
   cursor: pointer;
   align-items: center;
-  gap: 0.4rem;
-  font-family: var(--font-heading);
-  font-size: 0.9rem;
+  gap: 0.45rem;
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  font-size: 0.95rem;
   font-weight: 600;
   transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .mobile-nav-toggle:hover {
   background: var(--leaf-green-light);
   border-color: var(--leaf-green);
+  transform: translateY(-1px);
 }
 
 .mobile-nav-toggle svg {
   width: 20px;
   height: 20px;
   display: block;
-}
-
-/* Mobile Nav Toggle */
-.mobile-nav-toggle {
-  display: none;
-  background: none;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 0.5rem;
-  color: var(--primary);
-  cursor: pointer;
-}
-
-.mobile-nav-toggle svg {
-  width: 26px;
-  height: 26px;
 }
 
 /* Mobile Drawer */
@@ -514,19 +508,22 @@ img, svg, video {
 }
 
 .mobile-nav-link {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-main);
-  padding: 0.6rem 0.8rem;
+  color: #1F2937;
+  padding: 0.65rem 1rem;
   border-radius: var(--radius-sm);
   text-decoration: none;
   display: block;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
 }
 
 .mobile-nav-link:hover, .mobile-nav-link.active {
   background: var(--leaf-green-light);
   color: var(--primary);
+  transform: translateX(4px);
 }
 
 /* ==========================================================================

@@ -126,6 +126,10 @@ function applyLanguage(lang) {
     }
   });
 
+  if (typeof initActivityGalleries === 'function') {
+    initActivityGalleries();
+  }
+
   console.log(`[Green Horizon i18n] Language switched to: ${lang}`);
 }
 

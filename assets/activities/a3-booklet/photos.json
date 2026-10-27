@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "file": "booklet-cover.jpg",
+    "caption_en": "Official 99-page Green Horizon educational booklet cover (CC BY-SA 4.0)",
+    "caption_de": "Offizielles 99-seitiges Green Horizon Bildungshandbuch-Cover (CC BY-SA 4.0)",
+    "caption_tr": "Resmi 99 sayfalık Green Horizon eğitim kitapçığı kapağı (CC BY-SA 4.0)",
+    "caption_ro": "Coperta ghidului educațional oficial Green Horizon de 99 de pagini (CC BY-SA 4.0)",
+    "credit": "Green Horizon Consortium"
+  },
+  {
+    "file": "poster-chapter1-climate-action.jpg",
+    "caption_en": "Chapter 1 poster: Climate Action, Environmental Urgency and Youth Participation",
+    "caption_de": "Kapitel 1 Poster: Klimaschutz, ökologische Dringlichkeit und Jugendbeteiligung",
+    "caption_tr": "Bölüm 1 posteri: İklim Eylemi, Çevresel Aciliyet ve Gençlik Katılımı",
+    "caption_ro": "Poster Capitolul 1: Acțiune Climatică, Urgență de Mediu și Participarea Tinerilor",
+    "credit": "Green Horizon Consortium"
+  }
+]

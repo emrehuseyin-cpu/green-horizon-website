@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "file": "photo-youth-video-editing.jpg",
+    "caption_en": "Youth participants editing documentary short films and curating photography series",
+    "caption_de": "Jugendliche schneiden Kurzdokumentarfilme und kuratieren die Fotoserie",
+    "caption_tr": "Genç katılımcılar kısa belgesel filmleri kurgularken ve fotoğraf serisini seçerken",
+    "caption_ro": "Tinerii participanți editând scurtmetraje documentare și selectând seria de fotografii",
+    "credit": "Green Horizon Consortium"
+  },
+  {
+    "file": "poster-capture-the-change.jpg",
+    "caption_en": "Capture the Change: Youth Climate Documentary Series official poster",
+    "caption_de": "Capture the Change: Offizielles Poster der Jugend-Klimadokumentarserie",
+    "caption_tr": "Değişimi Yakala: Gençlik İklim Belgesel Serisi resmi afişi",
+    "caption_ro": "Surprinde Schimbarea: Posterul oficial al seriei documentare de tineret pentru climă",
+    "credit": "Green Horizon Consortium"
+  }
+]

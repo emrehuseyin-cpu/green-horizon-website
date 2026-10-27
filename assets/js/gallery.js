@@ -149,10 +149,11 @@ function initHomepageGalleryStrip() {
 }
 
 /**
- * 3. Activity Photo Galleries (A1–A7)
+ * 3. Activity Photo Slider / Carousel (A1–A7)
  * Loads photos from folder/photos.json.
  * If empty, the gallery section is completely hidden (no placeholders).
- * Renders a responsive grid (3 desktop, 2 tablet, 1 phone) with lightbox support.
+ * Renders an interactive photo slide carousel with prev/next buttons, dots, touch swipe,
+ * localized captions, and lightbox integration.
  */
 function initActivityGalleries() {
   const containers = document.querySelectorAll('.activity-photo-gallery[data-activity-folder]');
@@ -177,7 +178,7 @@ function initActivityGalleries() {
           return;
         }
 
-        container.style.display = 'grid';
+        container.style.display = 'block';
 
         const galleryItems = photos.map(item => {
           const caption = item[`caption_${currentLang}`] || item.caption_en || item.caption || '';
@@ -189,33 +190,153 @@ function initActivityGalleries() {
           };
         });
 
-        container.innerHTML = galleryItems.map((item, idx) => `
-          <div class="activity-gallery-card" data-idx="${idx}" tabindex="0" role="button" aria-label="${item.caption ? `View photo: ${item.caption}` : 'View photo'}">
-            <div class="activity-gallery-thumb-wrap">
-              <img src="${item.file}" alt="${item.alt}" loading="lazy" decoding="async" class="activity-gallery-img">
-            </div>
-            ${(item.caption || item.credit) ? `
-              <div class="activity-gallery-caption">
-                ${item.caption ? `<span class="activity-gallery-caption-text">${item.caption}</span>` : ''}
-                ${item.credit ? `<span class="activity-gallery-credit">© ${item.credit}</span>` : ''}
-              </div>
-            ` : ''}
+        const total = galleryItems.length;
+        let currentSlide = 0;
+
+        // Build HTML
+        const hasMultiple = total > 1;
+
+        let slidesHtml = galleryItems.map((item, idx) => `
+          <div class="activity-slide" data-idx="${idx}">
+            <img src="${item.file}" alt="${item.alt}" loading="lazy" decoding="async">
           </div>
         `).join('');
 
-        container.querySelectorAll('.activity-gallery-card').forEach(card => {
-          card.addEventListener('click', () => {
-            const idx = parseInt(card.getAttribute('data-idx'), 10);
-            openLightbox(galleryItems, idx);
+        let dotsHtml = '';
+        if (hasMultiple) {
+          dotsHtml = `
+            <div class="activity-slider-dots">
+              ${galleryItems.map((_, i) => `
+                <button class="activity-slider-dot ${i === 0 ? 'active' : ''}" data-slide-target="${i}" aria-label="Go to photo ${i + 1}"></button>
+              `).join('')}
+            </div>
+          `;
+        }
+
+        let navButtonsHtml = '';
+        if (hasMultiple) {
+          navButtonsHtml = `
+            <button class="activity-slider-nav prev-btn" aria-label="Previous photo">&#10094;</button>
+            <button class="activity-slider-nav next-btn" aria-label="Next photo">&#10095;</button>
+          `;
+        }
+
+        container.innerHTML = `
+          <div class="activity-slider-container" tabindex="0" role="region" aria-label="Activity photo carousel">
+            <div class="activity-slider-viewport">
+              <div class="activity-slider-track">
+                ${slidesHtml}
+              </div>
+              <div class="activity-slider-zoom-hint">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Click to enlarge</span>
+              </div>
+              ${navButtonsHtml}
+            </div>
+            <div class="activity-slider-caption-bar">
+              <div class="activity-slider-caption-text">
+                <span class="slide-active-caption">${galleryItems[0].caption}</span>
+                ${galleryItems[0].credit ? `<span class="activity-slider-credit">© ${galleryItems[0].credit}</span>` : ''}
+              </div>
+              <div class="activity-slider-controls">
+                ${dotsHtml}
+                ${hasMultiple ? `<span class="activity-slider-counter">1 / ${total}</span>` : ''}
+              </div>
+            </div>
+          </div>
+        `;
+
+        const track = container.querySelector('.activity-slider-track');
+        const captionEl = container.querySelector('.slide-active-caption');
+        const creditEl = container.querySelector('.activity-slider-credit');
+        const counterEl = container.querySelector('.activity-slider-counter');
+        const dots = container.querySelectorAll('.activity-slider-dot');
+        const viewport = container.querySelector('.activity-slider-viewport');
+        const prevBtn = container.querySelector('.activity-slider-nav.prev-btn');
+        const nextBtn = container.querySelector('.activity-slider-nav.next-btn');
+        const sliderBox = container.querySelector('.activity-slider-container');
+
+        function updateSlide(newIndex) {
+          currentSlide = (newIndex + total) % total;
+          track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+          const currentItem = galleryItems[currentSlide];
+          if (captionEl) captionEl.textContent = currentItem.caption || '';
+          if (creditEl) {
+            creditEl.textContent = currentItem.credit ? `© ${currentItem.credit}` : '';
+            creditEl.style.display = currentItem.credit ? 'block' : 'none';
+          }
+          if (counterEl) {
+            counterEl.textContent = `${currentSlide + 1} / ${total}`;
+          }
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentSlide);
           });
-          card.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              const idx = parseInt(card.getAttribute('data-idx'), 10);
-              openLightbox(galleryItems, idx);
-            }
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            updateSlide(currentSlide - 1);
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            updateSlide(currentSlide + 1);
+          });
+        }
+
+        dots.forEach(dot => {
+          dot.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const target = parseInt(dot.getAttribute('data-slide-target'), 10);
+            updateSlide(target);
           });
         });
+
+        // Click on viewport opens lightbox
+        viewport.addEventListener('click', () => {
+          openLightbox(galleryItems, currentSlide);
+        });
+
+        // Keyboard arrows on slider box
+        sliderBox.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            updateSlide(currentSlide - 1);
+          } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            updateSlide(currentSlide + 1);
+          } else if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openLightbox(galleryItems, currentSlide);
+          }
+        });
+
+        // Touch Swipe Support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        viewport.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        viewport.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          const diff = touchEndX - touchStartX;
+          if (Math.abs(diff) > 40) {
+            if (diff < 0) {
+              updateSlide(currentSlide + 1);
+            } else {
+              updateSlide(currentSlide - 1);
+            }
+          }
+        }, { passive: true });
       })
       .catch(err => {
         container.style.display = 'none';
