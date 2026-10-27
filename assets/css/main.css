@@ -1274,6 +1274,7 @@ img, svg, video {
   width: 1px;
   height: 48px;
   background: var(--border-color);
+  margin-left: auto;
 }
 
 .footer-partner-strip {
@@ -1389,6 +1390,16 @@ img, svg, video {
   .partner-logo-item {
     height: 28px;
     max-width: 90px;
+  }
+  .footer-logos-container {
+    justify-content: center;
+  }
+  .footer-logo-divider {
+    display: none;
+  }
+  .footer-partner-strip {
+    justify-content: center;
+    margin-left: 0;
   }
 }
 
