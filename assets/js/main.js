@@ -36,6 +36,7 @@ function initHeader() {
     if ((currentPath === '' && (href === '' || href === '/' || href === 'index')) ||
         (currentPath !== '' && href === currentPath)) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 }
@@ -55,6 +56,7 @@ function initMobileNav() {
     overlay.classList.add('open');
     toggleBtn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeDrawer() {
@@ -62,6 +64,7 @@ function initMobileNav() {
     overlay.classList.remove('open');
     toggleBtn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    toggleBtn.focus();
   }
 
   toggleBtn.addEventListener('click', () => {
@@ -118,13 +121,33 @@ function initHomepageNewsSection() {
     });
 }
 
-/* 4. Privacy-Conscious Cookie Consent (GDPR Compliant) */
+/* 4. Privacy-Conscious Cookie Consent (GDPR / ePrivacy Directive Compliant) */
 function initCookieConsent() {
-  const banner = document.getElementById('cookie-consent-banner');
-  if (!banner) return;
-
   const consent = localStorage.getItem('gh_cookie_consent');
-  if (!consent) {
+  if (consent) return;
+
+  let banner = document.getElementById('cookie-consent-banner');
+  if (!banner) {
+    banner = document.createElement('div');
+    banner.id = 'cookie-consent-banner';
+    banner.className = 'cookie-consent-banner';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Cookie & Privacy Consent');
+    banner.innerHTML = `
+      <div class="cookie-consent-content">
+        <span class="cookie-consent-icon" aria-hidden="true">🍪</span>
+        <div class="cookie-consent-text">
+          <strong>Privacy &amp; Cookie Preferences</strong>
+          This website uses essential technical storage to ensure core features, navigation, and accessibility preferences. We do not use third-party tracking or commercial advertising cookies. Learn more in our <a href="privacy">Privacy Policy</a>.
+        </div>
+      </div>
+      <div class="cookie-consent-actions">
+        <button id="cookie-decline-btn" type="button" class="btn btn-outline btn-sm">Essential Only</button>
+        <button id="cookie-accept-btn" type="button" class="btn btn-primary btn-sm">Accept All</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+  } else {
     banner.classList.remove('hidden');
   }
 
