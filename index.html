@@ -27,7 +27,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/components.css?v=20261028">
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -346,7 +346,7 @@
           </a>
         </div>
 
-        <!-- Top 3 News Cards Rendered dynamically by assets/js/main.js -->
+        <!-- Top 3 News Cards Rendered dynamically by assets/js/main.js?v=20261028 -->
         <div id="homepage-news-grid" class="news-grid">
           <!-- Fallback or dynamic items -->
           <article class="news-card">
@@ -516,8 +516,23 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   
   <!-- Core Scripts -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20261028"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/gallery.js"></script>
+  <!-- Cookie & Privacy Consent Banner (GDPR / ePrivacy) -->
+  <div id="cookie-consent-banner" class="cookie-consent-banner hidden" role="region" aria-label="Cookie &amp; Privacy Consent">
+    <div class="cookie-consent-content">
+      <span class="cookie-consent-icon" aria-hidden="true">🍪</span>
+      <div class="cookie-consent-text">
+        <strong>Privacy &amp; Cookie Preferences</strong>
+        This website uses essential technical storage to ensure core features, navigation, and accessibility preferences. We do not use third-party tracking or commercial advertising cookies. Learn more in our <a href="privacy">Privacy Policy</a>.
+      </div>
+    </div>
+    <div class="cookie-consent-actions">
+      <button id="cookie-decline-btn" type="button" class="btn btn-outline btn-sm">Essential Only</button>
+      <button id="cookie-accept-btn" type="button" class="btn btn-primary btn-sm">Accept All</button>
+    </div>
+  </div>
+
 </body>
 </html>
