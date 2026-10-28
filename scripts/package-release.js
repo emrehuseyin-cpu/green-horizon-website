@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { syncPhotos } = require('./sync-activity-photos');
 const { resizePhotos } = require('./resize-photos');
 
 const rootDir = path.join(__dirname, '..');
@@ -13,11 +14,12 @@ const distDir = path.join(rootDir, 'dist');
 
 console.log('--- GREEN HORIZON: PRE-FLIGHT VALIDATION & BUILD ---');
 
-// 0. Auto-resize activity photos if needed
+// 0. Auto-sync newly added photos and auto-resize if needed
 try {
+  syncPhotos();
   resizePhotos();
 } catch (e) {
-  console.warn('[Note] Photo resize check warning:', e.message);
+  console.warn('[Note] Photo sync/resize check warning:', e.message);
 }
 
 // 1. Verify JSON Data Files
