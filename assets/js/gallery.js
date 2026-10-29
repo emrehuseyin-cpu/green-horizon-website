@@ -36,10 +36,11 @@ function initMainGalleryPage() {
 function renderGalleryItems(grid, items) {
   if (!grid) return;
 
-  if (items.length === 0) {
+  if (!items || items.length === 0) {
     grid.innerHTML = `
-      <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
-        <p style="font-size: 1.1rem;">No photos currently found in this category.</p>
+      <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1.5rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-light); color: var(--text-muted); max-width: 650px; margin: 2rem auto;">
+        <p style="font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">Exhibition Gallery In Preparation</p>
+        <p style="font-size: 0.95rem; line-height: 1.6; margin: 0;">Curated photographic works, environmental monitoring captures, and drone perspectives from our activities will be uploaded here soon.</p>
       </div>
     `;
     return;
@@ -110,6 +111,16 @@ function initHomepageGalleryStrip() {
   fetch('assets/data/gallery.json')
     .then(res => res.json())
     .then(items => {
+      if (!items || items.length === 0) {
+        strip.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1.5rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-light); color: var(--text-muted);">
+            <p style="font-size: 1.05rem; font-weight: 600; color: var(--primary); margin-bottom: 0.35rem;">Exhibition Photos in Preparation</p>
+            <p style="font-size: 0.9rem; margin: 0;">Photos will be published following our local workshops and transnational mobilities.</p>
+          </div>
+        `;
+        return;
+      }
+
       // Pick latest 6-8 photos
       const previewItems = items.slice(0, 8);
       strip.innerHTML = previewItems.map((item, idx) => `
