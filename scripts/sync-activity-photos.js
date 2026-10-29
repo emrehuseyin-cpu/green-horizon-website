@@ -134,6 +134,12 @@ function syncPhotos() {
       }
     }
 
+    // 1. Prune entries from photos.json if the file was deleted from disk
+    const initialCount = items.length;
+    items = items.filter(it => it.file && fs.existsSync(path.join(dir, it.file)));
+    const prunedCount = initialCount - items.length;
+    let modified = prunedCount > 0;
+
     const existingFiles = new Set(items.map(it => it.file));
     const allFiles = fs.readdirSync(dir);
 
@@ -155,9 +161,17 @@ function syncPhotos() {
         });
         totalNew++;
       });
+      modified = true;
+    }
 
+    if (modified) {
       fs.writeFileSync(jsonPath, JSON.stringify(items, null, 2) + '\n', 'utf8');
-      console.log(`[Synced] Added ${newImages.length} photo(s) to ${meta.title} (${subPath}/photos.json)`);
+      if (prunedCount > 0) {
+        console.log(`[Pruned] Removed ${prunedCount} deleted photo(s) from ${meta.title} (${subPath}/photos.json)`);
+      }
+      if (newImages.length > 0) {
+        console.log(`[Synced] Added ${newImages.length} photo(s) to ${meta.title} (${subPath}/photos.json)`);
+      }
     }
   }
 
