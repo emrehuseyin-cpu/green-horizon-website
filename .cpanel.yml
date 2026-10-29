@@ -1,8 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=~/public_html/
-    # If greenhorizonyou.eu is configured as an addon domain in a subfolder, adjust to:
-    # export DEPLOYPATH=~/public_html/greenhorizonyou.eu/
+    - export DEPLOYPATH=/home/$USER/public_html/
     - /bin/cp -R * $DEPLOYPATH
     - /bin/cp -f .htaccess $DEPLOYPATH
