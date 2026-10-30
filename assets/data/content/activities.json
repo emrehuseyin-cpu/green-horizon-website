@@ -103,18 +103,18 @@
     {
       "participants": "Open to the public worldwide",
       "place": "Online (MetaSteps Virtual Gallery)",
-      "number": "12",
-      "date": "",
+      "number": "6",
+      "date": "June 2026",
       "photo": {
         "file": "assets/images/booklet/poster-chapter2-photography.jpg",
         "alt": "Welcome panel of the Green Horizon virtual exhibition",
-        "caption": "Virtual exhibition goes live online (October 2026)"
+        "caption": "Virtual exhibition goes live online (June 2026)"
       },
       "title": "VR Exhibition Online Launch",
       "linkLabel": "Visit the VR Exhibition",
       "link": "exhibition",
       "id": "act-vr-launch",
-      "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
+      "description": "The digital 3D virtual reality photo exhibition went live online in June 2026, ahead of the national dissemination conferences. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
     },
     {
       "id": "act-conference-ro",
