@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80" role="img" aria-label="Empower Plus Logo">
+  <!-- Background Badge -->
+  <rect width="240" height="80" rx="12" fill="rgba(18,60,47,0.3)" stroke="rgba(35,201,171,0.2)" stroke-width="1"/>
+  <!-- Geometric Icon -->
+  <g transform="translate(16, 16)">
+    <circle cx="24" cy="24" r="22" fill="#123C2F" stroke="#23C9AB" stroke-width="1.5"/>
+    <!-- Plus symbol in tech circle -->
+    <path d="M 24,14 L 24,34 M 14,24 L 34,24" stroke="#B7FF4A" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="16" fill="none" stroke="#23C9AB" stroke-width="1" stroke-dasharray="2 3"/>
+  </g>
+  <!-- Partner Name -->
+  <g transform="translate(74, 23)">
+    <text x="0" y="14" fill="#FFFFFF" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="0.5">Asociatia Empower Plus</text>
+    <text x="0" y="29" fill="#23C9AB" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Youth &amp; Environmental Dev</text>
+    <text x="0" y="43" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="500">ROMANIA // PARTNER</text>
+  </g>
+</svg>

@@ -1,0 +1,409 @@
+<?php
+/**
+ * Template Name: Educational Resources
+ *
+ * GREEN HORIZON — Official WordPress Theme
+ * Erasmus+ KA210-YOU (Project: 2024-3-DE04-KA210-YOU-000293009)
+ */
+if (!defined('ABSPATH')) exit;
+get_header();
+?>
+<!-- Header Section -->
+    <section class="section-hero booklet-bg-pattern">
+      <div class="container" style="text-align: center;">
+        <span class="section-eyebrow">Open Educational Resources</span>
+        <h1 class="section-title">Educational Resources &amp; Booklet</h1>
+        <p class="section-subtitle" style="max-width: 820px; margin: 0 auto;">
+          Open-access handbooks, camera drone flight safety checklists, and non-formal curricular modules developed for European youth workers, schools, and environmental advocates.
+        </p>
+      </div>
+    </section>
+
+    
+    <!-- Three Main Result Cards Overview -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div style="text-align: center; max-width: 820px; margin: 0 auto 3rem auto;">
+          <span class="section-eyebrow">Erasmus+ KA210-YOU • Project Deliverables</span>
+          <h2 class="section-title">Official Project Results</h2>
+          <p class="section-subtitle">
+            The Green Horizon partnership successfully delivered three core results designed as Open Educational Resources for youth workers, schools, and climate advocates.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+          <!-- Result Card 1: Booklet -->
+          <div class="card card-accent-green" style="display: flex; flex-direction: column;">
+            <span class="booklet-chapter-pill pill-ch1" style="margin-bottom: 0.8rem;">Result 1 • Handbook</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--primary);">Educational Booklet</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem; flex: 1;">
+              Comprehensive Educational Booklet combining climate mitigation, photography masterclasses, and drone safety drills. Published under CC BY-SA 4.0.
+            </p>
+            <a href="#result-booklet" class="btn btn-primary btn-sm" style="text-decoration: none;">Download Booklet (PDF) &darr;</a>
+          </div>
+
+          <!-- Result Card 2: Short Climate Campaigns -->
+          <div class="card card-accent-blue" style="display: flex; flex-direction: column;">
+            <span class="booklet-chapter-pill pill-ch3" style="margin-bottom: 0.8rem;">Result 2 • Video Media</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--sky-blue);">Short Climate Campaigns</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem; flex: 1;">
+              Documentary series · 3 videos from Germany, Romania and Türkiye
+            </p>
+            <a href="#result-documentaries" class="btn btn-secondary btn-sm" style="text-decoration: none;">Watch 3 Videos &rarr;</a>
+          </div>
+
+          <!-- Result Card 3: VR-Enhanced Photo Exhibition -->
+          <div class="card card-accent-purple" style="display: flex; flex-direction: column;">
+            <span class="booklet-chapter-pill pill-ch2" style="margin-bottom: 0.8rem;">Result 3 • VR-Enhanced Photo Exhibition</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--purple);">VR-Enhanced Photo Exhibition</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem; flex: 1;">
+              Drone photos by young people from Germany, Romania and Türkiye. Presented at the dissemination conferences in July 2026 and online as a virtual exhibition since October 2026.
+            </p>
+            <a href="<?= esc_url(gh_get_option('vr_embed_url', 'https://metasteps.com/viewer/embed/832a0a3b-4ea0-413d-9b47-d9eccd1e1459?showSignIn=0&showCommunications=0&showOrbitButton=0&showSettingsButton=0&showSoundButton=0&showLikeButton=0&forceOrbitCamera=0')) ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="text-decoration: none; background: var(--purple); border-color: var(--purple);">Visit the VR exhibition &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: EDUCATIONAL BOOKLET (Result 1) -->
+    <section id="result-booklet" class="section section-warm booklet-bg-pattern" style="padding-top: 3rem; padding-bottom: 3rem;">
+      <div class="container">
+        <div class="card card-accent-green" style="padding: 2.5rem; margin-bottom: 2rem;">
+          <div style="display: grid; grid-template-columns: 240px 1fr; gap: 2.5rem; align-items: center;">
+            <div style="text-align: center;">
+              <img src="<?= esc_url(gh_asset('images/booklet-cover.jpg')) ?>" alt="Official Green Horizon Booklet Cover" style="width: 100%; max-width: 220px; border-radius: var(--radius-md); box-shadow: var(--shadow-hover); margin: 0 auto;">
+            </div>
+            <div>
+              <span class="badge badge-completed">Project Result 1 • Flagship Booklet</span>
+              <h2 style="font-size: 1.85rem; margin: 0.5rem 0 0.8rem 0; color: var(--primary);">
+                Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change
+              </h2>
+              <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1.4rem; font-size: 1.02rem;">
+                The official Educational Booklet developed jointly by Integrational e.V. (Germany), Yenilikçi Eğitim Bilim ve Sanat Derneği – IESA (Türkiye), and Asociația Empower Plus (Romania). Structured into three practical chapters: (1) Climate Action &amp; Environmental Urgency; (2) Photography &amp; Visual Storytelling; (3) Drone Operation, Safety Rules, 6 Flight Drills &amp; Printable Field Checklist.
+              </p>
+              <div style="margin-bottom: 1.25rem;">
+                <div style="font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em;">
+                  Download in 4 Official Partner Languages (PDF):
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.65rem; margin-bottom: 1rem;">
+                  <a href="<?= esc_url(gh_get_option('booklet_en', gh_asset('downloads/green-horizon-booklet-en.pdf'))) ?>" download="green-horizon-booklet-en.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1rem;">
+                    <span>🇬🇧</span>
+                    <span><strong>English</strong> (3.5 MB) &darr;</span>
+                  </a>
+                  <a href="<?= esc_url(gh_get_option('booklet_de', gh_asset('downloads/green-horizon-booklet-de.pdf'))) ?>" download="green-horizon-booklet-de.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1rem;">
+                    <span>🇩🇪</span>
+                    <span><strong>Deutsch</strong> (3.3 MB) &darr;</span>
+                  </a>
+                  <a href="<?= esc_url(gh_get_option('booklet_tr', gh_asset('downloads/green-horizon-booklet-tr.pdf'))) ?>" download="green-horizon-booklet-tr.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1rem;">
+                    <span>🇹🇷</span>
+                    <span><strong>Türkçe</strong> (3.3 MB) &darr;</span>
+                  </a>
+                  <a href="<?= esc_url(gh_get_option('booklet_ro', gh_asset('downloads/green-horizon-booklet-ro.pdf'))) ?>" download="green-horizon-booklet-ro.pdf" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1rem;">
+                    <span>🇷🇴</span>
+                    <span><strong>Română</strong> (3.8 MB) &darr;</span>
+                  </a>
+                </div>
+                <div>
+                  <a href="#interactive-checklist" class="btn btn-outline" style="text-decoration: none;">
+                    Jump to Field Checklist &darr;
+                  </a>
+                </div>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">
+                Licensed under Creative Commons (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DOCUMENTARY SERIES (Result 2) -->
+    <section id="result-documentaries" class="section" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem auto;">
+          <span class="section-eyebrow">Project Result 2 • Media Series</span>
+          <h2 class="section-title">Short Climate Campaigns</h2>
+          <p class="section-subtitle">
+            Documentary series · 3 videos from Germany, Romania and Türkiye
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <!-- Film 1: Germany (Bonn Parklands) -->
+          <div class="media-embed-slot" id="film-1">
+            <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; overflow: hidden;">
+              <video controls preload="metadata" poster="<?= esc_url(gh_get_option('film_1_poster_url', gh_asset('video/poster-germany.jpg'))) ?>" playsinline style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                <source src="<?= esc_url(gh_get_option('film_1_video_url', gh_asset('video/campaign-germany.mp4'))) ?>" type="video/mp4">
+                Your browser does not support HTML5 video playback.
+              </video>
+            </div>
+
+            <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-completed" style="font-size: 0.75rem;">Germany</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-light);">31 seconds</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0 0 0.5rem 0; font-family: var(--font-heading); line-height: 1.3;">Reduce & Reconnect: Aerial Perspectives & Youth Eco-Action in Bonn</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 0; flex: 1;">Youth participants in Bonn capture aerial drone views of urban lake ecosystems and parklands, raising smartphone banners to advocate for conscious consumption (“REDUCE”) and Erasmus+ youth-led climate responsibility.</p>
+            </div>
+          </div>
+
+          <!-- Film 2: Romania (Carpathian Valleys) -->
+          <div class="media-embed-slot" id="film-2">
+            <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; overflow: hidden;">
+              <video controls preload="metadata" poster="<?= esc_url(gh_get_option('film_2_poster_url', gh_asset('video/poster-romania.jpg'))) ?>" playsinline style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                <source src="<?= esc_url(gh_get_option('film_2_video_url', gh_asset('video/campaign-romania.mp4'))) ?>" type="video/mp4">
+                Your browser does not support HTML5 video playback.
+              </video>
+            </div>
+
+            <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-completed" style="font-size: 0.75rem;">Romania</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-light);">54 seconds</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0 0 0.5rem 0; font-family: var(--font-heading); line-height: 1.3;">Stop Water Contamination: Aerial Guardians of Carpathian Valleys</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 0; flex: 1;">Romanian youth teams deploy camera drones above mountain parklands in Brașov, pairing sweeping canopy views with an urgent on-camera call to safeguard freshwater reserves and stop water contamination.</p>
+            </div>
+          </div>
+
+          <!-- Film 3: Türkiye (Mersin) -->
+          <div class="media-embed-slot" id="film-3">
+            <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; overflow: hidden;">
+              <video controls preload="metadata" poster="<?= esc_url(gh_get_option('film_3_poster_url', gh_asset('video/poster-turkiye.jpg'))) ?>" playsinline style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                <source src="<?= esc_url(gh_get_option('film_3_video_url', gh_asset('video/campaign-turkiye.mp4'))) ?>" type="video/mp4">
+                Your browser does not support HTML5 video playback.
+              </video>
+            </div>
+
+            <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <span class="badge badge-completed" style="font-size: 0.75rem;">Türkiye</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-light);">67 seconds</span>
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--primary); margin: 0 0 0.5rem 0; font-family: var(--font-heading); line-height: 1.3;">Stop Plastic Waste: Youth Recycling & Circular Action in Mersin</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 0; flex: 1;">Young advocates in Mersin take to public spaces with grassroots campaign signs—“RECYCLE” and “STOP PLASTIC WASTE”—highlighting the daily battle against single-use plastics and mobilizing youth for circular waste management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VR-ENHANCED PHOTO EXHIBITION (Result 3) -->
+    <section id="result-vr-photo-exhibition" class="section section-warm booklet-bg-pattern" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+      <span id="result-photo-exhibition" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
+      <span id="result-vr-exhibition" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
+      <div class="container">
+        <div style="text-align: center; max-width: 850px; margin: 0 auto 2rem auto;">
+          <span class="section-eyebrow">Project Result 3 • Exhibition &amp; Virtual Reality</span>
+          <h2 class="section-title">VR-Enhanced Photo Exhibition</h2>
+          <div style="background: #FFFFFF; border: 2px solid var(--leaf-green); border-radius: var(--radius-md); padding: 0.85rem 1.5rem; display: inline-block; margin: 1rem auto 1.5rem auto; box-shadow: var(--shadow-sm);">
+            <p style="margin: 0; font-family: var(--font-heading); color: var(--primary); font-size: 1.05rem; font-weight: 700;">
+              "Presented at the dissemination conferences in Romania (17 July), Türkiye (22 July) and Germany (25 July 2026)"
+            </p>
+          </div>
+          <p class="section-subtitle" style="margin-top: 0;">
+            Drone photos by young people from Germany, Romania and Türkiye. Presented at the dissemination conferences in July 2026 and online as a virtual exhibition since October 2026.
+          </p>
+        </div>
+
+        <!-- Virtual Exhibition Card -->
+        <div class="card card-accent-purple" style="padding: 2.5rem; margin-bottom: 2.5rem;">
+          <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;">
+            <div style="text-align: center;">
+              <img src="<?= esc_url(gh_asset('images/booklet/poster-chapter2-photography.jpg')) ?>" alt="Green Horizon VR Exhibition Welcome Panel Image" style="width: 100%; max-width: 260px; border-radius: var(--radius-md); box-shadow: var(--shadow-hover); margin: 0 auto; border: 2px solid var(--purple);">
+            </div>
+            <div>
+              <span class="booklet-chapter-pill pill-ch2" style="margin-bottom: 0.75rem;">Virtual Reality Gallery</span>
+              <h3 style="font-size: 1.6rem; margin: 0.3rem 0 0.8rem 0; color: var(--purple); font-family: var(--font-heading);">
+                Virtual Exhibition Walkthrough
+              </h3>
+              <p style="font-size: 1.02rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+                The virtual exhibition brings together the drone photos of the Green Horizon photo exhibition, presented at our dissemination conferences in July 2026. It went online in October 2026 so that everyone can visit it, take the guided tour and explore climate change in Germany, Romania and Türkiye from above.
+              </p>
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <a href="<?= esc_url(gh_get_option('vr_embed_url', 'https://metasteps.com/viewer/embed/832a0a3b-4ea0-413d-9b47-d9eccd1e1459?showSignIn=0&showCommunications=0&showOrbitButton=0&showSettingsButton=0&showSoundButton=0&showLikeButton=0&forceOrbitCamera=0')) ?>" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="text-decoration: none; background: var(--purple); border-color: var(--purple);">
+                  Visit the VR exhibition &rarr;
+                </a>
+                <a href="<?= esc_url(home_url('/exhibition')) ?>" class="btn btn-outline btn-lg" style="text-decoration: none;">
+                  Exhibition Details &amp; Embed &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample preview grid of exhibition works -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="card" style="padding: 0.8rem; overflow: hidden;">
+            <img src="<?= esc_url(gh_asset('images/booklet/photo-field-tablet-team.jpg')) ?>" alt="Youth field team reviewing flight imagery in Romania" style="width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-sm);" loading="lazy">
+            <div style="padding: 0.8rem 0.4rem 0.2rem;">
+              <span class="badge badge-completed" style="font-size: 0.72rem;">Romania</span>
+              <h4 style="font-size: 1rem; margin: 0.4rem 0 0.2rem; color: var(--primary);">Field Team Environmental Survey</h4>
+              <p style="font-size: 0.82rem; color: var(--text-light); margin: 0;">Presented at Brașov Dissemination Conference (17 July 2026)</p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0.8rem; overflow: hidden;">
+            <img src="<?= esc_url(gh_asset('images/booklet/photo-outdoor-group-training.jpg')) ?>" alt="Youth workers operating camera drone in open landscape" style="width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-sm);" loading="lazy">
+            <div style="padding: 0.8rem 0.4rem 0.2rem;">
+              <span class="badge badge-completed" style="font-size: 0.72rem;">Training Mobility</span>
+              <h4 style="font-size: 1rem; margin: 0.4rem 0 0.2rem; color: var(--primary);">Canopy &amp; Woodland Documentation</h4>
+              <p style="font-size: 0.82rem; color: var(--text-light); margin: 0;">Presented at Germany Dissemination Conference (25 July 2026)</p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0.8rem; overflow: hidden;">
+            <img src="<?= esc_url(gh_asset('images/booklet/photo-youth-pilot-park.jpg')) ?>" alt="Youth pilot operating camera drone in municipal park" style="width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-sm);" loading="lazy">
+            <div style="padding: 0.8rem 0.4rem 0.2rem;">
+              <span class="badge badge-completed" style="font-size: 0.72rem;">Türkiye</span>
+              <h4 style="font-size: 1rem; margin: 0.4rem 0 0.2rem; color: var(--primary);">Coastal Habitats &amp; Agriculture</h4>
+              <p style="font-size: 0.82rem; color: var(--text-light); margin: 0;">Presented at Mersin Dissemination Conference (22 July 2026)</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="<?= esc_url(home_url('/gallery')) ?>" class="btn btn-primary btn-md" style="text-decoration: none;">
+            📸 View Complete Exhibition Gallery &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- Interactive Field Checklist from Page 97 -->
+    <section id="interactive-checklist" class="section">
+      <div class="container">
+        <div class="field-checklist-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+            <div>
+              <span class="booklet-chapter-pill pill-safety">Page 97 Checklist</span>
+              <h2 style="font-size: 1.7rem; margin: 0.2rem 0; color: var(--primary);">Drone Documentation Field Checklist</h2>
+              <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">
+                Three-phase safety checklist for youth workers and pilots before, during, and after flight operations.
+              </p>
+            </div>
+            <a href="<?= esc_url(gh_asset('downloads/green-horizon-booklet-en.pdf#page=97')) ?>" target="_blank" class="btn btn-secondary btn-sm" style="text-decoration: none;">
+              View Page 97 in PDF &rarr;
+            </a>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            
+            <!-- Phase 1: BEFORE -->
+            <div class="checklist-group">
+              <div class="checklist-group-title" style="color: var(--primary);">
+                1. BEFORE TAKE-OFF
+              </div>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Clear purpose &amp; shot list agreed for the climate issue</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Airspace rules, official maps &amp; permissions verified</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Operator registration, pilot certificate &amp; insurance on site</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Weather &amp; wind checked (wind &lt; 30 km/h, no rain/fog)</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Batteries (drone &amp; remote) fully charged, SD card formatted</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Propellers, arms &amp; camera lens inspected for damage</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Safe take-off / landing zone marked (clear of people &amp; obstacles)</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Compass calibrated, Home Point &amp; Return-to-Home altitude set</span>
+              </label>
+            </div>
+
+            <!-- Phase 2: DURING -->
+            <div class="checklist-group">
+              <div class="checklist-group-title" style="color: var(--sky-blue);">
+                2. DURING FLIGHT
+              </div>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Keep drone in direct Visual Line of Sight (VLOS) at all times</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Never exceed 120 metres (400 ft) above ground level</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Maintain 50m horizontal distance from uninvolved people</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Never fly over crowds, gatherings, or moving traffic</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Respect wildlife: if birds or animals react, climb and leave</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Land with at least 25% battery remaining (never run to empty)</span>
+              </label>
+            </div>
+
+            <!-- Phase 3: AFTER -->
+            <div class="checklist-group">
+              <div class="checklist-group-title" style="color: var(--warm-orange);">
+                3. AFTER LANDING
+              </div>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Power off drone first, then controller; inspect motors</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Back up SD card immediately (organise by date, location, story)</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Log flight details (date, location, duration, weather, notes)</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Check footage for incidental faces / license plates to blur</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Store batteries at room temperature (~50% charge for storage)</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- European Dissemination Platform Link Section -->
+    <section class="section section-warm">
+      <div class="container" style="text-align: center; max-width: 760px;">
+        <span class="section-eyebrow">European Results Archive</span>
+        <h2 style="margin-bottom: 1rem; color: var(--primary);">Erasmus+ Project Results Platform</h2>
+        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+          In accordance with European Union transparency requirements, all verified project summaries, intellectual outputs, and beneficiary evaluations are accessible on the official European Commission platform:
+        </p>
+        <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2024-3-DE04-KA210-YOU-000293009" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="text-decoration: none;">
+          Explore Project on Erasmus+ Platform &rarr;
+        </a>
+      </div>
+    </section>
+<?php
+get_footer();

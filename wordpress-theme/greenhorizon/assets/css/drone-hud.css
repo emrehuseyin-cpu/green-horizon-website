@@ -1,0 +1,11 @@
+/* GREEN HORIZON — Deprecated Drone HUD styles removed to adopt light, friendly booklet aesthetic */
+.drone-hud-overlay,
+.drone-reticle-crosshair,
+.drone-telemetry-hud,
+.drone-corner,
+.hud-compass-bar,
+.hud-altitude-ladder,
+.hud-status-rec,
+.hud-scanlines {
+  display: none !important;
+}

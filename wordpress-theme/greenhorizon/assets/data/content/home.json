@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "flags_text": "Germany 🇩🇪 • Romania 🇷🇴 • Türkiye 🇹🇷",
+    "title": "GREEN HORIZON: YOUTH VOICES FOR CLIMATE ACTION THROUGH DRONE TECHNOLOGY",
+    "subtitle": "An Erasmus+ youth partnership equipping young people and youth workers with practical skills in camera drone piloting, environmental photography, and visual storytelling to document climate challenges and drive community action.",
+    "cta_booklet_label": "📖 Download Educational Booklet (PDF)",
+    "cta_vr_label": "🥽 Visit the VR Exhibition",
+    "cta_gallery_label": "📸 Explore Photo Gallery",
+    "cta_activities_label": "🗓 Activities & Timeline"
+  },
+  "promo_video": {
+    "eyebrow": "Aerial Perspective",
+    "heading": "Our Project from Above",
+    "subtitle": "Experience our local environments and transnational field training through aerial camera perspectives captured by youth participants.",
+    "poster": "assets/video/poster-promo.jpg",
+    "video_src_mp4": "assets/video/campaign-1-footage.mp4",
+    "title": "Green Horizon: Official Promotional Video",
+    "description": "The official promotional film of Green Horizon captures transnational youth climate advocacy and aerial drone perspectives across Germany, Romania, and Türkiye. From urban parklands in Bonn and Carpathian mountain canopies in Brașov to Mediterranean coastlines in Mersin, young participants document environmental shifts, champion conscious consumption, and prove how digital aerial skills inspire local ecological change."
+  },
+  "results_section": {
+    "eyebrow": "Key Results",
+    "heading": "What We Created Together",
+    "subtitle": "Explore the three tangible results developed during the Green Horizon partnership.",
+    "result_1": {
+      "badge": "Result 1 • Publication",
+      "title": "Educational Booklet",
+      "meta": "Educational Booklet • CC BY-SA 4.0",
+      "description": "Combines climate change mitigation principles, photographic composition masterclasses, camera drone flight safety, 6 flight drills, and a printable field checklist.",
+      "link_text": "Overview & Modules →",
+      "link_url": "resources#result-booklet"
+    },
+    "result_2": {
+      "badge": "Result 2 • Media Series",
+      "title": "Short Climate Campaigns",
+      "meta": "Documentary series · 3 videos from Germany, Romania and Türkiye",
+      "description": "Grid of 3 documentary short films filmed and edited by youth participants, documenting riverbank health, forest recovery, and coastal ecosystems from above.",
+      "link_text": "Watch 3 Videos →",
+      "link_url": "resources#result-documentaries"
+    },
+    "result_3": {
+      "badge": "Result 3 • VR-Enhanced Photo Exhibition",
+      "title": "VR-Enhanced Photo Exhibition",
+      "meta": "Presented July 2026 • Online since October 2026",
+      "description": "Drone photos by young people from Germany, Romania and Türkiye. Presented at the dissemination conferences in July 2026 and online as a virtual exhibition since October 2026.",
+      "vr_button_text": "Visit the VR exhibition →",
+      "vr_url": "https://metasteps.com/viewer/embed/832a0a3b-4ea0-413d-9b47-d9eccd1e1459?showSignIn=0&showCommunications=0&showOrbitButton=0&showSettingsButton=0&showSoundButton=0&showLikeButton=0&forceOrbitCamera=0",
+      "details_button_text": "Details",
+      "details_url": "resources#result-vr-photo-exhibition"
+    }
+  },
+  "partnership_section": {
+    "eyebrow": "Transnational Partnership",
+    "heading": "Where We Worked",
+    "subtitle": "Connecting youth across Germany, Romania, and Türkiye: Bonn (DE), Mersin (TR), and Brașov (RO).",
+    "cities": [
+      {
+        "city": "Bonn, Germany 🇩🇪",
+        "partner": "Integrational e.V.",
+        "role": "Project coordinator; VR photo exhibition, local workshops and dissemination."
+      },
+      {
+        "city": "Brașov, Romania 🇷🇴",
+        "partner": "Asociația Empower Plus",
+        "role": "Training course host (A2) and documentary series."
+      },
+      {
+        "city": "Mersin, Türkiye 🇹🇷",
+        "partner": "IESA",
+        "role": "Booklet lead; host of the Mersin dissemination conference and final meeting."
+      }
+    ]
+  }
+}

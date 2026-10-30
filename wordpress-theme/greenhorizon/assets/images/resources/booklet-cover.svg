@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="600" height="850">
+  <defs>
+    <linearGradient id="book-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040b09"/>
+      <stop offset="40%" stop-color="#0c251d"/>
+      <stop offset="85%" stop-color="#123C2F"/>
+      <stop offset="100%" stop-color="#061611"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="850" rx="8" fill="url(#book-bg)" stroke="rgba(35, 201, 171, 0.4)" stroke-width="2"/>
+
+  <!-- Decorative Top Banner -->
+  <rect x="40" y="40" width="520" height="36" fill="rgba(18, 60, 47, 0.6)" rx="4" stroke="rgba(183, 255, 74, 0.3)"/>
+  <text x="60" y="63" fill="#B7FF4A" font-family="monospace" font-size="12" font-weight="bold">ERASMUS+ KA210-YOU // SMALL-SCALE PARTNERSHIP</text>
+
+  <!-- Drone Emblem on Cover -->
+  <g transform="translate(300, 260)">
+    <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(35, 201, 171, 0.3)" stroke-width="2" stroke-dasharray="8 6"/>
+    <circle cx="0" cy="0" r="80" fill="rgba(18, 60, 47, 0.5)" stroke="#B7FF4A" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="#B7FF4A"/>
+    
+    <!-- Rotors -->
+    <circle cx="-50" cy="-50" r="18" fill="none" stroke="#23C9AB" stroke-width="2"/>
+    <circle cx="50" cy="-50" r="18" fill="none" stroke="#23C9AB" stroke-width="2"/>
+    <circle cx="-50" cy="50" r="18" fill="none" stroke="#23C9AB" stroke-width="2"/>
+    <circle cx="50" cy="50" r="18" fill="none" stroke="#23C9AB" stroke-width="2"/>
+
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#B7FF4A" stroke-width="1.5"/>
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="#B7FF4A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="50" y="460" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="800">GREEN HORIZON</text>
+  <text x="50" y="500" fill="#B7FF4A" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">EDUCATIONAL BOOKLET</text>
+  <text x="50" y="535" fill="#23C9AB" font-family="'Inter', sans-serif" font-size="15" font-weight="600">Youth Voices for Climate Action Through Drone Technology</text>
+
+  <!-- Description text -->
+  <text x="50" y="585" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">A Comprehensive Practical Guide for Youth Workers, Educators &amp; Young Leaders:</text>
+  <text x="50" y="610" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 01: European Climate Challenges &amp; Youth Perspectives</text>
+  <text x="50" y="632" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 02: Fundamentals of UAV Technology &amp; Flight Operations</text>
+  <text x="50" y="654" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 03: EASA Open Category Regulations &amp; Safety Protocols</text>
+  <text x="50" y="676" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 04: Aerial Photography &amp; Cinematic Storytelling</text>
+  <text x="50" y="698" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 05: Environmental Data Gathering &amp; Ethical Media</text>
+  <text x="50" y="720" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">• Module 06: Non-Formal Workshop Blueprints &amp; Assessment</text>
+
+  <!-- Bottom partner indicators -->
+  <line x1="40" y1="760" x2="560" y2="760" stroke="rgba(35, 201, 171, 0.3)" stroke-width="1"/>
+  <text x="50" y="785" fill="#94A3B8" font-family="'Space Grotesk', monospace" font-size="11">CONSORTIUM: Integrational e.V. (DE) | IESA (TR) | Empower Plus (RO)</text>
+  <text x="50" y="805" fill="#1B5E20" font-family="sans-serif" font-size="10" font-weight="bold">CO-FUNDED BY THE EUROPEAN UNION</text>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "header": {
+    "eyebrow": "Get In Touch",
+    "title": "Contact the Consortium",
+    "subtitle": "Inquiries regarding project outcomes, educational materials, or collaboration in future European youth initiatives."
+  },
+  "form_heading": "Send a Message",
+  "partners": [
+    {
+      "badge": "Project Coordinator",
+      "name": "Integrational e.V.",
+      "type": "Non-governmental organisation/association/social enterprise",
+      "address": "Galileistraße 84, 53177 Bonn, Nordrhein-Westfalen, 🇩🇪 Germany",
+      "oid": "E10325233",
+      "phone": "+491784041104",
+      "email": "integrationalev@gmail.com",
+      "website": "https://integrationale-v.de"
+    },
+    {
+      "badge": "Partner Organisation",
+      "name": "Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA)",
+      "type": "Non-governmental organisation/association/social enterprise",
+      "address": "Menteş mahallesi Nevit Kodallı caddesi Öztürk Apartmanı No:96, 33140 Mersin, Mersin, 🇹🇷 Türkiye",
+      "oid": "E10315828",
+      "phone": "+905054813591",
+      "email": "iesaerasmus@gmail.com",
+      "website": "https://innovativeducation.net"
+    },
+    {
+      "badge": "Partner Organisation",
+      "name": "Asociația Empower Plus",
+      "type": "Non-governmental organisation/association/social enterprise",
+      "address": "Str. Preciziei, nr. 14, bl. F2, sc. 2, et. 3, ap. 108, 062204 Bucharest, Sector 6, Bucureşti - Ilfov, 🇷🇴 Romania",
+      "oid": "E10309212",
+      "phone": "+40773962100",
+      "email": "empower.plus.ngo@gmail.com",
+      "website": "https://empowerplus.org"
+    }
+  ]
+}

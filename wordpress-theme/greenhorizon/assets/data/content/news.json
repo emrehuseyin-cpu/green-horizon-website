@@ -1,0 +1,130 @@
+{
+  "articles": [
+    {
+      "id": "news-vr-online",
+      "title": "Green Horizon Virtual Exhibition Goes Live Online",
+      "slug": "green-horizon-virtual-exhibition-goes-live-online",
+      "date": "October 2026",
+      "category": "Virtual Reality",
+      "image": "assets/images/booklet/poster-chapter2-photography.jpg",
+      "summary": "The digital virtual exhibition brings together youth drone photography presented at our summer dissemination conferences, accessible worldwide on MetaSteps.",
+      "full_text": "The virtual exhibition brings together the drone photos of the Green Horizon photo exhibition, presented at our dissemination conferences in July 2026. It went online in October 2026 so that everyone can visit it, take the guided tour and explore climate change in Germany, Romania and Türkiye from above. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/poster-chapter2-photography.jpg",
+          "caption": "Welcome panel of the Green Horizon Virtual Exhibition on MetaSteps."
+        }
+      ],
+      "author": "Empower Plus & Consortium",
+      "badge": "Completed"
+    },
+    {
+      "id": "news-final-meeting",
+      "title": "Final Partner Meeting Held in Mersin, Türkiye",
+      "slug": "final-partner-meeting-held-in-mersin-turkiye",
+      "date": "1 August 2026",
+      "category": "Governance & Closing",
+      "image": "assets/images/booklet/photo-workshop-flipchart.jpg",
+      "summary": "Project coordinators from Germany, Romania, and Türkiye gathered in Mersin on 31 July – 1 August 2026 to evaluate project milestones and adopt long-term plans.",
+      "full_text": "On 31 July – 1 August 2026, representatives from Integrational e.V., Asociația Empower Plus, and Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA) met in Mersin, Türkiye for the Final Transnational Partner Meeting. The consortium reviewed participant outcomes, finalized dissemination documentation, and established a follow-up sustainability strategy. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/photo-workshop-flipchart.jpg",
+          "caption": "Consortium partners reviewing final project outcomes and evaluation metrics in Mersin."
+        }
+      ],
+      "author": "IESA & Consortium",
+      "badge": "Completed"
+    },
+    {
+      "id": "news-dissemination-conferences",
+      "title": "Dissemination Conferences in Romania, Türkiye and Germany Showcase Youth Documentaries and Photo Exhibition",
+      "slug": "dissemination-conferences-romania-turkiye-germany",
+      "date": "25 July 2026",
+      "category": "Dissemination Events",
+      "image": "assets/images/booklet/poster-capture-the-change.jpg",
+      "summary": "Partner organizations hosted multiplier conferences in Romania (17 July), Mersin, Türkiye (22 July), and Germany (25 July 2026) screening youth films.",
+      "full_text": "During July 2026, the Green Horizon partnership held national dissemination conferences in Romania (17 July), Mersin, Türkiye (22 July), and Germany (25 July 2026). Each event brought together [number of participants] local youth, educators, and community stakeholders to screen the 3 youth climate documentaries and present the physical photo exhibition. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/poster-capture-the-change.jpg",
+          "caption": "Official poster for the youth climate documentary series and exhibition."
+        }
+      ],
+      "author": "Green Horizon Dissemination Team",
+      "badge": "Completed"
+    },
+    {
+      "id": "news-local-workshops",
+      "title": "Local Youth Workshops Held in Mersin, Germany and Romania",
+      "slug": "local-youth-workshops-mersin-germany-romania",
+      "date": "29 April 2026",
+      "category": "Local Action",
+      "image": "assets/images/booklet/photo-field-tablet-team.jpg",
+      "summary": "Grassroots workshops engaged local young people in Mersin (19 April), Germany (23 April), and Romania (29 April 2026) in drone piloting and climate storytelling.",
+      "full_text": "Trained youth workers facilitated local workshops across partner countries: 19 April 2026 in Mersin, Türkiye; 23 April 2026 in Germany; and 29 April 2026 in Romania. A total of [number of participants] young people received hands-on training with camera drones, learned photographic framing, and developed storyboards documenting local climate challenges. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/photo-field-tablet-team.jpg",
+          "caption": "Young participants collaborating on flight plans and storyboard concepts during local workshops."
+        }
+      ],
+      "author": "Local Workshop Facilitators",
+      "badge": "Completed"
+    },
+    {
+      "id": "news-booklet-release",
+      "title": "Educational Booklet on Drone Operation, Photography and Climate Change Released",
+      "slug": "educational-booklet-on-drone-operation-photography-released",
+      "date": "[publication date – to be added]",
+      "category": "Publication Release",
+      "image": "assets/images/booklet-cover.jpg",
+      "summary": "The open-access Educational Booklet is published under CC BY-SA 4.0, combining climate mitigation, photography masterclasses, and drone safety drills.",
+      "full_text": "The partnership has released the Educational Booklet titled \"Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change\". Written for youth workers, educators, and young people, the guide is published as an Open Educational Resource under Creative Commons CC BY-SA 4.0. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet-cover.jpg",
+          "caption": "Cover of the Green Horizon Educational Booklet."
+        }
+      ],
+      "author": "Consortium Editorial Team",
+      "badge": "Open Educational Resource"
+    },
+    {
+      "id": "news-training-romania",
+      "title": "Training Course on Drone Operation, Photography and Video Editing Held in Brașov",
+      "slug": "training-course-drone-operation-photography-video-editing-brasov",
+      "date": "18 October 2025",
+      "category": "Training Mobility",
+      "image": "assets/images/booklet/photo-outdoor-group-training.jpg",
+      "summary": "18 youth workers from Germany, Romania, and Türkiye completed an 8-day training course in Brașov, Romania (11–18 October 2025).",
+      "full_text": "Hosted by Asociația Empower Plus in Brașov, Romania from 11 to 18 October 2025, 18 youth workers (6 from Germany, 6 from Romania, and 6 from Türkiye) completed hands-on training in camera drone flight operation, EU safety regulations, and video editing. Participants developed competencies to serve as facilitators in local youth workshops. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/photo-outdoor-group-training.jpg",
+          "caption": "The 18 participating youth workers and facilitators during the training mobility in Brașov, Romania."
+        }
+      ],
+      "author": "Asociația Empower Plus",
+      "badge": "Completed"
+    },
+    {
+      "id": "news-kickoff-meeting",
+      "title": "Consortium Holds Project Kick-Off Meeting in Germany",
+      "slug": "consortium-holds-project-kick-off-meeting-germany",
+      "date": "29 July 2025",
+      "category": "Governance",
+      "image": "assets/images/booklet/poster-chapter1-climate-action.jpg",
+      "summary": "Representatives from Integrational e.V., Asociația Empower Plus, and IESA met on 28–29 July 2025 in Germany to launch the project.",
+      "full_text": "Coordinators and youth workers from Germany, Romania, and Türkiye convened on 28–29 July 2025 in Germany for the official Kick-Off Transnational Project Meeting. The team agreed on the project management framework, established quality and risk monitoring procedures, and coordinated preparations for the training course in Romania. [add text]",
+      "photos": [
+        {
+          "file": "assets/images/booklet/poster-chapter1-climate-action.jpg",
+          "caption": "Opening session and roadmap planning during the kick-off meeting in Germany."
+        }
+      ],
+      "author": "Integrational e.V.",
+      "badge": "Completed"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "integrational",
+    "oid": "E10325233",
+    "role": "Project Coordinator (Applicant)",
+    "roleTag": "COORDINATOR",
+    "name": "Integrational e.V.",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Nordrhein-Westfalen",
+    "city": "Bonn",
+    "coordinates": [
+      50.7374,
+      7.0982
+    ],
+    "logo": "assets/images/partners/integrational-official.png",
+    "description": "Integrational e.V. is a German non-profit, non-governmental organisation based in Bonn, Germany. The organisation focuses on youth empowerment, digital literacy, and social inclusion, with a strong emphasis on climate advocacy through cutting-edge technology, digital media, and civic participation. As project coordinator, Integrational e.V. oversees overall project governance, financial monitoring, and quality assurance.",
+    "keyResponsibilities": [
+      "Overall project management, day-to-day administration, and quality control (Activity A1)",
+      "Hosting the Kick-off meeting in Germany (28–29 July 2025)",
+      "Leading the project website construction and continuous management (Activity A6)",
+      "Leading the VR Photo Exhibition and local German workshops with at least 20 youth participants (Activity A4, 23 April 2026)",
+      "Financial oversight, quarterly reports, timesheets, and submission of reports to the German National Agency (DE04 - JUGEND für Europa)"
+    ],
+    "contactPerson": "Project Management Team",
+    "email": "integrationalev@gmail.com",
+    "phone": "+491784041104",
+    "address": "Galileistraße 84, 53177 Bonn, NORDRHEIN-WESTFALEN, Germany",
+    "partnerType": "Non-governmental organisation/association/social enterprise",
+    "website": "https://greenhorizonyou.eu"
+  },
+  {
+    "id": "iesa",
+    "oid": "E10315828",
+    "role": "Project Partner (Education & Climate Lead)",
+    "roleTag": "PARTNER",
+    "name": "Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA)",
+    "country": "Türkiye",
+    "countryCode": "TR",
+    "region": "Mersin",
+    "city": "Mersin",
+    "coordinates": [
+      36.8121,
+      34.6415
+    ],
+    "logo": "assets/images/partners/iesa-official.png",
+    "description": "Yenilikçi Eğitim Bilim ve Sanat Derneği (Innovative Education, Science and Art Association) is a non-governmental organisation established in Mersin, Türkiye by educators, academics, artists, and entrepreneurs. IESA specializes in citizen participation, STEAM education, digital youth work, and grassroots climate advocacy. In Green Horizon, IESA authors the educational booklet, acts as internal evaluator, and hosts the Final Transnational Project Meeting.",
+    "keyResponsibilities": [
+      "Leading the production of the 'Booklet on Drone Operation, Photography, and Effective Ways to Mitigate Climate Change' (Activity A3)",
+      "Acting as internal evaluator, transferring KA2 project expertise to the consortium",
+      "Hosting the Final Transnational Project Meeting (TPM 2) and Dissemination Conference in Türkiye (Activity A7)",
+      "Guiding youth in documenting climate change in rural and urban areas through photography and video",
+      "Tracking the local impact of activities and gathering community engagement metrics"
+    ],
+    "contactPerson": "IESA Youth Work Department",
+    "email": "iesaerasmus@gmail.com",
+    "phone": "+905054813591",
+    "address": "Menteş mahallesi Nevit Kodallı caddesi Öztürk Apartmanı No:96, 33140 Mersin, Mersin, Türkiye",
+    "partnerType": "Non-governmental organisation/association/social enterprise",
+    "website": "https://innovativeducation.net"
+  },
+  {
+    "id": "empower-plus",
+    "oid": "E10309212",
+    "role": "Project Partner (Training Course & VR Provider)",
+    "roleTag": "PARTNER",
+    "name": "Asociatia Empower Plus",
+    "country": "Romania",
+    "countryCode": "RO",
+    "region": "Brașov",
+    "city": "Brașov",
+    "coordinates": [
+      45.6579,
+      25.6012
+    ],
+    "logo": "assets/images/partners/empower-plus-official.png",
+    "description": "Asociatia Empower Plus is a Romanian youth organisation based in Brașov, focused on empowering young people through non-formal education, creativity, environmental awareness, and digital skills. With specialized expertise in drone technology, photography, and arts, Empower Plus delivers the Transnational Training Course for Youth Workers in Romania and curates the virtual exhibition.",
+    "keyResponsibilities": [
+      "Developing and delivering the Drone Operation, Photography, and Video Editing Training Course for 18 Youth Workers in Romania (Activity A2, 11–18 October 2025)",
+      "Technical mentoring and ongoing support during the production of the youth documentary series and photo exhibition",
+      "Leading cross-country knowledge sharing and peer-to-peer learning among youth workers",
+      "Leading the design and setup of the virtual exhibition on the MetaSteps platform",
+      "Organizing Romanian local workshops with at least 20 youth participants"
+    ],
+    "contactPerson": "Empower Plus Project Office",
+    "email": "empower.plus.ngo@gmail.com",
+    "phone": "+40773962100",
+    "address": "Str Preciziei, nr 14, bl.F2, sc. 2, et. 3, ap.108, 062204 Bucharest, Sector 6, Bucureşti - Ilfov, Romania",
+    "partnerType": "Non-governmental organisation/association/social enterprise",
+    "website": "https://greenhorizonyou.eu/partners.html#empower-plus"
+  }
+]

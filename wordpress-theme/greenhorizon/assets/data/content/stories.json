@@ -1,0 +1,70 @@
+{
+  "stories": [
+    {
+      "id": "story-rhine-basin",
+      "title": "Reduce & Reconnect: Aerial Perspectives & Youth Eco-Action in Bonn",
+      "country": "Germany",
+      "countryCode": "DE",
+      "location": "Bonn & Urban Green Corridors, Germany",
+      "category": "Eco-Action & Reduction",
+      "episode": "Campaign Film 01 (Activity A5)",
+      "duration": "31 seconds",
+      "video_file": "assets/video/campaign-germany.mp4",
+      "poster": "assets/video/poster-germany.jpg",
+      "author": "Integrational e.V. Youth Media Lab",
+      "summary": "Youth participants in Bonn capture aerial drone views of urban lake ecosystems and parklands, raising smartphone banners to advocate for conscious consumption ('REDUCE') and Erasmus+ youth-led climate responsibility.",
+      "content": "Through Green Horizon, young participants in Bonn deployed camera drones to capture sweeping aerial perspectives of urban parkland lakes and walking trails. Combining drone imagery with digital youth activism, participants showcased on-screen calls for resource reduction ('REDUCE') and civic engagement under the Erasmus+ programme.",
+      "highlights": [
+        "Aerial drone perspectives of autumn parkland lakes and walking paths in Bonn",
+        "Youth participants presenting mobile campaign slogans ('REDUCE', 'ERASMUS+')",
+        "Grassroots youth advocacy for mindful consumption and climate responsibility"
+      ],
+      "mediaType": "video-case",
+      "status": "Completed"
+    },
+    {
+      "id": "story-carpathian-canopy",
+      "title": "Stop Water Contamination: Aerial Guardians of Carpathian Valleys",
+      "country": "Romania",
+      "countryCode": "RO",
+      "location": "Brașov & Carpathian Foothills, Romania",
+      "category": "Freshwater & Forest Protection",
+      "episode": "Campaign Film 02 (Activity A5)",
+      "duration": "54 seconds",
+      "video_file": "assets/video/campaign-romania.mp4",
+      "poster": "assets/video/poster-romania.jpg",
+      "author": "Asociația Empower Plus Media Lab",
+      "summary": "Romanian youth teams deploy camera drones above mountain parklands in Brașov, pairing sweeping canopy views with an urgent on-camera call to safeguard freshwater reserves and stop water contamination.",
+      "content": "In the scenic mountain foothills around Brașov, Romanian youth participants and youth workers worked hands-on with camera drones in open-air workshops. Featuring direct-to-camera youth statements ('Stop water contamination!') alongside high-altitude drone passes over Carpathian canopies, the campaign urges communities to preserve mountain rivers and drinking water sources.",
+      "highlights": [
+        "High-angle drone ascents over Carpathian mountain valleys and tree canopies",
+        "Hands-on drone piloting and peer-to-peer equipment handoffs in Brașov",
+        "Direct youth message urging immediate action against freshwater contamination"
+      ],
+      "mediaType": "video-case",
+      "status": "Completed"
+    },
+    {
+      "id": "story-mersin-coastal",
+      "title": "Stop Plastic Waste: Youth Recycling & Circular Action in Mersin",
+      "country": "Türkiye",
+      "countryCode": "TR",
+      "location": "Mersin Coastal Region, Türkiye",
+      "category": "Plastic Waste & Circular Action",
+      "episode": "Campaign Film 03 (Activity A5)",
+      "duration": "67 seconds",
+      "video_file": "assets/video/campaign-turkiye.mp4",
+      "poster": "assets/video/poster-turkiye.jpg",
+      "author": "IESA Youth Media Team",
+      "summary": "Young advocates in Mersin take to public spaces with grassroots campaign signs—'RECYCLE' and 'STOP PLASTIC WASTE'—highlighting the daily battle against single-use plastics and mobilizing youth for circular waste management.",
+      "content": "Filmed in vertical social reel format, IESA youth participants in Mersin brought climate messages straight to community walking paths. By displaying wearable and ground-level signs ('RECYCLE', 'STOP PLASTIC WASTE') alongside discarded single-use plastic bottles, the film sparks immediate reflection on daily consumer habits, waste sorting, and coastal sustainability.",
+      "highlights": [
+        "Dynamic social reel format tailored for youth-to-youth environmental outreach",
+        "Handcrafted and wearable signs championing 'RECYCLE' and 'STOP PLASTIC WASTE'",
+        "Spotlighting plastic pollution reduction and circular habits in Mersin"
+      ],
+      "mediaType": "video-case",
+      "status": "Completed"
+    }
+  ]
+}
