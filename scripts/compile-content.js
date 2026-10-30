@@ -30,9 +30,26 @@ function compileSiteContent() {
   const results = loadJSON('results.json');
   const contact = loadJSON('contact.json');
 
-  // Keep root assets/data in sync with assets/data/content
-  const dataFiles = ['activities.json', 'partners.json', 'news.json', 'stories.json', 'gallery.json'];
-  dataFiles.forEach(f => {
+  // Keep root assets/data in sync with assets/data/content (unwrapping root arrays for runtime JS)
+  const newsData = loadJSON('news.json');
+  if (newsData) {
+    const list = Array.isArray(newsData) ? newsData : (newsData.articles || []);
+    fs.writeFileSync(path.join(rootDir, 'assets/data/news.json'), JSON.stringify(list, null, 2) + '\n');
+  }
+
+  const actData = loadJSON('activities.json');
+  if (actData) {
+    const list = Array.isArray(actData) ? actData : (actData.milestones || []);
+    fs.writeFileSync(path.join(rootDir, 'assets/data/activities.json'), JSON.stringify(list, null, 2) + '\n');
+  }
+
+  const partnersData = loadJSON('partners.json');
+  if (partnersData) {
+    const list = Array.isArray(partnersData) ? partnersData : (partnersData.partners || []);
+    fs.writeFileSync(path.join(rootDir, 'assets/data/partners.json'), JSON.stringify(list, null, 2) + '\n');
+  }
+
+  ['stories.json', 'gallery.json'].forEach(f => {
     const src = path.join(contentDir, f);
     const dest = path.join(rootDir, 'assets/data', f);
     if (fs.existsSync(src)) {
