@@ -69,6 +69,15 @@ function resizePhotos() {
           return;
         }
 
+        const ext = path.extname(srcFile).toLowerCase();
+        if (ext === '.webp') {
+          // WebP files are already web-optimized by default
+          if (!fs.existsSync(destFile) || fs.statSync(destFile).mtime < fs.statSync(srcFile).mtime) {
+            fs.copyFileSync(srcFile, destFile);
+          }
+          return;
+        }
+
         // Only generate if destination doesn't exist or source is newer
         const srcStat = fs.statSync(srcFile);
         let needResize = true;

@@ -214,7 +214,7 @@ function initActivityGalleries() {
         `).join('');
 
         let dotsHtml = '';
-        if (hasMultiple) {
+        if (hasMultiple && total <= 12) {
           dotsHtml = `
             <div class="activity-slider-dots">
               ${galleryItems.map((_, i) => `
@@ -247,11 +247,7 @@ function initActivityGalleries() {
               </div>
               ${navButtonsHtml}
             </div>
-            <div class="activity-slider-caption-bar">
-              <div class="activity-slider-caption-text">
-                <span class="slide-active-caption">${galleryItems[0].caption}</span>
-                ${galleryItems[0].credit ? `<span class="activity-slider-credit">© ${galleryItems[0].credit}</span>` : ''}
-              </div>
+            <div class="activity-slider-caption-bar" style="justify-content: center; padding: 0.65rem 1rem;">
               <div class="activity-slider-controls">
                 ${dotsHtml}
                 ${hasMultiple ? `<span class="activity-slider-counter">1 / ${total}</span>` : ''}
@@ -534,5 +530,11 @@ function renderActiveLightboxItem() {
     if (item.date) metaText += `• 🗓 ${item.date} `;
     if (item.category) metaText += `• [${item.category}]`;
     metaEl.textContent = metaText.trim();
+  }
+
+  const captionBox = document.querySelector('.lightbox-caption-box');
+  if (captionBox) {
+    const hasText = (item.caption || item.title || item.credit || item.place);
+    captionBox.style.display = hasText ? 'block' : 'none';
   }
 }
