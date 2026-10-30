@@ -1,0 +1,220 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images will be saved and linked
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+# Display settings
+site_url: "https://greenhorizonyou.eu"
+display_url: "https://greenhorizonyou.eu"
+logo_url: "https://greenhorizonyou.eu/assets/images/logo-greenhorizon-emblem.png"
+
+collections:
+  # =========================================================================
+  # 1. CORE PAGES CONTENT
+  # =========================================================================
+  - name: "pages"
+    label: "Pages Content"
+    delete: false
+    files:
+      # HOMEPAGE
+      - name: "home"
+        label: "Homepage"
+        file: "assets/data/content/home.json"
+        fields:
+          - label: "Hero Flags Text"
+            name: "hero.flags_text"
+            widget: "string"
+          - label: "Hero Headline"
+            name: "hero.title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero.subtitle"
+            widget: "text"
+          - label: "Promo Video Heading"
+            name: "promo_video.heading"
+            widget: "string"
+          - label: "Promo Video Title"
+            name: "promo_video.title"
+            widget: "string"
+          - label: "Promo Video Description"
+            name: "promo_video.description"
+            widget: "text"
+          - label: "Promo Video Poster Image"
+            name: "promo_video.poster"
+            widget: "image"
+          - label: "Result 1: Booklet Description"
+            name: "results_section.result_1.description"
+            widget: "text"
+          - label: "Result 2: Climate Campaigns Description"
+            name: "results_section.result_2.description"
+            widget: "text"
+          - label: "Result 3: VR Exhibition Description"
+            name: "results_section.result_3.description"
+            widget: "text"
+
+      # ABOUT PAGE
+      - name: "about"
+        label: "About Page"
+        file: "assets/data/content/about.json"
+        fields:
+          - label: "Page Headline"
+            name: "header.title"
+            widget: "string"
+          - label: "Page Subtitle"
+            name: "header.subtitle"
+            widget: "text"
+          - label: "Context Heading"
+            name: "context.heading"
+            widget: "string"
+          - label: "Context Paragraphs"
+            name: "context.paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", widget: "text" }
+          - label: "Key Objectives (1 to 6)"
+            name: "objectives_section.objectives"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Erasmus+ Priorities"
+            name: "priorities_section.priorities"
+            widget: "list"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      # RESULTS & RESOURCES PAGE
+      - name: "results"
+        label: "Results & Resources"
+        file: "assets/data/content/results.json"
+        fields:
+          - label: "Header Title"
+            name: "header.title"
+            widget: "string"
+          - label: "Header Subtitle"
+            name: "header.subtitle"
+            widget: "text"
+          - label: "Booklet Title"
+            name: "result_1_booklet.title"
+            widget: "string"
+          - label: "Booklet Description"
+            name: "result_1_booklet.description"
+            widget: "text"
+          - label: "Campaign Documentary Films"
+            name: "result_2_documentaries.films"
+            widget: "list"
+            fields:
+              - { label: "Country", name: "country", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Film Title", name: "title", widget: "string" }
+              - { label: "Film Description", name: "description", widget: "text" }
+              - { label: "Poster Image", name: "poster", widget: "image" }
+          - label: "VR Exhibition Description"
+            name: "result_3_exhibition.description"
+            widget: "text"
+
+      # CONTACT & PARTNER ADDRESSES
+      - name: "contact"
+        label: "Contact Information"
+        file: "assets/data/content/contact.json"
+        fields:
+          - label: "Subtitle"
+            name: "header.subtitle"
+            widget: "text"
+          - label: "Partner Organizations Contact Cards"
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: "Role Badge", name: "badge", widget: "string" }
+              - { label: "Organization Name", name: "name", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "OID Number", name: "oid", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Website", name: "website", widget: "string" }
+
+      # GLOBAL SITE SETTINGS & FOOTER
+      - name: "settings"
+        label: "Site Settings & EU Disclaimer"
+        file: "assets/data/content/site-settings.json"
+        fields:
+          - { label: "Site Name", name: "site_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Project Code", name: "project_number", widget: "string" }
+          - { label: "Project Period", name: "project_period", widget: "string" }
+          - { label: "Grant Amount", name: "project_grant", widget: "string" }
+          - { label: "Coordinator", name: "coordinator_name", widget: "string" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Official EU Disclaimer", name: "eu_disclaimer", widget: "text" }
+          - { label: "Copyright Notice", name: "copyright_text", widget: "text" }
+          - label: "Social Media Links"
+            name: "social_links"
+            widget: "object"
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "YouTube", name: "youtube", widget: "string" }
+              - { label: "Facebook", name: "facebook", widget: "string" }
+
+  # =========================================================================
+  # 2. NEWS & ARTICLES
+  # =========================================================================
+  - name: "news"
+    label: "News & Updates"
+    file: "assets/data/content/news.json"
+    fields:
+      - label: "Articles"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "text" }
+          - { label: "Full Text", name: "full_text", widget: "markdown" }
+          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Author", name: "author", widget: "string" }
+
+  # =========================================================================
+  # 3. ACTIVITIES & TIMELINE
+  # =========================================================================
+  - name: "activities"
+    label: "Activities & Timeline"
+    file: "assets/data/content/activities.json"
+    fields:
+      - label: "Milestones"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Number", name: "number", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "string", required: false }
+          - { label: "Location", name: "place", widget: "string" }
+          - { label: "Participants", name: "participants", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Link URL", name: "link", widget: "string", required: false }
+          - { label: "Link Label", name: "linkLabel", widget: "string", required: false }
+
+  # =========================================================================
+  # 4. PROJECT PARTNERS
+  # =========================================================================
+  - name: "partners"
+    label: "Project Partners"
+    file: "assets/data/content/partners.json"
+    fields:
+      - label: "Partners"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Organization Name", name: "legalName", widget: "string" }
+          - { label: "Acronym", name: "acronym", widget: "string" }
+          - { label: "Country", name: "country", widget: "string" }
+          - { label: "Role", name: "role", widget: "string" }
+          - { label: "Website", name: "website", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Responsibilities", name: "responsibilities", widget: "list", field: { label: "Task", widget: "string" } }

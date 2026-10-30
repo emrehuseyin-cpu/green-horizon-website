@@ -34,6 +34,17 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# Decap CMS Admin redirects
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
 # Custom 404 page fallback
 [[redirects]]
   from = "/*"

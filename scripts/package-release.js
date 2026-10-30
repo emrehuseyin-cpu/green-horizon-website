@@ -8,13 +8,21 @@ const path = require('path');
 const { execSync } = require('child_process');
 const { syncPhotos } = require('./sync-activity-photos');
 const { resizePhotos } = require('./resize-photos');
+const { compileSiteContent } = require('./compile-content');
 
 const rootDir = path.join(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
 
 console.log('--- GREEN HORIZON: PRE-FLIGHT VALIDATION & BUILD ---');
 
-// 0. Auto-resize activity photos if needed
+// 0. Compile site content from JSON
+try {
+  compileSiteContent();
+} catch (e) {
+  console.warn('[Note] Content compiler warning:', e.message);
+}
+
+// 0b. Auto-resize activity photos if needed
 try {
   resizePhotos();
 } catch (e) {
@@ -102,6 +110,11 @@ requiredPages.forEach(p => {
 // Copy Assets and API
 copyRecursive(path.join(rootDir, 'assets'), path.join(distDir, 'assets'));
 copyRecursive(path.join(rootDir, 'api'), path.join(distDir, 'api'));
+
+// Copy Decap CMS Admin Dashboard
+if (fs.existsSync(path.join(rootDir, 'admin'))) {
+  copyRecursive(path.join(rootDir, 'admin'), path.join(distDir, 'admin'));
+}
 
 console.log(`[PASS] Production files copied to /dist directory (${fs.readdirSync(distDir).length} top-level entries).`);
 
