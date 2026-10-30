@@ -1,1 +1,84 @@
-[]
+{
+  "photos": [
+    {
+      "id": "gal-01",
+      "file": "assets/activities/a2-training-course/training_course_01.webp",
+      "title": "Transnational Training Course & Drone Drills",
+      "caption": "Youth workers and participants practicing flight navigation and camera maneuvering during the training mobility in Brașov.",
+      "category": "Training course",
+      "date": "October 2025",
+      "place": "Brașov, Romania",
+      "alt": "Youth participants practicing camera drone flight in Brașov"
+    },
+    {
+      "id": "gal-02",
+      "file": "assets/activities/a2-training-course/training_course_06.webp",
+      "title": "Field Aerial Photography Drill",
+      "caption": "Hands-on drone piloting and photography framing exercises in outdoor terrain.",
+      "category": "Training course",
+      "date": "October 2025",
+      "place": "Brașov, Romania",
+      "alt": "Drone piloting and outdoor camera inspection"
+    },
+    {
+      "id": "gal-03",
+      "file": "assets/activities/a1-kickoff/tpm-kickoff-session-01.jpg",
+      "title": "Transnational Kick-Off Planning in Bonn",
+      "caption": "Consortium partners aligning work packages, mobility dates, and project milestones in Germany.",
+      "category": "Events",
+      "date": "May 2025",
+      "place": "Bonn, Germany",
+      "alt": "Project partners meeting in conference room for kickoff"
+    },
+    {
+      "id": "gal-04",
+      "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_04.webp",
+      "title": "Local Youth Workshop in Romania",
+      "caption": "Young participants exploring ecological monitoring techniques and environmental issues in Brașov.",
+      "category": "Workshops Romania",
+      "date": "April 2026",
+      "place": "Brașov, Romania",
+      "alt": "Youth participants engaged in local workshop activity"
+    },
+    {
+      "id": "gal-05",
+      "file": "assets/activities/a4-local-workshops/tr/DETR14.webp",
+      "title": "Local Eco-Action Workshop in Türkiye",
+      "caption": "Turkish youth team collaborating on coastal ecosystem preservation and drone survey planning in Mersin.",
+      "category": "Workshops Türkiye",
+      "date": "April 2026",
+      "place": "Mersin, Türkiye",
+      "alt": "Youth workshop participants working on ecological action plans"
+    },
+    {
+      "id": "gal-06",
+      "file": "assets/activities/a5-films-exhibition/Exh1.png",
+      "title": "Virtual Reality Exhibition Preparation",
+      "caption": "Curating aerial photos and youth climate stories for the 3D VR exhibition gallery.",
+      "category": "Exhibition",
+      "date": "June 2026",
+      "place": "Online / Transnational",
+      "alt": "Virtual reality exhibition showcase preparation"
+    },
+    {
+      "id": "gal-07",
+      "file": "assets/activities/a7-dissemination-final-meeting/ro/DER1.jpeg",
+      "title": "National Dissemination Conference Romania",
+      "caption": "Presenting Green Horizon tangible results, educational booklet, and documentary films to local youth and stakeholders.",
+      "category": "Events",
+      "date": "July 2026",
+      "place": "Romania",
+      "alt": "Audience and youth workers at dissemination event"
+    },
+    {
+      "id": "gal-08",
+      "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR1.jpeg",
+      "title": "National Dissemination Event Türkiye",
+      "caption": "Sharing drone photography outcomes and booklet methodologies with educators and youth communities in Mersin.",
+      "category": "Events",
+      "date": "July 2026",
+      "place": "Mersin, Türkiye",
+      "alt": "Presentation and discussion during dissemination conference"
+    }
+  ]
+}

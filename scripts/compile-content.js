@@ -49,13 +49,17 @@ function compileSiteContent() {
     fs.writeFileSync(path.join(rootDir, 'assets/data/partners.json'), JSON.stringify(list, null, 2) + '\n');
   }
 
-  ['stories.json', 'gallery.json'].forEach(f => {
-    const src = path.join(contentDir, f);
-    const dest = path.join(rootDir, 'assets/data', f);
-    if (fs.existsSync(src)) {
-      fs.copyFileSync(src, dest);
-    }
-  });
+  const storiesData = loadJSON('stories.json');
+  if (storiesData) {
+    const list = Array.isArray(storiesData) ? storiesData : (storiesData.stories || []);
+    fs.writeFileSync(path.join(rootDir, 'assets/data/stories.json'), JSON.stringify(list, null, 2) + '\n');
+  }
+
+  const galleryData = loadJSON('gallery.json');
+  if (galleryData) {
+    const list = Array.isArray(galleryData) ? galleryData : (galleryData.photos || []);
+    fs.writeFileSync(path.join(rootDir, 'assets/data/gallery.json'), JSON.stringify(list, null, 2) + '\n');
+  }
 
   // 1. Update Homepage (index.html)
   if (home && fs.existsSync(path.join(rootDir, 'index.html'))) {

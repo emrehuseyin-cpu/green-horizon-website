@@ -29,10 +29,10 @@ dist/
 hostgator-creds.json
 ftp-config.json
 
-# Large Media Files (Video files exceeding GitHub 100MB limit)
-assets/video/*.mp4
+# Raw Uncompressed Video Files
 assets/video/*.mov
-assets/video/*.webm
+assets/video/*.raw
+assets/video/*_original.*
 
 # IDE / Editor Files
 .vscode/

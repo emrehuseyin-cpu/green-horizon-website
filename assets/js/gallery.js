@@ -24,7 +24,8 @@ function initMainGalleryPage() {
 
   fetch('assets/data/gallery.json')
     .then(res => res.json())
-    .then(items => {
+    .then(data => {
+      const items = Array.isArray(data) ? data : (data && Array.isArray(data.photos) ? data.photos : []);
       renderGalleryItems(grid, items);
       setupCategoryFilters(grid, items);
     })
@@ -110,7 +111,8 @@ function initHomepageGalleryStrip() {
 
   fetch('assets/data/gallery.json')
     .then(res => res.json())
-    .then(items => {
+    .then(data => {
+      const items = Array.isArray(data) ? data : (data && Array.isArray(data.photos) ? data.photos : []);
       if (!items || items.length === 0) {
         strip.innerHTML = `
           <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1.5rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-light); color: var(--text-muted);">
@@ -181,8 +183,9 @@ function initActivityGalleries() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then(photos => {
-        if (!Array.isArray(photos) || photos.length === 0) {
+      .then(data => {
+        const photos = Array.isArray(data) ? data : (data && Array.isArray(data.photos) ? data.photos : []);
+        if (photos.length === 0) {
           // If the list is empty, the gallery section is hidden: show no placeholder images.
           container.style.display = 'none';
           container.innerHTML = '';
