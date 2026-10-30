@@ -9,7 +9,7 @@ function initResourcesPage() {
   const container = document.getElementById('resources-list-container');
   if (!container) return;
 
-  fetch('assets/data/resources.json')
+  fetch(`assets/data/resources.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       resourcesData = data;

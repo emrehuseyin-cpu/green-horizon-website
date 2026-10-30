@@ -637,30 +637,145 @@ function gh_get_album_info($albumId) {
 function gh_recompile_html() {
     $settingsPath = GH_ROOT_DIR . '/assets/data/content/site-settings.json';
     $homePath = GH_ROOT_DIR . '/assets/data/content/home.json';
+    $resultsPath = GH_ROOT_DIR . '/assets/data/content/results.json';
+    $storiesPath = GH_ROOT_DIR . '/assets/data/content/stories.json';
+    $aboutPath = GH_ROOT_DIR . '/assets/data/content/about.json';
+    $contactPath = GH_ROOT_DIR . '/assets/data/content/contact.json';
 
     $settings = file_exists($settingsPath) ? json_decode(file_get_contents($settingsPath), true) : null;
     $home = file_exists($homePath) ? json_decode(file_get_contents($homePath), true) : null;
+    $results = file_exists($resultsPath) ? json_decode(file_get_contents($resultsPath), true) : null;
+    $stories = file_exists($storiesPath) ? json_decode(file_get_contents($storiesPath), true) : null;
+    $about = file_exists($aboutPath) ? json_decode(file_get_contents($aboutPath), true) : null;
+    $contact = file_exists($contactPath) ? json_decode(file_get_contents($contactPath), true) : null;
+
+    $hasDist = is_dir(GH_ROOT_DIR . '/dist');
 
     // 1. Update index.html
     $indexPath = GH_ROOT_DIR . '/index.html';
     if ($home && file_exists($indexPath)) {
         $html = file_get_contents($indexPath);
         if (!empty($home['hero']['title'])) {
-            $html = preg_replace('/(<h1 class="section-title"[^>]*>)([\s\S]*?)(<\/h1>)/', '$1' . "\n            " . htmlspecialchars($home['hero']['title']) . "\n          $3", $html);
+            $html = preg_replace('/(<h1 class="section-title"[^>]*>)([\s\S]*?)(<\/h1>)/', '$1' . "\n            " . htmlspecialchars($home['hero']['title']) . "\n          $3", $html, 1);
         }
         if (!empty($home['hero']['subtitle'])) {
-            $html = preg_replace('/(<p class="section-subtitle"[^>]*>)([\s\S]*?)(<\/p>)/', '$1' . "\n            " . htmlspecialchars($home['hero']['subtitle']) . "\n          $3", $html);
+            $html = preg_replace('/(<p class="section-subtitle"[^>]*>)([\s\S]*?)(<\/p>)/', '$1' . "\n            " . htmlspecialchars($home['hero']['subtitle']) . "\n          $3", $html, 1);
         }
         if (!empty($home['promo_video']['title'])) {
-            $html = preg_replace('/(<h3 class="drone-video-title">)([\s\S]*?)(<\/h3>)/', '$1' . htmlspecialchars($home['promo_video']['title']) . '$3', $html);
+            $html = preg_replace('/(<h3 class="drone-video-title">)([\s\S]*?)(<\/h3>)/', '$1' . htmlspecialchars($home['promo_video']['title']) . '$3', $html, 1);
         }
         if (!empty($home['promo_video']['description'])) {
-            $html = preg_replace('/(<p class="drone-video-description">)([\s\S]*?)(<\/p>)/', '$1' . "\n              " . htmlspecialchars($home['promo_video']['description']) . "\n            $3", $html);
+            $html = preg_replace('/(<p class="drone-video-description">)([\s\S]*?)(<\/p>)/', '$1' . "\n              " . htmlspecialchars($home['promo_video']['description']) . "\n            $3", $html, 1);
+        }
+        if (!empty($home['promo_video']['poster'])) {
+            $html = preg_replace('/(<video id="drone-mp4-player"[^>]*poster=")([^"]*)(")/', '$1' . $home['promo_video']['poster'] . '$3', $html, 1);
+        }
+        if (!empty($home['promo_video']['video_src_mp4'])) {
+            $html = preg_replace('/(<video id="drone-mp4-player"[\s\S]*?<source src=")([^"]*)(")/', '$1' . $home['promo_video']['video_src_mp4'] . '$3', $html, 1);
         }
         file_put_contents($indexPath, $html);
+        if ($hasDist) @copy($indexPath, GH_ROOT_DIR . '/dist/index.html');
     }
 
-    // 2. Synchronize EU disclaimer & Project Number across all HTML files
+    // 2. Update resources.html & results.html (Campaign Films & Results)
+    if ($results && !empty($results['result_2_documentaries']['films'])) {
+        $films = $results['result_2_documentaries']['films'];
+        $resPages = ['resources.html', 'results.html'];
+
+        foreach ($resPages as $resPage) {
+            $pPath = GH_ROOT_DIR . '/' . $resPage;
+            if (!file_exists($pPath)) continue;
+            $rHtml = file_get_contents($pPath);
+
+            foreach ($films as $idx => $film) {
+                $filmSlotId = 'film-' . ($idx + 1);
+                // Replace in slot
+                $slotPattern = '/(<div class="media-embed-slot" id="' . $filmSlotId . '">)([\s\S]*?)(<\/div>\s*<\/div>)/';
+                if (preg_match($slotPattern, $rHtml, $match)) {
+                    $slotContent = $match[2];
+
+                    if (!empty($film['title'])) {
+                        $slotContent = preg_replace('/(<h3[^>]*>)([\s\S]*?)(<\/h3>)/', '$1' . htmlspecialchars($film['title']) . '$3', $slotContent, 1);
+                    }
+                    if (!empty($film['duration'])) {
+                        $slotContent = preg_replace('/(<span style="font-size: 0.82rem; font-weight: 700; color: var\(--text-light\);">)([\s\S]*?)(<\/span>)/', '$1' . htmlspecialchars($film['duration']) . '$3', $slotContent, 1);
+                    }
+                    if (!empty($film['description'])) {
+                        $slotContent = preg_replace('/(<p style="font-size: 0.9rem; color: var\(--text-muted\); line-height: 1.55; margin-bottom: 0; flex: 1;">)([\s\S]*?)(<\/p>)/', '$1' . htmlspecialchars($film['description']) . '$3', $slotContent, 1);
+                    }
+                    if (!empty($film['poster'])) {
+                        $slotContent = preg_replace('/(poster=")([^"]*)(")/', '$1' . $film['poster'] . '$3', $slotContent, 1);
+                    }
+                    if (!empty($film['video_src'])) {
+                        $slotContent = preg_replace('/(<source src=")([^"]*)(")/', '$1' . $film['video_src'] . '$3', $slotContent, 1);
+                    }
+
+                    $rHtml = str_replace($match[0], $match[1] . $slotContent . $match[3], $rHtml);
+                }
+            }
+
+            file_put_contents($pPath, $rHtml);
+            if ($hasDist) @copy($pPath, GH_ROOT_DIR . '/dist/' . $resPage);
+        }
+    }
+
+    // 3. Update stories.html
+    if ($stories && file_exists(GH_ROOT_DIR . '/stories.html')) {
+        $stList = isset($stories['stories']) ? $stories['stories'] : (is_array($stories) ? $stories : []);
+        $stPath = GH_ROOT_DIR . '/stories.html';
+        $sHtml = file_get_contents($stPath);
+
+        foreach ($stList as $idx => $st) {
+            $stSlotId = 'film-0' . ($idx + 1);
+            $stPattern = '/(<article class="media-embed-slot" id="' . $stSlotId . '">)([\s\S]*?)(<\/article>)/';
+            if (preg_match($stPattern, $sHtml, $match)) {
+                $stContent = $match[2];
+                if (!empty($st['title'])) {
+                    $stContent = preg_replace('/(<h3[^>]*>)([\s\S]*?)(<\/h3>)/', '$1' . "\n                " . htmlspecialchars($st['title']) . "\n              $3", $stContent, 1);
+                }
+                if (!empty($st['summary'])) {
+                    $stContent = preg_replace('/(<p style="font-size: 0.92rem; color: var\(--text-muted\); line-height: 1.6; margin-bottom: 1rem;">)([\s\S]*?)(<\/p>)/', '$1' . "\n                " . htmlspecialchars($st['summary']) . "\n              $3", $stContent, 1);
+                }
+                if (!empty($st['poster'])) {
+                    $stContent = preg_replace('/(poster=")([^"]*)(")/', '$1' . $st['poster'] . '$3', $stContent, 1);
+                }
+                if (!empty($st['video_file'])) {
+                    $stContent = preg_replace('/(<source src=")([^"]*)(")/', '$1' . $st['video_file'] . '$3', $stContent, 1);
+                }
+                $sHtml = str_replace($match[0], $match[1] . $stContent . $match[3], $sHtml);
+            }
+        }
+
+        file_put_contents($stPath, $sHtml);
+        if ($hasDist) @copy($stPath, GH_ROOT_DIR . '/dist/stories.html');
+    }
+
+    // 4. Update about.html Header
+    if ($about && file_exists(GH_ROOT_DIR . '/about.html')) {
+        $abPath = GH_ROOT_DIR . '/about.html';
+        $abHtml = file_get_contents($abPath);
+        if (!empty($about['header']['title'])) {
+            $abHtml = preg_replace('/(<h1 class="section-title">)([\s\S]*?)(<\/h1>)/', '$1' . htmlspecialchars($about['header']['title']) . '$3', $abHtml, 1);
+        }
+        if (!empty($about['header']['subtitle'])) {
+            $abHtml = preg_replace('/(<p class="section-subtitle"[^>]*>)([\s\S]*?)(<\/p>)/', '$1' . "\n          " . htmlspecialchars($about['header']['subtitle']) . "\n        $3", $abHtml, 1);
+        }
+        file_put_contents($abPath, $abHtml);
+        if ($hasDist) @copy($abPath, GH_ROOT_DIR . '/dist/about.html');
+    }
+
+    // 5. Update contact.html Header
+    if ($contact && file_exists(GH_ROOT_DIR . '/contact.html')) {
+        $cPath = GH_ROOT_DIR . '/contact.html';
+        $cHtml = file_get_contents($cPath);
+        if (!empty($contact['header']['title'])) {
+            $cHtml = preg_replace('/(<h1 class="section-title">)([\s\S]*?)(<\/h1>)/', '$1' . htmlspecialchars($contact['header']['title']) . '$3', $cHtml, 1);
+        }
+        file_put_contents($cPath, $cHtml);
+        if ($hasDist) @copy($cPath, GH_ROOT_DIR . '/dist/contact.html');
+    }
+
+    // 6. Synchronize EU disclaimer & Project Number across all HTML files
     if ($settings && !empty($settings['eu_disclaimer'])) {
         $htmlFiles = glob(GH_ROOT_DIR . '/*.html');
         foreach ($htmlFiles as $hPath) {
@@ -678,6 +793,21 @@ function gh_recompile_html() {
                 );
             }
             file_put_contents($hPath, $pageHtml);
+            if ($hasDist) {
+                @copy($hPath, GH_ROOT_DIR . '/dist/' . basename($hPath));
+            }
+        }
+    }
+
+    // 7. Synchronize runtime data directories
+    if ($hasDist) {
+        $sourceData = GH_ROOT_DIR . '/assets/data';
+        $destData = GH_ROOT_DIR . '/dist/assets/data';
+        if (is_dir($sourceData) && is_dir($destData)) {
+            $files = glob($sourceData . '/*.json');
+            foreach ($files as $f) {
+                @copy($f, $destData . '/' . basename($f));
+            }
         }
     }
 }

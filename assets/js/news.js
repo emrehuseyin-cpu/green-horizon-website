@@ -9,7 +9,7 @@ function initNewsPage() {
   const container = document.getElementById('news-articles-container');
   if (!container) return;
 
-  fetch('assets/data/news.json')
+  fetch(`assets/data/news.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       newsArticles = data;

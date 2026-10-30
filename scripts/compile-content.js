@@ -95,10 +95,75 @@ function compileSiteContent() {
           `$1\n              ${home.promo_video.description}\n            $3`
         );
       }
+      if (home.promo_video.poster) {
+        indexHtml = indexHtml.replace(
+          /(<video id="drone-mp4-player"[^>]*poster=")([^"]*)(")/,
+          `$1${home.promo_video.poster}$3`
+        );
+      }
+      if (home.promo_video.video_src_mp4) {
+        indexHtml = indexHtml.replace(
+          /(<video id="drone-mp4-player"[\s\S]*?<source src=")([^"]*)(")/,
+          `$1${home.promo_video.video_src_mp4}$3`
+        );
+      }
     }
 
     fs.writeFileSync(path.join(rootDir, 'index.html'), indexHtml, 'utf8');
     console.log('[PASS] index.html compiled with latest content.');
+  }
+
+  // 1b. Update resources.html & results.html
+  if (results && results.result_2_documentaries && results.result_2_documentaries.films) {
+    const films = results.result_2_documentaries.films;
+    ['resources.html', 'results.html'].forEach(page => {
+      const pPath = path.join(rootDir, page);
+      if (!fs.existsSync(pPath)) return;
+      let rHtml = fs.readFileSync(pPath, 'utf8');
+
+      films.forEach((film, idx) => {
+        const slotId = 'film-' + (idx + 1);
+        const slotPattern = new RegExp(`(<div class="media-embed-slot" id="${slotId}">)([\\s\\S]*?)(<\\/div>\\s*<\\/div>)`);
+        const match = rHtml.match(slotPattern);
+        if (match) {
+          let slotContent = match[2];
+          if (film.title) slotContent = slotContent.replace(/(<h3[^>]*>)([\s\S]*?)(<\/h3>)/, `$1${film.title}$3`);
+          if (film.duration) slotContent = slotContent.replace(/(<span style="font-size: 0.82rem; font-weight: 700; color: var\(--text-light\);">)([\s\S]*?)(<\/span>)/, `$1${film.duration}$3`);
+          if (film.description) slotContent = slotContent.replace(/(<p style="font-size: 0.9rem; color: var\(--text-muted\); line-height: 1.55; margin-bottom: 0; flex: 1;">)([\s\S]*?)(<\/p>)/, `$1${film.description}$3`);
+          if (film.poster) slotContent = slotContent.replace(/(poster=")([^"]*)(")/, `$1${film.poster}$3`);
+          if (film.video_src) slotContent = slotContent.replace(/(<source src=")([^"]*)(")/, `$1${film.video_src}$3`);
+          rHtml = rHtml.replace(match[0], match[1] + slotContent + match[3]);
+        }
+      });
+
+      fs.writeFileSync(pPath, rHtml, 'utf8');
+      console.log(`[PASS] ${page} compiled with latest documentary films.`);
+    });
+  }
+
+  // 1c. Update stories.html
+  const stories = loadJSON('stories.json');
+  if (stories && fs.existsSync(path.join(rootDir, 'stories.html'))) {
+    const stList = Array.isArray(stories) ? stories : (stories.stories || []);
+    const stPath = path.join(rootDir, 'stories.html');
+    let sHtml = fs.readFileSync(stPath, 'utf8');
+
+    stList.forEach((st, idx) => {
+      const slotId = 'film-0' + (idx + 1);
+      const slotPattern = new RegExp(`(<article class="media-embed-slot" id="${slotId}">)([\\s\\S]*?)(<\\/article>)`);
+      const match = sHtml.match(slotPattern);
+      if (match) {
+        let stContent = match[2];
+        if (st.title) stContent = stContent.replace(/(<h3[^>]*>)([\s\S]*?)(<\/h3>)/, `$1\n                ${st.title}\n              $3`);
+        if (st.summary) stContent = stContent.replace(/(<p style="font-size: 0.92rem; color: var\(--text-muted\); line-height: 1.6; margin-bottom: 1rem;">)([\s\S]*?)(<\/p>)/, `$1\n                ${st.summary}\n              $3`);
+        if (st.poster) stContent = stContent.replace(/(poster=")([^"]*)(")/, `$1${st.poster}$3`);
+        if (st.video_file) stContent = stContent.replace(/(<source src=")([^"]*)(")/, `$1${st.video_file}$3`);
+        sHtml = sHtml.replace(match[0], match[1] + stContent + match[3]);
+      }
+    });
+
+    fs.writeFileSync(stPath, sHtml, 'utf8');
+    console.log('[PASS] stories.html compiled with latest stories content.');
   }
 
   // 2. Update Global Footers across all HTML pages

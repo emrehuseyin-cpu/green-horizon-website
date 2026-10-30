@@ -92,7 +92,7 @@ function initHomepageNewsSection() {
   const newsContainer = document.getElementById('homepage-news-grid');
   if (!newsContainer) return;
 
-  fetch('assets/data/news.json')
+  fetch(`assets/data/news.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(articles => {
       // Pick top 3 newest articles

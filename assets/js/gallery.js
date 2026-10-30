@@ -22,7 +22,7 @@ function initMainGalleryPage() {
   const grid = document.getElementById('gallery-grid-container');
   if (!grid) return;
 
-  fetch('assets/data/gallery.json')
+  fetch(`assets/data/gallery.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       const items = Array.isArray(data) ? data : (data && Array.isArray(data.photos) ? data.photos : []);
@@ -109,7 +109,7 @@ function initHomepageGalleryStrip() {
   const strip = document.getElementById('homepage-gallery-strip');
   if (!strip) return;
 
-  fetch('assets/data/gallery.json')
+  fetch(`assets/data/gallery.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       const items = Array.isArray(data) ? data : (data && Array.isArray(data.photos) ? data.photos : []);
@@ -178,7 +178,7 @@ function initActivityGalleries() {
     const folder = container.getAttribute('data-activity-folder');
     if (!folder) return;
 
-    fetch(`${folder}/photos.json`)
+    fetch(`${folder}/photos.json?t=${Date.now()}`)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
@@ -363,7 +363,7 @@ function initActivityPhotoSpaces() {
   const activityGrids = document.querySelectorAll('[data-activity-slots]');
   if (!activityGrids.length) return;
 
-  fetch('assets/data/activities.json')
+  fetch(`assets/data/activities.json?t=${Date.now()}`)
     .then(res => res.json())
     .then(activities => {
       activityGrids.forEach(container => {
