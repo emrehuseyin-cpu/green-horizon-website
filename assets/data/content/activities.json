@@ -101,6 +101,22 @@
       }
     },
     {
+      "participants": "Open to the public worldwide",
+      "place": "Online (MetaSteps Virtual Gallery)",
+      "number": "12",
+      "date": "",
+      "photo": {
+        "file": "assets/images/booklet/poster-chapter2-photography.jpg",
+        "alt": "Welcome panel of the Green Horizon virtual exhibition",
+        "caption": "Virtual exhibition goes live online (October 2026)"
+      },
+      "title": "VR Exhibition Online Launch",
+      "linkLabel": "Visit the VR Exhibition",
+      "link": "exhibition",
+      "id": "act-vr-launch",
+      "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
+    },
+    {
       "id": "act-conference-ro",
       "number": "8",
       "date": "17 July 2026",
@@ -155,22 +171,6 @@
         "alt": "Consortium partners during the final transnational meeting in Mersin, Türkiye",
         "caption": "Final partner meeting in Mersin, Türkiye (31 July – 1 August 2026)"
       }
-    },
-    {
-      "participants": "Open to the public worldwide",
-      "place": "Online (MetaSteps Virtual Gallery)",
-      "number": "12",
-      "date": "",
-      "photo": {
-        "file": "assets/images/booklet/poster-chapter2-photography.jpg",
-        "alt": "Welcome panel of the Green Horizon virtual exhibition",
-        "caption": "Virtual exhibition goes live online (October 2026)"
-      },
-      "title": "VR Exhibition Online Launch",
-      "linkLabel": "Visit the VR Exhibition",
-      "link": "exhibition",
-      "id": "act-vr-launch",
-      "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
     }
   ]
 }
