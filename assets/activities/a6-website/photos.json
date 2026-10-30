@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "file": "vr-exh-01-welcome-hall.jpg",
+    "caption_en": "Virtual Reality Exhibition — Welcome Hall: Youth Voices for Climate Action Through Drone Technology",
+    "caption_tr": "Sanal Gerçeklik Sergisi — Karşılama Salonu: İHA Teknolojisiyle İklim Eylemi İçin Genç Sesler",
+    "caption_de": "VR-Ausstellung — Empfangshalle: Jugendstimmen für Klimaschutz durch Drohnentechnologie",
+    "caption_ro": "Expoziția Virtuală — Sala Principală: Vocile Tinerilor pentru Acțiune Climatică prin Tehnologia Dronelor",
+    "alt": "Green Horizon 3D Virtual Reality Exhibition Welcome Hall on MetaSteps",
+    "credit": "Asociația Empower Plus / Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exh-02-room1-climate-urgency.jpg",
+    "caption_en": "Virtual Exhibition Room 1 — Climate Urgency & Ecological Impact across Partner Regions",
+    "caption_tr": "Sanal Sergi Salon 1 — Ortak Bölgelerde İklim Aciliyeti ve Ekolojik Etkiler",
+    "caption_de": "VR-Ausstellungsraum 1 — Dringlichkeit des Klimawandels und ökologische Auswirkungen",
+    "caption_ro": "Camera Expozițională Virtuală 1 — Urgența Climatică și Impactul Ecologic",
+    "alt": "Virtual Exhibition Room 1 Climate Urgency panel display",
+    "credit": "IESA / Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exh-03-room2-visual-storytelling.jpg",
+    "caption_en": "Virtual Exhibition Room 2 — Visual Storytelling, Composition & Photography Artworks",
+    "caption_tr": "Sanal Sergi Salon 2 — Görsel Hikaye Anlatımı, Kompozisyon ve Fotoğraf Eserleri",
+    "caption_de": "VR-Ausstellungsraum 2 — Visuelles Storytelling, Bildgestaltung & Fotoausstellung",
+    "caption_ro": "Camera Expozițională Virtuală 2 — Storytelling Vizual, Compoziție și Fotografie",
+    "alt": "Virtual Exhibition Room 2 Visual Storytelling and Photography display",
+    "credit": "Integrational e.V. / Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exh-04-room3-drone-technology.jpg",
+    "caption_en": "Virtual Exhibition Room 3 — Aerial Drone Perspectives, Flight Mapping & Safety Guidelines",
+    "caption_tr": "Sanal Sergi Salon 3 — Havadan İHA Perspektifleri, Uçuş Haritalama ve Güvenlik İlkeleri",
+    "caption_de": "VR-Ausstellungsraum 3 — Drohnenperspektiven, Luftbildkartierung & Sicherheitsrichtlinien",
+    "caption_ro": "Camera Expozițională Virtuală 3 — Perspective Aeriene cu Drone, Cartografiere și Siguranță",
+    "alt": "Virtual Exhibition Room 3 Drone Perspectives and Technology display",
+    "credit": "Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exh-05-rhine-river-valley.jpg",
+    "caption_en": "Exhibition Artwork — Rhine River Valley & Aerial Cable Car Crossing (Bonn/Koblenz, Germany)",
+    "caption_tr": "Sergi Eseri — Ren Nehri Vadisi ve Havadan Teleferik Geçişi (Bonn/Koblenz, Almanya)",
+    "caption_de": "Ausstellungswerk — Mittelrheintal und Seilbahnquerung aus der Drohnenperspektive (Deutschland)",
+    "caption_ro": "Lucrare Expozițională — Valea Fluviului Rin și Telecabina Aeriană (Germania)",
+    "alt": "Aerial drone photograph of the Rhine River Valley in Germany",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "vr-exh-06-brasov-mountain-canopy.jpg",
+    "caption_en": "Exhibition Artwork — Mountain Forest Canopy & Ecological Corridors in Brașov (Romania)",
+    "caption_tr": "Sergi Eseri — Brașov Dağ Ormanı Örtüsü ve Ekolojik Koridorlar (Romanya)",
+    "caption_de": "Ausstellungswerk — Karpaten-Waldkronen und ökologische Korridore bei Brașov (Rumänien)",
+    "caption_ro": "Lucrare Expozițională — Coronamentul Pădurilor Montane și Coridoare Ecologice în Brașov (România)",
+    "alt": "Aerial drone view of temperate mountain forest canopy in Brașov Romania",
+    "credit": "Asociația Empower Plus"
+  },
+  {
+    "file": "vr-exh-07-mediterranean-coastline.jpg",
+    "caption_en": "Exhibition Artwork — Coastal Geomorphology & Maritime Conservation from Above (Türkiye)",
+    "caption_tr": "Sergi Eseri — Havadan Kıyı Jeomorfolojisi ve Denizel Koruma Alanları (Türkiye)",
+    "caption_de": "Ausstellungswerk — Küstengeomorphologie und Meeresschutz aus der Luft (Türkei)",
+    "caption_ro": "Lucrare Expozițională — Geomorfologie Costieră și Conservare Marină (Turcia)",
+    "alt": "Aerial drone perspective of coastal waters and geological marine formations in Türkiye",
+    "credit": "IESA"
+  },
+  {
+    "file": "vr-exh-08-urban-green-corridor.jpg",
+    "caption_en": "Exhibition Artwork — Urban Green Corridors & Sustainable Municipal Infrastructure",
+    "caption_tr": "Sergi Eseri — Kentsel Yeşil Koridorlar ve Sürdürülebilir Şehir Altyapısı",
+    "caption_de": "Ausstellungswerk — Städtische Grüngürtel und nachhaltige Infrastruktur",
+    "caption_ro": "Lucrare Expozițională — Coridoare Verzi Urbane și Infrastructură Sustenabilă",
+    "alt": "Aerial drone inspection of urban green belt and sustainable tree canopies",
+    "credit": "Green Horizon Youth Production"
+  },
+  {
+    "file": "vr-exh-09-wetland-flamingo-reserve.jpg",
+    "caption_en": "Exhibition Artwork — Wetland Biodiversity Sanctuary & Migratory Bird Ecosystems",
+    "caption_tr": "Sergi Eseri — Sulak Alan Biyoçeşitlilik Koruma Alanı ve Göçmen Kuş Ekosistemleri",
+    "caption_de": "Ausstellungswerk — Feuchtgebiets-Biodiversität und Zugvogel-Schutzgebiete",
+    "caption_ro": "Lucrare Expozițională — Sanctuar de Biodiversitate în Zone Umede și Păsări Migratoare",
+    "alt": "Aerial drone capture of coastal wetland ecosystem and flamingo flocks",
+    "credit": "IESA"
+  },
+  {
+    "file": "vr-exh-10-renewable-solar-transition.jpg",
+    "caption_en": "Exhibition Artwork — Clean Energy Transition: Aerial Mapping of Solar Photovoltaic Fields",
+    "caption_tr": "Sergi Eseri — Temiz Enerjiye Geçiş: Güneş Fotovoltaik Tarlalarının Havadan Haritalanması",
+    "caption_de": "Ausstellungswerk — Energiewende: Drohnenkartierung von Photovoltaik-Freiflächenanlagen",
+    "caption_ro": "Lucrare Expozițională — Tranziția către Energie Curată: Cartografiere Aeriană a Panourilor Solare",
+    "alt": "Aerial drone documentation of large-scale renewable solar energy installation",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "vr-exh-11-alpine-watershed-landscape.jpg",
+    "caption_en": "Exhibition Artwork — Alpine Watershed Dynamics & Mountain Climate Adaptation",
+    "caption_tr": "Sergi Eseri — Yüksek Dağ Havzası Dinamikleri ve Dağlık İklim Uyumu",
+    "caption_de": "Ausstellungswerk — Alpine Wassereinzugsgebiete und Anpassung an den Klimawandel",
+    "caption_ro": "Lucrare Expozițională — Dinamica Bazinelor Hidrografice Montane și Adaptarea Climatică",
+    "alt": "Aerial drone landscape of alpine watershed and mountain vegetation",
+    "credit": "Asociația Empower Plus"
+  },
+  {
+    "file": "vr-exh-12-youth-flight-pilots.jpg",
+    "caption_en": "Youth Field Pilot Crew — Capturing Climate Perspectives for the Virtual Exhibition",
+    "caption_tr": "Genç Saha Pilot Ekibi — Sanal Sergi İçin İklim Perspektiflerini Kaydederken",
+    "caption_de": "Jugend-Drohnenpilotenteam — Aufnahmen von Klimaperspektiven für die virtuelle Ausstellung",
+    "caption_ro": "Echipa de Tineri Piloți — Înregistrarea Perspectivelor Climatice pentru Expoziția Virtuală",
+    "alt": "Youth drone pilot crew conducting aerial field survey and photography",
+    "credit": "Green Horizon Consortium"
+  }
+]

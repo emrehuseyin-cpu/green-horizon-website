@@ -51,13 +51,13 @@
   },
   {
     "id": "gal-06",
-    "file": "assets/activities/a5-films-exhibition/Exh1.png",
-    "title": "Virtual Reality Exhibition Preparation",
-    "caption": "Curating aerial photos and youth climate stories for the 3D VR exhibition gallery.",
+    "file": "assets/activities/a6-website/vr-exh-01-welcome-hall.jpg",
+    "title": "VR Exhibition 3D Gallery Welcome Hall",
+    "caption": "Virtual Reality Exhibition on MetaSteps: Youth Voices for Climate Action Through Drone Technology.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / Transnational",
-    "alt": "Virtual reality exhibition showcase preparation"
+    "place": "Online / MetaSteps",
+    "alt": "Green Horizon 3D Virtual Reality Exhibition Welcome Hall on MetaSteps"
   },
   {
     "id": "gal-07",
@@ -78,5 +78,55 @@
     "date": "July 2026",
     "place": "Mersin, Türkiye",
     "alt": "Presentation and discussion during dissemination conference"
+  },
+  {
+    "id": "gal-09",
+    "file": "assets/activities/a6-website/vr-exh-05-rhine-river-valley.jpg",
+    "title": "Exhibition Artwork: Rhine River Valley",
+    "caption": "Aerial perspective of the Rhine river crossing and fluvial transport corridors in Germany.",
+    "category": "Exhibition",
+    "date": "June 2026",
+    "place": "Germany",
+    "alt": "Aerial drone photograph of the Rhine River Valley in Germany"
+  },
+  {
+    "id": "gal-10",
+    "file": "assets/activities/a6-website/vr-exh-06-brasov-mountain-canopy.jpg",
+    "title": "Exhibition Artwork: Carpathian Forest Canopy",
+    "caption": "Temperate mixed forest canopy and mountain ecological corridors in Brașov, Romania.",
+    "category": "Exhibition",
+    "date": "June 2026",
+    "place": "Brașov, Romania",
+    "alt": "Aerial drone view of temperate mountain forest canopy in Brașov Romania"
+  },
+  {
+    "id": "gal-11",
+    "file": "assets/activities/a6-website/vr-exh-07-mediterranean-coastline.jpg",
+    "title": "Exhibition Artwork: Mediterranean Coastline",
+    "caption": "Aerial coastal geomorphology and marine conservation zone in southern Türkiye.",
+    "category": "Exhibition",
+    "date": "June 2026",
+    "place": "Mersin, Türkiye",
+    "alt": "Aerial drone perspective of coastal waters and geological marine formations in Türkiye"
+  },
+  {
+    "id": "gal-12",
+    "file": "assets/activities/a6-website/vr-exh-09-wetland-flamingo-reserve.jpg",
+    "title": "Exhibition Artwork: Wetland Bird Sanctuary",
+    "caption": "Aerial documentation of migratory flamingo habitats and coastal delta biodiversity.",
+    "category": "Exhibition",
+    "date": "June 2026",
+    "place": "Türkiye",
+    "alt": "Aerial drone capture of coastal wetland ecosystem and flamingo flocks"
+  },
+  {
+    "id": "gal-13",
+    "file": "assets/activities/a6-website/vr-exh-10-renewable-solar-transition.jpg",
+    "title": "Exhibition Artwork: Solar Energy Transition",
+    "caption": "Aerial mapping of large-scale renewable solar installations advancing European climate goals.",
+    "category": "Exhibition",
+    "date": "June 2026",
+    "place": "Germany",
+    "alt": "Aerial drone documentation of large-scale renewable solar energy installation"
   }
 ]
