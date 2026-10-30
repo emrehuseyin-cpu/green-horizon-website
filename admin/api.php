@@ -496,13 +496,19 @@ if ($action === 'upload_video_file') {
 if ($action === 'system_status') {
     $gitBranch = 'main';
     $gitCommit = 'Unknown';
-    $gitOutput = '';
+    $hasUncommittedChanges = false;
+    $uncommittedList = [];
 
     if (function_exists('exec')) {
-        @exec('git rev-parse --abbrev-ref HEAD 2>&1', $bOut);
+        @exec('cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git rev-parse --abbrev-ref HEAD 2>&1', $bOut);
         if (!empty($bOut[0])) $gitBranch = trim($bOut[0]);
-        @exec('git log -1 --format="%h - %s (%ci)" 2>&1', $cOut);
+        @exec('cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git log -1 --format="%h - %s (%ci)" 2>&1', $cOut);
         if (!empty($cOut[0])) $gitCommit = trim($cOut[0]);
+        @exec('cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git status --porcelain 2>&1', $sOut);
+        if (!empty($sOut)) {
+            $hasUncommittedChanges = true;
+            $uncommittedList = array_slice($sOut, 0, 10);
+        }
     }
 
     echo json_encode([
@@ -513,8 +519,67 @@ if ($action === 'system_status') {
         'post_max_size' => ini_get('post_max_size'),
         'git_branch' => $gitBranch,
         'git_commit' => $gitCommit,
+        'has_uncommitted' => $hasUncommittedChanges,
+        'uncommitted_files' => $uncommittedList,
         'root_dir' => GH_ROOT_DIR
     ]);
+    exit;
+}
+
+// =============================================================================
+// ACTION: GIT COMMIT & PUSH TO GITHUB
+// =============================================================================
+if ($action === 'git_sync') {
+    if (!function_exists('exec')) {
+        echo json_encode(['success' => false, 'error' => 'exec() function is disabled on this server.']);
+        exit;
+    }
+
+    $input = json_decode(file_get_contents('php://input'), true) ?: $_POST;
+    $customMsg = trim($input['message'] ?? '');
+    $commitMsg = $customMsg ?: ('chore(cms): update website content from admin panel [' . date('Y-m-d H:i') . ']');
+
+    $output = [];
+    $ret = 0;
+
+    // Stage content changes
+    $cmd = 'cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git add assets/data/ assets/activities/ assets/video/ *.html 2>&1';
+    exec($cmd, $output, $ret);
+
+    // Check if there is anything to commit
+    $statusCheck = [];
+    exec('cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git status --porcelain 2>&1', $statusCheck);
+    if (empty($statusCheck)) {
+        echo json_encode(['success' => true, 'message' => 'Everything is already up-to-date. No changes to commit.']);
+        exit;
+    }
+
+    // Commit
+    $cmd = 'cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git commit -m ' . escapeshellarg($commitMsg) . ' 2>&1';
+    exec($cmd, $output, $ret);
+
+    // Push to GitHub
+    $pushOut = [];
+    $pushRet = 0;
+    exec('cd ' . escapeshellarg(GH_ROOT_DIR) . ' && git push origin main 2>&1', $pushOut, $pushRet);
+
+    $allLog = implode("\n", array_merge($output, $pushOut));
+
+    if ($pushRet === 0) {
+        echo json_encode([
+            'success' => true,
+            'message' => 'Successfully committed and pushed all changes to GitHub!',
+            'log' => $allLog
+        ]);
+    } else {
+        // Committed locally, push may need credentials or is offline
+        echo json_encode([
+            'success' => true,
+            'partial' => true,
+            'message' => 'Changes committed locally. Push to remote responded: ' . substr($allLog, 0, 150),
+            'log' => $allLog
+        ]);
+    }
     exit;
 }
 

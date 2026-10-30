@@ -595,6 +595,36 @@ function openNewArticleModal() {
 // 7. SETTINGS & SYSTEM STATUS
 // =============================================================================
 function initSettings() {
+  const syncBtn = document.getElementById('git-sync-btn');
+  if (syncBtn) {
+    syncBtn.addEventListener('click', async () => {
+      if (!confirm('Commit and push all current content changes to GitHub?')) return;
+      syncBtn.disabled = true;
+      syncBtn.textContent = '⏳ Syncing...';
+
+      try {
+        const res = await fetch('api.php?action=git_sync', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': currentCsrf }
+        });
+        const data = await res.json();
+        syncBtn.disabled = false;
+        syncBtn.textContent = '🚀 Sync to GitHub';
+
+        if (data.success) {
+          showAlert(data.message || 'Changes pushed to GitHub successfully!');
+          loadSystemStatus();
+        } else {
+          showAlert(data.error || 'Git sync failed.', 'danger');
+        }
+      } catch (err) {
+        syncBtn.disabled = false;
+        syncBtn.textContent = '🚀 Sync to GitHub';
+        showAlert('Could not connect to git sync API.', 'danger');
+      }
+    });
+  }
+
   const pwdForm = document.getElementById('change-password-form');
   if (pwdForm) {
     pwdForm.addEventListener('submit', async (e) => {

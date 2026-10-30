@@ -66,6 +66,9 @@ $csrfToken = gh_get_csrf_token();
       </div>
 
       <div class="header-right">
+        <button id="git-sync-btn" class="btn btn-outline btn-sm" style="border-color: #6EE7B7; color: #ECFDF5;" title="Commit and push changes to GitHub">
+          🚀 Sync to GitHub
+        </button>
         <a href="../" target="_blank" class="btn btn-outline btn-sm">
           <span>View Live Website</span> ↗
         </a>
