@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "file": "vr-exhibition-welcome-hall.jpg",
+    "caption_en": "Green Horizon 3D Virtual Reality Exhibition — Welcome Hallway on MetaSteps",
+    "caption_tr": "Green Horizon 3D Sanal Gerçeklik Sergisi — MetaSteps Karşılama Alanı",
+    "caption_de": "Green Horizon 3D-VR-Ausstellung — Empfangshalle auf MetaSteps",
+    "caption_ro": "Expoziția 3D în Realitate Virtuală Green Horizon — Holul Principal pe MetaSteps",
+    "alt": "Green Horizon 3D Virtual Reality Exhibition Welcome Hallway on MetaSteps",
+    "credit": "Asociația Empower Plus / Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exhibition-main-gallery.jpg",
+    "caption_en": "Main 3D Exhibition Hall with Curated Youth Drone Photography Artworks",
+    "caption_tr": "Gençlerin İHA Fotoğraf Eserlerinin Sergilendiği Ana 3D Sergi Salonu",
+    "caption_de": "Haupt-3D-Ausstellungshalle mit ausgewählten Drohnen-Fotoarbeiten von Jugendlichen",
+    "caption_ro": "Sala Principală 3D de Expoziție cu Lucrări Fotografice cu Drone ale Tinerilor",
+    "alt": "Main 3D Exhibition Hall with framed drone photography artworks on MetaSteps",
+    "credit": "Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exhibition-artworks-wall.jpg",
+    "caption_en": "Virtual Gallery Walls Featuring Aerial Drone Perspectives from Germany, Romania, and Türkiye",
+    "caption_tr": "Almanya, Romanya ve Türkiye'den Havadan İHA Perspektiflerini İçeren Sanal Sergi Duvarları",
+    "caption_de": "Virtuelle Galeriewände mit Drohnen-Luftbildperspektiven aus Deutschland, Rumänien und der Türkei",
+    "caption_ro": "Pereții Galeriei Virtuale cu Perspective Aeriene din Germania, România și Turcia",
+    "alt": "Virtual Gallery Walls featuring aerial drone photographs on MetaSteps",
+    "credit": "Green Horizon Consortium"
+  },
+  {
+    "file": "vr-exhibition-meta-steps-room.jpg",
+    "caption_en": "Interactive MetaSteps 3D Walkthrough Room Accessible Directly in Modern Web Browsers",
+    "caption_tr": "Doğrudan Web Tarayıcılarından Erişilebilen Etkileşimli MetaSteps 3D Sergi Odası",
+    "caption_de": "Interaktiver MetaSteps 3D-Rundgang, direkt in modernen Webbrowsern abrufbar",
+    "caption_ro": "Tur Interactiv 3D pe Platforma MetaSteps Accesibil Direct din Browser",
+    "alt": "Interactive MetaSteps 3D Walkthrough room interface",
+    "credit": "Green Horizon Consortium"
+  }
+]
