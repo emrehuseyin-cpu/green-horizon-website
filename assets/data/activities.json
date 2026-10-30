@@ -28,20 +28,20 @@
     }
   },
   {
-    "id": "act-booklet",
+    "participants": "",
+    "place": "Digital Publication (Open Access)",
     "number": "3",
     "date": "",
-    "title": "Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change",
-    "place": "Digital Publication (Open Access)",
-    "participants": "",
-    "description": "A comprehensive Educational Booklet co-authored by the partnership covering climate change mitigation concepts, photography composition, and drone operation safety rules. Includes 6 practical flight drills and a printable field checklist.",
-    "link": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
-    "linkLabel": "Download Educational Booklet (PDF)",
     "photo": {
       "file": "assets/images/booklet-cover.jpg",
       "alt": "Cover of the Green Horizon Educational Booklet",
       "caption": "Official Educational Booklet published under CC BY-SA 4.0"
-    }
+    },
+    "title": "Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change",
+    "linkLabel": "Download Educational Booklet (PDF)",
+    "link": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
+    "id": "act-booklet",
+    "description": "A comprehensive Educational Booklet co-authored by the partnership covering climate change mitigation concepts, photography composition, and drone operation safety rules. Includes 6 practical flight drills and a printable field checklist."
   },
   {
     "id": "act-workshop-tr",
@@ -63,7 +63,7 @@
     "date": "23 April 2026",
     "title": "Local Workshop",
     "place": "Germany",
-    "participants": "[number of participants]",
+    "participants": "20",
     "description": "Hosted by Integrational e.V., local young people learned camera drone safety, flight controls, and visual storytelling methods to observe riverbank habitats and urban green spaces.",
     "photo": {
       "file": "assets/activities/a4-workshops-de/photo-1.jpg",
@@ -77,7 +77,7 @@
     "date": "29 April 2026",
     "title": "Local Workshop",
     "place": "Romania",
-    "participants": "[number of participants]",
+    "participants": "20",
     "description": "Organized by Asociația Empower Plus, young participants practiced camera drone piloting, video capture, and photo framing to document local environmental realities.",
     "photo": {
       "file": "assets/activities/a4-workshops-ro/photo-1.jpg",
@@ -91,7 +91,7 @@
     "date": "May–July 2026",
     "title": "Documentary Series Production & Exhibition Photo Selection",
     "place": "Germany, Romania, and Türkiye",
-    "participants": "[number of participants]",
+    "participants": "",
     "description": "Young people worked in local production teams to film, edit, and finalize the documentary series and curate high-resolution drone photography for the dissemination conferences and exhibition.",
     "photo": {
       "file": "assets/images/booklet/booklet_img_29_657.jpg",
@@ -100,12 +100,28 @@
     }
   },
   {
+    "participants": "Open to the public worldwide",
+    "place": "Online (MetaSteps Virtual Gallery)",
+    "number": "12",
+    "date": "",
+    "photo": {
+      "file": "assets/images/booklet/poster-chapter2-photography.jpg",
+      "alt": "Welcome panel of the Green Horizon virtual exhibition",
+      "caption": "Virtual exhibition goes live online (October 2026)"
+    },
+    "title": "VR Exhibition Online Launch",
+    "linkLabel": "Visit the VR Exhibition",
+    "link": "exhibition",
+    "id": "act-vr-launch",
+    "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
+  },
+  {
     "id": "act-conference-ro",
     "number": "8",
     "date": "17 July 2026",
     "title": "Dissemination Conference",
     "place": "Romania",
-    "participants": "[number of participants]",
+    "participants": "20",
     "description": "Asociația Empower Plus hosted the national dissemination event where youth-created documentary films and the Green Horizon photo exhibition were presented to local community members, educators, and stakeholders.",
     "photo": {
       "file": "assets/activities/a7-conferences-ro/photo-1.jpg",
@@ -119,7 +135,7 @@
     "date": "22 July 2026",
     "title": "Dissemination Conference",
     "place": "Mersin, Türkiye",
-    "participants": "[number of participants]",
+    "participants": "20",
     "description": "IESA organized the dissemination conference in Mersin, showcasing the project results, screening the documentary short films, and exhibiting photographs of local climate challenges to community stakeholders.",
     "photo": {
       "file": "assets/activities/a7-conferences-tr/photo-1.jpg",
@@ -133,7 +149,7 @@
     "date": "25 July 2026",
     "title": "Dissemination Conference",
     "place": "Germany",
-    "participants": "[number of participants]",
+    "participants": "20",
     "description": "Integrational e.V. presented the final project results, screening the youth documentaries and displaying the photography collection to local youth leaders, educators, and community representatives.",
     "photo": {
       "file": "assets/activities/a7-conferences-de/photo-1.jpg",
@@ -147,28 +163,12 @@
     "date": "31 July – 1 August 2026",
     "title": "Final Partner Meeting",
     "place": "Mersin, Türkiye",
-    "participants": "[number of participants]",
+    "participants": "",
     "description": "Representatives from Integrational e.V., Asociația Empower Plus, and IESA met in Mersin to evaluate all project results, review participant feedback, finalize reporting procedures, and plan future collaboration.",
     "photo": {
       "file": "assets/activities/a7-final-meeting-tr/photo-1.jpg",
       "alt": "Consortium partners during the final transnational meeting in Mersin, Türkiye",
       "caption": "Final partner meeting in Mersin, Türkiye (31 July – 1 August 2026)"
-    }
-  },
-  {
-    "id": "act-vr-launch",
-    "number": "12",
-    "date": "October 2026",
-    "title": "VR Exhibition Online Launch",
-    "place": "Online (MetaSteps Virtual Gallery)",
-    "participants": "Open to the public worldwide",
-    "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above.",
-    "link": "exhibition",
-    "linkLabel": "Visit the VR Exhibition",
-    "photo": {
-      "file": "assets/images/booklet/poster-chapter2-photography.jpg",
-      "alt": "Welcome panel of the Green Horizon virtual exhibition",
-      "caption": "Virtual exhibition goes live online (October 2026)"
     }
   }
 ]
