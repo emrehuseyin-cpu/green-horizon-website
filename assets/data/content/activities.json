@@ -29,20 +29,20 @@
       }
     },
     {
-      "id": "act-booklet",
+      "participants": "",
+      "place": "Digital Publication (Open Access)",
       "number": "3",
       "date": "",
-      "title": "Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change",
-      "place": "Digital Publication (Open Access)",
-      "participants": "",
-      "description": "A comprehensive Educational Booklet co-authored by the partnership covering climate change mitigation concepts, photography composition, and drone operation safety rules. Includes 6 practical flight drills and a printable field checklist.",
-      "link": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
-      "linkLabel": "Download Educational Booklet (PDF)",
       "photo": {
         "file": "assets/images/booklet-cover.jpg",
         "alt": "Cover of the Green Horizon Educational Booklet",
         "caption": "Official Educational Booklet published under CC BY-SA 4.0"
-      }
+      },
+      "title": "Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change",
+      "linkLabel": "Download Educational Booklet (PDF)",
+      "link": "assets/downloads/Green_Horizon_Booklet_Official.pdf",
+      "id": "act-booklet",
+      "description": "A comprehensive Educational Booklet co-authored by the partnership covering climate change mitigation concepts, photography composition, and drone operation safety rules. Includes 6 practical flight drills and a printable field checklist."
     },
     {
       "id": "act-workshop-tr",
@@ -64,7 +64,7 @@
       "date": "23 April 2026",
       "title": "Local Workshop",
       "place": "Germany",
-      "participants": "[number of participants]",
+      "participants": "20",
       "description": "Hosted by Integrational e.V., local young people learned camera drone safety, flight controls, and visual storytelling methods to observe riverbank habitats and urban green spaces.",
       "photo": {
         "file": "assets/activities/a4-workshops-de/photo-1.jpg",
@@ -157,20 +157,20 @@
       }
     },
     {
-      "id": "act-vr-launch",
+      "participants": "Open to the public worldwide",
+      "place": "Online (MetaSteps Virtual Gallery)",
       "number": "12",
       "date": "October 2026",
-      "title": "VR Exhibition Online Launch",
-      "place": "Online (MetaSteps Virtual Gallery)",
-      "participants": "Open to the public worldwide",
-      "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above.",
-      "link": "exhibition",
-      "linkLabel": "Visit the VR Exhibition",
       "photo": {
         "file": "assets/images/booklet/poster-chapter2-photography.jpg",
         "alt": "Welcome panel of the Green Horizon virtual exhibition",
         "caption": "Virtual exhibition goes live online (October 2026)"
-      }
+      },
+      "title": "VR Exhibition Online Launch",
+      "linkLabel": "Visit the VR Exhibition",
+      "link": "exhibition",
+      "id": "act-vr-launch",
+      "description": "The digital version of the photo exhibitions presented at the conferences went live online in October 2026. It allows visitors worldwide to take a guided virtual tour of youth drone photography and explore climate change in Germany, Romania, and Türkiye from above."
     }
   ]
 }
