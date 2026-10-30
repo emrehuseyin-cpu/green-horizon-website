@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/uejnbpte/public_html/greenhorizonyou/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -f .htaccess $DEPLOYPATH
+    - export DEPLOYPATH=/home1/uejnbpte/public_html/
+    - /bin/cp -R * $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp -f .htaccess $DEPLOYPATH 2>/dev/null || true
