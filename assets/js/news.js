@@ -192,6 +192,60 @@ window.openArticleModal = function(id) {
       `;
     }
 
+    // Related Results & Activity Photos
+    const hasResults = art.results && art.results.length > 0;
+    const hasPhotosOrActivities = art.activity_photos && art.activity_photos.length > 0;
+
+    if (hasResults || hasPhotosOrActivities) {
+      html += `
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+          <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 1rem; font-family: var(--font-heading); display: flex; align-items: center; gap: 0.5rem;">
+            <span>🎯</span>
+            <span>Related Project Results &amp; Activity Photos</span>
+          </h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.85rem;">
+      `;
+
+      if (hasResults) {
+        art.results.forEach(res => {
+          html += `
+            <a href="${res.url}" ${res.url.endsWith('.pdf') ? 'target="_blank" rel="noopener noreferrer"' : ''} style="display: flex; flex-direction: column; justify-content: space-between; padding: 1rem; background: var(--leaf-green-light); border-radius: var(--radius-md); border: 1px solid rgba(46, 125, 50, 0.2); text-decoration: none; color: var(--text-main); transition: transform 0.2s, box-shadow 0.2s;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.72rem; font-weight: 700; background: var(--primary); color: #fff; padding: 0.15rem 0.5rem; border-radius: 999px;">${res.badge || 'Project Result'}</span>
+                  <span style="font-size: 0.95rem; color: var(--primary);">&rarr;</span>
+                </div>
+                <strong style="font-size: 0.95rem; color: var(--primary-dark); display: block; margin-bottom: 0.25rem;">${res.title}</strong>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.4;">${res.desc}</p>
+              </div>
+            </a>
+          `;
+        });
+      }
+
+      if (hasPhotosOrActivities) {
+        art.activity_photos.forEach(act => {
+          html += `
+            <a href="${act.url}" style="display: flex; flex-direction: column; justify-content: space-between; padding: 1rem; background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--border-color); text-decoration: none; color: var(--text-main); box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: transform 0.2s, box-shadow 0.2s;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.72rem; font-weight: 700; background: var(--bg-soft); color: var(--text-main); padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid var(--border-color);">${act.badge || 'Activity'}</span>
+                  <span style="font-size: 0.95rem; color: var(--primary);">&rarr;</span>
+                </div>
+                <strong style="font-size: 0.95rem; color: var(--primary-dark); display: block; margin-bottom: 0.25rem;">${act.title}</strong>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.4;">${act.desc}</p>
+              </div>
+            </a>
+          `;
+        });
+      }
+
+      html += `
+          </div>
+        </div>
+      `;
+    }
+
     bodyEl.innerHTML = html;
   }
 
