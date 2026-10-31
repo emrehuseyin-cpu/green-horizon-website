@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "file": "final-meeting-01.jpeg",
+    "caption_en": "Final Partner Meeting in Mersin: Consortium representatives convening for project evaluation",
+    "caption_tr": "Mersin'de Kapanış Ortak Toplantısı: Konsorsiyum temsilcileri proje değerlendirmesi için bir arada",
+    "caption_de": "Abschlusstreffen in Mersin: Konsortialpartner versammeln sich zur Projektauswertung",
+    "caption_ro": "Întâlnirea Finală a Partenerilor la Mersin: Reprezentanții consorțiului reuniți pentru evaluarea proiectului",
+    "alt": "Final Partner Meeting in Mersin consortium delegation"
+  },
+  {
+    "file": "final-meeting-02.jpeg",
+    "caption_en": "Consortium review of tangible deliverables, educational handbook, and documentary series",
+    "caption_tr": "Somut proje çıktıları, eğitim kitapçığı ve belgesel serisinin konsorsiyum tarafından incelenmesi",
+    "caption_de": "Überprüfung der Projektergebnisse, des Bildungshandbuchs und der Dokumentarfilmreihe",
+    "caption_ro": "Analiza rezultatelor tangibile, a manualului educațional și a seriei de documentare",
+    "alt": "Consortium review of project results and deliverables"
+  },
+  {
+    "file": "final-meeting-03.jpeg",
+    "caption_en": "Impact analysis and youth participant feedback assessment across Germany, Romania, and Türkiye",
+    "caption_tr": "Almanya, Romanya ve Türkiye'deki genç katılımcı geri bildirimlerinin ve etki analizinin değerlendirilmesi",
+    "caption_de": "Wirkungsanalyse und Bewertung des Feedbacks der Jugendlichen aus allen Partnerländern",
+    "caption_ro": "Analiza impactului și evaluarea feedback-ului tinerilor participanți din Germania, România și Turcia",
+    "alt": "Participant feedback review and impact analysis"
+  },
+  {
+    "file": "final-meeting-04.jpeg",
+    "caption_en": "Final reporting and administrative compliance session under Erasmus+ guidelines",
+    "caption_tr": "Erasmus+ kuralları çerçevesinde nihai raporlama ve idari uyum oturumu",
+    "caption_de": "Abschlussberichterstattung und administrative Abstimmung nach Erasmus+-Leitlinien",
+    "caption_ro": "Sesiune de raportare finală și conformitate administrativă conform ghidului Erasmus+",
+    "alt": "Final administrative reporting session"
+  },
+  {
+    "file": "final-meeting-05.jpeg",
+    "caption_en": "Strategic planning for long-term project sustainability and future youth initiatives",
+    "caption_tr": "Uzun vadeli proje sürdürülebilirliği ve gelecekteki gençlik girişimleri için stratejik planlama",
+    "caption_de": "Strategische Planung für langfristige Nachhaltigkeit und künftige Jugendinitiativen",
+    "caption_ro": "Planificare strategică pentru sustenabilitatea pe termen lung și inițiative viitoare",
+    "alt": "Strategic planning and sustainability discussion"
+  },
+  {
+    "file": "final-meeting-06.jpeg",
+    "caption_en": "Cross-cultural evaluation of drone training methodology and environmental storytelling",
+    "caption_tr": "İHA eğitim metodolojisinin ve çevre hikaye anlatımının kültürlerarası değerlendirmesi",
+    "caption_de": "Interkulturelle Evaluierung der Drohnentraining-Methodik und des ökologischen Storytellings",
+    "caption_ro": "Evaluare interculturală a metodologiei de instruire cu drone și a storytelling-ului ecologic",
+    "alt": "Methodology evaluation session"
+  },
+  {
+    "file": "final-meeting-07.jpeg",
+    "caption_en": "Concluding session celebrating the successful delivery of the Green Horizon partnership",
+    "caption_tr": "Green Horizon ortaklığının başarıyla tamamlanmasını kutlayan kapanış oturumu",
+    "caption_de": "Abschlusssitzung und erfolgreicher Abschluss der Green Horizon-Partnerschaft",
+    "caption_ro": "Sesiunea de încheiere ce marchează finalizarea cu succes a parteneriatului Green Horizon",
+    "alt": "Closing session of the Green Horizon final partner meeting"
+  }
+]
