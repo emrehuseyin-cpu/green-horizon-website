@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "file": "de-workshop-01-flight-cones.jpg",
+    "caption_en": "Local Youth Workshop in Germany: Precision camera drone maneuvering through obstacle courses",
+    "caption_tr": "Almanya Yerel Gençlik Atölyesi: Parkurda hassas kamera İHA manevraları",
+    "caption_de": "Lokaler Jugendworkshop in Deutschland: Präzise Drohnenmanöver im Parcours",
+    "caption_ro": "Atelier Local de Tineret în Germania: Manevre de precizie cu drona prin traseu cu obstacole",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "de-workshop-02-pilot-park.jpg",
+    "caption_en": "Youth participants in Bonn practicing aerial composition and environmental framing",
+    "caption_tr": "Bonn'daki genç katılımcılar havadan kompozisyon ve çevresel çerçeveleme pratiği yaparken",
+    "caption_de": "Jugendliche in Bonn beim Üben von Luftbildgestaltung und Bildausschnitt",
+    "caption_ro": "Tinerii participanți din Bonn exersând compoziția aeriană și încadrarea de mediu",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "de-workshop-03-outdoor-training.jpg",
+    "caption_en": "Outdoor flight safety briefing and pre-flight checklist review before takeoff",
+    "caption_tr": "Kalkış öncesi açık hava uçuş güvenliği brifingi ve uçuş öncesi kontrol listesi incelemesi",
+    "caption_de": "Sicherheitsunterweisung im Freien und Überprüfung der Checkliste vor dem Flug",
+    "caption_ro": "Instructaj de siguranță în aer liber și verificarea listei de verificare înainte de decolare",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "de-workshop-04-flipchart-planning.jpg",
+    "caption_en": "Collaborative brainstorming on local climate challenges and green infrastructure observation",
+    "caption_tr": "Yerel iklim sorunları ve yeşil altyapı gözlemi üzerine ortak fikir fırtınası",
+    "caption_de": "Gemeinsames Brainstorming zu lokalen Klimafragen und grüner Stadtinfrastruktur",
+    "caption_ro": "Brainstorming colaborativ despre provocările climatice locale și infrastructura verde",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "de-workshop-05-video-editing.jpg",
+    "caption_en": "Youth production team editing raw drone footage into documentary clips",
+    "caption_tr": "Ham İHA görüntülerini belgesel kliplerine dönüştüren genç prodüksiyon ekibi",
+    "caption_de": "Jugend-Produktionsteam beim Schneiden von Rohmaterial zu Dokumentationsclips",
+    "caption_ro": "Echipa de producție a tinerilor editând filmările brute cu drone în clipuri documentare",
+    "credit": "Integrational e.V."
+  },
+  {
+    "file": "de-workshop-06-tablet-field-team.jpg",
+    "caption_en": "Field monitoring team analyzing real-time aerial telemetry and spatial data",
+    "caption_tr": "Gerçek zamanlı hava telemetrisi ve mekansal verileri analiz eden saha izleme ekibi",
+    "caption_de": "Feldüberwachungsteam bei der Analyse von Echtzeit-Telemetriedaten",
+    "caption_ro": "Echipa de monitorizare pe teren analizând datele aeriene și telemetria în timp real",
+    "credit": "Integrational e.V."
+  }
+]
