@@ -1,128 +1,219 @@
 [
   {
-    "id": "news-vr-online",
-    "title": "Green Horizon Virtual Exhibition Goes Live Online",
-    "slug": "green-horizon-virtual-exhibition-goes-live-online",
-    "date": "June 2026",
-    "category": "Virtual Reality",
-    "image": "assets/images/booklet/poster-chapter2-photography.jpg",
-    "summary": "The digital 3D virtual reality exhibition goes live online ahead of the summer dissemination conferences, accessible worldwide on MetaSteps.",
-    "full_text": "The virtual exhibition brings together the drone photography of Green Horizon. Launched online in June 2026, it allows visitors worldwide to take a guided virtual tour of youth aerial perspectives on climate change in Germany, Romania and Türkiye ahead of the national dissemination conferences in July 2026.",
-    "photos": [
+    "id": "news-press-media-coverage",
+    "title": "Romanian Media Spotlight: PubTV and Turnul Chindiei Feature Green Horizon",
+    "slug": "romanian-media-spotlight-pubtv-turnul-chindiei",
+    "date": "August 2026",
+    "category": "Media & Press",
+    "image": "assets/activities/a7-dissemination-final-meeting/ro/ro-dissemination-01.jpg",
+    "summary": "Prominent regional news portals PubTV Romania and Turnul Chindiei publish in-depth features on Green Horizon, highlighting how young people harnessed camera drones, digital storytelling, and international cooperation for climate mitigation.",
+    "full_text": "The Green Horizon project has received prominent television and press coverage in Romania following the successful rollout of the national dissemination conference and youth media exhibitions.\n\nMedia outlet PubTV Romania published a dedicated report titled \"Green Horizon: Tinerii, tehnologia și creativitatea pentru un viitor mai verde\" (Green Horizon: Youth, technology, and creativity for a greener future), spotlighting the innovative pedagogical model where youth from Germany, Romania, and Türkiye were trained not merely as passive observers, but as aerial photographers and environmental storytellers equipped with cutting-edge drone cameras.\n\nSimultaneously, leading regional publication Turnul Chindiei featured the project under the headline \"Green Horizon: Tehnologie și educație pentru mediu\" (Green Horizon: Technology and education for the environment). The article emphasizes the project’s transnational synergies between coordinator Integrational e.V. (Bonn, Germany), lead media partner Asociația Empower Plus (Brașov, Romania), and environmental expert partner Yenilikçi Eğitim Bilim ve Sanat Derneği (Mersin, Türkiye).\n\nBoth media publications highlighted the open educational availability of all project outcomes—including the 3-chapter Educational Booklet, the youth documentary series, and the interactive 3D Virtual Reality exhibition—all released as Open Educational Resources under Creative Commons CC BY-SA 4.0 license.",
+    "links": [
       {
-        "file": "assets/images/booklet/poster-chapter2-photography.jpg",
-        "caption": "Welcome panel of the Green Horizon Virtual Exhibition on MetaSteps."
+        "platform": "Media outlet",
+        "label": "PubTV.ro: Green Horizon – Tinerii, tehnologia și creativitatea pentru un viitor mai verde",
+        "url": "https://pubtv.ro/green-horizon-tinerii-tehnologia-si-creativitatea-pentru-un-viitor-mai-verde/"
+      },
+      {
+        "platform": "Media outlet",
+        "label": "TurnulChindiei.ro: Green Horizon – Tehnologie și educație pentru mediu",
+        "url": "https://turnulchindiei.ro/green-horizon-tehnologie-si-educatie-pentru-mediu/"
       }
     ],
+    "author": "Empower Plus & Romanian Press",
+    "badge": "Press Coverage"
+  },
+  {
+    "id": "news-social-media-campaign",
+    "title": "Project Dissemination on Instagram & Facebook Reaches European Youth Communities",
+    "slug": "project-dissemination-instagram-facebook-campaign",
+    "date": "July 2026",
+    "category": "Social Media",
+    "image": "assets/activities/a7-dissemination-final-meeting/tr/tr-dissemination-01.jpg",
+    "summary": "Explore Green Horizon’s digital outreach campaign on Instagram and Facebook, featuring behind-the-scenes drone flight drills, local workshop carousels, and dissemination conference livestreams.",
+    "full_text": "Throughout the project lifecycle, partner organizations maintained an active, multilingual social media presence to connect directly with youth, environmental educators, and civil society across Europe.\n\nOn Instagram, official posts documented the evolution of participants—from crafting homemade pinhole cameras during the Brașov training course to piloting quadcopters over coastal wetlands in Mersin and riverbanks along the Rhine. A dedicated Instagram Story Highlight compiles real-time stories, participant testimonials, and aerial cinematography showcases.\n\nOn Facebook, partner organizations shared public updates engaging educational institutions, local municipalities, and European youth networks. These posts disseminated workshop announcements, screened short teaser reels from the youth documentary series, and celebrated the release of the Open Educational Resource booklet.",
+    "links": [
+      {
+        "platform": "Instagram",
+        "label": "Instagram Post: Drone Pilot Practice & Field Training",
+        "url": "https://www.instagram.com/p/DR4tN98DCF9/?dlrf=MWk1YjV0cWIyaG0xZQ=="
+      },
+      {
+        "platform": "Instagram",
+        "label": "Instagram Post: Youth Storytelling & Video Editing Sessions",
+        "url": "https://www.instagram.com/p/DR4-S0PCfrP/?dlrf=YWFoY25neG14MHJ3"
+      },
+      {
+        "platform": "Instagram",
+        "label": "Instagram Post: National Dissemination Highlights",
+        "url": "https://www.instagram.com/p/DR7G0iiiDq1/?rpxt=MTQyaXdkc256bXNqZA=="
+      },
+      {
+        "platform": "Instagram",
+        "label": "Instagram Story Highlight: Green Horizon Project Journey",
+        "url": "https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDQ0NTA5MTQ1NDMzODM4?story_media_id=3742371384991968630&vrfl=MWZhNmw5MDJzcm1sbA=="
+      },
+      {
+        "platform": "Facebook",
+        "label": "Facebook Share: Multiplier Event & Community Presentation",
+        "url": "https://www.facebook.com/share/p/1DfqF6NxLy/?mibextid=wwXIfr"
+      },
+      {
+        "platform": "Facebook",
+        "label": "Facebook Share: Local Workshop Outcomes & Youth Perspectives",
+        "url": "https://www.facebook.com/share/p/1NE8TykTx7/?mibextid=wwXIfr"
+      },
+      {
+        "platform": "Facebook",
+        "label": "Facebook Share: Final Partner Coordination & Results Release",
+        "url": "https://www.facebook.com/share/p/1EEiykaX2D/?mibextid=wwXIfr"
+      }
+    ],
+    "author": "Consortium Social Media Team",
+    "badge": "Social Campaign"
+  },
+  {
+    "id": "news-newsletter-03",
+    "title": "Newsletter No. 3: What We Achieved — Dissemination Conferences, Final Partner Meeting & Global VR Launch",
+    "slug": "newsletter-no-3-what-we-achieved",
+    "date": "October 2026",
+    "category": "Newsletters",
+    "image": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-01.jpeg",
+    "pdf_download": "assets/documents/newsletters/green-horizon-newsletter-03-results-and-conferences.pdf",
+    "summary": "Issue No. 3 celebrates project culmination: 3 national multiplier conferences, the final evaluation meeting in Mersin, our global 3D VR exhibition launch, and project impact metrics.",
+    "full_text": "The consortium is proud to publish the third issue of the official Green Horizon Newsletter, titled \"WHAT WE ACHIEVED (Progress May – October 2026)\".\n\nIn July 2026, Green Horizon went fully public across Europe. Three national dissemination conferences presented the youth documentary series and curated photography exhibitions to young people, youth workers, and local institutional representatives:\n• 17 July 2026 in Romania: Asociația Empower Plus presented the whole journey from the Brașov training course to local workshops, screening photos and videos.\n• 22 July 2026 in Mersin, Türkiye: IESA convened 20 participants, including teachers and municipal representatives, exploring drone and video integration into grassroots climate action.\n• 25 July 2026 in Bonn, Germany: Integrational e.V. hosted 20 attendees, closing the circle in the city where the partnership began.\n\nOn 31 July – 1 August 2026, coordinators met in Mersin for the Final Transnational Partner Meeting, adopting a comprehensive sustainability agreement to ensure all educational resources, films, and websites remain accessible indefinitely.\n\nSince October 2026, the 3D Virtual Reality exhibition is live online on Artsteps and MetaSteps, featuring dedicated country rooms for Germany, Romania, and Türkiye with a fully guided audio-visual tour.\n\nGreen Horizon in Numbers:\n• 18 youth workers trained as certified drone mentors\n• 60 young people trained across local workshops\n• 3 short documentary films produced\n• 3 dissemination conferences organized\n• 1 open Educational Booklet under CC BY-SA 4.0\n\nThe consortium extends sincere gratitude to all youth participants, partner teams at Integrational e.V., Empower Plus, and IESA, and the German National Agency JUGEND für Europa.",
+    "links": [
+      {
+        "platform": "Download PDF",
+        "label": "Download Official Newsletter No. 3 (PDF)",
+        "url": "assets/documents/newsletters/green-horizon-newsletter-03-results-and-conferences.pdf"
+      }
+    ],
+    "author": "Consortium Editorial Board",
+    "badge": "Official Newsletter"
+  },
+  {
+    "id": "news-newsletter-02",
+    "title": "Newsletter No. 2: Local Voices From Above — 60 Young People Take Drone Controls Across Three Cities",
+    "slug": "newsletter-no-2-local-voices-from-above",
+    "date": "April 2026",
+    "category": "Newsletters",
+    "image": "assets/activities/a4-local-workshops/tr/tr-workshop-01.jpg",
+    "pdf_download": "assets/documents/newsletters/green-horizon-newsletter-02-local-workshops.pdf",
+    "summary": "Issue No. 2 follows trained youth workers stepping into trainer roles across Mersin, Bonn, and Brașov, empowering 60 young participants to document local environmental stress.",
+    "full_text": "The partnership has published Issue No. 2 of the official Green Horizon Newsletter, titled \"LOCAL VOICES FROM ABOVE (Progress November 2025 – April 2026)\".\n\nIn April 2026, trained youth workers transitioned into trainers. Each partner organization ran an intensive one-day workshop for 20 young people in their home city—60 young people in total—most taking control of a camera drone and video editing suite for the first time:\n\n• 19 April 2026 · Mersin, Türkiye (\"From chaos to order\"): IESA kicked off the series. Following an orientation to Turkish drone regulations, participants mastered cutting, transitions, and narrative structuring. Focus areas included Mediterranean warming (accelerating faster than global averages), extreme heatwaves, and seasonal drought stress on local delta wetlands.\n\n• 23 April 2026 · Bonn, Germany (\"The Rhine and the city\"): Integrational e.V. welcomed 20 youth in Bonn. Participants mapped city climate impacts, including severe low water levels on the Rhine (recalling dry summers of 2018 and 2022 when cargo barges sailed half-empty) and urban heat islands, while navigating Bonn’s restricted airspace protocols.\n\n• 29 April 2026 · Brașov, Romania (\"Filming with drones\"): Empower Plus trained 20 young participants in Romanian. Sessions covered drone flight dynamics, camera movement parameters, and a structured 4-step editing pipeline: import, cutting and rhythm, colour grading, and export.\n\nAcross all three cities, the identical 4-stage pedagogical flow (Learn, fly, film, edit) yielded three finished short documentary videos and the core photography collection.",
+    "links": [
+      {
+        "platform": "Download PDF",
+        "label": "Download Official Newsletter No. 2 (PDF)",
+        "url": "assets/documents/newsletters/green-horizon-newsletter-02-local-workshops.pdf"
+      }
+    ],
+    "author": "Consortium Editorial Board",
+    "badge": "Official Newsletter"
+  },
+  {
+    "id": "news-newsletter-01",
+    "title": "Newsletter No. 1: Green Horizon Takes Off — From Bonn Kick-off to Brașov Training Course",
+    "slug": "newsletter-no-1-green-horizon-takes-off",
+    "date": "October 2025",
+    "category": "Newsletters",
+    "image": "assets/activities/a2-training-course/training_course_01.webp",
+    "pdf_download": "assets/documents/newsletters/green-horizon-newsletter-01-getting-started.pdf",
+    "summary": "The inaugural issue details the foundation of our transnational consortium, pinhole camera optics experiments, EU 120m drone safety rules, and flight practice in Brașov.",
+    "full_text": "We are thrilled to present the inaugural issue of the Green Horizon Newsletter: \"GREEN HORIZON TAKES OFF (Progress May – October 2025)\".\n\nWhat does climate change look like from 120 metres up? Green Horizon set out to answer that question with youth workers and young people from Germany, Romania, and Türkiye. With drones, cameras, and editing apps, participants learn to document what is changing in their own regions and turn observations into compelling stories that inspire civic action.\n\nThree Organisations, One Horizon (1 May 2025 – 31 August 2026):\n• Integrational e.V. (Bonn, Germany) coordinates the project, bringing proven expertise in engaging young people with migrant backgrounds.\n• Asociația Empower Plus (Brașov, Romania) leads drone piloting, aerial photography, and digital media production.\n• Yenilikçi Eğitim Bilim ve Sanat Derneği - IESA (Mersin, Türkiye) spearheads environmental education and authorship of the Educational Booklet.\n\nThe Kick-Off Meeting (28–29 July 2025 · Bonn, Germany):\nPartner teams convened in Bonn to finalize activity schedules, establish communication and dissemination matrices, confirm strict EU visibility rules, and prepare the Brașov training course.\n\nTraining Course in Brașov (11–18 October 2025 · 18 Youth Workers · 6 Days):\nSix youth workers from each country gathered in Brașov for an immersive week. Participants began by crafting pinhole cameras from recycled containers to grasp foundational optical physics, mastered EU \"open\" category drone regulations (including the mandatory 120-metre ceiling and pilot line-of-sight constraints), conducted outdoor aerial filming drills, and edited environmental documentaries, culminating in Youthpass certification.",
+    "links": [
+      {
+        "platform": "Download PDF",
+        "label": "Download Official Newsletter No. 1 (PDF)",
+        "url": "assets/documents/newsletters/green-horizon-newsletter-01-getting-started.pdf"
+      }
+    ],
+    "author": "Consortium Editorial Board",
+    "badge": "Official Newsletter"
+  },
+  {
+    "id": "news-vr-online",
+    "title": "Green Horizon Virtual Exhibition Goes Live Online on MetaSteps and Artsteps",
+    "slug": "green-horizon-virtual-exhibition-goes-live-online",
+    "date": "June 2026",
+    "category": "Dissemination & Closing",
+    "image": "assets/activities/a6-website/vr-exhb1.png",
+    "summary": "The digital 3D virtual reality exhibition goes live online ahead of the national dissemination conferences, welcoming visitors worldwide to explore aerial climate perspectives on MetaSteps and Artsteps.",
+    "full_text": "Ahead of the summer multiplier conferences, the Green Horizon partnership launched its immersive 3D Virtual Reality Exhibition online.\n\nHosted on Artsteps and MetaSteps, the virtual exhibition features drone photography and video installations capturing the Rhine riverbed in Germany, Carpathian forest ecosystems surrounding Brașov, and Mediterranean coastal deltas in Mersin. The virtual space is structured into three dedicated country wings and includes an automated guided tour, background environmental narratives, and interactive hotspots accessible from mobile browsers, desktop PCs, and VR headsets without requiring specialized software.\n\nThe virtual launch ensures that the artistic and educational contributions of participating youth reach audiences worldwide, providing a permanent digital showcase for European climate awareness.",
     "author": "Empower Plus & Consortium",
-    "badge": "Completed"
+    "badge": "Virtual Exhibition"
   },
   {
     "id": "news-final-meeting",
-    "title": "Final Partner Meeting Held in Mersin, Türkiye",
+    "title": "Final Transnational Partner Meeting Held in Mersin, Türkiye",
     "slug": "final-partner-meeting-held-in-mersin-turkiye",
     "date": "1 August 2026",
-    "category": "Governance & Closing",
-    "image": "assets/images/booklet/photo-workshop-flipchart.jpg",
-    "summary": "Project coordinators from Germany, Romania, and Türkiye gathered in Mersin on 31 July – 1 August 2026 to evaluate project milestones and adopt long-term plans.",
-    "full_text": "On 31 July – 1 August 2026, representatives from Integrational e.V., Asociația Empower Plus, and Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA) met in Mersin, Türkiye for the Final Transnational Partner Meeting. The consortium reviewed participant outcomes, finalized dissemination documentation, and established a follow-up sustainability strategy. [add text]",
-    "photos": [
-      {
-        "file": "assets/images/booklet/photo-workshop-flipchart.jpg",
-        "caption": "Consortium partners reviewing final project outcomes and evaluation metrics in Mersin."
-      }
-    ],
+    "category": "Governance",
+    "image": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-02.jpeg",
+    "summary": "Consortium delegations from Germany, Romania, and Türkiye convened in Mersin on 31 July – 1 August 2026 to review evaluation metrics, verify EU visibility, and adopt the long-term sustainability agreement.",
+    "full_text": "On 31 July – 1 August 2026, 9 project coordinators and lead trainers representing Integrational e.V., Asociația Empower Plus, and Yenilikçi Eğitim Bilim ve Sanat Derneği (IESA) gathered in Mersin, Türkiye for the Final Transnational Partner Meeting.\n\nOver two intensive days, the consortium conducted qualitative and quantitative evaluations of all 7 project activities:\n1. A1 Project Management & Kick-off Meeting in Bonn\n2. A2 Transnational Training Course in Brașov\n3. A3 Educational Booklet authorship and release\n4. A4 Grassroots youth workshops in Mersin, Bonn, and Brașov\n5. A5 Youth documentary series production and curated photo exhibition\n6. A6 Dedicated project website and 3D Virtual Reality gallery\n7. A7 Multiplier dissemination conferences and final partner review\n\nThe partners signed the formal Sustainability Agreement, guaranteeing that all web infrastructure, educational booklets, photo archives, and video links will remain hosted online and free to access for a minimum of five years. Discussions also initiated conceptual frameworks for subsequent Erasmus+ climate literacy collaborations.",
     "author": "IESA & Consortium",
     "badge": "Completed"
   },
   {
     "id": "news-dissemination-conferences",
-    "title": "Dissemination Conferences in Romania, Türkiye and Germany Showcase Youth Documentaries and Photo Exhibition",
+    "title": "National Dissemination Conferences in Romania, Türkiye and Germany Showcase Youth Films",
     "slug": "dissemination-conferences-romania-turkiye-germany",
     "date": "25 July 2026",
-    "category": "Dissemination Events",
-    "image": "assets/images/booklet/poster-capture-the-change.jpg",
-    "summary": "Partner organizations hosted multiplier conferences in Romania (17 July), Mersin, Türkiye (22 July), and Germany (25 July 2026) screening youth films.",
-    "full_text": "During July 2026, the Green Horizon partnership held national dissemination conferences in Romania (17 July), Mersin, Türkiye (22 July), and Germany (25 July 2026). Each event brought together 20 local youth, educators, and community stakeholders to screen the 3 youth climate documentaries and present the physical photo exhibition. [add text]",
-    "photos": [
-      {
-        "file": "assets/images/booklet/poster-capture-the-change.jpg",
-        "caption": "Official poster for the youth climate documentary series and exhibition."
-      }
-    ],
+    "category": "Dissemination & Closing",
+    "image": "assets/activities/a7-dissemination-final-meeting/ro/ro-dissemination-05.jpg",
+    "summary": "Multiplier events hosted in Romania (17 July), Mersin (22 July), and Bonn (25 July) engaged 60 participants (20 per country), screening youth climate films and presenting curated photo prints.",
+    "full_text": "Throughout July 2026, partner organizations organized three national dissemination conferences to share project findings with local youth, educators, civil society representatives, and municipal authorities:\n\n• Romania (17 July 2026): Asociația Empower Plus hosted 20 attendees in Brașov. The event presented the educational journey of local participants, screened the Romanian youth climate video, and showcased physical prints of high-altitude environmental monitoring.\n\n• Mersin, Türkiye (22 July 2026): IESA brought together 20 participants, including secondary school teachers, environmental activists, and young creators. The session featured screening of the Turkish documentary focusing on Mediterranean coastline changes, followed by an interactive panel on utilizing drone technology for community environmental audits.\n\n• Bonn, Germany (25 July 2026): Integrational e.V. welcomed 20 youth workers, civic leaders, and migrant youth advocates. The German team showcased the Bonn river basin documentary, discussed urban climate resilience, and introduced attendees to the Open Educational Resource booklet.",
     "author": "Green Horizon Dissemination Team",
-    "badge": "Completed"
+    "badge": "Dissemination Events"
   },
   {
     "id": "news-local-workshops",
-    "title": "Local Youth Workshops Held in Mersin, Germany and Romania",
+    "title": "Local Youth Workshops in Mersin, Bonn and Brașov: 60 Young People Learn Drone Piloting and Storytelling",
     "slug": "local-youth-workshops-mersin-germany-romania",
     "date": "29 April 2026",
     "category": "Local Action",
-    "image": "assets/images/booklet/photo-field-tablet-team.jpg",
-    "summary": "Grassroots workshops engaged local young people in Mersin (19 April), Germany (23 April), and Romania (29 April 2026) in drone piloting and climate storytelling.",
-    "full_text": "Trained youth workers facilitated local workshops across partner countries: 19 April 2026 in Mersin, Türkiye; 23 April 2026 in Germany; and 29 April 2026 in Romania. A total of 60 young people (20 in each partner country) received hands-on training with camera drones, learned photographic framing, and developed storyboards documenting local climate challenges.",
-    "photos": [
-      {
-        "file": "assets/images/booklet/photo-field-tablet-team.jpg",
-        "caption": "Young participants collaborating on flight plans and storyboard concepts during local workshops."
-      }
-    ],
+    "image": "assets/activities/a4-local-workshops/de/de-workshop-01-flight-cones.jpg",
+    "summary": "60 young participants across three countries (20 in Mersin, 20 in Bonn, 20 in Brașov) completed one-day workshops translating aerial drone data into climate action videos.",
+    "full_text": "In April 2026, trained youth workers returned to their communities and led grassroots one-day workshops for local youth:\n• 19 April 2026: Mersin, Türkiye (IESA) — 20 youth\n• 23 April 2026: Bonn, Germany (Integrational e.V.) — 20 youth\n• 29 April 2026: Brașov, Romania (Empower Plus) — 20 youth\n\nA total of 60 young people, many of whom had never handled a drone controller or edited video footage, received hands-on flight instructions, safety guidance, and smartphone editing training. Participants investigated environmental conditions in their own neighbourhoods—from coastal erosion in Mersin to urban heat and low water levels on the Rhine in Bonn, and protected forest reserves near Brașov—generating raw footage that formed the backbone of the project documentary films.",
     "author": "Local Workshop Facilitators",
-    "badge": "Completed"
+    "badge": "Local Action"
   },
   {
     "id": "news-booklet-release",
-    "title": "Educational Booklet on Drone Operation, Photography and Climate Change Released",
+    "title": "Educational Booklet on Drone Operation, Photography and Climate Change Released as CC BY-SA 4.0 Open Resource",
     "slug": "educational-booklet-on-drone-operation-photography-released",
-    "date": "[publication date – to be added]",
+    "date": "December 2025",
     "category": "Publication Release",
-    "image": "assets/images/booklet-cover.jpg",
-    "summary": "The open-access Educational Booklet is published under CC BY-SA 4.0, combining climate mitigation, photography masterclasses, and drone safety drills.",
-    "full_text": "The partnership has released the Educational Booklet titled \"Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change\". Written for youth workers, educators, and young people, the guide is published as an Open Educational Resource under Creative Commons CC BY-SA 4.0. [add text]",
-    "photos": [
-      {
-        "file": "assets/images/booklet-cover.jpg",
-        "caption": "Cover of the Green Horizon Educational Booklet."
-      }
-    ],
+    "image": "assets/activities/a3-booklet/Progress1.png",
+    "summary": "The consortium published its tri-lingual Educational Booklet, offering 3 comprehensive chapters covering flight safety checklists, photographic framing, and environmental education under CC BY-SA 4.0.",
+    "full_text": "The Green Horizon consortium has officially published the \"Booklet on Drone Operation, Photography and Effective Ways to Mitigate Climate Change\".\n\nCrafted under the editorial leadership of IESA with collaborative input from Integrational e.V. and Asociația Empower Plus, the booklet serves as a practical handbook for youth workers, school educators, and young leaders. The publication is structured into three core chapters:\n1. Climate Change Context & Youth Action: Understanding local environmental indicators, European Green Deal goals, and civic participation.\n2. Photography & Cinematography Fundamentals: Lighting, rule of thirds, framing, storytelling, and ethical visual documentation.\n3. Safe Drone Operation & Regulations: EU flight rules, airspace verification, weather risk assessment, battery management, and practical flight checklists.\n\nThe booklet is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) and is available for free digital download in English, German, and Romanian.",
     "author": "Consortium Editorial Team",
     "badge": "Open Educational Resource"
   },
   {
     "id": "news-training-romania",
-    "title": "Training Course on Drone Operation, Photography and Video Editing Held in Brașov",
+    "title": "Intensive 6-Day Training Course in Brașov: 18 Youth Workers Master Drone Technology and Environmental Storytelling",
     "slug": "training-course-drone-operation-photography-video-editing-brasov",
     "date": "18 October 2025",
     "category": "Training Mobility",
-    "image": "assets/images/booklet/photo-outdoor-group-training.jpg",
-    "summary": "18 youth workers from Germany, Romania, and Türkiye completed an 8-day training course in Brașov, Romania (11–18 October 2025).",
-    "full_text": "Hosted by Asociația Empower Plus in Brașov, Romania from 11 to 18 October 2025, 18 youth workers (6 from Germany, 6 from Romania, and 6 from Türkiye) completed hands-on training in camera drone flight operation, EU safety regulations, and video editing. Participants developed competencies to serve as facilitators in local youth workshops. [add text]",
-    "photos": [
-      {
-        "file": "assets/images/booklet/photo-outdoor-group-training.jpg",
-        "caption": "The 18 participating youth workers and facilitators during the training mobility in Brașov, Romania."
-      }
-    ],
+    "image": "assets/activities/a2-training-course/training_course_02.webp",
+    "summary": "18 youth workers from Germany, Romania, and Türkiye met in Brașov on 11–18 October 2025, progressing from handmade pinhole cameras to advanced drone cinematography and EU safety rules.",
+    "full_text": "From 11 to 18 October 2025, Asociația Empower Plus hosted 18 youth workers (6 from Germany, 6 from Romania, and 6 from Türkiye) in Brașov, Romania for an intensive 6-day training mobility.\n\nDesigned to bridge technology and environmental pedagogy, the course guided participants through progressive experiential modules:\n• Analog Optics: Participants constructed working pinhole cameras from recycled tin cans and cardboard, developing an intuitive understanding of focal length, exposure, and light capture.\n• EU Regulations & Flight Safety: Trainers instructed youth workers on European Union \"open\" category restrictions, emphasizing the 120-metre legal ceiling, pilot line-of-sight mandates, and emergency fail-safe procedures.\n• Practical Flight Drills: In designated open park spaces, participants practiced flight maneuvers, obstacle navigation, gimbal control, and cinematic tracking.\n• Post-Production: Teams edited aerial footage into short climate vignettes using mobile and open-source desktop editing suites.\n\nAll 18 participants successfully completed the mobility, evaluated their learning through the European Youthpass framework, and received certificates qualifying them to lead local youth workshops.",
     "author": "Asociația Empower Plus",
-    "badge": "Completed"
+    "badge": "Mobility Completed"
   },
   {
     "id": "news-kickoff-meeting",
-    "title": "Consortium Holds Project Kick-Off Meeting in Germany",
+    "title": "Consortium Launches Project with Kick-Off Meeting in Bonn, Germany",
     "slug": "consortium-holds-project-kick-off-meeting-germany",
     "date": "29 July 2025",
     "category": "Governance",
-    "image": "assets/images/booklet/poster-chapter1-climate-action.jpg",
-    "summary": "Representatives from Integrational e.V., Asociația Empower Plus, and IESA met on 28–29 July 2025 in Germany to launch the project.",
-    "full_text": "Coordinators and youth workers from Germany, Romania, and Türkiye convened on 28–29 July 2025 in Germany for the official Kick-Off Transnational Project Meeting. The team agreed on the project management framework, established quality and risk monitoring procedures, and coordinated preparations for the training course in Romania. [add text]",
-    "photos": [
-      {
-        "file": "assets/images/booklet/poster-chapter1-climate-action.jpg",
-        "caption": "Opening session and roadmap planning during the kick-off meeting in Germany."
-      }
-    ],
+    "image": "assets/activities/a1-kickoff/kickoff_01.webp",
+    "summary": "9 coordinators from Integrational e.V., Asociația Empower Plus, and IESA gathered in Bonn on 28–29 July 2025 to align project management and timeline milestones.",
+    "full_text": "On 28–29 July 2025, delegations from the three partner organizations convened in Bonn, Germany for the official Transnational Kick-Off Meeting of the Green Horizon project.\n\nCoordinated by Integrational e.V., the 9 participating project leaders finalized operational protocols for the 16-month initiative (1 May 2025 – 31 August 2026, project number 2024-3-DE04-KA210-YOU-000293009). Discussions established risk monitoring matrices, budgetary oversight rules, and strict adherence to European Union visibility guidelines.\n\nThe partners formalized preparation deadlines for Activity A2 (the Brașov training course), established the editorial roadmap for Activity A3 (the Educational Booklet), and agreed on a shared communication strategy spanning social media, regional press outreach, and official newsletters.",
     "author": "Integrational e.V.",
-    "badge": "Completed"
+    "badge": "Project Launch"
   }
 ]
