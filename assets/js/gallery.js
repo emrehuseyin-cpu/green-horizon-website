@@ -48,17 +48,23 @@ function renderGalleryItems(grid, items) {
   }
 
   grid.innerHTML = items.map((item, idx) => `
-    <article class="gallery-item-card" data-idx="${idx}" tabindex="0" role="button" aria-label="View photo: ${item.title || item.caption}">
+    <article class="gallery-item-card" data-idx="${idx}" tabindex="0" role="button" aria-label="View photo: ${item.title || item.category}">
       <div class="gallery-item-thumb-wrapper">
-        <img class="gallery-item-thumb" src="${item.file}" alt="${item.alt || item.title || 'Green Horizon photo'}" loading="lazy">
+        <img class="gallery-item-thumb" src="${item.file}" alt="${item.alt || item.title || 'Green Horizon photo'}" loading="lazy" decoding="async">
         <span class="gallery-item-badge">${item.category}</span>
-      </div>
-      <div class="gallery-item-body">
-        <h3 class="gallery-item-title">${item.title || item.category}</h3>
-        <p class="gallery-item-caption">${item.caption}</p>
-        <div class="gallery-item-meta">
-          <span>📍 ${item.place}</span>
-          <span>🗓 ${item.date}</span>
+        <div class="gallery-item-overlay">
+          <div class="gallery-item-overlay-content">
+            <h3 class="gallery-item-title">${item.title || item.category}</h3>
+            ${item.date ? `<span class="gallery-item-date">${item.date}</span>` : ''}
+          </div>
+          <div class="gallery-zoom-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
         </div>
       </div>
     </article>
@@ -84,6 +90,24 @@ function setupCategoryFilters(grid, allItems) {
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
   if (!filterBtns.length) return;
 
+  // Add counts to filter buttons dynamically
+  filterBtns.forEach(btn => {
+    const filter = btn.getAttribute('data-category');
+    let count = 0;
+    if (!filter || filter === 'all') {
+      count = allItems.length;
+    } else {
+      count = allItems.filter(item => (item.category || '').toLowerCase().trim() === filter.toLowerCase().trim()).length;
+    }
+    let countSpan = btn.querySelector('.filter-count');
+    if (!countSpan) {
+      countSpan = document.createElement('span');
+      countSpan.className = 'filter-count';
+      btn.appendChild(countSpan);
+    }
+    countSpan.textContent = count;
+  });
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -94,7 +118,7 @@ function setupCategoryFilters(grid, allItems) {
         renderGalleryItems(grid, allItems);
       } else {
         const filtered = allItems.filter(item => {
-          return item.category.toLowerCase().trim() === filter.toLowerCase().trim();
+          return (item.category || '').toLowerCase().trim() === filter.toLowerCase().trim();
         });
         renderGalleryItems(grid, filtered);
       }
@@ -126,17 +150,23 @@ function initHomepageGalleryStrip() {
       // Pick latest 6-8 photos
       const previewItems = items.slice(0, 8);
       strip.innerHTML = previewItems.map((item, idx) => `
-        <article class="gallery-item-card" data-idx="${idx}" tabindex="0" role="button" aria-label="View photo: ${item.title || item.caption}">
+        <article class="gallery-item-card" data-idx="${idx}" tabindex="0" role="button" aria-label="View photo: ${item.title || item.category}">
           <div class="gallery-item-thumb-wrapper">
-            <img class="gallery-item-thumb" src="${item.file}" alt="${item.alt || item.title || 'Green Horizon photo'}" loading="lazy">
+            <img class="gallery-item-thumb" src="${item.file}" alt="${item.alt || item.title || 'Green Horizon photo'}" loading="lazy" decoding="async">
             <span class="gallery-item-badge">${item.category}</span>
-          </div>
-          <div class="gallery-item-body">
-            <h3 class="gallery-item-title">${item.title || item.category}</h3>
-            <p class="gallery-item-caption" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${item.caption}</p>
-            <div class="gallery-item-meta">
-              <span>📍 ${item.place}</span>
-              <span>🗓 ${item.date}</span>
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-overlay-content">
+                <h3 class="gallery-item-title">${item.title || item.category}</h3>
+                ${item.date ? `<span class="gallery-item-date">${item.date}</span>` : ''}
+              </div>
+              <div class="gallery-zoom-button" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
             </div>
           </div>
         </article>
@@ -518,26 +548,24 @@ function renderActiveLightboxItem() {
 
   if (imgEl) {
     imgEl.src = item.file || item.image;
-    imgEl.alt = item.alt || item.title || item.caption || 'Enlarged photo';
+    imgEl.alt = item.alt || item.title || 'Enlarged photo';
     imgEl.style.maxWidth = '1600px';
-    imgEl.style.maxHeight = '80vh';
+    imgEl.style.maxHeight = '78vh';
     imgEl.style.objectFit = 'contain';
   }
   if (capEl) {
-    capEl.textContent = item.caption || item.title || '';
+    capEl.textContent = item.title || item.category || '';
   }
   if (metaEl) {
-    let metaText = '';
-    if (item.credit) metaText += `© ${item.credit} `;
-    if (item.place) metaText += `📍 ${item.place} `;
-    if (item.date) metaText += `• 🗓 ${item.date} `;
-    if (item.category) metaText += `• [${item.category}]`;
-    metaEl.textContent = metaText.trim();
+    let metaParts = [];
+    if (item.category) metaParts.push(item.category);
+    metaParts.push(`Photo ${currentLightboxIndex + 1} of ${activeLightboxItems.length}`);
+    if (item.date) metaParts.push(item.date);
+    metaEl.textContent = metaParts.join(' • ');
   }
 
   const captionBox = document.querySelector('.lightbox-caption-box');
   if (captionBox) {
-    const hasText = (item.caption || item.title || item.credit || item.place);
-    captionBox.style.display = hasText ? 'block' : 'none';
+    captionBox.style.display = 'block';
   }
 }

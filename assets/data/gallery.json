@@ -3,970 +3,776 @@
     "id": "gal-001",
     "file": "assets/activities/a2-training-course/training_course_01.webp",
     "title": "Flight Maneuvering Practice",
-    "caption": "Youth participants practicing precision drone flight and obstacle navigation in Brașov.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Flight Maneuvering Practice during Green Horizon training course in Romania"
   },
   {
     "id": "gal-002",
     "file": "assets/activities/a2-training-course/training_course_02.webp",
     "title": "Drone Camera Calibration",
-    "caption": "Hands-on gimbal stabilization and camera sensor settings training.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Drone Camera Calibration during Green Horizon training course in Romania"
   },
   {
     "id": "gal-003",
     "file": "assets/activities/a2-training-course/training_course_06.webp",
     "title": "Field Aerial Photography Drill",
-    "caption": "Outdoor composition and framing exercises in mountain terrain.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Field Aerial Photography Drill during Green Horizon training course in Romania"
   },
   {
     "id": "gal-004",
     "file": "assets/activities/a2-training-course/training_course_08.webp",
     "title": "Flight Safety Briefing",
-    "caption": "Pre-flight safety protocols and European drone regulation compliance.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Flight Safety Briefing during Green Horizon training course in Romania"
   },
   {
     "id": "gal-005",
     "file": "assets/activities/a2-training-course/training_course_10.webp",
     "title": "Telemetry & GPS Mapping",
-    "caption": "Monitoring live telemetry, battery health, and altitude limits.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Telemetry & GPS Mapping during Green Horizon training course in Romania"
   },
   {
     "id": "gal-006",
     "file": "assets/activities/a2-training-course/training_course_13.webp",
     "title": "Outdoor Flight Navigation",
-    "caption": "Piloting camera drones over varied topography in the Romanian countryside.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Outdoor Flight Navigation during Green Horizon training course in Romania"
   },
   {
     "id": "gal-007",
     "file": "assets/activities/a2-training-course/training_course_15.webp",
     "title": "Video Storyboarding Session",
-    "caption": "Youth teams developing shot lists and narratives for environmental short films.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Video Storyboarding Session during Green Horizon training course in Romania"
   },
   {
     "id": "gal-008",
     "file": "assets/activities/a2-training-course/training_course_16.webp",
     "title": "Gimbal Motion & Cinematography",
-    "caption": "Learning cinematic camera movements for documentary storytelling.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Gimbal Motion & Cinematography during Green Horizon training course in Romania"
   },
   {
     "id": "gal-009",
     "file": "assets/activities/a2-training-course/training_course_17.webp",
     "title": "Team Aerial Coordination",
-    "caption": "Spotter and pilot collaboration during long-range observation drills.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Team Aerial Coordination during Green Horizon training course in Romania"
   },
   {
     "id": "gal-010",
     "file": "assets/activities/a2-training-course/training_course_20.webp",
     "title": "Post-Production Lab",
-    "caption": "Video editing and color grading of aerial footage recorded during field drills.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Post-Production Lab during Green Horizon training course in Romania"
   },
   {
     "id": "gal-011",
     "file": "assets/activities/a2-training-course/training_course_22.webp",
     "title": "Ecological Observation Techniques",
-    "caption": "Identifying environmental stress indicators from aerial vantage points.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Ecological Observation Techniques during Green Horizon training course in Romania"
   },
   {
     "id": "gal-012",
     "file": "assets/activities/a2-training-course/training_course_23.webp",
     "title": "Group Flight Evaluation",
-    "caption": "Reviewing flight logs and discussing flight precision with international peers.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Group Flight Evaluation during Green Horizon training course in Romania"
   },
   {
     "id": "gal-013",
     "file": "assets/activities/a2-training-course/training_course_25.webp",
     "title": "Landscape Framing Exercise",
-    "caption": "Composing wide-angle landscape shots showcasing Carpathian forestry.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Landscape Framing Exercise during Green Horizon training course in Romania"
   },
   {
     "id": "gal-014",
     "file": "assets/activities/a2-training-course/training_course_26.webp",
     "title": "Visual Storytelling Workshop",
-    "caption": "Structuring documentary chapters to communicate climate urgency.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Visual Storytelling Workshop during Green Horizon training course in Romania"
   },
   {
     "id": "gal-015",
     "file": "assets/activities/a2-training-course/training_course_28.webp",
     "title": "Field Post-Flight Debrief",
-    "caption": "Analyzing flight performance, battery management, and environmental factors.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Field Post-Flight Debrief during Green Horizon training course in Romania"
   },
   {
     "id": "gal-016",
     "file": "assets/activities/a2-training-course/training_course_29.webp",
     "title": "Multi-Country Collaboration",
-    "caption": "Youth workers from Germany, Romania, and Türkiye collaborating on flight plans.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Multi-Country Collaboration during Green Horizon training course in Romania"
   },
   {
     "id": "gal-017",
     "file": "assets/activities/a2-training-course/training_course_30.webp",
     "title": "Advanced Gimbal Control",
-    "caption": "Smooth panning and tilting techniques for dynamic video capture.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Advanced Gimbal Control during Green Horizon training course in Romania"
   },
   {
     "id": "gal-018",
     "file": "assets/activities/a2-training-course/training_course_32.webp",
     "title": "Drone Maintenance & Inspection",
-    "caption": "Propeller inspection, sensor cleaning, and firmware verification.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Drone Maintenance & Inspection during Green Horizon training course in Romania"
   },
   {
     "id": "gal-019",
     "file": "assets/activities/a2-training-course/training_course_35.webp",
     "title": "Course Graduation & Certificate",
-    "caption": "Youth workers celebrating the completion of the 8-day training mobility in Brașov.",
     "category": "Training course",
     "date": "October 2025",
-    "place": "Brașov, Romania",
     "alt": "Course Graduation & Certificate during Green Horizon training course in Romania"
   },
   {
     "id": "gal-020",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-01-flight-cones.jpg",
     "title": "Obstacle Course Navigation",
-    "caption": "Youth participants in Germany practicing precision maneuvering through flight cones.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Obstacle Course Navigation - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-021",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-02-pilot-park.jpg",
     "title": "Urban Park Observation",
-    "caption": "Capturing aerial photography of urban green spaces in Bonn, Germany.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Urban Park Observation - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-022",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-03-outdoor-training.jpg",
     "title": "Outdoor Safety Briefing",
-    "caption": "Youth leaders conducting pre-flight checklist reviews and safety procedures.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Outdoor Safety Briefing - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-023",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-04-flipchart-planning.jpg",
     "title": "Climate Action Brainstorming",
-    "caption": "Young people mapping local environmental challenges and urban heat islands.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Climate Action Brainstorming - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-024",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-05-video-editing.jpg",
     "title": "Documentary Post-Production",
-    "caption": "Youth editing teams assembling short video stories on local climate action.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Documentary Post-Production - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-025",
     "file": "assets/activities/a4-local-workshops/de/de-workshop-06-tablet-field-team.jpg",
     "title": "Field Telemetry & Monitoring",
-    "caption": "Analyzing real-time sensor data and live video feeds from drone flights.",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "place": "Bonn, Germany",
     "alt": "Field Telemetry & Monitoring - Green Horizon Germany Workshop"
   },
   {
     "id": "gal-026",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_04.webp",
     "title": "Youth Drone Pilot Drill",
-    "caption": "Young participants in Brașov learning flight controls and altitude safety.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Youth Drone Pilot Drill - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-027",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_08.webp",
     "title": "Forest Boundary Mapping",
-    "caption": "Observing local forest health and mountain vegetation from above.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Forest Boundary Mapping - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-028",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_11.webp",
     "title": "Visual Composition Exercise",
-    "caption": "Applying rule-of-thirds and symmetry to aerial ecological photography.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Visual Composition Exercise - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-029",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_14.webp",
     "title": "Environmental Discussion Group",
-    "caption": "Participants discussing local deforestation and watershed preservation.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Environmental Discussion Group - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-030",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_18.webp",
     "title": "Field Observation Team",
-    "caption": "Youth conducting drone inspections of riverbank erosion in Brașov.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Field Observation Team - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-031",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_23.webp",
     "title": "Video Camera Operation",
-    "caption": "Hands-on camera settings adjustment for varying mountain lighting conditions.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Video Camera Operation - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-032",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_29.webp",
     "title": "Peer Flight Demonstration",
-    "caption": "Participants sharing piloting techniques and safe takeoff routines.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Peer Flight Demonstration - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-033",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_32.webp",
     "title": "Youth Storyboard Review",
-    "caption": "Reviewing video storyboard sketches before conducting outdoor filming.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Youth Storyboard Review - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-034",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_34.webp",
     "title": "Workshop Conclusion in Brașov",
-    "caption": "Romanian youth participants celebrating the completion of their local workshop.",
     "category": "Workshops Romania",
     "date": "April 2026",
-    "place": "Brașov, Romania",
     "alt": "Workshop Conclusion in Brașov - Green Horizon Romania Workshop"
   },
   {
     "id": "gal-035",
     "file": "assets/activities/a4-local-workshops/tr/DETR14.webp",
     "title": "Coastal Drone Training Session",
-    "caption": "IESA trainers and youth participants preparing camera drones in Mersin.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Coastal Drone Training Session - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-036",
     "file": "assets/activities/a4-local-workshops/tr/DETR17.webp",
     "title": "Flight Safety Briefing",
-    "caption": "Reviewing Turkish civil aviation drone regulations and safety distances.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Flight Safety Briefing - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-037",
     "file": "assets/activities/a4-local-workshops/tr/DETR110.webp",
     "title": "Flight Controller Operation",
-    "caption": "Youth participant learning sensitive stick movements and emergency landing.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Flight Controller Operation - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-038",
     "file": "assets/activities/a4-local-workshops/tr/DETR118.webp",
     "title": "Wetland Observation Drill",
-    "caption": "Piloting drones to document delta ecosystems and coastal biodiversity.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Wetland Observation Drill - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-039",
     "file": "assets/activities/a4-local-workshops/tr/DETR121.webp",
     "title": "Aerial Landscape Framing",
-    "caption": "Capturing the interplay between Mediterranean coastline and urban growth.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Aerial Landscape Framing - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-040",
     "file": "assets/activities/a4-local-workshops/tr/DETR126.webp",
     "title": "Field Team Collaboration",
-    "caption": "Youth working in pairs as pilot and spotter during field surveys.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Field Team Collaboration - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-041",
     "file": "assets/activities/a4-local-workshops/tr/DETR137.webp",
     "title": "Marine Ecology Inspection",
-    "caption": "Inspecting coastal erosion and marine habitats from the air in Mersin.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Marine Ecology Inspection - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-042",
     "file": "assets/activities/a4-local-workshops/tr/DETR140.webp",
     "title": "Telemetry & Sensor Monitoring",
-    "caption": "Monitoring flight coordinates, wind resistance, and battery status.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Telemetry & Sensor Monitoring - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-043",
     "file": "assets/activities/a4-local-workshops/tr/DETR150.webp",
     "title": "Footage Review & Editing",
-    "caption": "Youth production team reviewing 4K video clips captured during the workshop.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Footage Review & Editing - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-044",
     "file": "assets/activities/a4-local-workshops/tr/DETR156.webp",
     "title": "Storytelling & Dialogue",
-    "caption": "Discussing climate adaptation strategies with local environmental youth advocates.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Storytelling & Dialogue - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-045",
     "file": "assets/activities/a4-local-workshops/tr/DETR162.webp",
     "title": "Drone Return-to-Home Drill",
-    "caption": "Testing automated failsafe routines and precision GPS landing.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Drone Return-to-Home Drill - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-046",
     "file": "assets/activities/a4-local-workshops/tr/DETR1123.webp",
     "title": "Workshop Celebration in Mersin",
-    "caption": "Turkish youth team celebrating the successful completion of the local workshop.",
     "category": "Workshops Türkiye",
     "date": "April 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Workshop Celebration in Mersin - Green Horizon Türkiye Workshop"
   },
   {
     "id": "gal-047",
     "file": "assets/activities/a5-films-exhibition/Exh1.png",
     "title": "Mediterranean Coastal Geomorphology",
-    "caption": "Aerial drone perspective of turquoise coastal waters and geological marine formations in Türkiye.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Mediterranean Coastal Geomorphology aerial drone photography"
   },
   {
     "id": "gal-048",
     "file": "assets/activities/a5-films-exhibition/Exh2.png",
     "title": "Rhine River Valley & Aerial Cable Car",
-    "caption": "Aerial view of the Rhine river crossing, river shipping, and green valley slopes in Germany.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Bonn/Koblenz, Germany",
     "alt": "Rhine River Valley & Aerial Cable Car aerial drone photography"
   },
   {
     "id": "gal-049",
     "file": "assets/activities/a5-films-exhibition/Exh3.png",
     "title": "Carpathian Forest Canopy Health",
-    "caption": "High-resolution drone panorama of mixed temperate forest canopy in Brașov, Romania.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Brașov, Romania",
     "alt": "Carpathian Forest Canopy Health aerial drone photography"
   },
   {
     "id": "gal-050",
     "file": "assets/activities/a5-films-exhibition/Exh4.png",
     "title": "Urban Green Corridors",
-    "caption": "Aerial documentation of sustainable urban tree corridors mitigating metropolitan heat.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Transnational",
     "alt": "Urban Green Corridors aerial drone photography"
   },
   {
     "id": "gal-051",
     "file": "assets/activities/a5-films-exhibition/Exh5.png",
     "title": "Wetland Biodiversity Sanctuary",
-    "caption": "Aerial survey of delta lagoons and migratory bird ecosystems in southern Türkiye.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Wetland Biodiversity Sanctuary aerial drone photography"
   },
   {
     "id": "gal-052",
     "file": "assets/activities/a5-films-exhibition/Exh6.png",
     "title": "Renewable Solar Infrastructure",
-    "caption": "Large-scale photovoltaic array contributing to clean energy transition.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Germany",
     "alt": "Renewable Solar Infrastructure aerial drone photography"
   },
   {
     "id": "gal-053",
     "file": "assets/activities/a5-films-exhibition/Exh7.png",
     "title": "Watershed Stress & Drought Observation",
-    "caption": "Comparative aerial monitoring of seasonal water retention and drying riverbeds.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Romania",
     "alt": "Watershed Stress & Drought Observation aerial drone photography"
   },
   {
     "id": "gal-054",
     "file": "assets/activities/a5-films-exhibition/Exh8.png",
     "title": "Alpine Vegetation & Treeline Dynamics",
-    "caption": "High-altitude mountain terrain showing ecological shifts in alpine flora.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Romania",
     "alt": "Alpine Vegetation & Treeline Dynamics aerial drone photography"
   },
   {
     "id": "gal-055",
     "file": "assets/activities/a5-films-exhibition/Exh9.png",
     "title": "Agricultural Landscape Mosaic",
-    "caption": "Drone mapping of regenerative farming patterns and soil conservation strips.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Transnational",
     "alt": "Agricultural Landscape Mosaic aerial drone photography"
   },
   {
     "id": "gal-056",
     "file": "assets/activities/a5-films-exhibition/Exh10.png",
     "title": "Rural Wind Energy Generation",
-    "caption": "Aerial perspective of modern wind turbines harmonizing with rural landscapes.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Germany",
     "alt": "Rural Wind Energy Generation aerial drone photography"
   },
   {
     "id": "gal-057",
     "file": "assets/activities/a5-films-exhibition/Exh11.png",
     "title": "Youth Drone Research Team in Field",
-    "caption": "Young pilots and environmental researchers conducting aerial documentation.",
     "category": "Drone photography",
     "date": "June 2026",
-    "place": "Transnational",
     "alt": "Youth Drone Research Team in Field aerial drone photography"
   },
   {
     "id": "gal-058",
     "file": "assets/activities/a6-website/vr-exhb1.png",
     "title": "MetaSteps 3D Gallery: Welcome Hall",
-    "caption": "Entrance hallway to the Green Horizon 3D Virtual Reality Exhibition on MetaSteps.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "MetaSteps 3D Gallery: Welcome Hall on MetaSteps"
   },
   {
     "id": "gal-059",
     "file": "assets/activities/a6-website/vr-exhb2.png",
     "title": "3D Gallery: Main Exhibition Hall",
-    "caption": "Grand exhibition hall showcasing framed youth aerial photographs and spatial audio.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Main Exhibition Hall on MetaSteps"
   },
   {
     "id": "gal-060",
     "file": "assets/activities/a6-website/vr-exhb3.png",
     "title": "3D Gallery: Photography Perspective",
-    "caption": "Framed drone prints displayed along the virtual gallery walls with museum track lighting.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Photography Perspective on MetaSteps"
   },
   {
     "id": "gal-061",
     "file": "assets/activities/a6-website/vr-exhb4.png",
     "title": "3D Gallery: Thematic Skylight Room",
-    "caption": "Natural ambient skylights illuminating environmental documentation artworks.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Thematic Skylight Room on MetaSteps"
   },
   {
     "id": "gal-062",
     "file": "assets/activities/a6-website/vr-exhb5.png",
     "title": "3D Gallery: Close-Up Inspection",
-    "caption": "Visitors can inspect high-resolution prints and contextual youth captions in 3D.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Close-Up Inspection on MetaSteps"
   },
   {
     "id": "gal-063",
     "file": "assets/activities/a6-website/vr-exhb6.png",
     "title": "3D Gallery: Climate Action Wall",
-    "caption": "Panoramic view of curated regional climate impacts from Germany, Romania, and Türkiye.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Climate Action Wall on MetaSteps"
   },
   {
     "id": "gal-064",
     "file": "assets/activities/a6-website/vr-exhb7.png",
     "title": "3D Gallery: Curatorial Waypoints",
-    "caption": "Interactive navigation markers enabling self-guided virtual tours in web browsers.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Curatorial Waypoints on MetaSteps"
   },
   {
     "id": "gal-065",
     "file": "assets/activities/a6-website/vr-exhb8.png",
     "title": "3D Gallery: Full Exhibition Panorama",
-    "caption": "Wide-angle architectural perspective of the Green Horizon virtual exhibition space.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Online / MetaSteps",
     "alt": "3D Gallery: Full Exhibition Panorama on MetaSteps"
   },
   {
     "id": "gal-066",
     "file": "assets/activities/a5-films-exhibition/Exh12.jpg",
     "title": "Curated Exhibition Print: Old Growth Canopy",
-    "caption": "Exhibition photograph depicting preserved old-growth mountain woodland.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Romania",
     "alt": "Curated Exhibition Print: Old Growth Canopy exhibition panel"
   },
   {
     "id": "gal-067",
     "file": "assets/activities/a5-films-exhibition/Exh13.jpg",
     "title": "Curated Exhibition Print: Riparian Forest",
-    "caption": "Exhibition panel illustrating fluvial riverbank biodiversity and water protection.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Germany",
     "alt": "Curated Exhibition Print: Riparian Forest exhibition panel"
   },
   {
     "id": "gal-068",
     "file": "assets/activities/a5-films-exhibition/Exh14.jpg",
     "title": "Curated Exhibition Print: Coastal Horizons",
-    "caption": "Exhibition artwork capturing maritime light and coastal cliff formations.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Türkiye",
     "alt": "Curated Exhibition Print: Coastal Horizons exhibition panel"
   },
   {
     "id": "gal-069",
     "file": "assets/activities/a5-films-exhibition/Exh15.jpg",
     "title": "Curated Exhibition Print: Mountain Ridge",
-    "caption": "Exhibition print highlighting Carpathian mountain elevations and cloud cover.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Romania",
     "alt": "Curated Exhibition Print: Mountain Ridge exhibition panel"
   },
   {
     "id": "gal-070",
     "file": "assets/activities/a5-films-exhibition/Exh16.jpg",
     "title": "Curated Exhibition Print: Urban Canopy",
-    "caption": "Exhibition panel illustrating urban forestry and microclimate regulation.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Germany",
     "alt": "Curated Exhibition Print: Urban Canopy exhibition panel"
   },
   {
     "id": "gal-071",
     "file": "assets/activities/a5-films-exhibition/Exh17.jpg",
     "title": "Curated Exhibition Print: Fluvial Waterways",
-    "caption": "Exhibition print tracking natural river meanders and wetlands.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Türkiye",
     "alt": "Curated Exhibition Print: Fluvial Waterways exhibition panel"
   },
   {
     "id": "gal-072",
     "file": "assets/activities/a5-films-exhibition/Exh18.jpg",
     "title": "Curated Exhibition Print: Horizon Sunset",
-    "caption": "Exhibition artwork concluding the visual storytelling journey with hope and climate action.",
     "category": "Exhibition",
     "date": "June 2026",
-    "place": "Transnational",
     "alt": "Curated Exhibition Print: Horizon Sunset exhibition panel"
   },
   {
     "id": "gal-073",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-session-01.jpg",
     "title": "Kick-off Meeting Opening",
-    "caption": "Consortium partners convening in Bonn, Germany to launch the Green Horizon partnership.",
     "category": "Events",
     "date": "July 2025",
-    "place": "Bonn, Germany",
     "alt": "Kick-off Meeting Opening"
   },
   {
     "id": "gal-074",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-collaboration-02.jpg",
     "title": "Work Package & Mobility Alignment",
-    "caption": "Coordinators and youth leaders defining activity timelines and quality indicators.",
     "category": "Events",
     "date": "July 2025",
-    "place": "Bonn, Germany",
     "alt": "Work Package & Mobility Alignment"
   },
   {
     "id": "gal-075",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-meeting-room-03.jpg",
     "title": "Consortium Deliberations",
-    "caption": "Reviewing Erasmus+ grant agreements, dissemination strategy, and risk mitigation.",
     "category": "Events",
     "date": "July 2025",
-    "place": "Bonn, Germany",
     "alt": "Consortium Deliberations"
   },
   {
     "id": "gal-076",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-working-group-04.jpg",
     "title": "Training Curriculum Working Group",
-    "caption": "Drafting the 8-day drone pilot training modules for youth workers in Brașov.",
     "category": "Events",
     "date": "July 2025",
-    "place": "Bonn, Germany",
     "alt": "Training Curriculum Working Group"
   },
   {
     "id": "gal-077",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-strategy-review-05.jpg",
     "title": "Quality Management Review",
-    "caption": "Establishing evaluation metrics, participant safety protocols, and monitoring tools.",
     "category": "Events",
     "date": "July 2025",
-    "place": "Bonn, Germany",
     "alt": "Quality Management Review"
   },
   {
     "id": "gal-078",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-01.jpeg",
     "title": "Final Partner Meeting Convening",
-    "caption": "Consortium delegations meeting in Mersin, Türkiye to evaluate project results.",
     "category": "Events",
     "date": "July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Final Partner Meeting Convening"
   },
   {
     "id": "gal-079",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-02.jpeg",
     "title": "Deliverables & Impact Review",
-    "caption": "Reviewing the educational booklet, documentary series, and exhibition reach.",
     "category": "Events",
     "date": "July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Deliverables & Impact Review"
   },
   {
     "id": "gal-080",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-03.jpeg",
     "title": "Participant Feedback Assessment",
-    "caption": "Evaluating feedback from youth participants across Germany, Romania, and Türkiye.",
     "category": "Events",
     "date": "July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Participant Feedback Assessment"
   },
   {
     "id": "gal-081",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-04.jpeg",
     "title": "Administrative & Final Reporting",
-    "caption": "Finalizing reporting documentation in accordance with Erasmus+ guidelines.",
     "category": "Events",
     "date": "July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Administrative & Final Reporting"
   },
   {
     "id": "gal-082",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-05.jpeg",
     "title": "Sustainability & Future Initiatives",
-    "caption": "Planning post-project dissemination and long-term youth climate initiatives.",
     "category": "Events",
     "date": "August 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Sustainability & Future Initiatives"
   },
   {
     "id": "gal-083",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-06.jpeg",
     "title": "Methodology Peer Evaluation",
-    "caption": "Assessing the educational transferability of the drone curriculum.",
     "category": "Events",
     "date": "August 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Methodology Peer Evaluation"
   },
   {
     "id": "gal-084",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-07.jpeg",
     "title": "Partnership Closing Celebration",
-    "caption": "Consortium partners celebrating the successful completion of the Green Horizon project.",
     "category": "Events",
     "date": "August 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Partnership Closing Celebration"
   },
   {
     "id": "gal-085",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER1.jpeg",
     "title": "Dissemination Conference Romania",
-    "caption": "Opening plenary presenting the youth documentary films to local community stakeholders in Romania.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Dissemination Conference Romania"
   },
   {
     "id": "gal-086",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER2.jpeg",
     "title": "Booklet Presentation to Educators",
-    "caption": "Demonstrating the Green Horizon educational handbook and flight checklists to teachers.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Booklet Presentation to Educators"
   },
   {
     "id": "gal-087",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER3.jpeg",
     "title": "Photo Exhibition Screening",
-    "caption": "Audience inspecting youth aerial drone prints and local climate narratives.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Photo Exhibition Screening"
   },
   {
     "id": "gal-088",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER4.jpeg",
     "title": "Youth Participant Testimonies",
-    "caption": "Young pilots sharing their personal experiences during the drone workshops.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Youth Participant Testimonies"
   },
   {
     "id": "gal-089",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER5.jpeg",
     "title": "Panel Discussion on Climate Urgency",
-    "caption": "Community leaders and youth discussing regional environmental solutions.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Panel Discussion on Climate Urgency"
   },
   {
     "id": "gal-090",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER6.jpeg",
     "title": "Interactive VR Demonstration",
-    "caption": "Attendees trying out the MetaSteps 3D virtual reality exhibition.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Interactive VR Demonstration"
   },
   {
     "id": "gal-091",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER7.jpeg",
     "title": "Stakeholder Networking",
-    "caption": "Building future partnerships with environmental NGOs and youth organizations.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Stakeholder Networking"
   },
   {
     "id": "gal-092",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER8.jpeg",
     "title": "Documentary Film Screenings",
-    "caption": "Screening of the three youth-produced climate documentaries.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Documentary Film Screenings"
   },
   {
     "id": "gal-093",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER9.jpeg",
     "title": "Dissemination Conference Closing",
-    "caption": "Celebrating the impactful conclusion of the dissemination conference in Romania.",
     "category": "Events",
     "date": "17 July 2026",
-    "place": "Romania",
     "alt": "Dissemination Conference Closing"
   },
   {
     "id": "gal-094",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR1.jpeg",
     "title": "Dissemination Conference Türkiye",
-    "caption": "Presenting the project deliverables and educational methodology to stakeholders in Mersin.",
     "category": "Events",
     "date": "22 July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Dissemination Conference Türkiye"
   },
   {
     "id": "gal-095",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR2.jpeg",
     "title": "Youth Documentary Screening",
-    "caption": "Screening documentary films produced by local youth teams.",
     "category": "Events",
     "date": "22 July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Youth Documentary Screening"
   },
   {
     "id": "gal-096",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR3.jpeg",
     "title": "Exhibition Panel Discussion",
-    "caption": "Educators and youth workers discussing the integration of drone technology in youth work.",
     "category": "Events",
     "date": "22 July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Exhibition Panel Discussion"
   },
   {
     "id": "gal-097",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR4.jpeg",
     "title": "Community Dissemination Plenary",
-    "caption": "Distributing the printed Green Horizon educational handbook to local schools.",
     "category": "Events",
     "date": "22 July 2026",
-    "place": "Mersin, Türkiye",
     "alt": "Community Dissemination Plenary"
   }
 ]
