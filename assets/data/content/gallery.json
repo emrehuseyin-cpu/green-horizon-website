@@ -153,54 +153,206 @@
   },
   {
     "id": "gal-020",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-01-flight-cones.jpg",
-    "title": "Obstacle Course Navigation",
+    "file": "assets/activities/a4-local-workshops/de/DELW1.jpeg",
+    "title": "Local Workshop Germany – Session 1",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Obstacle Course Navigation - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 1)"
   },
   {
     "id": "gal-021",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-02-pilot-park.jpg",
-    "title": "Urban Park Observation",
+    "file": "assets/activities/a4-local-workshops/de/DELW2.jpeg",
+    "title": "Local Workshop Germany – Session 2",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Urban Park Observation - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 2)"
   },
   {
     "id": "gal-022",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-03-outdoor-training.jpg",
-    "title": "Outdoor Safety Briefing",
+    "file": "assets/activities/a4-local-workshops/de/DELW3.jpeg",
+    "title": "Local Workshop Germany – Session 3",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Outdoor Safety Briefing - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 3)"
   },
   {
     "id": "gal-023",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-04-flipchart-planning.jpg",
-    "title": "Climate Action Brainstorming",
+    "file": "assets/activities/a4-local-workshops/de/DELW4.jpeg",
+    "title": "Local Workshop Germany – Session 4",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Climate Action Brainstorming - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 4)"
   },
   {
     "id": "gal-024",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-05-video-editing.jpg",
-    "title": "Documentary Post-Production",
+    "file": "assets/activities/a4-local-workshops/de/DELW5.jpeg",
+    "title": "Local Workshop Germany – Session 5",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Documentary Post-Production - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 5)"
   },
   {
     "id": "gal-025",
-    "file": "assets/activities/a4-local-workshops/de/de-workshop-06-tablet-field-team.jpg",
-    "title": "Field Telemetry & Monitoring",
+    "file": "assets/activities/a4-local-workshops/de/DELW6.jpeg",
+    "title": "Local Workshop Germany – Session 6",
     "category": "Workshops Germany",
     "date": "April 2026",
-    "alt": "Field Telemetry & Monitoring - Green Horizon Germany Workshop"
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 6)"
   },
   {
     "id": "gal-026",
+    "file": "assets/activities/a4-local-workshops/de/DELW7.jpeg",
+    "title": "Local Workshop Germany – Session 7",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 7)"
+  },
+  {
+    "id": "gal-027",
+    "file": "assets/activities/a4-local-workshops/de/DELW8.jpeg",
+    "title": "Local Workshop Germany – Session 8",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 8)"
+  },
+  {
+    "id": "gal-028",
+    "file": "assets/activities/a4-local-workshops/de/DELW9.jpeg",
+    "title": "Local Workshop Germany – Session 9",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 9)"
+  },
+  {
+    "id": "gal-029",
+    "file": "assets/activities/a4-local-workshops/de/DELW10.jpeg",
+    "title": "Local Workshop Germany – Session 10",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 10)"
+  },
+  {
+    "id": "gal-030",
+    "file": "assets/activities/a4-local-workshops/de/DELW11.jpeg",
+    "title": "Local Workshop Germany – Session 11",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 11)"
+  },
+  {
+    "id": "gal-031",
+    "file": "assets/activities/a4-local-workshops/de/DELW12.jpeg",
+    "title": "Local Workshop Germany – Session 12",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 12)"
+  },
+  {
+    "id": "gal-032",
+    "file": "assets/activities/a4-local-workshops/de/DELW13.jpeg",
+    "title": "Local Workshop Germany – Session 13",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 13)"
+  },
+  {
+    "id": "gal-033",
+    "file": "assets/activities/a4-local-workshops/de/DELW14.jpeg",
+    "title": "Local Workshop Germany – Session 14",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 14)"
+  },
+  {
+    "id": "gal-034",
+    "file": "assets/activities/a4-local-workshops/de/DELW15.jpeg",
+    "title": "Local Workshop Germany – Session 15",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 15)"
+  },
+  {
+    "id": "gal-035",
+    "file": "assets/activities/a4-local-workshops/de/DELW16.jpeg",
+    "title": "Local Workshop Germany – Session 16",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 16)"
+  },
+  {
+    "id": "gal-036",
+    "file": "assets/activities/a4-local-workshops/de/DELW17.jpeg",
+    "title": "Local Workshop Germany – Session 17",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 17)"
+  },
+  {
+    "id": "gal-037",
+    "file": "assets/activities/a4-local-workshops/de/DELW18.jpeg",
+    "title": "Local Workshop Germany – Session 18",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 18)"
+  },
+  {
+    "id": "gal-038",
+    "file": "assets/activities/a4-local-workshops/de/DELW19.jpeg",
+    "title": "Local Workshop Germany – Session 19",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 19)"
+  },
+  {
+    "id": "gal-039",
+    "file": "assets/activities/a4-local-workshops/de/DELW20.jpeg",
+    "title": "Local Workshop Germany – Session 20",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 20)"
+  },
+  {
+    "id": "gal-040",
+    "file": "assets/activities/a4-local-workshops/de/DELW21.jpeg",
+    "title": "Local Workshop Germany – Session 21",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 21)"
+  },
+  {
+    "id": "gal-041",
+    "file": "assets/activities/a4-local-workshops/de/DELW22.jpeg",
+    "title": "Local Workshop Germany – Session 22",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 22)"
+  },
+  {
+    "id": "gal-042",
+    "file": "assets/activities/a4-local-workshops/de/DELW23.jpeg",
+    "title": "Local Workshop Germany – Session 23",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 23)"
+  },
+  {
+    "id": "gal-043",
+    "file": "assets/activities/a4-local-workshops/de/DELW24.jpeg",
+    "title": "Local Workshop Germany – Session 24",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 24)"
+  },
+  {
+    "id": "gal-044",
+    "file": "assets/activities/a4-local-workshops/de/DELW25.jpeg",
+    "title": "Local Workshop Germany – Session 25",
+    "category": "Workshops Germany",
+    "date": "April 2026",
+    "alt": "Green Horizon local youth workshop session in Bonn, Germany (Photo 25)"
+  },
+  {
+    "id": "gal-045",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_04.webp",
     "title": "Youth Drone Pilot Drill",
     "category": "Workshops Romania",
@@ -208,7 +360,7 @@
     "alt": "Youth Drone Pilot Drill - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-027",
+    "id": "gal-046",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_08.webp",
     "title": "Forest Boundary Mapping",
     "category": "Workshops Romania",
@@ -216,7 +368,7 @@
     "alt": "Forest Boundary Mapping - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-028",
+    "id": "gal-047",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_11.webp",
     "title": "Visual Composition Exercise",
     "category": "Workshops Romania",
@@ -224,7 +376,7 @@
     "alt": "Visual Composition Exercise - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-029",
+    "id": "gal-048",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_14.webp",
     "title": "Environmental Discussion Group",
     "category": "Workshops Romania",
@@ -232,7 +384,7 @@
     "alt": "Environmental Discussion Group - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-030",
+    "id": "gal-049",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_18.webp",
     "title": "Field Observation Team",
     "category": "Workshops Romania",
@@ -240,7 +392,7 @@
     "alt": "Field Observation Team - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-031",
+    "id": "gal-050",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_23.webp",
     "title": "Video Camera Operation",
     "category": "Workshops Romania",
@@ -248,7 +400,7 @@
     "alt": "Video Camera Operation - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-032",
+    "id": "gal-051",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_29.webp",
     "title": "Peer Flight Demonstration",
     "category": "Workshops Romania",
@@ -256,7 +408,7 @@
     "alt": "Peer Flight Demonstration - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-033",
+    "id": "gal-052",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_32.webp",
     "title": "Youth Storyboard Review",
     "category": "Workshops Romania",
@@ -264,7 +416,7 @@
     "alt": "Youth Storyboard Review - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-034",
+    "id": "gal-053",
     "file": "assets/activities/a4-local-workshops/ro/romania_local_workshop_34.webp",
     "title": "Workshop Conclusion in Brașov",
     "category": "Workshops Romania",
@@ -272,7 +424,7 @@
     "alt": "Workshop Conclusion in Brașov - Green Horizon Romania Workshop"
   },
   {
-    "id": "gal-035",
+    "id": "gal-054",
     "file": "assets/activities/a4-local-workshops/tr/DETR14.webp",
     "title": "Coastal Drone Training Session",
     "category": "Workshops Türkiye",
@@ -280,7 +432,7 @@
     "alt": "Coastal Drone Training Session - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-036",
+    "id": "gal-055",
     "file": "assets/activities/a4-local-workshops/tr/DETR17.webp",
     "title": "Flight Safety Briefing",
     "category": "Workshops Türkiye",
@@ -288,7 +440,7 @@
     "alt": "Flight Safety Briefing - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-037",
+    "id": "gal-056",
     "file": "assets/activities/a4-local-workshops/tr/DETR110.webp",
     "title": "Flight Controller Operation",
     "category": "Workshops Türkiye",
@@ -296,7 +448,7 @@
     "alt": "Flight Controller Operation - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-038",
+    "id": "gal-057",
     "file": "assets/activities/a4-local-workshops/tr/DETR118.webp",
     "title": "Wetland Observation Drill",
     "category": "Workshops Türkiye",
@@ -304,7 +456,7 @@
     "alt": "Wetland Observation Drill - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-039",
+    "id": "gal-058",
     "file": "assets/activities/a4-local-workshops/tr/DETR121.webp",
     "title": "Aerial Landscape Framing",
     "category": "Workshops Türkiye",
@@ -312,7 +464,7 @@
     "alt": "Aerial Landscape Framing - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-040",
+    "id": "gal-059",
     "file": "assets/activities/a4-local-workshops/tr/DETR126.webp",
     "title": "Field Team Collaboration",
     "category": "Workshops Türkiye",
@@ -320,7 +472,7 @@
     "alt": "Field Team Collaboration - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-041",
+    "id": "gal-060",
     "file": "assets/activities/a4-local-workshops/tr/DETR137.webp",
     "title": "Marine Ecology Inspection",
     "category": "Workshops Türkiye",
@@ -328,7 +480,7 @@
     "alt": "Marine Ecology Inspection - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-042",
+    "id": "gal-061",
     "file": "assets/activities/a4-local-workshops/tr/DETR140.webp",
     "title": "Telemetry & Sensor Monitoring",
     "category": "Workshops Türkiye",
@@ -336,7 +488,7 @@
     "alt": "Telemetry & Sensor Monitoring - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-043",
+    "id": "gal-062",
     "file": "assets/activities/a4-local-workshops/tr/DETR150.webp",
     "title": "Footage Review & Editing",
     "category": "Workshops Türkiye",
@@ -344,7 +496,7 @@
     "alt": "Footage Review & Editing - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-044",
+    "id": "gal-063",
     "file": "assets/activities/a4-local-workshops/tr/DETR156.webp",
     "title": "Storytelling & Dialogue",
     "category": "Workshops Türkiye",
@@ -352,7 +504,7 @@
     "alt": "Storytelling & Dialogue - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-045",
+    "id": "gal-064",
     "file": "assets/activities/a4-local-workshops/tr/DETR162.webp",
     "title": "Drone Return-to-Home Drill",
     "category": "Workshops Türkiye",
@@ -360,7 +512,7 @@
     "alt": "Drone Return-to-Home Drill - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-046",
+    "id": "gal-065",
     "file": "assets/activities/a4-local-workshops/tr/DETR1123.webp",
     "title": "Workshop Celebration in Mersin",
     "category": "Workshops Türkiye",
@@ -368,7 +520,7 @@
     "alt": "Workshop Celebration in Mersin - Green Horizon Türkiye Workshop"
   },
   {
-    "id": "gal-047",
+    "id": "gal-066",
     "file": "assets/activities/a5-films-exhibition/Exh1.png",
     "title": "Mediterranean Coastal Geomorphology",
     "category": "Drone photography",
@@ -376,7 +528,7 @@
     "alt": "Mediterranean Coastal Geomorphology aerial drone photography"
   },
   {
-    "id": "gal-048",
+    "id": "gal-067",
     "file": "assets/activities/a5-films-exhibition/Exh2.png",
     "title": "Rhine River Valley & Aerial Cable Car",
     "category": "Drone photography",
@@ -384,7 +536,7 @@
     "alt": "Rhine River Valley & Aerial Cable Car aerial drone photography"
   },
   {
-    "id": "gal-049",
+    "id": "gal-068",
     "file": "assets/activities/a5-films-exhibition/Exh3.png",
     "title": "Carpathian Forest Canopy Health",
     "category": "Drone photography",
@@ -392,7 +544,7 @@
     "alt": "Carpathian Forest Canopy Health aerial drone photography"
   },
   {
-    "id": "gal-050",
+    "id": "gal-069",
     "file": "assets/activities/a5-films-exhibition/Exh4.png",
     "title": "Urban Green Corridors",
     "category": "Drone photography",
@@ -400,7 +552,7 @@
     "alt": "Urban Green Corridors aerial drone photography"
   },
   {
-    "id": "gal-051",
+    "id": "gal-070",
     "file": "assets/activities/a5-films-exhibition/Exh5.png",
     "title": "Wetland Biodiversity Sanctuary",
     "category": "Drone photography",
@@ -408,7 +560,7 @@
     "alt": "Wetland Biodiversity Sanctuary aerial drone photography"
   },
   {
-    "id": "gal-052",
+    "id": "gal-071",
     "file": "assets/activities/a5-films-exhibition/Exh6.png",
     "title": "Renewable Solar Infrastructure",
     "category": "Drone photography",
@@ -416,7 +568,7 @@
     "alt": "Renewable Solar Infrastructure aerial drone photography"
   },
   {
-    "id": "gal-053",
+    "id": "gal-072",
     "file": "assets/activities/a5-films-exhibition/Exh7.png",
     "title": "Watershed Stress & Drought Observation",
     "category": "Drone photography",
@@ -424,7 +576,7 @@
     "alt": "Watershed Stress & Drought Observation aerial drone photography"
   },
   {
-    "id": "gal-054",
+    "id": "gal-073",
     "file": "assets/activities/a5-films-exhibition/Exh8.png",
     "title": "Alpine Vegetation & Treeline Dynamics",
     "category": "Drone photography",
@@ -432,7 +584,7 @@
     "alt": "Alpine Vegetation & Treeline Dynamics aerial drone photography"
   },
   {
-    "id": "gal-055",
+    "id": "gal-074",
     "file": "assets/activities/a5-films-exhibition/Exh9.png",
     "title": "Agricultural Landscape Mosaic",
     "category": "Drone photography",
@@ -440,7 +592,7 @@
     "alt": "Agricultural Landscape Mosaic aerial drone photography"
   },
   {
-    "id": "gal-056",
+    "id": "gal-075",
     "file": "assets/activities/a5-films-exhibition/Exh10.png",
     "title": "Rural Wind Energy Generation",
     "category": "Drone photography",
@@ -448,7 +600,7 @@
     "alt": "Rural Wind Energy Generation aerial drone photography"
   },
   {
-    "id": "gal-057",
+    "id": "gal-076",
     "file": "assets/activities/a5-films-exhibition/Exh11.png",
     "title": "Youth Drone Research Team in Field",
     "category": "Drone photography",
@@ -456,7 +608,7 @@
     "alt": "Youth Drone Research Team in Field aerial drone photography"
   },
   {
-    "id": "gal-058",
+    "id": "gal-077",
     "file": "assets/activities/a6-website/vr-exhb1.png",
     "title": "MetaSteps 3D Gallery: Welcome Hall",
     "category": "Exhibition",
@@ -464,7 +616,7 @@
     "alt": "MetaSteps 3D Gallery: Welcome Hall on MetaSteps"
   },
   {
-    "id": "gal-059",
+    "id": "gal-078",
     "file": "assets/activities/a6-website/vr-exhb2.png",
     "title": "3D Gallery: Main Exhibition Hall",
     "category": "Exhibition",
@@ -472,7 +624,7 @@
     "alt": "3D Gallery: Main Exhibition Hall on MetaSteps"
   },
   {
-    "id": "gal-060",
+    "id": "gal-079",
     "file": "assets/activities/a6-website/vr-exhb3.png",
     "title": "3D Gallery: Photography Perspective",
     "category": "Exhibition",
@@ -480,7 +632,7 @@
     "alt": "3D Gallery: Photography Perspective on MetaSteps"
   },
   {
-    "id": "gal-061",
+    "id": "gal-080",
     "file": "assets/activities/a6-website/vr-exhb4.png",
     "title": "3D Gallery: Thematic Skylight Room",
     "category": "Exhibition",
@@ -488,7 +640,7 @@
     "alt": "3D Gallery: Thematic Skylight Room on MetaSteps"
   },
   {
-    "id": "gal-062",
+    "id": "gal-081",
     "file": "assets/activities/a6-website/vr-exhb5.png",
     "title": "3D Gallery: Close-Up Inspection",
     "category": "Exhibition",
@@ -496,7 +648,7 @@
     "alt": "3D Gallery: Close-Up Inspection on MetaSteps"
   },
   {
-    "id": "gal-063",
+    "id": "gal-082",
     "file": "assets/activities/a6-website/vr-exhb6.png",
     "title": "3D Gallery: Climate Action Wall",
     "category": "Exhibition",
@@ -504,7 +656,7 @@
     "alt": "3D Gallery: Climate Action Wall on MetaSteps"
   },
   {
-    "id": "gal-064",
+    "id": "gal-083",
     "file": "assets/activities/a6-website/vr-exhb7.png",
     "title": "3D Gallery: Curatorial Waypoints",
     "category": "Exhibition",
@@ -512,7 +664,7 @@
     "alt": "3D Gallery: Curatorial Waypoints on MetaSteps"
   },
   {
-    "id": "gal-065",
+    "id": "gal-084",
     "file": "assets/activities/a6-website/vr-exhb8.png",
     "title": "3D Gallery: Full Exhibition Panorama",
     "category": "Exhibition",
@@ -520,7 +672,7 @@
     "alt": "3D Gallery: Full Exhibition Panorama on MetaSteps"
   },
   {
-    "id": "gal-066",
+    "id": "gal-085",
     "file": "assets/activities/a5-films-exhibition/Exh12.jpg",
     "title": "Curated Exhibition Print: Old Growth Canopy",
     "category": "Exhibition",
@@ -528,7 +680,7 @@
     "alt": "Curated Exhibition Print: Old Growth Canopy exhibition panel"
   },
   {
-    "id": "gal-067",
+    "id": "gal-086",
     "file": "assets/activities/a5-films-exhibition/Exh13.jpg",
     "title": "Curated Exhibition Print: Riparian Forest",
     "category": "Exhibition",
@@ -536,7 +688,7 @@
     "alt": "Curated Exhibition Print: Riparian Forest exhibition panel"
   },
   {
-    "id": "gal-068",
+    "id": "gal-087",
     "file": "assets/activities/a5-films-exhibition/Exh14.jpg",
     "title": "Curated Exhibition Print: Coastal Horizons",
     "category": "Exhibition",
@@ -544,7 +696,7 @@
     "alt": "Curated Exhibition Print: Coastal Horizons exhibition panel"
   },
   {
-    "id": "gal-069",
+    "id": "gal-088",
     "file": "assets/activities/a5-films-exhibition/Exh15.jpg",
     "title": "Curated Exhibition Print: Mountain Ridge",
     "category": "Exhibition",
@@ -552,7 +704,7 @@
     "alt": "Curated Exhibition Print: Mountain Ridge exhibition panel"
   },
   {
-    "id": "gal-070",
+    "id": "gal-089",
     "file": "assets/activities/a5-films-exhibition/Exh16.jpg",
     "title": "Curated Exhibition Print: Urban Canopy",
     "category": "Exhibition",
@@ -560,7 +712,7 @@
     "alt": "Curated Exhibition Print: Urban Canopy exhibition panel"
   },
   {
-    "id": "gal-071",
+    "id": "gal-090",
     "file": "assets/activities/a5-films-exhibition/Exh17.jpg",
     "title": "Curated Exhibition Print: Fluvial Waterways",
     "category": "Exhibition",
@@ -568,7 +720,7 @@
     "alt": "Curated Exhibition Print: Fluvial Waterways exhibition panel"
   },
   {
-    "id": "gal-072",
+    "id": "gal-091",
     "file": "assets/activities/a5-films-exhibition/Exh18.jpg",
     "title": "Curated Exhibition Print: Horizon Sunset",
     "category": "Exhibition",
@@ -576,7 +728,7 @@
     "alt": "Curated Exhibition Print: Horizon Sunset exhibition panel"
   },
   {
-    "id": "gal-073",
+    "id": "gal-092",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-session-01.jpg",
     "title": "Kick-off Meeting Opening",
     "category": "Events",
@@ -584,7 +736,7 @@
     "alt": "Kick-off Meeting Opening"
   },
   {
-    "id": "gal-074",
+    "id": "gal-093",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-collaboration-02.jpg",
     "title": "Work Package & Mobility Alignment",
     "category": "Events",
@@ -592,7 +744,7 @@
     "alt": "Work Package & Mobility Alignment"
   },
   {
-    "id": "gal-075",
+    "id": "gal-094",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-meeting-room-03.jpg",
     "title": "Consortium Deliberations",
     "category": "Events",
@@ -600,7 +752,7 @@
     "alt": "Consortium Deliberations"
   },
   {
-    "id": "gal-076",
+    "id": "gal-095",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-working-group-04.jpg",
     "title": "Training Curriculum Working Group",
     "category": "Events",
@@ -608,7 +760,7 @@
     "alt": "Training Curriculum Working Group"
   },
   {
-    "id": "gal-077",
+    "id": "gal-096",
     "file": "assets/activities/a1-kickoff/tpm-kickoff-strategy-review-05.jpg",
     "title": "Quality Management Review",
     "category": "Events",
@@ -616,7 +768,7 @@
     "alt": "Quality Management Review"
   },
   {
-    "id": "gal-078",
+    "id": "gal-097",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-01.jpeg",
     "title": "Final Partner Meeting Convening",
     "category": "Events",
@@ -624,7 +776,7 @@
     "alt": "Final Partner Meeting Convening"
   },
   {
-    "id": "gal-079",
+    "id": "gal-098",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-02.jpeg",
     "title": "Deliverables & Impact Review",
     "category": "Events",
@@ -632,7 +784,7 @@
     "alt": "Deliverables & Impact Review"
   },
   {
-    "id": "gal-080",
+    "id": "gal-099",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-03.jpeg",
     "title": "Participant Feedback Assessment",
     "category": "Events",
@@ -640,7 +792,7 @@
     "alt": "Participant Feedback Assessment"
   },
   {
-    "id": "gal-081",
+    "id": "gal-100",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-04.jpeg",
     "title": "Administrative & Final Reporting",
     "category": "Events",
@@ -648,7 +800,7 @@
     "alt": "Administrative & Final Reporting"
   },
   {
-    "id": "gal-082",
+    "id": "gal-101",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-05.jpeg",
     "title": "Sustainability & Future Initiatives",
     "category": "Events",
@@ -656,7 +808,7 @@
     "alt": "Sustainability & Future Initiatives"
   },
   {
-    "id": "gal-083",
+    "id": "gal-102",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-06.jpeg",
     "title": "Methodology Peer Evaluation",
     "category": "Events",
@@ -664,7 +816,7 @@
     "alt": "Methodology Peer Evaluation"
   },
   {
-    "id": "gal-084",
+    "id": "gal-103",
     "file": "assets/activities/a7-dissemination-final-meeting/final-meeting/final-meeting-07.jpeg",
     "title": "Partnership Closing Celebration",
     "category": "Events",
@@ -672,7 +824,7 @@
     "alt": "Partnership Closing Celebration"
   },
   {
-    "id": "gal-085",
+    "id": "gal-104",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER1.jpeg",
     "title": "Dissemination Conference Romania",
     "category": "Events",
@@ -680,7 +832,7 @@
     "alt": "Dissemination Conference Romania"
   },
   {
-    "id": "gal-086",
+    "id": "gal-105",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER2.jpeg",
     "title": "Booklet Presentation to Educators",
     "category": "Events",
@@ -688,7 +840,7 @@
     "alt": "Booklet Presentation to Educators"
   },
   {
-    "id": "gal-087",
+    "id": "gal-106",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER3.jpeg",
     "title": "Photo Exhibition Screening",
     "category": "Events",
@@ -696,7 +848,7 @@
     "alt": "Photo Exhibition Screening"
   },
   {
-    "id": "gal-088",
+    "id": "gal-107",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER4.jpeg",
     "title": "Youth Participant Testimonies",
     "category": "Events",
@@ -704,7 +856,7 @@
     "alt": "Youth Participant Testimonies"
   },
   {
-    "id": "gal-089",
+    "id": "gal-108",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER5.jpeg",
     "title": "Panel Discussion on Climate Urgency",
     "category": "Events",
@@ -712,7 +864,7 @@
     "alt": "Panel Discussion on Climate Urgency"
   },
   {
-    "id": "gal-090",
+    "id": "gal-109",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER6.jpeg",
     "title": "Interactive VR Demonstration",
     "category": "Events",
@@ -720,7 +872,7 @@
     "alt": "Interactive VR Demonstration"
   },
   {
-    "id": "gal-091",
+    "id": "gal-110",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER7.jpeg",
     "title": "Stakeholder Networking",
     "category": "Events",
@@ -728,7 +880,7 @@
     "alt": "Stakeholder Networking"
   },
   {
-    "id": "gal-092",
+    "id": "gal-111",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER8.jpeg",
     "title": "Documentary Film Screenings",
     "category": "Events",
@@ -736,7 +888,7 @@
     "alt": "Documentary Film Screenings"
   },
   {
-    "id": "gal-093",
+    "id": "gal-112",
     "file": "assets/activities/a7-dissemination-final-meeting/ro/DER9.jpeg",
     "title": "Dissemination Conference Closing",
     "category": "Events",
@@ -744,7 +896,7 @@
     "alt": "Dissemination Conference Closing"
   },
   {
-    "id": "gal-094",
+    "id": "gal-113",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR1.jpeg",
     "title": "Dissemination Conference Türkiye",
     "category": "Events",
@@ -752,7 +904,7 @@
     "alt": "Dissemination Conference Türkiye"
   },
   {
-    "id": "gal-095",
+    "id": "gal-114",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR2.jpeg",
     "title": "Youth Documentary Screening",
     "category": "Events",
@@ -760,7 +912,7 @@
     "alt": "Youth Documentary Screening"
   },
   {
-    "id": "gal-096",
+    "id": "gal-115",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR3.jpeg",
     "title": "Exhibition Panel Discussion",
     "category": "Events",
@@ -768,11 +920,67 @@
     "alt": "Exhibition Panel Discussion"
   },
   {
-    "id": "gal-097",
+    "id": "gal-116",
     "file": "assets/activities/a7-dissemination-final-meeting/tr/DETR4.jpeg",
     "title": "Community Dissemination Plenary",
     "category": "Events",
     "date": "22 July 2026",
     "alt": "Community Dissemination Plenary"
+  },
+  {
+    "id": "gal-117",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE1.jpeg",
+    "title": "Dissemination Conference Germany – View 1",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 1)"
+  },
+  {
+    "id": "gal-118",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE2.jpeg",
+    "title": "Dissemination Conference Germany – View 2",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 2)"
+  },
+  {
+    "id": "gal-119",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE3.jpeg",
+    "title": "Dissemination Conference Germany – View 3",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 3)"
+  },
+  {
+    "id": "gal-120",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE4.jpeg",
+    "title": "Dissemination Conference Germany – View 4",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 4)"
+  },
+  {
+    "id": "gal-121",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE5.jpeg",
+    "title": "Dissemination Conference Germany – View 5",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 5)"
+  },
+  {
+    "id": "gal-122",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE6.jpeg",
+    "title": "Dissemination Conference Germany – View 6",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 6)"
+  },
+  {
+    "id": "gal-123",
+    "file": "assets/activities/a7-dissemination-final-meeting/de/DEDE7.jpeg",
+    "title": "Dissemination Conference Germany – View 7",
+    "category": "Events",
+    "date": "July 2026",
+    "alt": "Green Horizon dissemination conference in Bonn, Germany (Photo 7)"
   }
 ]
