@@ -452,14 +452,46 @@ function initI18n() {
 
   // Apply current language on initial load
   applyLanguage(currentLang);
+  if (currentLang && currentLang !== 'en') {
+    triggerGoogleTranslate(currentLang);
+  }
 }
 
 function setLanguage(lang) {
   if (!i18nTranslations[lang]) return;
   currentLang = lang;
   localStorage.setItem('gh_lang', lang);
+  triggerGoogleTranslate(lang);
   applyLanguage(lang);
   window.dispatchEvent(new CustomEvent('gh_language_changed', { detail: { lang } }));
+}
+
+function triggerGoogleTranslate(lang) {
+  // Sync cookies
+  const cookieVal = lang === 'en' ? '' : `/en/${lang}`;
+  const expireStr = lang === 'en' ? '; expires=Thu, 01 Jan 1970 00:00:00 UTC' : '';
+
+  document.cookie = `googtrans=${cookieVal}; path=/${expireStr}`;
+  if (window.location.hostname) {
+    document.cookie = `googtrans=${cookieVal}; domain=.${window.location.hostname}; path=/${expireStr}`;
+    document.cookie = `googtrans=${cookieVal}; domain=${window.location.hostname}; path=/${expireStr}`;
+  }
+
+  // Trigger combo
+  const tryChangeCombo = (attempts = 0) => {
+    const combo = document.querySelector('.goog-te-combo');
+    if (combo) {
+      const targetVal = lang === 'en' ? 'en' : lang;
+      if (combo.value !== targetVal) {
+        combo.value = targetVal;
+        combo.dispatchEvent(new Event('change'));
+      }
+    } else if (attempts < 30) {
+      setTimeout(() => tryChangeCombo(attempts + 1), 150);
+    }
+  };
+
+  tryChangeCombo();
 }
 
 function applyLanguage(lang) {
@@ -659,3 +691,39 @@ function applyLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', initI18n);
+
+// Background Full-Page Translation Engine (Google Translate Integration)
+window.googleTranslateElementInit = function() {
+  if (window.google && window.google.translate) {
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,de,tr,ro',
+      autoDisplay: false
+    }, 'google_translate_element');
+
+    const saved = localStorage.getItem('gh_lang');
+    if (saved && saved !== 'en') {
+      setTimeout(() => {
+        triggerGoogleTranslate(saved);
+      }, 350);
+    }
+  }
+};
+
+(function() {
+  if (!document.getElementById('google_translate_element')) {
+    const d = document.createElement('div');
+    d.id = 'google_translate_element';
+    d.style.display = 'none';
+    document.body.appendChild(d);
+  }
+
+  if (!document.getElementById('google-translate-script')) {
+    const s = document.createElement('script');
+    s.id = 'google-translate-script';
+    s.type = 'text/javascript';
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.async = true;
+    document.head.appendChild(s);
+  }
+})();
