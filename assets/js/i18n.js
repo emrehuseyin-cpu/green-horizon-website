@@ -406,7 +406,23 @@ const i18nTranslations = {
   }
 };
 
-let currentLang = localStorage.getItem('gh_lang') || 'en';
+// Strict default: English for all first-time visitors
+const storedLang = localStorage.getItem('gh_lang');
+let currentLang = (storedLang && i18nTranslations[storedLang]) ? storedLang : 'en';
+
+// Clean any stale translation cookies if visiting in English / first-time
+if (!storedLang || storedLang === 'en') {
+  clearTranslationCookies();
+}
+
+function clearTranslationCookies() {
+  const expires = '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+  document.cookie = 'googtrans=' + expires;
+  if (window.location.hostname) {
+    document.cookie = 'googtrans=' + expires + ' domain=.' + window.location.hostname + ';';
+    document.cookie = 'googtrans=' + expires + ' domain=' + window.location.hostname + ';';
+  }
+}
 
 function initI18n() {
   const langBtn = document.getElementById('lang-switch-btn');
@@ -450,40 +466,61 @@ function initI18n() {
     });
   });
 
-  // Apply current language on initial load
+  // Apply language state
   applyLanguage(currentLang);
-  if (currentLang && currentLang !== 'en') {
-    triggerGoogleTranslate(currentLang);
+
+  // If returning user previously chose non-English, load and trigger translation
+  if (currentLang !== 'en') {
+    ensureGoogleTranslateLoaded(() => {
+      triggerGoogleTranslate(currentLang);
+    });
   }
 }
 
 function setLanguage(lang) {
   if (!i18nTranslations[lang]) return;
+  const previousLang = currentLang;
   currentLang = lang;
   localStorage.setItem('gh_lang', lang);
-  triggerGoogleTranslate(lang);
-  applyLanguage(lang);
+
+  if (lang === 'en') {
+    clearTranslationCookies();
+    applyLanguage('en');
+    // If the page was previously translated, reload to cleanly restore original English DOM
+    if (previousLang !== 'en') {
+      window.location.reload();
+      return;
+    }
+  } else {
+    ensureGoogleTranslateLoaded(() => {
+      triggerGoogleTranslate(lang);
+    });
+    applyLanguage(lang);
+  }
+
   window.dispatchEvent(new CustomEvent('gh_language_changed', { detail: { lang } }));
 }
 
 function triggerGoogleTranslate(lang) {
-  // Sync cookies
-  const cookieVal = lang === 'en' ? '' : `/en/${lang}`;
-  const expireStr = lang === 'en' ? '; expires=Thu, 01 Jan 1970 00:00:00 UTC' : '';
-
-  document.cookie = `googtrans=${cookieVal}; path=/${expireStr}`;
-  if (window.location.hostname) {
-    document.cookie = `googtrans=${cookieVal}; domain=.${window.location.hostname}; path=/${expireStr}`;
-    document.cookie = `googtrans=${cookieVal}; domain=${window.location.hostname}; path=/${expireStr}`;
+  if (lang === 'en') {
+    clearTranslationCookies();
+    return;
   }
 
-  // Trigger combo
+  // Set cookies for translation engine
+  const cookieVal = `/en/${lang}`;
+  document.cookie = `googtrans=${cookieVal}; path=/;`;
+  if (window.location.hostname) {
+    document.cookie = `googtrans=${cookieVal}; domain=.${window.location.hostname}; path=/;`;
+    document.cookie = `googtrans=${cookieVal}; domain=${window.location.hostname}; path=/;`;
+  }
+
+  // Trigger select combo
   const tryChangeCombo = (attempts = 0) => {
     const combo = document.querySelector('.goog-te-combo');
     if (combo) {
-      const targetVal = lang === 'en' ? 'en' : lang;
-      if (combo.value !== targetVal) {
-        combo.value = targetVal;
+      if (combo.value !== lang) {
+        combo.value = lang;
         combo.dispatchEvent(new Event('change'));
       }
     } else if (attempts < 30) {
@@ -492,6 +529,48 @@ function triggerGoogleTranslate(lang) {
   };
 
   tryChangeCombo();
+}
+
+function ensureGoogleTranslateLoaded(callback) {
+  if (!document.getElementById('google_translate_element')) {
+    const d = document.createElement('div');
+    d.id = 'google_translate_element';
+    d.style.display = 'none';
+    document.body.appendChild(d);
+  }
+
+  if (window.google && window.google.translate) {
+    if (callback) callback();
+    return;
+  }
+
+  if (!document.getElementById('google-translate-script')) {
+    window.googleTranslateElementInit = function() {
+      new window.google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,de,tr,ro',
+        autoDisplay: false
+      }, 'google_translate_element');
+
+      if (callback) {
+        setTimeout(callback, 250);
+      }
+    };
+
+    const s = document.createElement('script');
+    s.id = 'google-translate-script';
+    s.type = 'text/javascript';
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.async = true;
+    document.head.appendChild(s);
+  } else if (callback) {
+    const poll = setInterval(() => {
+      if (window.google && window.google.translate) {
+        clearInterval(poll);
+        callback();
+      }
+    }, 100);
+  }
 }
 
 function applyLanguage(lang) {
@@ -691,39 +770,3 @@ function applyLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', initI18n);
-
-// Background Full-Page Translation Engine (Google Translate Integration)
-window.googleTranslateElementInit = function() {
-  if (window.google && window.google.translate) {
-    new window.google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'en,de,tr,ro',
-      autoDisplay: false
-    }, 'google_translate_element');
-
-    const saved = localStorage.getItem('gh_lang');
-    if (saved && saved !== 'en') {
-      setTimeout(() => {
-        triggerGoogleTranslate(saved);
-      }, 350);
-    }
-  }
-};
-
-(function() {
-  if (!document.getElementById('google_translate_element')) {
-    const d = document.createElement('div');
-    d.id = 'google_translate_element';
-    d.style.display = 'none';
-    document.body.appendChild(d);
-  }
-
-  if (!document.getElementById('google-translate-script')) {
-    const s = document.createElement('script');
-    s.id = 'google-translate-script';
-    s.type = 'text/javascript';
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }
-})();
