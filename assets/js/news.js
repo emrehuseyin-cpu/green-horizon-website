@@ -47,7 +47,7 @@ function renderNewsArticles(articles) {
       <article class="card card-accent-green" id="${art.id}" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="margin-bottom: 1rem; overflow: hidden; border-radius: var(--radius-md); position: relative;">
-            <img src="${art.image || 'assets/images/booklet-cover.jpg'}" alt="${art.title}" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" loading="lazy">
+            <img src="${art.image || 'assets/images/booklet-cover.jpg'}" alt="${art.title}" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" loading="lazy" onerror="this.onerror=null; this.src='assets/images/booklet-cover.jpg';">
             ${art.badge ? `<span style="position: absolute; top: 10px; right: 10px; background: rgba(18, 53, 36, 0.88); backdrop-filter: blur(4px); color: #FFFFFF; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: var(--radius-full);">${art.badge}</span>` : ''}
           </div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem;">
@@ -136,7 +136,7 @@ window.openArticleModal = function(id) {
     if (art.image) {
       html += `
         <div style="margin-bottom: 1.5rem; overflow: hidden; border-radius: var(--radius-md); max-height: 320px;">
-          <img src="${art.image}" alt="${art.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <img src="${art.image}" alt="${art.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.onerror=null; this.src='assets/images/booklet-cover.jpg';">
         </div>
       `;
     }
