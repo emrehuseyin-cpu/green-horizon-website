@@ -45,8 +45,8 @@
         "id": "film-1",
         "country": "Germany",
         "duration": "31 seconds",
-        "title": "Reduce & Reconnect: Aerial Perspectives & Youth Eco-Action in Bonn",
-        "description": "Youth participants in Bonn capture aerial drone views of urban lake ecosystems and parklands, raising smartphone banners to advocate for conscious consumption (“REDUCE”) and Erasmus+ youth-led climate responsibility.",
+        "title": "Reduce & Reconnect: Aerial Perspectives & Youth Eco-Action",
+        "description": "Prepared and published by the German youth team during the Training Course in Brașov, Romania. Participants combined aerial drone footage with digital messages ('REDUCE') to advocate for conscious consumption and youth-led climate responsibility.",
         "video_src": "assets/video/campaign-germany.mp4",
         "poster": "assets/video/poster-germany.jpg"
       },
@@ -55,7 +55,7 @@
         "country": "Romania",
         "duration": "54 seconds",
         "title": "Stop Water Contamination: Aerial Guardians of Carpathian Valleys",
-        "description": "Romanian youth teams deploy camera drones above mountain parklands in Brașov, pairing sweeping canopy views with an urgent on-camera call to safeguard freshwater reserves and stop water contamination.",
+        "description": "Prepared and published by the Romanian youth team during the Training Course in Brașov, Romania. The video pairs sweeping canopy views with an urgent on-camera call to safeguard freshwater reserves and stop water contamination.",
         "video_src": "assets/video/campaign-romania.mp4",
         "poster": "assets/video/poster-romania.jpg"
       },
@@ -63,8 +63,8 @@
         "id": "film-3",
         "country": "Türkiye",
         "duration": "67 seconds",
-        "title": "Stop Plastic Waste: Youth Recycling & Circular Action in Mersin",
-        "description": "Young advocates in Mersin take to public spaces with grassroots campaign signs—“RECYCLE” and “STOP PLASTIC WASTE”—highlighting the daily battle against single-use plastics and mobilizing youth for circular waste management.",
+        "title": "Stop Plastic Waste: Youth Recycling & Circular Action",
+        "description": "Prepared and published by the Turkish youth team (IESA) during the Training Course in Brașov, Romania. Filmed in dynamic social reel format with aerial canopy sweeps and grassroots signs ('RECYCLE', 'STOP PLASTIC WASTE') to mobilize youth for circular waste management.",
         "video_src": "assets/video/campaign-turkiye.mp4",
         "poster": "assets/video/poster-turkiye.jpg"
       }
