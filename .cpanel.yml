@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/uejnbpte/public_html/
-    - /bin/cp -R * $DEPLOYPATH 2>/dev/null || true
-    - /bin/cp -f .htaccess $DEPLOYPATH 2>/dev/null || true
+    - export DEPLOYPATH=/home1/uejnbpte/public_html
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
